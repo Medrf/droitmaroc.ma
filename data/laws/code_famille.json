@@ -1,0 +1,1012 @@
+{
+    "code_id": "code_famille",
+    "code_name_fr": "Code de la Famille (Moudawana)",
+    "code_name_ar": "مدونة الأسرة",
+    "total_articles": 400,
+    "source": "Loi n° 70-03 portant Code de la Famille",
+    "articles": [
+        {
+            "number": 1,
+            "text_fr": "La présente loi est dénommée Code de la famille. Elle est désignée dans la suite du présent texte par le code.",
+            "text_ar": "تسمى هذه المدونة مدونة الأسرة.",
+            "keywords": [
+                "Code",
+                "famille"
+            ]
+        },
+        {
+            "number": 2,
+            "text_fr": "Les dispositions du présent code s’appliquent: 1. à tous les marocains, même ceux portant une autre nationalité; 2. aux réfugiés...; 3. à toute relation entre deux personnes lorsque l’une des deux parties est marocaine; 4. à toute relation entre deux marocains lorsque l’un d’eux est musulman.",
+            "text_ar": "تسري أحكام هذه المدونة على جميع المغاربة...",
+            "keywords": [
+                "application",
+                "marocains"
+            ]
+        },
+        {
+            "number": 3,
+            "text_fr": "Le ministère public est partie principale dans toutes les actions visant l’application des dispositions du présent code.",
+            "text_ar": "تعتبر النيابة العامة طرفا أصليا...",
+            "keywords": [
+                "ministère public"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "Le mariage est un pacte fondé sur le consentement mutuel et une union légale et durable...",
+            "text_ar": "الزواج ميثاق تراض وترابط شرعي...",
+            "keywords": [
+                "mariage"
+            ]
+        },
+        {
+            "number": 5,
+            "text_fr": "Les fiançailles sont une promesse mutuelle de mariage entre un homme et une femme...",
+            "text_ar": "الخطبة تواعد متبادل على الزواج...",
+            "keywords": [
+                "fiançailles"
+            ]
+        },
+        {
+            "number": 6,
+            "text_fr": "Les deux parties sont considérées en période de fiançailles jusqu’à la conclusion de l’acte de mariage...",
+            "text_ar": "يعتبر الطرفان في فترة خطبة...",
+            "keywords": [
+                "fiançailles"
+            ]
+        },
+        {
+            "number": 7,
+            "text_fr": "La simple renonciation aux fiançailles n’ouvre pas droit au dédommagement. Toutefois si l’une des deux parties cause un préjudice à l’autre, la partie lésée peut réclamer réparation.",
+            "text_ar": "مجرد العدول عن الخطبة لا يوجب التعويض...",
+            "keywords": [
+                "dédommagement",
+                "préjudice"
+            ]
+        },
+        {
+            "number": 8,
+            "text_fr": "Chacun des deux fiancés peut demander la restitution des présents offerts, à moins que la renonciation... ne soit de son fait.",
+            "text_ar": "لكل من الخاطبين أن يسترد الهدايا...",
+            "keywords": [
+                "restitution",
+                "présents"
+            ]
+        },
+        {
+            "number": 9,
+            "text_fr": "Lorsque le fiancé s’acquitte du sadaq... et qu’il y a eu renonciation... le fiancé ou ses héritiers peuvent demander la restitution...",
+            "text_ar": "إذا قدم الخاطب الصداق...",
+            "keywords": [
+                "sadaq",
+                "restitution"
+            ]
+        },
+        {
+            "number": 10,
+            "text_fr": "Le mariage est conclu par l’offre de l’un des deux contractants et l’acceptation de l’autre...",
+            "text_ar": "ينعقد الزواج بإيجاب أحد المتعاقدين وقبول الآخر...",
+            "keywords": [
+                "conclusion",
+                "offre"
+            ]
+        },
+        {
+            "number": 11,
+            "text_fr": "L’offre et l’acceptation doivent être: 1. exprimées oralement... 2. concordantes... 3. Décisives...",
+            "text_ar": "يشترط في الإيجاب والقبول...",
+            "keywords": [
+                "offre",
+                "acceptation"
+            ]
+        },
+        {
+            "number": 12,
+            "text_fr": "Sont applicables à l’acte de mariage vicié par la contrainte ou par le dol les dispositions des articles 63 et 66 ci-dessous.",
+            "text_ar": "تطبق على عقد الزواج المشوب بإكراه أو تدليس مقتضيات المادتين 63 و 66 أدناه.",
+            "keywords": [
+                "contrainte",
+                "dol"
+            ]
+        },
+        {
+            "number": 13,
+            "text_fr": "L’acte de mariage est subordonné aux conditions suivantes : 1. la capacité... 2. la non suppression du Sadaq... 3. la participation du tuteur... 4. le constat... 5. L’absence d’empêchements...",
+            "text_ar": "تتوقف صحة عقد الزواج على...",
+            "keywords": [
+                "conditions",
+                "validité"
+            ]
+        },
+        {
+            "number": 14,
+            "text_fr": "Les marocains résidant à l’étranger peuvent conclure leur mariage, selon les procédures administratives locales...",
+            "text_ar": "يمكن للمغاربة المقيمين بالخارج إبرام عقود زواجهم وفقا للإجراءات الإدارية المحلية...",
+            "keywords": [
+                "MRE",
+                "étranger"
+            ]
+        },
+        {
+            "number": 15,
+            "text_fr": "Les marocains, ayant conclu un acte de mariage conformément à la législation locale du pays de résidence, doivent déposer une copie dudit acte dans un délai de trois mois...",
+            "text_ar": "يجب على المغاربة الذين أبرموا عقد زواجهم طبقا للقانون المحلي لبلد إقامتهم أن يودعوا نسخة منه داخل أجل ثلاثة أشهر...",
+            "keywords": [
+                "transcription",
+                "consulat"
+            ]
+        },
+        {
+            "number": 16,
+            "text_fr": "Le document de l’acte de mariage constitue la preuve valable du mariage. Si des raisons impérieuses... le tribunal admet... tous les moyens de preuve...",
+            "text_ar": "تعتبر وثيقة عقد الزواج الوسيلة المقبولة لإثبات الزواج...",
+            "keywords": [
+                "preuve",
+                "mariage"
+            ]
+        },
+        {
+            "number": 17,
+            "text_fr": "Le mariage est conclu en la présence de ses parties. Toutefois, mandat à cet effet peut être donné...",
+            "text_ar": "يتم عقد الزواج بحضور أطرافه. و يجوز التوكيل فيه...",
+            "keywords": [
+                "mandat",
+                "procuration"
+            ]
+        },
+        {
+            "number": 18,
+            "text_fr": "Le juge ne peut se charger personnellement de conclure, soit pour lui même, soit pour ses ascendants ou descendants, le mariage d’une personne soumise à sa tutelle.",
+            "text_ar": "لا يجوز للقاضي أن يتولى بصفة شخصية إبرام عقد زواج له أو لأصوله أو فروعه...",
+            "keywords": [
+                "juge",
+                "tutelle"
+            ]
+        },
+        {
+            "number": 19,
+            "text_fr": "La capacité matrimoniale s’acquiert... à dix huit années grégoriennes révolues.",
+            "text_ar": "تكتمل أهلية الزواج بإتمام الفتى والفتاة... ثماني عشرة سنة...",
+            "keywords": [
+                "capacité",
+                "18 ans"
+            ]
+        },
+        {
+            "number": 20,
+            "text_fr": "Le juge de la famille... peut autoriser le mariage du garçon et de la fille avant l’âge de la capacité...",
+            "text_ar": "لقاضي الأسرة... أن يأذن بزواج الفتى والفتاة دون سن الأهلية...",
+            "keywords": [
+                "dérogation",
+                "mineur"
+            ]
+        },
+        {
+            "number": 21,
+            "text_fr": "Le mariage du mineur est subordonné à l’approbation de son représentant légal...",
+            "text_ar": "زواج القاصر متوقف على موافقة نائبه الشرعي...",
+            "keywords": [
+                "mineur",
+                "tuteur"
+            ]
+        },
+        {
+            "number": 22,
+            "text_fr": "Les conjoints... acquièrent la capacité civile pour ester en justice pour tout ce qui concerne les droits et obligations résultant du mariage...",
+            "text_ar": "يكتسب الزوجان... الأهلية المدنية في التقاضي...",
+            "keywords": [
+                "capacité civile",
+                "ester en justice"
+            ]
+        },
+        {
+            "number": 23,
+            "text_fr": "Le juge de la famille... autorise le mariage de l’handicapé mental... sur production d’un rapport...",
+            "text_ar": "يأذن قاضي الأسرة بزواج المعاق ذهنيا... بعد تقديم تقرير...",
+            "keywords": [
+                "handicap",
+                "mariage"
+            ]
+        },
+        {
+            "number": 24,
+            "text_fr": "La tutelle matrimoniale (wilaya) est un droit de la femme...",
+            "text_ar": "الولاية في الزواج حق للمرأة...",
+            "keywords": [
+                "wilaya",
+                "femme"
+            ]
+        },
+        {
+            "number": 25,
+            "text_fr": "La femme majeure peut contracter son mariage elle-même ou déléguer...",
+            "text_ar": "للمرأة الراشدة أن تعقد زواجها بنفسها...",
+            "keywords": [
+                "femme majeure"
+            ]
+        },
+        {
+            "number": 26,
+            "text_fr": "Le Sadaq (la dot) est ce que l’époux offre à son épouse...",
+            "text_ar": "الصداق هو ما يقدمه الزوج لزوجته...",
+            "keywords": [
+                "sadaq"
+            ]
+        },
+        {
+            "number": 27,
+            "text_fr": "Le Sadaq est fixé dans l’acte de mariage lors de sa conclusion. A défaut, sa fixation est déléguée aux conjoints...",
+            "text_ar": "يحدد الصداق وقت العقد...",
+            "keywords": [
+                "fixation",
+                "sadaq"
+            ]
+        },
+        {
+            "number": 28,
+            "text_fr": "Tout ce qui peut faire légalement l’objet d’une obligation peut servir de sadaq...",
+            "text_ar": "كل ما صح التزامه شرعا صلح أن يكون صداقا...",
+            "keywords": [
+                "objet",
+                "sadaq"
+            ]
+        },
+        {
+            "number": 29,
+            "text_fr": "Le sadaq est la propriété de la femme ; elle en a la libre disposition...",
+            "text_ar": "الصداق ملك للمرأة تتصرف فيه كيف شاءت...",
+            "keywords": [
+                "propriété",
+                "sadaq"
+            ]
+        },
+        {
+            "number": 30,
+            "text_fr": "Il peut être convenu du paiement d’avance ou à terme, de la totalité ou d’une partie du sadaq.",
+            "text_ar": "يجوز الاتفاق على تعجيل الصداق أو تأجيله...",
+            "keywords": [
+                "paiement",
+                "sadaq"
+            ]
+        },
+        {
+            "number": 31,
+            "text_fr": "Le sadaq est payé à l’échéance du terme convenu. L’épouse peut demander le paiement de la partie échue... avant la consommation...",
+            "text_ar": "يؤدى الصداق عند حلول الأجل المتفق عليه...",
+            "keywords": [
+                "échéance",
+                "sadaq"
+            ]
+        },
+        {
+            "number": 32,
+            "text_fr": "L’épouse a droit à l’intégralité du sadaq, en cas de consommation du mariage ou de décès...",
+            "text_ar": "تستحق الزوجة الصداق كاملاً بالدخول أو بالموت...",
+            "keywords": [
+                "droit",
+                "sadaq"
+            ]
+        },
+        {
+            "number": 33,
+            "text_fr": "En cas de divergence sur le versement... il est ajouté foi aux déclarations de l’épouse si la contestation intervient avant la consommation... et à celles de l’époux dans le cas contraire.",
+            "text_ar": "إذا اختلف الزوجان في قبض الصداق...",
+            "keywords": [
+                "divergence",
+                "preuve"
+            ]
+        },
+        {
+            "number": 34,
+            "text_fr": "Tout ce qu’apporte l’épouse sous forme de Jihaz... lui appartient...",
+            "text_ar": "كل ما تأتي به الزوجة من جهاز... يعتبر ملكا لها...",
+            "keywords": [
+                "jihaz",
+                "propriété"
+            ]
+        },
+        {
+            "number": 35,
+            "text_fr": "Les empêchements du mariage sont de deux sortes : perpétuels et temporaires.",
+            "text_ar": "موانع الزواج قسمان: مؤبدة ومؤقتة.",
+            "keywords": [
+                "empêchements"
+            ]
+        },
+        {
+            "number": 36,
+            "text_fr": "Est prohibé, pour cause de parenté, le mariage de l’homme avec ses ascendantes et descendantes...",
+            "text_ar": "يحرم على الرجل بسبب القرابة: أصوله وفصوله...",
+            "keywords": [
+                "inceste",
+                "parenté"
+            ]
+        },
+        {
+            "number": 37,
+            "text_fr": "Est prohibé, pour cause de parenté par alliance, le mariage de l’homme avec les ascendantes de ses épouses...",
+            "text_ar": "يحرم على الرجل بسبب المصاهرة...",
+            "keywords": [
+                "alliance"
+            ]
+        },
+        {
+            "number": 38,
+            "text_fr": "L’allaitement entraîne les mêmes empêchements que la filiation...",
+            "text_ar": "يحرم من الرضاع ما يحرم من النسب...",
+            "keywords": [
+                "allaitement"
+            ]
+        },
+        {
+            "number": 39,
+            "text_fr": "Sont prohibés temporairement: 1. le mariage simultané avec deux soeurs... 2. le fait d’avoir à la fois un nombre d’épouses supérieur... 3. en cas de divorce des deux époux trois fois successives... 5. le mariage d’une musulmane avec un non-musulman...",
+            "text_ar": "المحرمات المؤقتة: الجمع بين أختين...",
+            "keywords": [
+                "empêchements temporaires"
+            ]
+        },
+        {
+            "number": 40,
+            "text_fr": "La polygamie est interdite lorsqu’une injustice est à craindre entre les épouses...",
+            "text_ar": "يمنع التعدد إذا خيف عدم العدل...",
+            "keywords": [
+                "polygamie"
+            ]
+        },
+        {
+            "number": 41,
+            "text_fr": "Le tribunal n’autorise pas la polygamie si le motif objectif exceptionnel n’est pas établi...",
+            "text_ar": "لا تأذن المحكمة بالتعدد...",
+            "keywords": [
+                "polygamie",
+                "tribunal"
+            ]
+        },
+        {
+            "number": 42,
+            "text_fr": "Lorsqu’il n’existe pas de condition... l’homme qui désire prendre une autre épouse présente au tribunal une demande...",
+            "text_ar": "في غياب شرط... يقدم الراغب في التعدد طلبا للمحكمة...",
+            "keywords": [
+                "polygamie",
+                "demande"
+            ]
+        },
+        {
+            "number": 43,
+            "text_fr": "Le tribunal convoque aux fins de comparution l’épouse dont l’époux désire prendre une autre épouse...",
+            "text_ar": "تستدعي المحكمة الزوجة المراد التزوج عليها...",
+            "keywords": [
+                "polygamie",
+                "convocation"
+            ]
+        },
+        {
+            "number": 44,
+            "text_fr": "Les débats se déroulent en chambre du conseil... Le tribunal peut autoriser la polygamie... si le motif objectif exceptionnel de la polygamie est établi...",
+            "text_ar": "تجري المناقشة في غرفة المشورة...",
+            "keywords": [
+                "débats",
+                "polygamie"
+            ]
+        },
+        {
+            "number": 45,
+            "text_fr": "Lorsque est établie, au cours des débats, l’impossibilité de la poursuite de la relation conjugale..., le tribunal fixe un montant correspondant à tous les droits de l’épouse...",
+            "text_ar": "إذا ثبت للمحكمة... تعذر استمرار العلاقة الزوجية...",
+            "keywords": [
+                "divorce",
+                "droits"
+            ]
+        },
+        {
+            "number": 46,
+            "text_fr": "Lorsque la polygamie est autorisée, le mariage n’est conclu avec la future épouse qu‘après que celle-ci ait été avisée par le juge que le prétendant est marié...",
+            "text_ar": "في حالة الإذن بالتعدد، لا يبرم العقد... إلا بعد إشعارها...",
+            "keywords": [
+                "avis",
+                "future épouse"
+            ]
+        },
+        {
+            "number": 47,
+            "text_fr": "Toutes les conditions sont contraignantes à l’exception de celles qui sont contraires aux dispositions et aux buts de l’acte de mariage...",
+            "text_ar": "الشروط كلها ملزمة إلا ما خالف منها أحكام العقد...",
+            "keywords": [
+                "conditions",
+                "validité"
+            ]
+        },
+        {
+            "number": 48,
+            "text_fr": "Les conditions qui assurent un intérêt légitime au conjoint qui les formule sont valables...",
+            "text_ar": "الشروط التي تحقق مصلحة مشروعة... تكون صحيحة...",
+            "keywords": [
+                "conditions",
+                "intérêt légitime"
+            ]
+        },
+        {
+            "number": 49,
+            "text_fr": "Chacun des deux époux dispose d’un patrimoine distinct. Toutefois, ils peuvent... se mettre d’accord sur la fructification et la répartition des biens acquis...",
+            "text_ar": "لكل واحد من الزوجين ذمة مالية مستقلة...",
+            "keywords": [
+                "patrimoine",
+                "biens"
+            ]
+        },
+        {
+            "number": 50,
+            "text_fr": "L’acte de mariage... est réputé valable et produit tous ses effets...",
+            "text_ar": "يعتبر عقد الزواج... صحيحا ومنتجا لآثاره...",
+            "keywords": [
+                "effets",
+                "validité"
+            ]
+        },
+        {
+            "number": 51,
+            "text_fr": "Les droits et devoirs réciproques entre conjoints: 1. la cohabitation légale... 2. les bons rapports... 3. la prise en charge... 4. la concertation... 6. les droits de succession...",
+            "text_ar": "الحقوق وبر الواجبات المتبادلة بين الزوجين...",
+            "keywords": [
+                "droits",
+                "devoirs"
+            ]
+        },
+        {
+            "number": 52,
+            "text_fr": "Lorsque l'un des conjoints persiste à manquer aux obligations... l'autre partie peut réclamer l'exécution... ou recourir à la procédure de discorde...",
+            "text_ar": "إذا أخل أحد الزوجين بالواجبات...",
+            "keywords": [
+                "manquement",
+                "obligation"
+            ]
+        },
+        {
+            "number": 53,
+            "text_fr": "Lorsque l'un des conjoints expulse l'autre du foyer conjugal sans motif, le ministère public intervient pour ramener immédiatement la partie expulsée...",
+            "text_ar": "إذا قام أحد الزوجين بطرد الآخر من بيت الزوجية...",
+            "keywords": [
+                "expulsion",
+                "foyer"
+            ]
+        },
+        {
+            "number": 54,
+            "text_fr": "Les parents doivent à leurs enfants: 1. la protection... 2. la préservation de leur identité... 3. la filiation... 7. l’enseignement...",
+            "text_ar": "للأطفال على أبويهم حقوق...",
+            "keywords": [
+                "enfants",
+                "parentalité"
+            ]
+        },
+        {
+            "number": 55,
+            "text_fr": "Le mariage produit des effets sur les proches parents des époux tels que les empêchements au mariage...",
+            "text_ar": "تترتب على الزواج آثار بالنسبة لأقارب الزوجين...",
+            "keywords": [
+                "effets",
+                "proches"
+            ]
+        },
+        {
+            "number": 56,
+            "text_fr": "Le mariage non valide peut être soit nul, soit vicié.",
+            "text_ar": "الزواج   غير الصحيح يكون إما باطلا وإما فاسدا.",
+            "keywords": [
+                "nullité",
+                "vice"
+            ]
+        },
+        {
+            "number": 57,
+            "text_fr": "Le mariage est nul: 1. lorsque l'un des éléments... fait défaut; 2. lorsqu’il existe un empêchement... 3. lorsque l’offre et l’acceptation... ne sont pas concordantes.",
+            "text_ar": "يكون الزواج باطلا...",
+            "keywords": [
+                "nullité"
+            ]
+        },
+        {
+            "number": 58,
+            "text_fr": "Le tribunal prononce la nullité du mariage... dès qu'il en a connaissance...",
+            "text_ar": "تصرح المحكمة ببطلان الزواج...",
+            "keywords": [
+                "jugement",
+                "nullité"
+            ]
+        },
+        {
+            "number": 59,
+            "text_fr": "Le mariage est entaché de vice, lorsque l’une des conditions de sa validité n’est pas remplie...",
+            "text_ar": "يكون الزواج فاسدا...",
+            "keywords": [
+                "mariage vicié"
+            ]
+        },
+        {
+            "number": 60,
+            "text_fr": "Le mariage entaché d’un vice est résilié s’il n’y a pas eu consommation...",
+            "text_ar": "يفسخ الزواج الفاسد قبل البناء...",
+            "keywords": [
+                "résiliation",
+                "vice"
+            ]
+        },
+        {
+            "number": 61,
+            "text_fr": "Le mariage, vicié à cause de l'acte, est résilié avant et après sa consommation dans les cas suivants...",
+            "text_ar": "يفسخ الزواج الفاسد لعقده...",
+            "keywords": [
+                "résiliation",
+                "cas"
+            ]
+        },
+        {
+            "number": 62,
+            "text_fr": "Lorsque l'offre ou l'acceptation... est assortie d'un délai ou d'une condition... les dispositions de l'article 47 ci-dessus sont applicables.",
+            "text_ar": "إذا اقترن الإيجاب أو القبول بأجل أو شرط...",
+            "keywords": [
+                "délai",
+                "condition"
+            ]
+        },
+        {
+            "number": 63,
+            "text_fr": "Le conjoint qui a fait l’objet de contrainte ou de faits dolosifs... peut demander la résiliation... dans un délai maximum de deux mois...",
+            "text_ar": "للمكره أو المدلس عليه أن يطلب فسخ الزواج...",
+            "keywords": [
+                "contrainte",
+                "dol"
+            ]
+        },
+        {
+            "number": 64,
+            "text_fr": "Le mariage résilié... ne produit aucun effet avant sa consommation...",
+            "text_ar": "الزواج المفسوخ لا ينتج أي أثر...",
+            "keywords": [
+                "effets",
+                "mariage résilié"
+            ]
+        },
+        {
+            "number": 65,
+            "text_fr": "I- Il est constitué un dossier pour la conclusion du mariage... 1. Formulaire... 2. Extrait d'acte de naissance... 3. Attestation administrative... 4. Certificat médical... 5. Autorisation... 6. Certificat d’aptitude...",
+            "text_ar": "يحدث ملف لعقد الزواج...",
+            "keywords": [
+                "dossier",
+                "pièces"
+            ]
+        },
+        {
+            "number": 66,
+            "text_fr": "En cas de manoeuvres dolosives... il est fait application... des dispositions de l’article 366 du code pénal...",
+            "text_ar": "يعاقب... كل من استعمل تدليسا...",
+            "keywords": [
+                "fraude",
+                "sanction"
+            ]
+        },
+        {
+            "number": 67,
+            "text_fr": "Le contrat de mariage doit comporter: 1. La mention de l'autorisation... 2. Les noms... 3. Le tuteur... 7. Le sadaq...",
+            "text_ar": "يجب أن يتضمن عقد الزواج...",
+            "keywords": [
+                "acte",
+                "mentions"
+            ]
+        },
+        {
+            "number": 68,
+            "text_fr": "Le texte de l’acte de mariage est transcrit sur le registre tenu à cet effet...",
+            "text_ar": "يضمن نص العقد في السجل...",
+            "keywords": [
+                "transcription",
+                "registre"
+            ]
+        },
+        {
+            "number": 69,
+            "text_fr": "Dès l’homologation de l’acte de mariage par le juge, l’original dudit acte est remis à l’épouse...",
+            "text_ar": "يسلم أصل رسم الزواج للزوجة...",
+            "keywords": [
+                "remise",
+                "acte"
+            ]
+        },
+        {
+            "number": 70,
+            "text_fr": "Le recours à la dissolution du mariage ne doit avoir lieu qu’exceptionnellement...",
+            "text_ar": "لا ينبغي اللجوء إلى حل ميثاق الزوجية إلا استثناء...",
+            "keywords": [
+                "dissolution",
+                "exception"
+            ]
+        },
+        {
+            "number": 71,
+            "text_fr": "La dissolution du mariage résulte du décès, de la résiliation, du divorce, du divorce judiciaire ou du divorce moyennant compensation (Khol’).",
+            "text_ar": "ينحل عقد الزواج بالوفاة أو الفسخ أو الطلاق أو التطليق أو الخلع.",
+            "keywords": [
+                "dissolution",
+                "causes"
+            ]
+        },
+        {
+            "number": 72,
+            "text_fr": "La dissolution du mariage entraîne les effets prévus au présent code, à partir de la date...",
+            "text_ar": "تترتب آثار انحلال عقد الزواج...",
+            "keywords": [
+                "effets",
+                "date"
+            ]
+        },
+        {
+            "number": 73,
+            "text_fr": "Le divorce peut avoir lieu soit verbalement en termes explicites, soit par écrit soit encore par signe...",
+            "text_ar": "يقع الطلاق باللفظ الصريح...",
+            "keywords": [
+                "divorce",
+                "forme"
+            ]
+        },
+        {
+            "number": 74,
+            "text_fr": "Le décès et sa date sont établis devant le tribunal par tout moyen recevable...",
+            "text_ar": "تثبت الوفاة وتاريخها أمام المحكمة...",
+            "keywords": [
+                "décès",
+                "preuve"
+            ]
+        },
+        {
+            "number": 75,
+            "text_fr": "S’il s’avère, après le jugement déclaratif du décès d’un disparu, qu’il est toujours en vie, le ministère public... est tenu de demander... établissant cela...",
+            "text_ar": "إذا حكم بوفاة المفقود ثم ظهر حيا...",
+            "keywords": [
+                "disparu",
+                "retour"
+            ]
+        },
+        {
+            "number": 76,
+            "text_fr": "En cas d’établissement de la date réelle du décès, autre que celle prononcée... le ministère public... est tenu de demander... un jugement rétablissant ce fait...",
+            "text_ar": "إذا ثبت تاريخ الوفاة الحقيقي...",
+            "keywords": [
+                "décès",
+                "rectification"
+            ]
+        },
+        {
+            "number": 77,
+            "text_fr": "La résiliation de l’acte de mariage est prononcée par jugement avant ou après sa consommation...",
+            "text_ar": "يحكم بفسخ عقد الزواج...",
+            "keywords": [
+                "résiliation",
+                "jugement"
+            ]
+        },
+        {
+            "number": 78,
+            "text_fr": "Le divorce est la dissolution du pacte conjugal exercée par l’époux et par l’épouse, sous le contrôle de la justice...",
+            "text_ar": "الطلاق هو حل ميثاق الزوجية يمارسه الزوج والزوجة...",
+            "keywords": [
+                "divorce",
+                "définition"
+            ]
+        },
+        {
+            "number": 79,
+            "text_fr": "Quiconque veut divorcer doit demander au tribunal l’autorisation d’en faire dresser acte par deux adouls...",
+            "text_ar": "يجب على من يريد الطلاق أن يطلب الإذن من المحكمة...",
+            "keywords": [
+                "divorce",
+                "autorisation"
+            ]
+        },
+        {
+            "number": 80,
+            "text_fr": "La demande d’autorisation de faire constater l’acte de divorce doit contenir l’identité... et le nombre d’enfants...",
+            "text_ar": "يجب أن يتضمن طلب الإذن بالإشهاد على الطلاق...",
+            "keywords": [
+                "demande",
+                "contenu"
+            ]
+        },
+        {
+            "number": 81,
+            "text_fr": "Le tribunal convoque les époux pour une tentative de réconciliation. Si l’époux... ne comparaît pas, il est réputé avoir renoncé...",
+            "text_ar": "تستدعي المحكمة الزوجين لمحاولة الإصلاح...",
+            "keywords": [
+                "réconciliation",
+                "convocation"
+            ]
+        },
+        {
+            "number": 82,
+            "text_fr": "Lorsque les deux parties comparaissent, les débats ont lieu en chambre de conseil... Le tribunal peut... désigner deux arbitres...",
+            "text_ar": "عند حضور الطرفين، تجري المناقشة...",
+            "keywords": [
+                "débats",
+                "arbitres"
+            ]
+        },
+        {
+            "number": 83,
+            "text_fr": "Si la réconciliation des conjoints s’avère impossible, le tribunal fixe un montant que l’époux consigne... dans un délai ne dépassant pas trente jours...",
+            "text_ar": "إذا تعذر الإصلاح بين الزوجين، حددت المحكمة مبلغا...",
+            "keywords": [
+                "consignation",
+                "droits"
+            ]
+        },
+        {
+            "number": 84,
+            "text_fr": "Les droits dus à l’épouse comportent : le reliquat du sadaq, ... la pension de la retraite de viduité (Idda) et le don de consolation (Mout’â)...",
+            "text_ar": "تشمل مستحقات الزوجة: مؤخر الصداق... نفقة العدة والمتعة...",
+            "keywords": [
+                "droits",
+                "mout'a"
+            ]
+        },
+        {
+            "number": 85,
+            "text_fr": "Les droits à pension alimentaire dus aux enfants sont fixés conformément aux articles 168 et 190...",
+            "text_ar": "تحدد مستحقات الأطفال الملزم بنفقتهم...",
+            "keywords": [
+                "enfants",
+                "pension"
+            ]
+        },
+        {
+            "number": 86,
+            "text_fr": "Si l’époux ne consigne pas le montant... il est réputé renoncer à son intention de divorcer...",
+            "text_ar": "إذا لم يودع الزوج المبلغ... اعتبر متراجعا...",
+            "keywords": [
+                "renonciation",
+                "consignation"
+            ]
+        },
+        {
+            "number": 87,
+            "text_fr": "Dès que le montant exigé est consigné par l’époux, le tribunal l’autorise à faire instrumenter l’acte de divorce...",
+            "text_ar": "بمجرد إيداع الزوج المبلغ المطلوب، تأذن له المحكمة...",
+            "keywords": [
+                "autorisation",
+                "acte"
+            ]
+        },
+        {
+            "number": 88,
+            "text_fr": "Après réception de l’exemplaire visé à l’article précédent, le tribunal rend une décision motivée...",
+            "text_ar": "بعد التوصل بنسخة من الرسم... تصدر المحكمة قرارا...",
+            "keywords": [
+                "jugement",
+                "divorce"
+            ]
+        },
+        {
+            "number": 89,
+            "text_fr": "Si l'époux consent au droit d'option au divorce de l'épouse, celle-ci peut l'exercer...",
+            "text_ar": "إذا ملك الزوج زوجته حق إيقاع الطلاق...",
+            "keywords": [
+                "droit d'option",
+                "tamlik"
+            ]
+        },
+        {
+            "number": 90,
+            "text_fr": "Ne peut être recevable, la demande d’autorisation de divorce faite en état d’ébriété avancée, sous la contrainte...",
+            "text_ar": "لا يقبل طلب الإذن بطلاق السكران الطافح...",
+            "keywords": [
+                "irrecevabilité",
+                "ébriété"
+            ]
+        },
+        {
+            "number": 91,
+            "text_fr": "Le divorce par serment en général ou par serment de continence est sans effet.",
+            "text_ar": "لا يقع الطلاق باليمين أو بالظهار.",
+            "keywords": [
+                "serment",
+                "ilâ"
+            ]
+        },
+        {
+            "number": 92,
+            "text_fr": "Le divorce associé à un nombre... n’équivaut qu’un seul divorce.",
+            "text_ar": "الطلاق المقترن بالعدد... لا يقع إلا واحدة.",
+            "keywords": [
+                "nombre",
+                "divorce"
+            ]
+        },
+        {
+            "number": 93,
+            "text_fr": "Le divorce lié à une condition de faire ou de ne pas faire est nul et non avenu.",
+            "text_ar": "الطلاق المعلق على فعل شيء أو تركه لا يقع.",
+            "keywords": [
+                "condition",
+                "divorce"
+            ]
+        },
+        {
+            "number": 94,
+            "text_fr": "Si les époux... demande au tribunal de régler un différend... le tribunal doit tenter de les réconcilier.",
+            "text_ar": "إذا طلب الزوجان... حل نزاع... وجب على المحكمة محاولة الإصلاح.",
+            "keywords": [
+                "discorde",
+                "réconciliation"
+            ]
+        },
+        {
+            "number": 95,
+            "text_fr": "Les deux arbitres... recherchent les causes du différend... En cas de réconciliation... les arbitres en dressent un rapport...",
+            "text_ar": "يقوم الحكمان... باستقصاء أسباب الخلاف...",
+            "keywords": [
+                "arbitres",
+                "rapport"
+            ]
+        },
+        {
+            "number": 96,
+            "text_fr": "En cas de désaccord des arbitres... le tribunal peut procéder à une enquête complémentaire...",
+            "text_ar": "إذا اختلف الحكمان... للمحكمة أن تجري بحثا إضافيا...",
+            "keywords": [
+                "désaccord",
+                "enquête"
+            ]
+        },
+        {
+            "number": 97,
+            "text_fr": "En cas d’impossibilité de réconciliation et lorsque la discorde persiste, le tribunal prononce le divorce et statue sur les droits...",
+            "text_ar": "في حالة تعذر الإصلاح واستمرار الشقاق، تحكم المحكمة بالتطليق...",
+            "keywords": [
+                "discorde",
+                "divorce"
+            ]
+        },
+        {
+            "number": 98,
+            "text_fr": "L'épouse peut demander le divorce judiciaire pour l'une des causes suivantes: 1. Manquement à une condition... 2. Préjudice... 3. Défaut d'entretien... 6. Délaissement.",
+            "text_ar": "للزوجة طلب التطليق للأسباب الآتية...",
+            "keywords": [
+                "divorce judiciaire",
+                "causes"
+            ]
+        },
+        {
+            "number": 99,
+            "text_fr": "Tout manquement à l’une des conditions... est considéré comme un préjudice justifiant la demande du divorce judiciaire.",
+            "text_ar": "يعتبر كل إخلال بشرط... ضررا مبررا لطلب التطليق.",
+            "keywords": [
+                "préjudice",
+                "condition"
+            ]
+        },
+        {
+            "number": 100,
+            "text_fr": "Les faits constituant le préjudice sont établis par tout moyen de preuve, y compris la déposition des témoins...",
+            "text_ar": "تثبت وقائع الضرر بجميع وسائل الإثبات...",
+            "keywords": [
+                "preuve",
+                "préjudice"
+            ]
+        },
+        {
+            "number": 101,
+            "text_fr": "Dans le cas où le divorce est prononcé pour cause de préjudice, le tribunal peut fixer... le montant de l’indemnité...",
+            "text_ar": "في حالة الحكم بالتطليق للضرر... للمحكمة أن تحدد التعويض...",
+            "keywords": [
+                "indemnité",
+                "préjudice"
+            ]
+        },
+        {
+            "number": 102,
+            "text_fr": "L'épouse peut demander le divorce judiciaire pour manquement de l’époux à l’obligation de pension alimentaire...",
+            "text_ar": "للزوجة طلب التطليق بسبب إخلال الزوج بالنفقة...",
+            "keywords": [
+                "défaut d'entretien"
+            ]
+        },
+        {
+            "number": 103,
+            "text_fr": "Les dispositions qui précèdent son applicables à l’époux absent... Si le lieu de l’époux absent est inconnu...",
+            "text_ar": "تطبق الأحكام السابقة على الزوج الغائب...",
+            "keywords": [
+                "absent",
+                "entretien"
+            ]
+        },
+        {
+            "number": 104,
+            "text_fr": "Si l'époux s'absente du foyer conjugal durant une période excédant une année, l'épouse a la faculté de demander le divorce judiciaire.",
+            "text_ar": "إذا غاب الزوج عن بيت الزوجية مدة تزيد عن سنة...",
+            "keywords": [
+                "absence",
+                "divorce"
+            ]
+        },
+        {
+            "number": 105,
+            "text_fr": "Si l’adresse de l’époux absent est inconnue, le tribunal engage... les procédures qu’il juge utiles...",
+            "text_ar": "إذا كان الزوج الغائب مجهول العنوان...",
+            "keywords": [
+                "absence",
+                "procédure"
+            ]
+        },
+        {
+            "number": 106,
+            "text_fr": "Si l'époux purge une peine de réclusion ou d’emprisonnement supérieure à trois ans, l’épouse peut demander le divorce judiciaire après un an...",
+            "text_ar": "إذا حكم على الزوج بالحبس أو السجن أكثر من ثلاث سنوات...",
+            "keywords": [
+                "prison",
+                "divorce"
+            ]
+        },
+        {
+            "number": 107,
+            "text_fr": "Sont considérés comme vices rédhibitoires... 1. les vices empêchant les rapports... 2. Les maladies constituant un danger...",
+            "text_ar": "تعتبر عيوبا مبررة لطلب فسخ الزواج...",
+            "keywords": [
+                "vices rédhibitoires",
+                "maladie"
+            ]
+        },
+        {
+            "number": 108,
+            "text_fr": "La recevabilité de la demande... est subordonnée aux conditions suivantes: 1. Le demandeur ne doit pas avoir pris connaissance du vice...",
+            "text_ar": "يشترط لقبول طلب فسخ الزواج للعيب...",
+            "keywords": [
+                "recevabilité",
+                "vice"
+            ]
+        },
+        {
+            "number": 109,
+            "text_fr": "Il n'y a pas de versement de sadaq en cas de divorce pour vice rédhibitoire prononcé par le juge avant consommation...",
+            "text_ar": "لا صداق في الفسخ للعيب قبل البناء...",
+            "keywords": [
+                "sadaq",
+                "vice"
+            ]
+        },
+        {
+            "number": 110,
+            "text_fr": "Si l’époux a eu connaissance du vice avant la conclusion... et que le divorce a eu lieu avant la consommation..., il est tenu de verser la moitié du sadaq.",
+            "text_ar": "إذا كان الزوج عالما بالعيب قبل العقد...",
+            "keywords": [
+                "sadaq",
+                "connaissance"
+            ]
+        },
+        {
+            "number": 111,
+            "text_fr": "Il sera fait appel à l’expertise de spécialistes pour la constatation du vice ou de la maladie.",
+            "text_ar": "يستعان بأهل الخبرة في إثبات العيب أو المرض.",
+            "keywords": [
+                "expertise",
+                "vice"
+            ]
+        },
+        {
+            "number": 112,
+            "text_fr": "Lorsque l’époux fait serment de continence à l’égard de son épouse ou il la délaisse, celle-ci peut en saisir le tribunal un délai de quatre mois...",
+            "text_ar": "إذا آلى الزوج من زوجته أو هجرها...",
+            "keywords": [
+                "serment",
+                "délaissement"
+            ]
+        },
+        {
+            "number": 113,
+            "text_fr": "A l’exception du cas d’absence, il est statué sur les actions en divorce judiciaire fondées sur l’une des causes prévues à l’article 98... dans un délai maximum de six mois...",
+            "text_ar": "يبت في دعاوى التطليق... في أجل أقصاه ستة أشهر...",
+            "keywords": [
+                "délai",
+                "jugement"
+            ]
+        }
+    ]
+}

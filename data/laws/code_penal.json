@@ -1,0 +1,774 @@
+{
+    "code_id": "code_penal",
+    "code_name_fr": "Code Pénal",
+    "code_name_ar": "القانون الجنائي",
+    "total_articles": 612,
+    "source": "Dahir n° 1-59-413 du 26 novembre 1962 portant approbation du texte du Code pénal",
+    "articles": [
+        {
+            "number": 1,
+            "text_fr": "La loi pénale détermine et constitue en infractions les faits de l'homme qui, à raison du trouble social qu'ils provoquent, justifient l'application à leur auteur de sanctions pénales.",
+            "text_ar": "يحدد التشريع الجنائي أفعال الإنسان التي يعدها جرائم، بسبب ما تحدثه من اضطراب اجتماعي، ويوجب زجر مرتكبيها بعقوبات جنائية.",
+            "keywords": [
+                "loi pénale",
+                "قانون جنائي",
+                "infraction",
+                "جريمة",
+                "sanction",
+                "عقوبة"
+            ]
+        },
+        {
+            "number": 2,
+            "text_fr": "Nul ne peut être condamné pour un fait qui n'est pas expressément prévu comme infraction par la loi, ni puni de peines que la loi n'a pas édictées.",
+            "text_ar": "لا يسوغ مؤاخذة أحد على فعل لا يعد جريمة بصريح القانون ولا معاقبته بعقوبات لم يقررها القانون.",
+            "keywords": [
+                "légalité",
+                "شرعية",
+                "nullum crimen",
+                "لا جريمة إلا بنص"
+            ]
+        },
+        {
+            "number": 3,
+            "text_fr": "Nul ne peut être condamné pour une pensée ou une opinion qui n'a pas été manifestée par des actes.",
+            "text_ar": "لا يسوغ مؤاخذة أحد على أفكاره أو آرائه التي لم يعبر عنها بأفعال.",
+            "keywords": [
+                "pensée",
+                "فكر",
+                "opinion",
+                "رأي",
+                "liberté",
+                "حرية"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "La loi pénale s'applique à tous ceux qui se trouvent sur le territoire du Royaume.",
+            "text_ar": "يسري التشريع الجنائي على كل من يوجد بتراب المملكة.",
+            "keywords": [
+                "territoire",
+                "تراب",
+                "application",
+                "تطبيق"
+            ]
+        },
+        {
+            "number": 5,
+            "text_fr": "Les infractions commises à bord des navires marocains sont punies conformément à la loi marocaine.",
+            "text_ar": "تخضع الجرائم المرتكبة على متن السفن المغربية للقانون المغربي.",
+            "keywords": [
+                "navires",
+                "سفن",
+                "compétence",
+                "اختصاص"
+            ]
+        },
+        {
+            "number": 10,
+            "text_fr": "L'infraction est qualifiée crime, délit ou contravention selon la peine prévue par la loi.",
+            "text_ar": "توصف الجريمة بجناية أو جنحة أو مخالفة حسب العقوبة المقررة لها قانونا.",
+            "keywords": [
+                "classification",
+                "تصنيف",
+                "crime",
+                "جناية",
+                "délit",
+                "جنحة",
+                "contravention",
+                "مخالفة"
+            ]
+        },
+        {
+            "number": 111,
+            "text_fr": "Les peines criminelles principales sont : la peine de mort, la réclusion perpétuelle, la réclusion à temps pour une durée de cinq à trente ans, la résidence forcée, la dégradation civique.",
+            "text_ar": "العقوبات الجنائية الأصلية هي: الإعدام، السجن المؤبد، السجن المؤقت من خمس سنوات إلى ثلاثين سنة، الإقامة الجبرية، التجريد من الحقوق الوطنية.",
+            "keywords": [
+                "peines criminelles",
+                "عقوبات جنائية",
+                "mort",
+                "إعدام",
+                "réclusion",
+                "سجن"
+            ]
+        },
+        {
+            "number": 112,
+            "text_fr": "L'exécution de la peine de mort a lieu par fusillade.",
+            "text_ar": "تنفذ عقوبة الإعدام رمياً بالرصاص.",
+            "keywords": [
+                "exécution",
+                "تنفيذ",
+                "mort",
+                "إعدام",
+                "fusillade",
+                "رمي بالرصاص"
+            ]
+        },
+        {
+            "number": 115,
+            "text_fr": "La réclusion à temps est prononcée pour une durée de cinq ans à trente ans. Elle est exécutée dans une prison centrale ou dans un pénitencier.",
+            "text_ar": "ينطق بالسجن من خمس سنوات إلى ثلاثين سنة. وينفذ في سجن مركزي أو إصلاحية.",
+            "keywords": [
+                "réclusion",
+                "سجن",
+                "durée",
+                "مدة",
+                "5 à 30 ans"
+            ]
+        },
+        {
+            "number": 116,
+            "text_fr": "Les peines correctionnelles principales sont : l'emprisonnement et l'amende.",
+            "text_ar": "العقوبات الجنحية الأصلية هي: الحبس والغرامة.",
+            "keywords": [
+                "peines correctionnelles",
+                "عقوبات جنحية",
+                "emprisonnement",
+                "حبس",
+                "amende",
+                "غرامة"
+            ]
+        },
+        {
+            "number": 117,
+            "text_fr": "L'emprisonnement est d'un mois à cinq ans, sauf les cas de récidive ou autres où la loi détermine d'autres limites.",
+            "text_ar": "يتراوح الحبس بين شهر واحد وخمس سنوات، إلا في حالات العود أو غيرها التي يحدد فيها القانون حدوداً أخرى.",
+            "keywords": [
+                "emprisonnement",
+                "حبس",
+                "durée",
+                "مدة",
+                "1 mois à 5 ans"
+            ]
+        },
+        {
+            "number": 118,
+            "text_fr": "L'amende correctionnelle est de 1200 dirhams au moins.",
+            "text_ar": "تبلغ الغرامة الجنحية ألفاً ومائتي درهم على الأقل.",
+            "keywords": [
+                "amende",
+                "غرامة",
+                "1200 dirhams",
+                "ألف ومائتا درهم"
+            ]
+        },
+        {
+            "number": 124,
+            "text_fr": "Il n'y a ni crime, ni délit, ni contravention lorsque le fait était ordonné par la loi et commandé par l'autorité légitime.",
+            "text_ar": "لا جناية ولا جنحة ولا مخالفة إذا كان الفعل قد أوجبه القانون وأمرت به السلطة الشرعية.",
+            "keywords": [
+                "fait justificatif",
+                "مبرر",
+                "ordre loi",
+                "أمر قانوني"
+            ]
+        },
+        {
+            "number": 125,
+            "text_fr": "N'est pas punissable celui qui accomplit un acte commandé par la nécessité actuelle de la légitime défense de soi-même ou d'autrui.",
+            "text_ar": "لا يعاقب من قام بفعل أوجبته ضرورة حالة الدفاع المشروع عن نفسه أو عن غيره.",
+            "keywords": [
+                "légitime défense",
+                "دفاع شرعي",
+                "non punissable",
+                "عدم المعاقبة"
+            ]
+        },
+        {
+            "number": 128,
+            "text_fr": "Est irresponsable et doit être absous celui qui, au moment de l'action, était atteint de troubles mentaux abolissant ou altérant gravement ses facultés.",
+            "text_ar": "لا يكون مسؤولاً ويجب الحكم بإعفائه، من كان وقت ارتكاب الفعل في حالة يستحيل عليه معها الإدراك أو الإرادة.",
+            "keywords": [
+                "irresponsabilité",
+                "انعدام المسؤولية",
+                "troubles mentaux",
+                "اضطرابات عقلية"
+            ]
+        },
+        {
+            "number": 129,
+            "text_fr": "Les mineurs de moins de douze ans sont pénalement irresponsables.",
+            "text_ar": "القاصرون الذين لم يبلغوا اثنتي عشرة سنة كاملة غير مسؤولين جنائياً.",
+            "keywords": [
+                "mineur",
+                "قاصر",
+                "irresponsabilité",
+                "انعدام المسؤولية",
+                "12 ans",
+                "إثنتا عشرة سنة"
+            ]
+        },
+        {
+            "number": 130,
+            "text_fr": "Les mineurs de douze à dix-huit ans sont considérés comme pénalement irresponsables mais peuvent faire l'objet de mesures de protection ou de rééducation.",
+            "text_ar": "القاصرون من اثنتي عشرة سنة إلى ثماني عشرة سنة يعتبرون غير مسؤولين جنائياً ولكن يمكن أن يخضعوا لتدابير الحماية أو التهذيب.",
+            "keywords": [
+                "mineur",
+                "قاصر",
+                "12 à 18 ans",
+                "protection",
+                "حماية",
+                "rééducation",
+                "تهذيب"
+            ]
+        },
+        {
+            "number": 132,
+            "text_fr": "La tentative est punissable comme l'infraction elle-même.",
+            "text_ar": "المحاولة معاقب عليها مثل الجريمة نفسها.",
+            "keywords": [
+                "tentative",
+                "محاولة",
+                "punissable",
+                "معاقب عليها"
+            ]
+        },
+        {
+            "number": 133,
+            "text_fr": "Toute tentative de crime qui a été manifestée par un commencement d'exécution ou par des actes non équivoques est assimilée au crime même.",
+            "text_ar": "كل محاولة ارتكاب جناية بدت بالشروع في التنفيذ أو بأفعال لا لبس فيها تعتبر كالجناية تماماً.",
+            "keywords": [
+                "commencement exécution",
+                "شروع في التنفيذ",
+                "crime",
+                "جناية"
+            ]
+        },
+        {
+            "number": 146,
+            "text_fr": "La récidive, c'est la situation du délinquant qui, après avoir été condamné définitivement, commet une nouvelle infraction.",
+            "text_ar": "العود هو حالة المجرم الذي يرتكب جريمة جديدة بعد صدور حكم نهائي بإدانته.",
+            "keywords": [
+                "récidive",
+                "عود",
+                "nouvelle infraction",
+                "جريمة جديدة"
+            ]
+        },
+        {
+            "number": 150,
+            "text_fr": "Toute personne saine d'esprit et capable de discernement est personnellement responsable des infractions qu'elle commet.",
+            "text_ar": "كل شخص سليم العقل قادر على التمييز يكون مسؤولاً شخصياً عن الجرائم التي يرتكبها.",
+            "keywords": [
+                "responsabilité",
+                "مسؤولية",
+                "discernement",
+                "تمييز"
+            ]
+        },
+        {
+            "number": 163,
+            "text_fr": "L'attentat contre la vie ou la personne du Roi est puni de mort.",
+            "text_ar": "الاعتداء على حياة الملك أو شخصه يعاقب بالإعدام.",
+            "keywords": [
+                "attentat",
+                "اعتداء",
+                "roi",
+                "ملك",
+                "mort",
+                "إعدام"
+            ]
+        },
+        {
+            "number": 165,
+            "text_fr": "L'attentat dont le but est de porter atteinte à l'intégrité du territoire marocain ou de soustraire au Roi l'obéissance due est puni de mort.",
+            "text_ar": "الاعتداء الذي يكون الغرض منه المساس بسلامة التراب المغربي أو تجريد الملك من الطاعة الواجبة له يعاقب بالإعدام.",
+            "keywords": [
+                "intégrité territoriale",
+                "سلامة ترابية",
+                "trahison",
+                "خيانة"
+            ]
+        },
+        {
+            "number": 172,
+            "text_fr": "Est coupable de trahison et puni de mort tout Marocain qui porte les armes contre le Maroc.",
+            "text_ar": "يعد خائناً ويعاقب بالإعدام كل مغربي حمل السلاح ضد المغرب.",
+            "keywords": [
+                "trahison",
+                "خيانة",
+                "armes",
+                "سلاح",
+                "mort",
+                "إعدام"
+            ]
+        },
+        {
+            "number": 175,
+            "text_fr": "Est coupable d'espionnage et puni de la réclusion perpétuelle tout étranger qui livre à une puissance étrangère des renseignements intéressant la défense nationale.",
+            "text_ar": "يعد جاسوساً ويعاقب بالسجن المؤبد كل أجنبي سلم لدولة أجنبية معلومات تهم الدفاع الوطني.",
+            "keywords": [
+                "espionnage",
+                "تجسس",
+                "étranger",
+                "أجنبي",
+                "défense nationale",
+                "دفاع وطني"
+            ]
+        },
+        {
+            "number": 181,
+            "text_fr": "Quiconque participe à un mouvement insurrectionnel armé est puni de réclusion de dix à vingt ans.",
+            "text_ar": "كل من شارك في حركة عصيان مسلحة يعاقب بالسجن من عشر إلى عشرين سنة.",
+            "keywords": [
+                "insurrection",
+                "عصيان",
+                "mouvement armé",
+                "حركة مسلحة"
+            ]
+        },
+        {
+            "number": 206,
+            "text_fr": "Est puni de deux à cinq ans d'emprisonnement quiconque commet un outrage envers un fonctionnaire public dans l'exercice de ses fonctions.",
+            "text_ar": "يعاقب بالحبس من سنتين إلى خمس سنوات كل من أهان موظفاً عمومياً أثناء قيامه بوظيفته.",
+            "keywords": [
+                "outrage",
+                "إهانة",
+                "fonctionnaire",
+                "موظف عمومي"
+            ]
+        },
+        {
+            "number": 218,
+            "text_fr": "Constituent des actes de terrorisme les faits commis intentionnellement en relation avec une entreprise individuelle ou collective ayant pour but l'atteinte grave à l'ordre public par l'intimidation, la terreur ou la violence.",
+            "text_ar": "تعتبر أعمالاً إرهابية الأفعال المرتكبة عمداً في إطار مشروع إجرامي فردي أو جماعي، يهدف إلى المس الخطير بالنظام العام بواسطة التخويف أو الترهيب أو العنف.",
+            "keywords": [
+                "terrorisme",
+                "إرهاب",
+                "ordre public",
+                "نظام عام",
+                "violence",
+                "عنف"
+            ]
+        },
+        {
+            "number": 241,
+            "text_fr": "L'atteinte à la vie d'une personne constitue meurtre.",
+            "text_ar": "الاعتداء على حياة شخص يشكل قتلاً.",
+            "keywords": [
+                "meurtre",
+                "قتل",
+                "vie",
+                "حياة"
+            ]
+        },
+        {
+            "number": 392,
+            "text_fr": "Quiconque donne intentionnellement la mort à autrui est coupable de meurtre et puni de réclusion perpétuelle.",
+            "text_ar": "كل من تسبب عمداً في قتل غيره يعد مرتكباً لجريمة القتل العمد ويعاقب بالسجن المؤبد.",
+            "keywords": [
+                "meurtre",
+                "قتل عمد",
+                "réclusion perpétuelle",
+                "سجن مؤبد",
+                "intentionnel",
+                "عمد"
+            ]
+        },
+        {
+            "number": 393,
+            "text_fr": "Le meurtre est puni de mort lorsqu'il a précédé, accompagné ou suivi un autre crime, lorsqu'il a eu pour objet de préparer, faciliter ou exécuter un délit, lorsqu'il a eu pour objet d'assurer la fuite ou l'impunité des auteurs.",
+            "text_ar": "يعاقب بالإعدام على القتل العمد إذا سبقته أو رافقته أو أعقبته جناية أخرى، أو إذا كان الغرض منه الإعداد لجنحة أو تسهيلها أو تنفيذها، أو إذا كان الغرض منه ضمان فرار الفاعلين أو إفلاتهم من العقاب.",
+            "keywords": [
+                "meurtre aggravé",
+                "قتل مع سبق الإصرار",
+                "mort",
+                "إعدام"
+            ]
+        },
+        {
+            "number": 394,
+            "text_fr": "L'assassinat est le meurtre commis avec préméditation ou guet-apens. Il est puni de mort.",
+            "text_ar": "الاغتيال هو القتل العمد المقترن بسبق الإصرار والترصد. ويعاقب عليه بالإعدام.",
+            "keywords": [
+                "assassinat",
+                "اغتيال",
+                "préméditation",
+                "سبق الإصرار",
+                "mort",
+                "إعدام"
+            ]
+        },
+        {
+            "number": 396,
+            "text_fr": "Est coupable de parricide et puni de mort celui qui donne intentionnellement la mort à son père, à sa mère ou à tout autre ascendant.",
+            "text_ar": "يعد مرتكباً لجريمة قتل الأصول ويعاقب بالإعدام كل من تعمد قتل أبيه أو أمه أو أحد أصوله.",
+            "keywords": [
+                "parricide",
+                "قتل الأصول",
+                "père",
+                "أب",
+                "mère",
+                "أم",
+                "mort",
+                "إعدام"
+            ]
+        },
+        {
+            "number": 398,
+            "text_fr": "Quiconque, par aliments, breuvages, médicaments ou par tout autre moyen, a causé la mort d'une personne est puni comme s'il avait commis un meurtre par violence.",
+            "text_ar": "كل من تسبب في موت شخص بواسطة مواد غذائية أو مشروبات أو أدوية أو بأي وسيلة أخرى يعاقب كما لو ارتكب جريمة قتل بالعنف.",
+            "keywords": [
+                "empoisonnement",
+                "تسميم",
+                "aliments",
+                "أغذية",
+                "médicaments",
+                "أدوية"
+            ]
+        },
+        {
+            "number": 400,
+            "text_fr": "Quiconque, sans intention de donner la mort, a volontairement porté des coups ou fait des blessures ayant entraîné la mort, est puni de la réclusion de dix à vingt ans.",
+            "text_ar": "كل من تعمد إحداث ضرب أو جروح أفضت إلى موت دون نية القتل، يعاقب بالسجن من عشر إلى عشرين سنة.",
+            "keywords": [
+                "coups mortels",
+                "ضرب مفضي للموت",
+                "blessures",
+                "جروح"
+            ]
+        },
+        {
+            "number": 401,
+            "text_fr": "Quiconque, par maladresse, imprudence, inattention, négligence ou inobservation des règlements, a involontairement causé la mort d'autrui est puni d'emprisonnement de trois mois à cinq ans et d'une amende.",
+            "text_ar": "كل من تسبب عن غير عمد، بخطإ أو رعونة أو عدم احتياط أو عدم مراعاة النظم، في موت شخص يعاقب بالحبس من ثلاثة أشهر إلى خمس سنوات وبغرامة.",
+            "keywords": [
+                "homicide involontaire",
+                "قتل غير عمد",
+                "négligence",
+                "إهمال",
+                "imprudence",
+                "رعونة"
+            ]
+        },
+        {
+            "number": 403,
+            "text_fr": "Quiconque porte volontairement des coups ou fait des blessures est puni d'emprisonnement d'un an à trois ans et d'une amende, lorsqu'il en est résulté une maladie ou une incapacité de travail de plus de vingt jours.",
+            "text_ar": "كل من تعمد إحداث جروح نتجت عنها عجز مؤقت عن العمل تتجاوز مدته عشرين يوماً، يعاقب بالحبس من سنة إلى ثلاث سنوات وبغرامة.",
+            "keywords": [
+                "coups blessures",
+                "ضرب وجرح",
+                "incapacité",
+                "عجز",
+                "20 jours"
+            ]
+        },
+        {
+            "number": 404,
+            "text_fr": "Quiconque a volontairement causé à autrui une mutilation ou une amputation est puni de réclusion de cinq à dix ans.",
+            "text_ar": "كل من تعمد إحداث تشويه أو بتر يعاقب بالسجن من خمس إلى عشر سنوات.",
+            "keywords": [
+                "mutilation",
+                "تشويه",
+                "amputation",
+                "بتر"
+            ]
+        },
+        {
+            "number": 418,
+            "text_fr": "Le meurtre, les blessures et les coups sont excusables lorsqu'ils sont commis par l'un des époux sur l'autre ainsi que sur le complice, à l'instant où il les surprend en flagrant délit d'adultère.",
+            "text_ar": "يعذر أحد الزوجين في جريمة القتل أو الجرح أو الضرب إذا ارتكبها ضد الآخر وشريكه، عند مفاجأتهما متلبسين بجريمة الخيانة الزوجية.",
+            "keywords": [
+                "excuse",
+                "عذر",
+                "adultère",
+                "خيانة زوجية",
+                "flagrant délit",
+                "تلبس"
+            ]
+        },
+        {
+            "number": 449,
+            "text_fr": "Quiconque par violence, menace ou fraude, enlève ou fait enlever un mineur de moins de dix-huit ans est puni de réclusion de cinq à dix ans.",
+            "text_ar": "كل من اختطف أو استدرج قاصراً دون الثامنة عشرة بالعنف أو التهديد أو الاحتيال، يعاقب بالسجن من خمس إلى عشر سنوات.",
+            "keywords": [
+                "enlèvement",
+                "اختطاف",
+                "mineur",
+                "قاصر",
+                "violence",
+                "عنف"
+            ]
+        },
+        {
+            "number": 454,
+            "text_fr": "Est punie de l'emprisonnement de cinq à dix ans toute personne qui abandonne dans un lieu solitaire un enfant ou un incapable.",
+            "text_ar": "يعاقب بالحبس من خمس إلى عشر سنوات كل من ترك طفلاً أو عاجزاً في مكان منعزل.",
+            "keywords": [
+                "abandon",
+                "تخلي",
+                "enfant",
+                "طفل",
+                "incapable",
+                "عاجز"
+            ]
+        },
+        {
+            "number": 471,
+            "text_fr": "L'avortement est l'interruption provoquée de la grossesse. Sauf dans les cas prévus par la loi, l'avortement est puni d'emprisonnement d'un à cinq ans.",
+            "text_ar": "الإجهاض هو الانقطاع المستحث للحمل. يعاقب عليه بالحبس من سنة إلى خمس سنوات، ما لم ينص القانون على خلاف ذلك.",
+            "keywords": [
+                "avortement",
+                "إجهاض",
+                "grossesse",
+                "حمل",
+                "interruption",
+                "انقطاع"
+            ]
+        },
+        {
+            "number": 475,
+            "text_fr": "Celui qui, par violence ou contrainte, ou par abus d'autorité, commet un acte impudique ou contre nature sur une personne, est puni de la réclusion de cinq à dix ans.",
+            "text_ar": "كل من ارتكب بالعنف أو الإكراه فعلاً منافياً للحشمة أو للطبيعة على شخص، يعاقب بالسجن من خمس إلى عشر سنوات.",
+            "keywords": [
+                "attentat pudeur",
+                "هتك عرض",
+                "violence",
+                "عنف",
+                "contrainte",
+                "إكراه"
+            ]
+        },
+        {
+            "number": 486,
+            "text_fr": "Le viol est l'acte par lequel un homme a des relations sexuelles avec une femme contre le gré de celle-ci. Il est puni de la réclusion de cinq à dix ans.",
+            "text_ar": "الاغتصاب هو مواقعة رجل لامرأة بدون رضاها. ويعاقب عليه بالسجن من خمس إلى عشر سنوات.",
+            "keywords": [
+                "viol",
+                "اغتصاب",
+                "réclusion",
+                "سجن"
+            ]
+        },
+        {
+            "number": 487,
+            "text_fr": "Si le viol a été commis sur une personne mineure de moins de dix-huit ans, la peine est la réclusion de dix à vingt ans.",
+            "text_ar": "إذا ارتكب الاغتصاب على قاصر دون الثامنة عشرة، تكون العقوبة السجن من عشر إلى عشرين سنة.",
+            "keywords": [
+                "viol mineur",
+                "اغتصاب قاصر",
+                "circonstance aggravante",
+                "ظرف مشدد"
+            ]
+        },
+        {
+            "number": 490,
+            "text_fr": "Sont punies de l'emprisonnement d'un mois à un an toutes personnes de sexe différent qui, n'étant pas unies par les liens du mariage, ont entre elles des relations sexuelles.",
+            "text_ar": "كل علاقة جنسية بين رجل وامرأة لا تربطهما علاقة زوجية، تكون جريمة الفساد، ويعاقب عليها بالحبس من شهر إلى سنة.",
+            "keywords": [
+                "relations sexuelles",
+                "علاقات جنسية",
+                "mariage",
+                "زواج",
+                "fassad",
+                "فساد"
+            ]
+        },
+        {
+            "number": 491,
+            "text_fr": "Est puni de l'emprisonnement d'un à deux ans toute personne mariée convaincue d'adultère.",
+            "text_ar": "يعاقب بالحبس من سنة إلى سنتين كل من ثبت ارتكابه جريمة الخيانة الزوجية وهو متزوج.",
+            "keywords": [
+                "adultère",
+                "خيانة زوجية",
+                "mariage",
+                "زواج"
+            ]
+        },
+        {
+            "number": 493,
+            "text_fr": "Les infractions prévues aux articles 490, 491 et 492 ne peuvent être poursuivies que sur plainte du conjoint offensé.",
+            "text_ar": "لا يمكن متابعة الجرائم المنصوص عليها في الفصول 490 و491 و492 إلا بناء على شكاية الزوج المجني عليه.",
+            "keywords": [
+                "plainte",
+                "شكاية",
+                "conjoint",
+                "زوج",
+                "poursuite",
+                "متابعة"
+            ]
+        },
+        {
+            "number": 505,
+            "text_fr": "Quiconque frauduleusement soustrait une chose qui ne lui appartient pas est coupable de vol.",
+            "text_ar": "كل من اختلس احتيالياً شيئاً لا يملكه يعد مرتكباً للسرقة.",
+            "keywords": [
+                "vol",
+                "سرقة",
+                "soustraction",
+                "اختلاس",
+                "frauduleuse",
+                "احتيالي"
+            ]
+        },
+        {
+            "number": 506,
+            "text_fr": "Le vol simple est puni de l'emprisonnement d'un à cinq ans et d'une amende.",
+            "text_ar": "السرقة البسيطة يعاقب عليها بالحبس من سنة إلى خمس سنوات وبغرامة.",
+            "keywords": [
+                "vol simple",
+                "سرقة بسيطة",
+                "emprisonnement",
+                "حبس"
+            ]
+        },
+        {
+            "number": 507,
+            "text_fr": "Le vol est puni de la réclusion de cinq à dix ans lorsqu'il est commis avec l'une des circonstances suivantes: la nuit, en réunion, avec effraction, escalade ou fausses clés.",
+            "text_ar": "يعاقب على السرقة بالسجن من خمس إلى عشر سنوات إذا ارتكبت مع أحد الظروف التالية: ليلاً، أو جماعة، أو بالكسر، أو التسلق، أو بمفاتيح مزورة.",
+            "keywords": [
+                "vol aggravé",
+                "سرقة موصوفة",
+                "nuit",
+                "ليل",
+                "effraction",
+                "كسر"
+            ]
+        },
+        {
+            "number": 508,
+            "text_fr": "Le vol est puni de la réclusion de vingt à trente ans lorsqu'il est commis avec violence, ou avec usage d'armes, ou par plusieurs personnes.",
+            "text_ar": "يعاقب على السرقة بالسجن من عشرين إلى ثلاثين سنة إذا ارتكبت بالعنف أو بالسلاح أو جماعة.",
+            "keywords": [
+                "vol violence",
+                "سرقة بالعنف",
+                "armes",
+                "سلاح"
+            ]
+        },
+        {
+            "number": 509,
+            "text_fr": "Le vol commis avec usage d'armes par plusieurs personnes, si des blessures en ont résulté, est puni de la réclusion perpétuelle.",
+            "text_ar": "السرقة المرتكبة بالسلاح من طرف عدة أشخاص، إذا نتج عنها جروح، تعاقب بالسجن المؤبد.",
+            "keywords": [
+                "vol arme",
+                "سرقة بسلاح",
+                "blessures",
+                "جروح",
+                "réclusion perpétuelle",
+                "سجن مؤبد"
+            ]
+        },
+        {
+            "number": 520,
+            "text_fr": "Quiconque, abusant d'un besoin, d'une faiblesse ou des passions d'un mineur, se fait remettre ou promettre des valeurs est puni de l'emprisonnement d'un à cinq ans.",
+            "text_ar": "كل من استغل حاجة قاصر أو ضعفه أو أهواءه ليحصل منه على أموال أو وعود، يعاقب بالحبس من سنة إلى خمس سنوات.",
+            "keywords": [
+                "abus faiblesse",
+                "استغلال ضعف",
+                "mineur",
+                "قاصر"
+            ]
+        },
+        {
+            "number": 521,
+            "text_fr": "Quiconque fait usage d'adresse, artifice ou de moyens frauduleux pour escroquer tout ou partie de la fortune d'autrui est coupable d'escroquerie.",
+            "text_ar": "كل من استعمل الاحتيال أو التدليس أو وسائل غير مشروعة للاستيلاء على أموال الغير يعد مرتكباً للنصب.",
+            "keywords": [
+                "escroquerie",
+                "نصب",
+                "adresse",
+                "احتيال",
+                "frauduleux",
+                "تدليس"
+            ]
+        },
+        {
+            "number": 522,
+            "text_fr": "L'escroquerie est punie de l'emprisonnement d'un à cinq ans et d'une amende.",
+            "text_ar": "يعاقب على النصب بالحبس من سنة إلى خمس سنوات وبغرامة.",
+            "keywords": [
+                "escroquerie",
+                "نصب",
+                "peine",
+                "عقوبة"
+            ]
+        },
+        {
+            "number": 540,
+            "text_fr": "L'abus de confiance est le fait par une personne de détourner ou dissiper au préjudice des propriétaires des objets qui lui ont été remis à charge de les rendre ou de les représenter.",
+            "text_ar": "خيانة الأمانة هي اختلاس أو تبديد أشياء سلمها صاحبها للمتهم بشرط ردها أو تقديمها له.",
+            "keywords": [
+                "abus confiance",
+                "خيانة الأمانة",
+                "détournement",
+                "اختلاس"
+            ]
+        },
+        {
+            "number": 541,
+            "text_fr": "L'abus de confiance est puni de l'emprisonnement de six mois à trois ans et d'une amende.",
+            "text_ar": "يعاقب على خيانة الأمانة بالحبس من ستة أشهر إلى ثلاث سنوات وبغرامة.",
+            "keywords": [
+                "abus confiance",
+                "خيانة الأمانة",
+                "peine",
+                "عقوبة"
+            ]
+        },
+        {
+            "number": 547,
+            "text_fr": "Quiconque sciemment recèle, en tout ou en partie, des choses enlevées, détournées ou obtenues à l'aide d'un crime ou d'un délit, est coupable de recel et puni de l'emprisonnement d'un à cinq ans.",
+            "text_ar": "كل من أخفى عن علم أشياء مختلسة أو محتال عليها أو متحصلة من جريمة، يعد مرتكباً لجريمة الإخفاء ويعاقب بالحبس من سنة إلى خمس سنوات.",
+            "keywords": [
+                "recel",
+                "إخفاء",
+                "crime",
+                "جريمة",
+                "délit",
+                "جنحة"
+            ]
+        },
+        {
+            "number": 574,
+            "text_fr": "Est coupable de destruction et puni de l'emprisonnement d'un mois à deux ans quiconque détruit, dégrade, ou détériore un bien mobilier ou immobilier d'autrui.",
+            "text_ar": "يعد مرتكباً لجريمة الإتلاف ويعاقب بالحبس من شهر إلى سنتين كل من أتلف أو خرب أو أفسد مالاً منقولاً أو عقاراً للغير.",
+            "keywords": [
+                "destruction",
+                "إتلاف",
+                "dégradation",
+                "تخريب",
+                "bien",
+                "مال"
+            ]
+        },
+        {
+            "number": 580,
+            "text_fr": "Quiconque met le feu volontairement à un édifice, navire ou lieu quelconque est puni de réclusion de cinq à dix ans.",
+            "text_ar": "كل من أضرم النار عمداً في بناء أو سفينة أو أي مكان آخر يعاقب بالسجن من خمس إلى عشر سنوات.",
+            "keywords": [
+                "incendie",
+                "حريق",
+                "feu",
+                "نار",
+                "volontaire",
+                "عمد"
+            ]
+        },
+        {
+            "number": 581,
+            "text_fr": "Si l'incendie volontaire a entraîné des blessures, l'auteur est puni de réclusion de dix à vingt ans. S'il en est résulté la mort, il est puni de la réclusion perpétuelle.",
+            "text_ar": "إذا نتج عن الحريق العمد جروح، يعاقب الفاعل بالسجن من عشر إلى عشرين سنة. وإذا نتج عنه موت، يعاقب بالسجن المؤبد.",
+            "keywords": [
+                "incendie mortel",
+                "حريق مميت",
+                "blessures",
+                "جروح",
+                "mort",
+                "موت"
+            ]
+        },
+        {
+            "number": 591,
+            "text_fr": "Constitue le délit d'usurpation de fonctions le fait de s'introduire dans une fonction publique sans y être appelé.",
+            "text_ar": "يشكل جريمة انتحال الوظائف الاستيلاء على وظيفة عمومية دون أن يكون مدعواً إليها.",
+            "keywords": [
+                "usurpation",
+                "انتحال",
+                "fonction publique",
+                "وظيفة عمومية"
+            ]
+        }
+    ]
+}

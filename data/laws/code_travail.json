@@ -1,0 +1,980 @@
+{
+    "code_id": "code_travail",
+    "code_name_fr": "Code du Travail",
+    "code_name_ar": "مدونة الشغل",
+    "total_articles": 589,
+    "source": "Loi n° 65-99 relative au Code du Travail",
+    "articles": [
+        {
+            "number": 1,
+            "text_fr": "La présente loi s'applique aux personnes liées par un contrat de travail, quels que soient les modalités de son exécution, la nature de la rémunération et le mode de son paiement.",
+            "text_ar": "تسري أحكام هذا القانون على الأشخاص المرتبطين بعقد شغل، أياً كانت طرق تنفيذه، وطبيعة الأجر وكيفية أدائه.",
+            "keywords": [
+                "contrat",
+                "عقد",
+                "champ application",
+                "نطاق تطبيق"
+            ]
+        },
+        {
+            "number": 2,
+            "text_fr": "Les dispositions de la présente loi s'appliquent également aux salariés travaillant à domicile.",
+            "text_ar": "تسري أحكام هذا القانون أيضاً على الأجراء الذين يشتغلون في منازلهم.",
+            "keywords": [
+                "domicile",
+                "منزل",
+                "télétravail",
+                "عمل عن بعد"
+            ]
+        },
+        {
+            "number": 3,
+            "text_fr": "Demeurent régies par les dispositions qui leur sont propres les catégories de salariés suivantes : les salariés des entreprises et établissements publics, les marins, les employés de maison, les catégories de salariés régies par un statut particulier.",
+            "text_ar": "تبقى خاضعة للنصوص التشريعية والتنظيمية المطبقة عليها الفئات التالية من الأجراء: أجراء المقاولات والمؤسسات العمومية، البحارة، خدم البيوت، فئات الأجراء الخاضعين لنظام أساسي خاص.",
+            "keywords": [
+                "exclusions",
+                "استثناءات",
+                "statut particulier",
+                "نظام خاص"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "Les conditions de travail, de rémunération et les relations éventuelles de travail des personnes qui se livrent à une activité pour le compte de plusieurs employeurs peuvent être fixées par convention collective ou par accord écrit.",
+            "text_ar": "يمكن تحديد شروط الشغل والأجر وعلاقات الشغل المحتملة للأشخاص الذين يمارسون نشاطاً لحساب عدة مشغلين بموجب اتفاقية شغل جماعية أو اتفاق كتابي.",
+            "keywords": [
+                "convention collective",
+                "اتفاقية جماعية",
+                "multi-employeur",
+                "متعدد المشغلين"
+            ]
+        },
+        {
+            "number": 5,
+            "text_fr": "Sont nuls et de nul effet les clauses du contrat de travail, du règlement intérieur, de la convention collective du travail ou du contrat d'apprentissage qui sont contraires aux dispositions de la présente loi.",
+            "text_ar": "تعتبر باطلة وعديمة الأثر الشروط المضمنة بعقد الشغل أو النظام الداخلي أو اتفاقية الشغل الجماعية أو عقد التدرج إذا كانت مخالفة لأحكام هذا القانون.",
+            "keywords": [
+                "nullité",
+                "بطلان",
+                "clauses",
+                "شروط"
+            ]
+        },
+        {
+            "number": 6,
+            "text_fr": "Le droit syndical est garanti. Les salariés ont le droit de constituer des syndicats ou d'y adhérer librement.",
+            "text_ar": "الحق النقابي مضمون. يحق للأجراء تأسيس نقابات أو الانخراط فيها بحرية.",
+            "keywords": [
+                "syndicat",
+                "نقابة",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 7,
+            "text_fr": "Les salariés ont le droit de bénéficier des programmes de lutte contre l'analphabétisme et de formation continue.",
+            "text_ar": "يحق للأجراء الاستفادة من برامج محاربة الأمية والتكوين المستمر.",
+            "keywords": [
+                "formation",
+                "تكوين",
+                "analphabétisme",
+                "أمية"
+            ]
+        },
+        {
+            "number": 8,
+            "text_fr": "Est interdite toute discrimination en matière d'emploi ou de profession fondée sur le sexe, la couleur, le handicap, la situation conjugale, la religion, l'opinion politique, l'affiliation syndicale, l'ascendance nationale ou l'origine sociale.",
+            "text_ar": "يمنع كل تمييز في مجال الشغل أو المهنة بسبب الجنس أو اللون أو الإعاقة أو الحالة الزوجية أو العقيدة أو الرأي السياسي أو الانتماء النقابي أو الأصل الوطني أو الاجتماعي.",
+            "keywords": [
+                "discrimination",
+                "تمييز",
+                "égalité",
+                "مساواة"
+            ]
+        },
+        {
+            "number": 9,
+            "text_fr": "Est interdite toute atteinte aux libertés et aux droits relatifs à l'exercice syndical à l'intérieur de l'entreprise.",
+            "text_ar": "يمنع أي مس بالحريات والحقوق المتعلقة بالممارسة النقابية داخل المقاولة.",
+            "keywords": [
+                "liberté syndicale",
+                "حرية نقابية",
+                "entreprise",
+                "مقاولة"
+            ]
+        },
+        {
+            "number": 10,
+            "text_fr": "Le travail forcé ou obligatoire est interdit dans toutes ses formes.",
+            "text_ar": "يمنع تشغيل الأجراء سخرة أو قهراً بأي شكل من الأشكال.",
+            "keywords": [
+                "travail forcé",
+                "سخرة",
+                "interdit",
+                "ممنوع"
+            ]
+        },
+        {
+            "number": 11,
+            "text_fr": "Lorsqu'un salarié, ayant rompu abusivement son contrat de travail, s'engage à nouveau, l'employeur ne peut être condamné à des dommages-intérêts envers l'employeur précédent que s'il est prouvé qu'il est intervenu dans la résiliation.",
+            "text_ar": "إذا ارتبط الأجير الذي فسخ عقد شغله بصورة تعسفية بمشغل جديد، فلا يمكن الحكم على هذا المشغل بأداء تعويض للمشغل السابق إلا إذا ثبت أنه تدخل في فسخ العقد.",
+            "keywords": [
+                "rupture abusive",
+                "فسخ تعسفي",
+                "engagement",
+                "ارتباط"
+            ]
+        },
+        {
+            "number": 12,
+            "text_fr": "Le recrutement de salariés par des personnes chargées de recruter des travailleurs est interdit, sous réserve des dispositions de l'article 477 ci-après.",
+            "text_ar": "يمنع استخدام الأجراء من طرف أشخاص يتولون التوسط في تشغيل العمال، مع مراعاة أحكام المادة 477 أسفله.",
+            "keywords": [
+                "recrutement",
+                "توظيف",
+                "intermédiaire",
+                "وسيط"
+            ]
+        },
+        {
+            "number": 13,
+            "text_fr": "Il est interdit aux employeurs et aux salariés de prendre des mesures susceptibles de porter atteinte à la stabilité de l'emploi.",
+            "text_ar": "يمنع على المشغلين والأجراء اتخاذ أي إجراء قد يمس باستقرار الشغل.",
+            "keywords": [
+                "stabilité",
+                "استقرار",
+                "emploi",
+                "شغل"
+            ]
+        },
+        {
+            "number": 14,
+            "text_fr": "Les organisations professionnelles des employeurs et les organisations syndicales des salariés sont habilitées à conclure des conventions collectives de travail.",
+            "text_ar": "تؤهل المنظمات المهنية للمشغلين والمنظمات النقابية للأجراء لإبرام اتفاقيات الشغل الجماعية.",
+            "keywords": [
+                "convention collective",
+                "اتفاقية جماعية",
+                "négociation",
+                "تفاوض"
+            ]
+        },
+        {
+            "number": 15,
+            "text_fr": "La validité du contrat de travail est subordonnée aux conditions relatives au consentement et à la capacité des parties.",
+            "text_ar": "تتوقف صحة عقد الشغل على الشروط المتعلقة بتراضي الطرفين وبأهليتهما.",
+            "keywords": [
+                "contrat",
+                "عقد",
+                "validité",
+                "صحة"
+            ]
+        },
+        {
+            "number": 16,
+            "text_fr": "Le contrat de travail peut être conclu pour une durée indéterminée, pour une durée déterminée ou pour accomplir un travail déterminé.",
+            "text_ar": "يمكن إبرام عقد الشغل لمدة غير محددة، أو لمدة محددة، أو لإنجاز شغل معين.",
+            "keywords": [
+                "CDI",
+                "CDD",
+                "durée",
+                "مدة"
+            ]
+        },
+        {
+            "number": 17,
+            "text_fr": "Le contrat de travail à durée déterminée peut être conclu dans les cas où la relation de travail ne pourrait avoir une durée indéterminée.",
+            "text_ar": "يمكن إبرام عقد شغل لمدة محددة في الحالات التي لا يمكن أن تكون فيها علاقة الشغل غير محددة المدة.",
+            "keywords": [
+                "CDD",
+                "عقد محدد المدة",
+                "cas",
+                "حالات"
+            ]
+        },
+        {
+            "number": 18,
+            "text_fr": "La preuve de l'existence du contrat de travail peut être rapportée par tous les moyens.",
+            "text_ar": "يمكن إثبات عقد الشغل بجميع وسائل الإثبات.",
+            "keywords": [
+                "preuve",
+                "إثبات",
+                "contrat",
+                "عقد"
+            ]
+        },
+        {
+            "number": 19,
+            "text_fr": "Le contrat de travail à durée indéterminée peut comporter une période d'essai dont la durée et le renouvellement sont fixés par voie réglementaire.",
+            "text_ar": "يمكن أن يتضمن عقد الشغل غير محدد المدة فترة اختبار تحدد مدتها وتجديدها بنص تنظيمي.",
+            "keywords": [
+                "période d'essai",
+                "فترة اختبار",
+                "CDI",
+                "عقد غير محدد"
+            ]
+        },
+        {
+            "number": 20,
+            "text_fr": "Pendant la période d'essai, chacune des parties peut mettre fin au contrat sans préavis ni indemnité.",
+            "text_ar": "يمكن لكل من الطرفين أثناء فترة الاختبار إنهاء عقد الشغل دون إخطار ولا تعويض.",
+            "keywords": [
+                "essai",
+                "اختبار",
+                "résiliation",
+                "فسخ"
+            ]
+        },
+        {
+            "number": 21,
+            "text_fr": "Le salarié est soumis à l'autorité de l'employeur dans le cadre des dispositions législatives ou réglementaires, du contrat de travail, de la convention collective ou du règlement intérieur.",
+            "text_ar": "يخضع الأجير لسلطة المشغل في إطار الأحكام التشريعية أو التنظيمية، وعقد الشغل، والاتفاقية الجماعية، والنظام الداخلي.",
+            "keywords": [
+                "autorité",
+                "سلطة",
+                "employeur",
+                "مشغل"
+            ]
+        },
+        {
+            "number": 22,
+            "text_fr": "Le salarié doit veiller à la conservation des choses et des moyens qui lui ont été remis pour l'accomplissement du travail dont il a été chargé.",
+            "text_ar": "يجب على الأجير المحافظة على الأشياء ووسائل العمل التي سلمت إليه للقيام بالشغل المكلف به.",
+            "keywords": [
+                "conservation",
+                "محافظة",
+                "moyens",
+                "وسائل"
+            ]
+        },
+        {
+            "number": 23,
+            "text_fr": "Les salariés ont le droit de bénéficier des services sociaux et des œuvres sociales de l'entreprise.",
+            "text_ar": "يحق للأجراء الاستفادة من الخدمات الاجتماعية والأعمال الاجتماعية للمقاولة.",
+            "keywords": [
+                "services sociaux",
+                "خدمات اجتماعية",
+                "œuvres sociales",
+                "أعمال اجتماعية"
+            ]
+        },
+        {
+            "number": 24,
+            "text_fr": "Le contrat de travail est suspendu pendant le service militaire obligatoire, pendant l'absence du salarié pour maladie ou accident dûment constatés, pendant la période de fermeture de l'établissement intervenue légalement.",
+            "text_ar": "يتوقف عقد الشغل مؤقتاً أثناء فترة الخدمة العسكرية الإلزامية، وأثناء تغيب الأجير بسبب مرض أو حادثة مثبتة قانونياً، وأثناء فترة إغلاق المقاولة بشكل قانوني.",
+            "keywords": [
+                "suspension",
+                "توقف",
+                "service militaire",
+                "خدمة عسكرية",
+                "maladie",
+                "مرض"
+            ]
+        },
+        {
+            "number": 25,
+            "text_fr": "Le contrat de travail à durée déterminée prend fin à l'échéance du terme.",
+            "text_ar": "ينتهي عقد الشغل المحدد المدة بحلول الأجل المحدد له.",
+            "keywords": [
+                "échéance",
+                "انتهاء",
+                "terme",
+                "أجل"
+            ]
+        },
+        {
+            "number": 32,
+            "text_fr": "En cas de modification dans la situation juridique de l'employeur ou dans la forme juridique de l'entreprise, les contrats de travail en cours au moment de cette modification subsistent entre les salariés et le nouvel employeur.",
+            "text_ar": "في حالة وقوع تغيير في الوضعية القانونية للمشغل أو في الشكل القانوني للمقاولة، فإن عقود الشغل السارية وقت التغيير تستمر بين الأجراء والمشغل الجديد.",
+            "keywords": [
+                "transfert",
+                "انتقال",
+                "changement employeur",
+                "تغيير المشغل"
+            ]
+        },
+        {
+            "number": 33,
+            "text_fr": "L'entreprise conserve la même identité et subsiste avec l'ensemble de ses composantes, notamment avec les mêmes salariés et les mêmes dirigeants.",
+            "text_ar": "تحتفظ المقاولة بنفس هويتها وتستمر بجميع مكوناتها، ولا سيما بنفس الأجراء والمسيرين.",
+            "keywords": [
+                "identité entreprise",
+                "هوية المقاولة",
+                "continuité",
+                "استمرارية"
+            ]
+        },
+        {
+            "number": 34,
+            "text_fr": "Le contrat de travail à durée indéterminée peut cesser par la volonté de l'employeur, sous réserve des dispositions de la présente section et de celles relatives au délai de préavis.",
+            "text_ar": "يمكن للعقد غير المحدد المدة أن ينتهي بإرادة المشغل، مع مراعاة أحكام هذا الفرع والأحكام المتعلقة بأجل الإخطار.",
+            "keywords": [
+                "résiliation",
+                "إنهاء",
+                "volonté",
+                "إرادة"
+            ]
+        },
+        {
+            "number": 35,
+            "text_fr": "Est interdit le licenciement d'un salarié sans motif valable.",
+            "text_ar": "يمنع فصل الأجير دون مبرر مقبول.",
+            "keywords": [
+                "licenciement",
+                "فصل",
+                "motif",
+                "سبب"
+            ]
+        },
+        {
+            "number": 36,
+            "text_fr": "Ne constituent pas des motifs valables de licenciement l'affiliation syndicale ou l'exercice d'un mandat de représentant syndical, le fait d'avoir déposé une plainte contre l'employeur.",
+            "text_ar": "لا تعد الأسباب التالية مبررات مقبولة لاتخاذ العقوبات التأديبية أو للفصل: الانتماء النقابي، تقديم شكاية ضد المشغل.",
+            "keywords": [
+                "motif invalide",
+                "سبب غير مقبول",
+                "syndicat",
+                "نقابة"
+            ]
+        },
+        {
+            "number": 37,
+            "text_fr": "L'employeur peut prendre l'une des sanctions disciplinaires suivantes à l'encontre du salarié pour faute non grave: l'avertissement, le blâme, un deuxième blâme ou la mise à pied, un troisième blâme ou le transfert.",
+            "text_ar": "يمكن للمشغل اتخاذ إحدى العقوبات التأديبية التالية في حق الأجير لارتكابه خطأ غير جسيم: الإنذار، التوبيخ، التوبيخ الثاني أو التوقيف لمدة لا تتجاوز 8 أيام، التوبيخ الثالث أو النقل.",
+            "keywords": [
+                "sanctions",
+                "عقوبات",
+                "avertissement",
+                "إنذار",
+                "blâme",
+                "توبيخ"
+            ]
+        },
+        {
+            "number": 38,
+            "text_fr": "Les sanctions disciplinaires doivent être appliquées dans l'ordre selon leur gravité.",
+            "text_ar": "تطبق العقوبات التأديبية تدريجياً حسب خطورتها.",
+            "keywords": [
+                "gradation",
+                "تدرج",
+                "discipline",
+                "تأديب"
+            ]
+        },
+        {
+            "number": 39,
+            "text_fr": "Sont considérées comme fautes graves pouvant justifier le licenciement: le délit portant atteinte à l'honneur, le vol, l'abus de confiance, l'ivresse publique, la consommation de stupéfiants, l'agression corporelle, l'insulte grave, le refus délibéré d'exécuter un travail, l'absence non justifiée de plus de quatre jours, la détérioration des équipements, la faute grave du salarié occasionnant un dommage matériel considérable, l'inobservation des règles de sécurité.",
+            "text_ar": "تعتبر أخطاء جسيمة يمكن أن تؤدي إلى الفصل: ارتكاب جنحة ماسة بالشرف، السرقة، خيانة الأمانة، السكر العلني، تعاطي المخدرات، الاعتداء بالضرب، السب الفادح، رفض إنجاز شغل عمداً، التغيب بدون مبرر لأكثر من أربعة أيام، إلحاق ضرر جسيم بالتجهيزات، الخطأ الجسيم الذي ينتج عنه ضرر مادي كبير، عدم احترام قواعد السلامة.",
+            "keywords": [
+                "faute grave",
+                "خطأ جسيم",
+                "licenciement",
+                "فصل",
+                "vol",
+                "سرقة"
+            ]
+        },
+        {
+            "number": 40,
+            "text_fr": "Avant le licenciement du salarié. l'employeur doit lui donner la possibilité de se défendre.",
+            "text_ar": "يجب على المشغل قبل فصل الأجير أن يتيح له فرصة الدفاع عن نفسه.",
+            "keywords": [
+                "défense",
+                "دفاع",
+                "procédure",
+                "مسطرة"
+            ]
+        },
+        {
+            "number": 41,
+            "text_fr": "En cas de licenciement abusif, le tribunal peut ordonner la réintégration du salarié ou le versement de dommages-intérêts.",
+            "text_ar": "في حالة الفصل التعسفي، للمحكمة أن تحكم بإرجاع الأجير إلى شغله أو بأداء تعويض عن الضرر.",
+            "keywords": [
+                "licenciement abusif",
+                "فصل تعسفي",
+                "réintégration",
+                "إرجاع",
+                "dommages",
+                "تعويض"
+            ]
+        },
+        {
+            "number": 42,
+            "text_fr": "Le montant des dommages-intérêts est égal à un mois et demi de salaire par année ou fraction d'année de travail.",
+            "text_ar": "يحدد مبلغ التعويض عن الفصل التعسفي في أجر شهر ونصف عن كل سنة عمل أو جزء من السنة.",
+            "keywords": [
+                "indemnité",
+                "تعويض",
+                "calcul",
+                "حساب"
+            ]
+        },
+        {
+            "number": 43,
+            "text_fr": "Le délai de préavis commence à courir le lendemain de la notification de la décision de mettre fin au contrat.",
+            "text_ar": "يبدأ سريان أجل الإخطار من اليوم الموالي لتبليغ قرار إنهاء العقد.",
+            "keywords": [
+                "préavis",
+                "إخطار",
+                "délai",
+                "أجل"
+            ]
+        },
+        {
+            "number": 51,
+            "text_fr": "Le salarié démissionnaire doit respecter le délai de préavis.",
+            "text_ar": "يجب على الأجير المستقيل احترام أجل الإخطار.",
+            "keywords": [
+                "démission",
+                "استقالة",
+                "préavis",
+                "إخطار"
+            ]
+        },
+        {
+            "number": 52,
+            "text_fr": "Le salarié bénéficie, pendant le délai de préavis, de permissions d'absence pour la recherche d'un autre emploi.",
+            "text_ar": "يستفيد الأجير أثناء أجل الإخطار من رخص التغيب للبحث عن شغل آخر.",
+            "keywords": [
+                "permission",
+                "رخصة",
+                "recherche emploi",
+                "البحث عن شغل"
+            ]
+        },
+        {
+            "number": 53,
+            "text_fr": "L'indemnité de licenciement est calculée sur la base de l'ancienneté du salarié.",
+            "text_ar": "يحتسب تعويض الفصل بناء على أقدمية الأجير.",
+            "keywords": [
+                "indemnité",
+                "تعويض",
+                "calcul",
+                "حساب",
+                "ancienneté",
+                "أقدمية"
+            ]
+        },
+        {
+            "number": 54,
+            "text_fr": "Le montant de l'indemnité de licenciement pour chaque année ou fraction d'année de travail effectif est égal à 96 heures de salaire pour les cinq premières années, 144 heures pour la période de 6 à 10 ans, 192 heures pour la période de 11 à 15 ans, 240 heures pour la période au-delà de 15 ans.",
+            "text_ar": "يعادل مبلغ تعويض الفصل عن كل سنة أو جزء من سنة من العمل الفعلي 96 ساعة من الأجر بالنسبة للخمس سنوات الأولى، 144 ساعة للفترة من 6 إلى 10 سنوات، 192 ساعة للفترة من 11 إلى 15 سنة، 240 ساعة لما فوق 15 سنة.",
+            "keywords": [
+                "calcul indemnité",
+                "حساب التعويض",
+                "ancienneté",
+                "أقدمية",
+                "heures",
+                "ساعات"
+            ]
+        },
+        {
+            "number": 55,
+            "text_fr": "Le salarié bénéficie, au moment du licenciement, d'un certificat de travail mentionnant la date de son entrée, celle de sa sortie et les postes qu'il a occupés.",
+            "text_ar": "يستفيد الأجير عند انتهاء عقد شغله من شهادة شغل تتضمن تاريخ دخوله وخروجه والمناصب التي شغلها.",
+            "keywords": [
+                "certificat",
+                "شهادة",
+                "travail",
+                "شغل"
+            ]
+        },
+        {
+            "number": 66,
+            "text_fr": "Le licenciement pour motifs technologiques, structurels ou économiques et la fermeture des entreprises sont soumis à autorisation du gouverneur de la préfecture ou de la province.",
+            "text_ar": "يتوقف الفصل لأسباب تكنولوجية أو هيكلية أو اقتصادية وإغلاق المقاولات على الحصول على إذن من عامل العمالة أو الإقليم.",
+            "keywords": [
+                "licenciement économique",
+                "فصل اقتصادي",
+                "autorisation",
+                "إذن"
+            ]
+        },
+        {
+            "number": 67,
+            "text_fr": "L'employeur doit notifier sa décision au délégué territorial chargé du travail.",
+            "text_ar": "يجب على المشغل إبلاغ المندوب الإقليمي المكلف بالشغل بقراره.",
+            "keywords": [
+                "notification",
+                "إبلاغ",
+                "délégué",
+                "مندوب"
+            ]
+        },
+        {
+            "number": 79,
+            "text_fr": "L'exercice du droit de grève par les salariés ne peut entraîner la rupture du contrat de travail sauf faute lourde imputable aux salariés.",
+            "text_ar": "لا يمكن أن تؤدي ممارسة الأجراء لحق الإضراب إلى فسخ عقد الشغل إلا إذا ارتكبوا خطأ جسيماً.",
+            "keywords": [
+                "grève",
+                "إضراب",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 135,
+            "text_fr": "Les mineurs ne peuvent être employés qu'à partir de l'âge de quinze ans révolus.",
+            "text_ar": "لا يمكن تشغيل القاصرين إلا بعد بلوغهم سن الخامسة عشرة كاملة.",
+            "keywords": [
+                "mineur",
+                "قاصر",
+                "âge",
+                "سن",
+                "15 ans"
+            ]
+        },
+        {
+            "number": 136,
+            "text_fr": "La durée maximale du travail des mineurs de moins de seize ans ne peut excéder dix heures par jour.",
+            "text_ar": "لا يجوز أن تتجاوز مدة شغل القاصرين دون السادسة عشرة عشر ساعات في اليوم.",
+            "keywords": [
+                "mineur",
+                "قاصر",
+                "durée",
+                "مدة",
+                "heures",
+                "ساعات"
+            ]
+        },
+        {
+            "number": 143,
+            "text_fr": "Les femmes peuvent être employées dans tout type de travail, à l'exception des travaux présentant des risques particuliers pour leur santé ou leur sécurité.",
+            "text_ar": "يمكن تشغيل النساء في جميع أنواع الأشغال، باستثناء الأشغال التي تشكل خطراً خاصاً على صحتهن أو سلامتهن.",
+            "keywords": [
+                "femme",
+                "مرأة",
+                "travaux dangereux",
+                "أشغال خطيرة"
+            ]
+        },
+        {
+            "number": 152,
+            "text_fr": "La salariée enceinte a droit à un congé de maternité de quatorze semaines.",
+            "text_ar": "تتمتع الأجيرة الحامل بإجازة ولادة مدتها أربعة عشر أسبوعاً.",
+            "keywords": [
+                "maternité",
+                "ولادة",
+                "congé",
+                "إجازة",
+                "femme",
+                "مرأة",
+                "14 semaines",
+                "أربعة عشر أسبوع"
+            ]
+        },
+        {
+            "number": 153,
+            "text_fr": "La mère salariée peut s'absenter pendant une année à compter de la date d'expiration du congé de maternité, pour élever son enfant, sous réserve de l'accord de l'employeur.",
+            "text_ar": "يمكن للأم الأجيرة التغيب سنة ابتداءً من تاريخ انتهاء إجازة الولادة لتربية طفلها، بموافقة المشغل.",
+            "keywords": [
+                "congé parental",
+                "إجازة أبوية",
+                "mère",
+                "أم",
+                "enfant",
+                "طفل"
+            ]
+        },
+        {
+            "number": 154,
+            "text_fr": "Pendant une période de douze mois suivant la reprise du travail, la mère salariée a droit à une demi-heure le matin et une demi-heure l'après-midi pour allaiter son enfant.",
+            "text_ar": "تستفيد الأم الأجيرة خلال الاثني عشر شهراً الموالية لاستئناف العمل من نصف ساعة صباحاً ونصف ساعة بعد الزوال للرضاعة.",
+            "keywords": [
+                "allaitement",
+                "رضاعة",
+                "mère",
+                "أم",
+                "pause",
+                "استراحة"
+            ]
+        },
+        {
+            "number": 172,
+            "text_fr": "Un règlement intérieur est obligatoire dans les entreprises employant habituellement au moins dix salariés.",
+            "text_ar": "يعد النظام الداخلي إلزامياً في المقاولات التي تشغل اعتياديا عشرة أجراء على الأقل.",
+            "keywords": [
+                "règlement intérieur",
+                "نظام داخلي",
+                "obligatoire",
+                "إلزامي"
+            ]
+        },
+        {
+            "number": 184,
+            "text_fr": "La durée normale de travail est fixée à 2288 heures par an ou 44 heures par semaine.",
+            "text_ar": "تحدد المدة العادية للشغل في 2288 ساعة في السنة أو 44 ساعة في الأسبوع.",
+            "keywords": [
+                "durée travail",
+                "مدة الشغل",
+                "heures",
+                "ساعات",
+                "44 heures",
+                "أربعة وأربعون ساعة"
+            ]
+        },
+        {
+            "number": 185,
+            "text_fr": "Dans les activités agricoles, la durée annuelle de travail est fixée à 2496 heures.",
+            "text_ar": "تحدد المدة السنوية للشغل في الأنشطة الفلاحية في 2496 ساعة.",
+            "keywords": [
+                "agriculture",
+                "فلاحة",
+                "durée",
+                "مدة"
+            ]
+        },
+        {
+            "number": 189,
+            "text_fr": "La répartition hebdomadaire de la durée de travail peut être organisée de façon à permettre la fermeture de l'établissement le samedi ou un autre jour de la semaine.",
+            "text_ar": "يمكن توزيع مدة الشغل الأسبوعية بشكل يسمح بإغلاق المقاولة يوم السبت أو يوم آخر من أيام الأسبوع.",
+            "keywords": [
+                "répartition",
+                "توزيع",
+                "semaine",
+                "أسبوع"
+            ]
+        },
+        {
+            "number": 196,
+            "text_fr": "Les heures de travail effectuées au-delà de la durée normale sont considérées comme heures supplémentaires donnant droit à une majoration de salaire.",
+            "text_ar": "تعتبر الساعات المنجزة فوق المدة العادية للشغل ساعات إضافية توجب زيادة في الأجر.",
+            "keywords": [
+                "heures supplémentaires",
+                "ساعات إضافية",
+                "majoration",
+                "زيادة"
+            ]
+        },
+        {
+            "number": 197,
+            "text_fr": "Les taux de majoration des heures supplémentaires sont de 25% si elles sont effectuées entre 6h et 21h et de 50% si elles sont effectuées entre 21h et 6h. Ces taux sont portés respectivement à 50% et 100% si elles sont effectuées le jour de repos hebdomadaire.",
+            "text_ar": "تحدد نسب الزيادة المترتبة عن الساعات الإضافية في 25% إذا أنجزت بين الساعة 6 والساعة 21، وفي 50% إذا أنجزت بين الساعة 21 والساعة 6. ترفع هذه النسب على التوالي إلى 50% و100% إذا أنجزت يوم الراحة الأسبوعية.",
+            "keywords": [
+                "majoration",
+                "زيادة",
+                "taux",
+                "نسبة",
+                "25%",
+                "50%",
+                "100%"
+            ]
+        },
+        {
+            "number": 205,
+            "text_fr": "Doivent obligatoirement bénéficier d'un repos hebdomadaire d'au moins vingt-quatre heures consécutives tous les salariés d'un même établissement.",
+            "text_ar": "يجب على جميع أجراء نفس المؤسسة الاستفادة إلزامياً من راحة أسبوعية لا تقل عن أربع وعشرين ساعة متوالية.",
+            "keywords": [
+                "repos hebdomadaire",
+                "راحة أسبوعية",
+                "24 heures",
+                "أربع وعشرون ساعة"
+            ]
+        },
+        {
+            "number": 206,
+            "text_fr": "Le repos hebdomadaire doit être accordé le vendredi, le samedi, le dimanche ou le jour de marché hebdomadaire.",
+            "text_ar": "يجب أن تمنح الراحة الأسبوعية يوم الجمعة أو السبت أو الأحد أو يوم السوق الأسبوعي.",
+            "keywords": [
+                "jour repos",
+                "يوم راحة",
+                "vendredi",
+                "جمعة",
+                "dimanche",
+                "أحد"
+            ]
+        },
+        {
+            "number": 217,
+            "text_fr": "Les jours fériés reconnus par la loi sont les suivants : le 1er janvier, le 11 janvier (Manifeste de l'indépendance), le 1er mai, le 30 juillet (Fête du Trône), le 14 août, le 20 août, le 21 août, le 6 novembre, le 18 novembre.",
+            "text_ar": "الأعياد المعترف بها قانوناً هي: فاتح يناير، 11 يناير (عيد المسيرة الخضراء)، فاتح ماي، 30 يوليوز (عيد العرش)، 14 غشت، 20 غشت، 21 غشت، 6 نونبر، 18 نونبر.",
+            "keywords": [
+                "jours fériés",
+                "أعياد",
+                "fête",
+                "عيد"
+            ]
+        },
+        {
+            "number": 231,
+            "text_fr": "Tout salarié a droit, après six mois de service continu, à un congé annuel payé.",
+            "text_ar": "يستحق كل أجير، بعد ستة أشهر من الشغل المستمر، إجازة سنوية مؤدى عنها.",
+            "keywords": [
+                "congé annuel",
+                "إجازة سنوية",
+                "payé",
+                "مؤدى عنها",
+                "6 mois"
+            ]
+        },
+        {
+            "number": 232,
+            "text_fr": "La durée du congé annuel payé est d'un jour et demi ouvrable par mois de service.",
+            "text_ar": "تحدد مدة الإجازة السنوية المؤدى عنها في يوم ونصف يوم عمل عن كل شهر من الشغل.",
+            "keywords": [
+                "durée congé",
+                "مدة إجازة",
+                "jours",
+                "أيام"
+            ]
+        },
+        {
+            "number": 233,
+            "text_fr": "Cette durée est augmentée d'un jour et demi ouvrable par période de cinq années de services sans pouvoir excéder trente jours de travail effectif.",
+            "text_ar": "تزاد هذه المدة بيوم ونصف يوم عمل عن كل خمس سنوات من الشغل على ألا تتجاوز ثلاثين يوم عمل فعلي.",
+            "keywords": [
+                "ancienneté",
+                "أقدمية",
+                "augmentation",
+                "زيادة",
+                "30 jours"
+            ]
+        },
+        {
+            "number": 269,
+            "text_fr": "Tout salarié a le droit de bénéficier de congés à l'occasion de certains événements familiaux : mariage du salarié (4 jours), décès d'un conjoint (3 jours), décès d'un parent (3 jours), naissance (3 jours), circoncision (2 jours).",
+            "text_ar": "يستحق كل أجير الاستفادة من رخص بمناسبة أحداث عائلية: زواج الأجير (4 أيام)، وفاة الزوج (3 أيام)، وفاة أحد الأبوين (3 أيام)، ولادة (3 أيام)، ختان (يومان).",
+            "keywords": [
+                "événements familiaux",
+                "أحداث عائلية",
+                "mariage",
+                "زواج",
+                "décès",
+                "وفاة",
+                "naissance",
+                "ولادة"
+            ]
+        },
+        {
+            "number": 345,
+            "text_fr": "L'employeur est tenu de verser au salarié un salaire pour le travail effectué.",
+            "text_ar": "يلتزم المشغل بأداء أجر للأجير مقابل الشغل المنجز.",
+            "keywords": [
+                "salaire",
+                "أجر",
+                "obligation",
+                "التزام"
+            ]
+        },
+        {
+            "number": 346,
+            "text_fr": "Le salaire minimum applicable en matière d'emploi est dénommé SMIG pour l'industrie et le commerce et SMAG pour l'agriculture.",
+            "text_ar": "يسمى الحد الأدنى للأجر المطبق في مجال التشغيل الحد الأدنى للأجور في الصناعة والتجارة، والحد الأدنى للأجور الفلاحي.",
+            "keywords": [
+                "SMIG",
+                "SMAG",
+                "salaire minimum",
+                "حد أدنى للأجر"
+            ]
+        },
+        {
+            "number": 356,
+            "text_fr": "Le salaire doit être payé en monnaie marocaine.",
+            "text_ar": "يجب أداء الأجر بالعملة المغربية.",
+            "keywords": [
+                "salaire",
+                "أجر",
+                "paiement",
+                "أداء",
+                "monnaie",
+                "عملة"
+            ]
+        },
+        {
+            "number": 357,
+            "text_fr": "Le salaire peut comporter des avantages en nature, mais la valeur de ces avantages ne peut dépasser la moitié du salaire.",
+            "text_ar": "يمكن أن يتضمن الأجر امتيازات عينية، على ألا تتجاوز قيمة هذه الامتيازات نصف الأجر.",
+            "keywords": [
+                "avantages nature",
+                "امتيازات عينية",
+                "50%"
+            ]
+        },
+        {
+            "number": 358,
+            "text_fr": "Le salaire doit être payé au moins deux fois par mois pour les ouvriers, et une fois par mois pour les employés.",
+            "text_ar": "يجب أداء الأجر مرتين في الشهر على الأقل بالنسبة للعمال، ومرة في الشهر بالنسبة للمستخدمين.",
+            "keywords": [
+                "paiement",
+                "أداء",
+                "périodicité",
+                "دورية"
+            ]
+        },
+        {
+            "number": 359,
+            "text_fr": "Le salarié à commission a droit au paiement de ses commissions pour toutes les opérations effectuées, même si elles n'ont pas été encaissées par l'employeur.",
+            "text_ar": "يستحق الأجير العامل بالعمولة أداء عمولاته عن جميع العمليات المنجزة، حتى وإن لم يستخلصها المشغل.",
+            "keywords": [
+                "commission",
+                "عمولة",
+                "paiement",
+                "أداء"
+            ]
+        },
+        {
+            "number": 382,
+            "text_fr": "Le bulletin de paie doit comporter les mentions obligatoires suivantes : nom de l'employeur, numéro d'affiliation à la CNSS, nom du salarié, emploi occupé, période de travail, salaire brut, retenues, salaire net.",
+            "text_ar": "يجب أن تتضمن ورقة الأداء البيانات الإلزامية التالية: اسم المشغل، رقم الانخراط في الصندوق الوطني للضمان الاجتماعي، اسم الأجير، الوظيفة المشغولة، فترة العمل، الأجر الإجمالي، الاقتطاعات، الأجر الصافي.",
+            "keywords": [
+                "bulletin paie",
+                "ورقة أداء",
+                "CNSS",
+                "ضمان اجتماعي"
+            ]
+        },
+        {
+            "number": 395,
+            "text_fr": "En cas de litige sur le montant du salaire, la charge de la preuve incombe à l'employeur.",
+            "text_ar": "في حالة النزاع حول مبلغ الأجر، يقع عبء الإثبات على المشغل.",
+            "keywords": [
+                "litige",
+                "نزاع",
+                "preuve",
+                "إثبات",
+                "salaire",
+                "أجر"
+            ]
+        },
+        {
+            "number": 430,
+            "text_fr": "L'employeur doit veiller à ce que les locaux de travail soient tenus dans un bon état de propreté.",
+            "text_ar": "يجب على المشغل السهر على أن تكون محلات الشغل في حالة جيدة من النظافة.",
+            "keywords": [
+                "hygiène",
+                "نظافة",
+                "locaux",
+                "محلات"
+            ]
+        },
+        {
+            "number": 431,
+            "text_fr": "L'employeur doit assurer l'aération, le nettoyage, l'éclairage et le chauffage des locaux de travail.",
+            "text_ar": "يجب على المشغل ضمان تهوية وتنظيف وإضاءة وتدفئة محلات الشغل.",
+            "keywords": [
+                "aération",
+                "تهوية",
+                "éclairage",
+                "إضاءة",
+                "chauffage",
+                "تدفئة"
+            ]
+        },
+        {
+            "number": 436,
+            "text_fr": "Les machines, les appareils de transmission, les outils et les engins doivent être équipés de dispositifs de protection d'une efficacité reconnue.",
+            "text_ar": "يجب أن تكون الآلات وأجهزة النقل والأدوات والمعدات مجهزة بأنظمة حماية ذات فعالية معترف بها.",
+            "keywords": [
+                "sécurité",
+                "سلامة",
+                "protection",
+                "حماية",
+                "machines",
+                "آلات"
+            ]
+        },
+        {
+            "number": 438,
+            "text_fr": "L'employeur doit mettre gratuitement à la disposition de ses salariés les équipements de protection individuelle.",
+            "text_ar": "يجب على المشغل أن يوفر مجاناً لأجرائه معدات الوقاية الفردية.",
+            "keywords": [
+                "équipements protection",
+                "معدات وقاية",
+                "gratuit",
+                "مجاني"
+            ]
+        },
+        {
+            "number": 464,
+            "text_fr": "La création d'un comité de sécurité et d'hygiène est obligatoire dans les entreprises employant au moins cinquante salariés.",
+            "text_ar": "يعد إحداث لجنة للسلامة وحفظ الصحة إلزامياً في المقاولات التي تشغل خمسين أجيراً على الأقل.",
+            "keywords": [
+                "comité sécurité",
+                "لجنة سلامة",
+                "obligatoire",
+                "إلزامي",
+                "50 salariés"
+            ]
+        },
+        {
+            "number": 466,
+            "text_fr": "Le comité de sécurité et d'hygiène est chargé notamment de détecter les risques professionnels, de proposer des mesures de prévention, de veiller au respect des mesures de sécurité.",
+            "text_ar": "تتولى لجنة السلامة وحفظ الصحة خاصة: اكتشاف المخاطر المهنية، اقتراح تدابير الوقاية، السهر على احترام تدابير السلامة.",
+            "keywords": [
+                "risques professionnels",
+                "مخاطر مهنية",
+                "prévention",
+                "وقاية"
+            ]
+        },
+        {
+            "number": 470,
+            "text_fr": "Tout employeur est tenu d'assurer à ses salariés un service médical du travail.",
+            "text_ar": "يجب على كل مشغل أن يوفر لأجرائه خدمة طبية للشغل.",
+            "keywords": [
+                "médecine travail",
+                "طب الشغل",
+                "service médical",
+                "خدمة طبية"
+            ]
+        },
+        {
+            "number": 530,
+            "text_fr": "L'élection des délégués des salariés a lieu dans les établissements employant habituellement au moins dix salariés.",
+            "text_ar": "ينتخب مندوبو الأجراء في المؤسسات التي تشغل اعتيادياً عشرة أجراء على الأقل.",
+            "keywords": [
+                "délégués",
+                "مندوبون",
+                "élection",
+                "انتخاب",
+                "10 salariés"
+            ]
+        },
+        {
+            "number": 531,
+            "text_fr": "Le nombre de délégués des salariés est fixé selon l'effectif de l'établissement.",
+            "text_ar": "يحدد عدد مندوبي الأجراء حسب عدد أجراء المؤسسة.",
+            "keywords": [
+                "nombre délégués",
+                "عدد المندوبين",
+                "effectif",
+                "عدد"
+            ]
+        },
+        {
+            "number": 546,
+            "text_fr": "Les délégués des salariés sont chargés de présenter à l'employeur toutes les réclamations individuelles relatives aux conditions de travail.",
+            "text_ar": "يتولى مندوبو الأجراء تقديم جميع الشكاوى الفردية المتعلقة بظروف الشغل إلى المشغل.",
+            "keywords": [
+                "réclamations",
+                "شكاوى",
+                "conditions travail",
+                "ظروف الشغل"
+            ]
+        },
+        {
+            "number": 549,
+            "text_fr": "Un comité d'entreprise est créé dans les entreprises employant habituellement au moins cinquante salariés.",
+            "text_ar": "تحدث لجنة للمقاولة في المقاولات التي تشغل اعتيادياً خمسين أجيراً على الأقل.",
+            "keywords": [
+                "comité entreprise",
+                "لجنة المقاولة",
+                "50 salariés",
+                "خمسون أجير"
+            ]
+        },
+        {
+            "number": 550,
+            "text_fr": "Le comité d'entreprise est consulté sur les questions relatives à la stratégie de production, à l'augmentation ou à la diminution de l'effectif, à la gestion du personnel.",
+            "text_ar": "تستشار لجنة المقاولة في المسائل المتعلقة بخطة الإنتاج، والزيادة أو التقليص في العدد، وتدبير الموارد البشرية.",
+            "keywords": [
+                "consultation",
+                "استشارة",
+                "stratégie",
+                "خطة",
+                "effectif",
+                "عدد"
+            ]
+        }
+    ]
+}

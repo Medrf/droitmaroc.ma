@@ -1,0 +1,940 @@
+{
+    "code_id": "doc",
+    "code_name_fr": "Dahir des Obligations et des Contrats (DOC)",
+    "code_name_ar": "قانون الالتزامات والعقود",
+    "total_articles": 1250,
+    "source": "Dahir du 9 ramadan 1331 (12 août 1913)",
+    "articles": [
+        {
+            "number": 1,
+            "text_fr": "Les obligations dérivent des conventions et autres déclarations de volonté, des quasi-contrats, des délits et des quasi-délits.",
+            "text_ar": "تنشأ الالتزامات عن الاتفاقات والتصريحات الأخرى المعبرة عن الإرادة وعن أشباه العقود وعن الجرائم وأشباه الجرائم.",
+            "keywords": [
+                "obligation",
+                "التزام",
+                "convention",
+                "اتفاق",
+                "sources",
+                "مصادر"
+            ]
+        },
+        {
+            "number": 2,
+            "text_fr": "Les éléments nécessaires pour la validité des obligations qui dérivent d'une déclaration de volonté sont : 1° La capacité de s'obliger ; 2° Une déclaration valable de volonté ; 3° Un objet certain ; 4° Une cause licite.",
+            "text_ar": "الأركان اللازمة لصحة الالتزامات الناشئة عن التعبير عن الإرادة هي: 1. الأهلية للالتزام 2. تعبير صحيح عن الإرادة 3. شيء محقق يصلح محلاً 4. وسبب مشروع.",
+            "keywords": [
+                "validité",
+                "صحة",
+                "capacité",
+                "أهلية",
+                "cause",
+                "سبب",
+                "objet",
+                "محل"
+            ]
+        },
+        {
+            "number": 3,
+            "text_fr": "La capacité civile de l'individu est réglée par la loi qui régit son statut personnel.",
+            "text_ar": "تخضع الأهلية المدنية للشخص للقانون المنظم لأحواله الشخصية.",
+            "keywords": [
+                "capacité",
+                "أهلية",
+                "statut personnel",
+                "أحوال شخصية"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "Tout être humain est capable d'obliger et de s'obliger, s'il n'en est déclaré incapable par la loi.",
+            "text_ar": "كل إنسان أهل للإلزام وللالتزام ما لم يصرح القانون بعدم أهليته.",
+            "keywords": [
+                "capacité",
+                "أهلية",
+                "principe",
+                "مبدأ"
+            ]
+        },
+        {
+            "number": 19,
+            "text_fr": "La convention n'est parfaite que par l'accord des parties sur les éléments essentiels de l'obligation.",
+            "text_ar": "لا يتم الاتفاق إلا بتراضي الطرفين على العناصر الأساسية للالتزام.",
+            "keywords": [
+                "accord",
+                "تراضي",
+                "convention",
+                "اتفاق",
+                "éléments essentiels",
+                "عناصر أساسية"
+            ]
+        },
+        {
+            "number": 20,
+            "text_fr": "L'acceptation expresse ou tacite des parties suffit pour parfaire l'obligation.",
+            "text_ar": "يكفي القبول الصريح أو الضمني من الطرفين لإتمام الالتزام.",
+            "keywords": [
+                "acceptation",
+                "قبول",
+                "expresse",
+                "صريح",
+                "tacite",
+                "ضمني"
+            ]
+        },
+        {
+            "number": 21,
+            "text_fr": "La réponse est considérée comme conforme à l'offre si elle s'y rattache purement et simplement, sans y ajouter aucune condition nouvelle.",
+            "text_ar": "يعتبر الرد مطابقاً للإيجاب إذا أحاله ببساطة ودون إضافة أي شرط جديد.",
+            "keywords": [
+                "offre",
+                "إيجاب",
+                "réponse",
+                "رد",
+                "acceptation",
+                "قبول"
+            ]
+        },
+        {
+            "number": 39,
+            "text_fr": "Celui qui est dans l'erreur, soit sur la nature du contrat, soit sur l'objet, peut demander l'annulation du contrat.",
+            "text_ar": "من وقع في غلط، سواء على طبيعة العقد أو على محله، يحق له طلب إبطال العقد.",
+            "keywords": [
+                "erreur",
+                "غلط",
+                "annulation",
+                "إبطال",
+                "nullité",
+                "بطلان"
+            ]
+        },
+        {
+            "number": 45,
+            "text_fr": "Celui dont le consentement a été donné par dol peut demander l'annulation du contrat.",
+            "text_ar": "من أبرم عقداً بسبب تدليس له الحق في طلب إبطاله.",
+            "keywords": [
+                "dol",
+                "تدليس",
+                "annulation",
+                "إبطال",
+                "consentement",
+                "رضا"
+            ]
+        },
+        {
+            "number": 46,
+            "text_fr": "Le dol donne lieu à la rescision lorsqu'il a été principal.",
+            "text_ar": "يؤدي التدليس إلى الإبطال إذا كان دافعاً رئيسياً للتعاقد.",
+            "keywords": [
+                "dol principal",
+                "تدليس رئيسي",
+                "rescision",
+                "إبطال"
+            ]
+        },
+        {
+            "number": 47,
+            "text_fr": "Le dol qui n'est pas déterminant ne donne lieu qu'à des dommages-intérêts.",
+            "text_ar": "التدليس غير الدافع لا يعطي إلا الحق في التعويض.",
+            "keywords": [
+                "dol incident",
+                "تدليس عارض",
+                "dommages-intérêts",
+                "تعويض"
+            ]
+        },
+        {
+            "number": 48,
+            "text_fr": "La violence rend le contrat rescindable.",
+            "text_ar": "الإكراه يجعل العقد قابلاً للإبطال.",
+            "keywords": [
+                "violence",
+                "إكراه",
+                "rescindable",
+                "قابل للإبطال"
+            ]
+        },
+        {
+            "number": 54,
+            "text_fr": "Les causes impulsives et déterminantes sont les motifs qui ont poussé à contracter.",
+            "text_ar": "أسباب الالتزام الدافعة والمحددة هي البواعث التي دفعت إلى التعاقد.",
+            "keywords": [
+                "cause",
+                "سبب",
+                "motif",
+                "دافع",
+                "volonté",
+                "إرادة"
+            ]
+        },
+        {
+            "number": 57,
+            "text_fr": "L'obligation sans cause ou fondée sur une cause illicite est non avenue.",
+            "text_ar": "الالتزام بدون سبب أو المبني على سبب غير مشروع يعتبر كأن لم يكن.",
+            "keywords": [
+                "cause illicite",
+                "سبب غير مشروع",
+                "nullité",
+                "بطلان"
+            ]
+        },
+        {
+            "number": 62,
+            "text_fr": "L'obligation est nulle de plein droit lorsqu'elle manque de l'un de ses éléments essentiels.",
+            "text_ar": "يبطل الالتزام بقوة القانون إذا انعدم أحد أركانه الجوهرية.",
+            "keywords": [
+                "nullité",
+                "بطلان",
+                "éléments essentiels",
+                "أركان جوهرية"
+            ]
+        },
+        {
+            "number": 63,
+            "text_fr": "La nullité de l'obligation principale entraîne la nullité des obligations accessoires.",
+            "text_ar": "يترتب على بطلان الالتزام الأصلي بطلان الالتزامات التبعية.",
+            "keywords": [
+                "nullité",
+                "بطلان",
+                "accessoire",
+                "تبعي"
+            ]
+        },
+        {
+            "number": 66,
+            "text_fr": "L'obligation annulable peut être confirmée par la partie qui a qualité pour en demander l'annulation.",
+            "text_ar": "يمكن إجازة الالتزام القابل للإبطال من طرف من له الحق في طلب إبطاله.",
+            "keywords": [
+                "confirmation",
+                "إجازة",
+                "annulation",
+                "إبطال"
+            ]
+        },
+        {
+            "number": 77,
+            "text_fr": "Tout fait quelconque de l'homme qui, sans l'autorité de la loi, cause sciemment et volontairement à autrui un dommage matériel ou moral, oblige son auteur à réparer ledit dommage.",
+            "text_ar": "كل فعل ارتكبه الإنسان عن بينة واختيار، ومن غير أن يسمح به القانون، فأحدث ضرراً مادياً أو معنوياً للغير، ألزم مرتكبه بتعويض هذا الضرر.",
+            "keywords": [
+                "responsabilité",
+                "مسؤولية",
+                "dommage",
+                "ضرر",
+                "faute",
+                "خطأ",
+                "réparation",
+                "تعويض"
+            ]
+        },
+        {
+            "number": 78,
+            "text_fr": "Chacun est responsable du dommage moral ou matériel qu'il a causé, non seulement par son fait, mais par sa faute, lorsqu'il est établi que cette faute en est la cause directe.",
+            "text_ar": "كل شخص مسؤول عن الضرر المعنوي أو المادي الذي أحدثه، لا بفعله فقط ولكن بخطئه أيضاً، وذلك عندما يثبت أن هذا الخطأ هو السبب المباشر في ذلك الضرر.",
+            "keywords": [
+                "responsabilité",
+                "مسؤولية",
+                "faute",
+                "خطأ",
+                "cause directe",
+                "سبب مباشر"
+            ]
+        },
+        {
+            "number": 79,
+            "text_fr": "L'Etat et les municipalités sont responsables des dommages causés directement par le fonctionnement de leurs administrations et par les fautes de service de leurs agents.",
+            "text_ar": "الدولة والبلديات مسؤولة عن الأضرار الناتجة مباشرة عن تسيير إداراتها وعن الأخطاء المصلحية لموظفيها.",
+            "keywords": [
+                "État",
+                "دولة",
+                "municipalités",
+                "بلديات",
+                "responsabilité",
+                "مسؤولية"
+            ]
+        },
+        {
+            "number": 85,
+            "text_fr": "On est responsable non seulement du dommage que l'on cause par son propre fait, mais encore de celui qui est causé par le fait des personnes dont on doit répondre.",
+            "text_ar": "لا يكون الشخص مسؤولاً عن الضرر الذي يحدثه بفعله فحسب، بل يكون مسؤولاً أيضاً عن الضرر الذي يحدثه الأشخاص الذين هم في عهدته.",
+            "keywords": [
+                "responsabilité",
+                "مسؤولية",
+                "autrui",
+                "الغير",
+                "fait d'autrui",
+                "فعل الغير"
+            ]
+        },
+        {
+            "number": 86,
+            "text_fr": "Le père, et la mère après le décès du mari, sont responsables du dommage causé par leurs enfants mineurs habitant avec eux.",
+            "text_ar": "الأب، ثم الأم بعد وفاة الزوج، مسؤولان عن الأضرار التي يسببها أطفالهما القاصرون الساكنون معهما.",
+            "keywords": [
+                "parents",
+                "أبوان",
+                "mineurs",
+                "قاصرون",
+                "responsabilité",
+                "مسؤولية"
+            ]
+        },
+        {
+            "number": 87,
+            "text_fr": "Les maîtres et commettants sont responsables du dommage causé par leurs domestiques et préposés dans les fonctions auxquelles ils les ont employés.",
+            "text_ar": "الأرباب والمخدومون مسؤولون عن الأضرار التي يحدثها خدمهم ومأموروهم في الوظائف التي استخدموهم فيها.",
+            "keywords": [
+                "commettant",
+                "مخدوم",
+                "préposé",
+                "مأمور",
+                "responsabilité",
+                "مسؤولية"
+            ]
+        },
+        {
+            "number": 88,
+            "text_fr": "Chacun doit répondre du dommage causé par les choses qu'il a sous sa garde.",
+            "text_ar": "كل شخص يسأل عن الضرر الناجم عن الأشياء التي في حراسته.",
+            "keywords": [
+                "chose",
+                "شيء",
+                "garde",
+                "حراسة",
+                "responsabilité du fait des choses",
+                "مسؤولية حارس الشيء"
+            ]
+        },
+        {
+            "number": 89,
+            "text_fr": "Le propriétaire d'un animal ou celui qui s'en sert, pendant qu'il est à son usage, est responsable du dommage causé par l'animal.",
+            "text_ar": "مالك الحيوان أو من يستعمله وقت الاستعمال مسؤول عن الضرر الذي يحدثه الحيوان.",
+            "keywords": [
+                "animal",
+                "حيوان",
+                "propriétaire",
+                "مالك",
+                "responsabilité",
+                "مسؤولية"
+            ]
+        },
+        {
+            "number": 98,
+            "text_fr": "Lorsqu'un fait de l'homme cause un dommage à un tiers par le fait d'une chose, le propriétaire de cette chose n'est responsable que s'il est établi qu'il y a une faute à sa charge.",
+            "text_ar": "إذا تسبب فعل الإنسان في إحداث ضرر للغير بواسطة شيء، فلا يكون مالك ذلك الشيء مسؤولاً إلا إذا ثبت وقوع خطأ من جانبه.",
+            "keywords": [
+                "faute",
+                "خطأ",
+                "chose",
+                "شيء",
+                "preuve",
+                "إثبات"
+            ]
+        },
+        {
+            "number": 106,
+            "text_fr": "L'obligation peut être conditionnelle, à terme, alternative ou facultative.",
+            "text_ar": "قد يكون الالتزام معلقاً على شرط أو مضافاً إلى أجل أو تخييرياً أو بدلياً.",
+            "keywords": [
+                "condition",
+                "شرط",
+                "terme",
+                "أجل",
+                "modalités",
+                "طرق"
+            ]
+        },
+        {
+            "number": 107,
+            "text_fr": "L'obligation est conditionnelle lorsqu'elle dépend d'un événement futur et incertain.",
+            "text_ar": "يكون الالتزام معلقاً على شرط إذا جعل وجوده رهيناً بأمر مستقبل غير محقق الوقوع.",
+            "keywords": [
+                "condition",
+                "شرط",
+                "événement futur",
+                "حدث مستقبلي"
+            ]
+        },
+        {
+            "number": 117,
+            "text_fr": "Le terme est un événement futur et certain dont les parties font dépendre l'exigibilité ou l'extinction de l'obligation.",
+            "text_ar": "الأجل هو حدث مستقبلي محقق الوقوع يجعله الطرفان رهيناً لاستحقاق الالتزام أو انقضائه.",
+            "keywords": [
+                "terme",
+                "أجل",
+                "exigibilité",
+                "استحقاق",
+                "extinction",
+                "انقضاء"
+            ]
+        },
+        {
+            "number": 189,
+            "text_fr": "Le débiteur d'une obligation de faire encourt une indemnité, à défaut d'exécution.",
+            "text_ar": "يتحمل المدين بالتزام بفعل تعويضاً في حالة عدم التنفيذ.",
+            "keywords": [
+                "obligation de faire",
+                "التزام بفعل",
+                "inexécution",
+                "عدم تنفيذ",
+                "indemnité",
+                "تعويض"
+            ]
+        },
+        {
+            "number": 230,
+            "text_fr": "Les obligations contractuelles valablement formées tiennent lieu de loi à ceux qui les ont faites.",
+            "text_ar": "الالتزامات التعاقدية المنشأة على وجه صحيح تقوم مقام القانون بالنسبة إلى منشئيها.",
+            "keywords": [
+                "contrat",
+                "عقد",
+                "loi",
+                "قانون",
+                "force obligatoire",
+                "قوة ملزمة"
+            ]
+        },
+        {
+            "number": 231,
+            "text_fr": "Tout engagement doit être exécuté de bonne foi.",
+            "text_ar": "كل التزام يجب تنفيذه بحسن نية.",
+            "keywords": [
+                "bonne foi",
+                "حسن النية",
+                "exécution",
+                "تنفيذ"
+            ]
+        },
+        {
+            "number": 232,
+            "text_fr": "La convention oblige non seulement à ce qui y est exprimé, mais encore à toutes les suites que la loi, l'usage ou l'équité donnent à l'obligation d'après sa nature.",
+            "text_ar": "الاتفاق لا يلزم بما هو مصرح به فيه فقط، بل أيضاً بجميع ما يترتب عليه حسب القانون والعرف والإنصاف بحسب طبيعة الالتزام.",
+            "keywords": [
+                "convention",
+                "اتفاق",
+                "loi",
+                "قانون",
+                "usage",
+                "عرف",
+                "équité",
+                "إنصاف"
+            ]
+        },
+        {
+            "number": 234,
+            "text_fr": "Les contractants peuvent établir les clauses qu'ils jugent à propos, pourvu qu'elles ne soient pas contraires à l'ordre public.",
+            "text_ar": "للمتعاقدين أن يضعوا الشروط التي يرونها مناسبة، بشرط ألا تكون مخالفة للنظام العام.",
+            "keywords": [
+                "liberté contractuelle",
+                "حرية التعاقد",
+                "clauses",
+                "شروط",
+                "ordre public",
+                "نظام عام"
+            ]
+        },
+        {
+            "number": 259,
+            "text_fr": "L'inexécution de l'obligation permet au créancier de demander la résolution du contrat.",
+            "text_ar": "يخول عدم تنفيذ الالتزام للدائن أن يطلب فسخ العقد.",
+            "keywords": [
+                "inexécution",
+                "عدم تنفيذ",
+                "résolution",
+                "فسخ",
+                "créancier",
+                "دائن"
+            ]
+        },
+        {
+            "number": 260,
+            "text_fr": "La résolution du contrat ne peut être prononcée que par le juge.",
+            "text_ar": "لا يمكن الحكم بفسخ العقد إلا من طرف القاضي.",
+            "keywords": [
+                "résolution",
+                "فسخ",
+                "juge",
+                "قاضي",
+                "judiciaire",
+                "قضائي"
+            ]
+        },
+        {
+            "number": 261,
+            "text_fr": "Le contrat résolu est considéré comme n'ayant jamais existé.",
+            "text_ar": "العقد المفسوخ يعتبر كأن لم يكن.",
+            "keywords": [
+                "résolution",
+                "فسخ",
+                "effet rétroactif",
+                "أثر رجعي"
+            ]
+        },
+        {
+            "number": 264,
+            "text_fr": "Les dommages-intérêts sont dus, soit à raison de l'inexécution de l'obligation, soit à raison du retard dans l'exécution.",
+            "text_ar": "استحقاق التعويض يترتب إما عن عدم الوفاء بالالتزام، وإما عن التأخر في الوفاء به.",
+            "keywords": [
+                "dommages-intérêts",
+                "تعويض",
+                "inexécution",
+                "عدم وفاء",
+                "retard",
+                "تأخر"
+            ]
+        },
+        {
+            "number": 268,
+            "text_fr": "Les dommages-intérêts comprennent la perte éprouvée et le gain manqué.",
+            "text_ar": "يشمل التعويض ما لحق الدائن من خسارة وما فاته من كسب.",
+            "keywords": [
+                "perte",
+                "خسارة",
+                "gain manqué",
+                "كسب فائت",
+                "dommages",
+                "أضرار"
+            ]
+        },
+        {
+            "number": 269,
+            "text_fr": "Le juge peut réduire le montant des dommages-intérêts ou même n'en pas accorder si le créancier, par sa faute, a contribué à produire le dommage.",
+            "text_ar": "للقاضي أن يخفض مبلغ التعويض أو لا يحكم به أصلاً إذا كان الدائن، بخطئه، قد ساهم في إحداث الضرر.",
+            "keywords": [
+                "réduction",
+                "تخفيض",
+                "faute victime",
+                "خطأ المتضرر"
+            ]
+        },
+        {
+            "number": 311,
+            "text_fr": "Le paiement est la remise de la chose due au créancier.",
+            "text_ar": "الوفاء هو تسليم الشيء المستحق للدائن.",
+            "keywords": [
+                "paiement",
+                "وفاء",
+                "chose due",
+                "شيء مستحق",
+                "créancier",
+                "دائن"
+            ]
+        },
+        {
+            "number": 312,
+            "text_fr": "Le paiement doit être fait au créancier ou à son représentant légitimement autorisé.",
+            "text_ar": "يجب أن يتم الوفاء للدائن أو لمن يمثله قانوناً.",
+            "keywords": [
+                "paiement",
+                "وفاء",
+                "créancier",
+                "دائن",
+                "représentant",
+                "ممثل"
+            ]
+        },
+        {
+            "number": 330,
+            "text_fr": "Le créancier qui reçoit un paiement partiel est tenu d'imputer ce paiement d'abord sur les intérêts, ensuite sur le capital.",
+            "text_ar": "الدائن الذي يتلقى وفاءً جزئياً ملزم بأن يحتسبه أولاً على الفوائد ثم على الأصل.",
+            "keywords": [
+                "imputation",
+                "احتساب",
+                "intérêts",
+                "فوائد",
+                "capital",
+                "أصل"
+            ]
+        },
+        {
+            "number": 345,
+            "text_fr": "La compensation est l'extinction simultanée de deux obligations de même espèce existant entre deux personnes réciproquement créancières et débitrices l'une de l'autre.",
+            "text_ar": "المقاصة هي انقضاء التزامين من نفس النوع بين شخصين كل منهما دائن ومدين للآخر في وقت واحد.",
+            "keywords": [
+                "compensation",
+                "مقاصة",
+                "extinction",
+                "انقضاء",
+                "dette",
+                "دين"
+            ]
+        },
+        {
+            "number": 371,
+            "text_fr": "Les obligations se prescrivent par quinze ans dans tous les cas où la loi n'a pas fixé un délai plus court.",
+            "text_ar": "تتقادم الالتزامات بمرور خمس عشرة سنة في جميع الحالات التي لم يحدد فيها القانون أجلاً أقصر.",
+            "keywords": [
+                "prescription",
+                "تقادم",
+                "15 ans",
+                "خمس عشرة سنة",
+                "délai",
+                "أجل"
+            ]
+        },
+        {
+            "number": 387,
+            "text_fr": "La preuve de l'obligation résulte des actes authentiques, des actes sous-seing privé, de la correspondance, des livres des parties, de l'aveu, du serment et des témoins.",
+            "text_ar": "تثبت الالتزامات بالعقود الرسمية والعقود العرفية والمراسلات ودفاتر الطرفين والإقرار واليمين وشهادة الشهود.",
+            "keywords": [
+                "preuve",
+                "إثبات",
+                "actes authentiques",
+                "عقود رسمية",
+                "témoins",
+                "شهود"
+            ]
+        },
+        {
+            "number": 392,
+            "text_fr": "Pour les actes contenant un montant ou une valeur supérieure à dix mille dirhams, la preuve testimoniale n'est pas admise.",
+            "text_ar": "لا تقبل شهادة الشهود لإثبات الأعمال التي تفوق قيمتها عشرة آلاف درهم.",
+            "keywords": [
+                "preuve testimoniale",
+                "شهادة",
+                "montant",
+                "مبلغ",
+                "10000 dirhams"
+            ]
+        },
+        {
+            "number": 401,
+            "text_fr": "L'aveu judiciaire fait pleine foi contre celui qui l'a fait.",
+            "text_ar": "الإقرار القضائي حجة كاملة على من صدر منه.",
+            "keywords": [
+                "aveu",
+                "إقرار",
+                "judiciaire",
+                "قضائي",
+                "pleine foi",
+                "حجة كاملة"
+            ]
+        },
+        {
+            "number": 404,
+            "text_fr": "Le serment décisoire peut être déféré sur quelque espèce de contestation que ce soit.",
+            "text_ar": "يمكن توجيه اليمين الحاسمة في أي نزاع كان.",
+            "keywords": [
+                "serment",
+                "يمين",
+                "décisoire",
+                "حاسمة",
+                "contestation",
+                "نزاع"
+            ]
+        },
+        {
+            "number": 478,
+            "text_fr": "La vente est un contrat par lequel l'une des parties transmet la propriété d'une chose ou d'un droit à l'autre contractant, contre un prix.",
+            "text_ar": "البيع عقد بمقتضاه ينقل أحد المتعاقدين للآخر ملكية شيء أو حق في مقابل ثمن.",
+            "keywords": [
+                "vente",
+                "بيع",
+                "propriété",
+                "ملكية",
+                "prix",
+                "ثمن"
+            ]
+        },
+        {
+            "number": 479,
+            "text_fr": "La vente est parfaite entre les parties dès qu'il y a consentement sur la chose et le prix.",
+            "text_ar": "يتم البيع بين الطرفين بمجرد التراضي على الشيء والثمن.",
+            "keywords": [
+                "consentement",
+                "تراضي",
+                "chose",
+                "شيء",
+                "prix",
+                "ثمن"
+            ]
+        },
+        {
+            "number": 489,
+            "text_fr": "Le vendeur a deux obligations principales : la délivrance de la chose vendue et la garantie.",
+            "text_ar": "يقع على البائع التزامان أساسيان: تسليم المبيع والضمان.",
+            "keywords": [
+                "délivrance",
+                "تسليم",
+                "garantie",
+                "ضمان",
+                "vendeur",
+                "بائع"
+            ]
+        },
+        {
+            "number": 528,
+            "text_fr": "Le vendeur est tenu de la garantie à raison des défauts cachés de la chose vendue qui la rendent impropre à l'usage.",
+            "text_ar": "يضمن البائع العيوب الخفية في المبيع التي تجعله غير صالح للاستعمال.",
+            "keywords": [
+                "garantie",
+                "ضمان",
+                "défauts cachés",
+                "عيوب خفية",
+                "vice",
+                "عيب"
+            ]
+        },
+        {
+            "number": 532,
+            "text_fr": "S'il y a des défauts cachés dans la chose vendue, l'acheteur peut à son choix rendre la chose et se faire restituer le prix ou garder la chose et demander une réduction du prix.",
+            "text_ar": "إذا كان بالمبيع عيوب خفية، فللمشتري الخيار بين رد الشيء واسترجاع الثمن أو الاحتفاظ به مع المطالبة بتخفيض الثمن.",
+            "keywords": [
+                "option",
+                "خيار",
+                "résolution",
+                "فسخ",
+                "réduction prix",
+                "تخفيض الثمن"
+            ]
+        },
+        {
+            "number": 556,
+            "text_fr": "L'acheteur d'un immeuble peut exercer le retrait à l'égard de tout acquéreur ultérieur.",
+            "text_ar": "لمشتري العقار أن يمارس حق الشفعة ضد كل مشتر لاحق.",
+            "keywords": [
+                "retrait",
+                "شفعة",
+                "immeuble",
+                "عقار",
+                "acquéreur",
+                "مشتر"
+            ]
+        },
+        {
+            "number": 620,
+            "text_fr": "Le louage de choses est un contrat par lequel l'une des parties cède à l'autre la jouissance d'une chose mobilière ou immobilière, pendant un certain temps, moyennant un prix déterminé.",
+            "text_ar": "كراء الأشياء عقد يمنح بمقتضاه أحد المتعاقدين للآخر منفعة منقول أو عقار، خلال مدة معينة، في مقابل أجرة محددة.",
+            "keywords": [
+                "louage",
+                "كراء",
+                "bail",
+                "إيجار",
+                "jouissance",
+                "منفعة",
+                "prix",
+                "أجرة"
+            ]
+        },
+        {
+            "number": 636,
+            "text_fr": "Le bailleur est tenu de délivrer la chose en bon état et de l'entretenir en état de servir à l'usage pour lequel elle est louée.",
+            "text_ar": "يلتزم المكري بتسليم الشيء في حالة جيدة وصيانته ليصلح للاستعمال المؤجر من أجله.",
+            "keywords": [
+                "bailleur",
+                "مكري",
+                "entretien",
+                "صيانة",
+                "état",
+                "حالة"
+            ]
+        },
+        {
+            "number": 640,
+            "text_fr": "Le preneur doit user de la chose louée en bon père de famille.",
+            "text_ar": "يجب على المكتري أن يستعمل العين المكتراة استعمال الرجل الحريص.",
+            "keywords": [
+                "preneur",
+                "مكتري",
+                "usage",
+                "استعمال",
+                "bon père de famille",
+                "رجل حريص"
+            ]
+        },
+        {
+            "number": 659,
+            "text_fr": "Le locataire peut sous-louer ou céder son bail si cela n'a pas été interdit par le contrat.",
+            "text_ar": "يمكن للمكتري أن يوجر من الباطن أو يتنازل عن الكراء إذا لم يمنع من ذلك بالعقد.",
+            "keywords": [
+                "sous-location",
+                "كراء من الباطن",
+                "cession",
+                "تنازل",
+                "bail",
+                "كراء"
+            ]
+        },
+        {
+            "number": 687,
+            "text_fr": "Le louage d'ouvrage ou de services est le contrat par lequel l'une des parties s'engage à faire quelque chose pour l'autre, moyennant un prix convenu.",
+            "text_ar": "عقد إيجار الخدمات هو العقد الذي يلتزم بموجبه أحد الطرفين بأداء عمل للطرف الآخر مقابل أجر متفق عليه.",
+            "keywords": [
+                "louage d'ouvrage",
+                "إيجار خدمات",
+                "travail",
+                "عمل",
+                "prix",
+                "أجر"
+            ]
+        },
+        {
+            "number": 745,
+            "text_fr": "L'architecte ou l'entrepreneur est responsable pendant dix ans de la ruine de l'édifice qu'il a construit ou dirigé.",
+            "text_ar": "يكون المهندس المعماري أو المقاول مسؤولاً لمدة عشر سنوات عن تهدم البناء الذي شيده أو أشرف عليه.",
+            "keywords": [
+                "architecte",
+                "مهندس",
+                "entrepreneur",
+                "مقاول",
+                "responsabilité décennale",
+                "ضمان عشري",
+                "10 ans"
+            ]
+        },
+        {
+            "number": 769,
+            "text_fr": "Le mandat est le contrat par lequel une personne charge une autre d'accomplir un acte juridique pour son compte et en son nom.",
+            "text_ar": "الوكالة عقد يكلف بموجبه شخص شخصاً آخر بإنجاز عمل قانوني لحسابه وباسمه.",
+            "keywords": [
+                "mandat",
+                "وكالة",
+                "mandataire",
+                "وكيل",
+                "représentation",
+                "تمثيل"
+            ]
+        },
+        {
+            "number": 779,
+            "text_fr": "Le mandataire est tenu d'exécuter exactement la mission qui lui est confiée.",
+            "text_ar": "يلتزم الوكيل بتنفيذ المهمة الموكولة إليه بدقة.",
+            "keywords": [
+                "mandataire",
+                "وكيل",
+                "mission",
+                "مهمة",
+                "exécution",
+                "تنفيذ"
+            ]
+        },
+        {
+            "number": 780,
+            "text_fr": "Le mandataire répond des fautes qu'il commet dans l'exécution de son mandat.",
+            "text_ar": "يسأل الوكيل عن الأخطاء التي يرتكبها في تنفيذ وكالته.",
+            "keywords": [
+                "responsabilité",
+                "مسؤولية",
+                "fautes",
+                "أخطاء",
+                "mandat",
+                "وكالة"
+            ]
+        },
+        {
+            "number": 793,
+            "text_fr": "Le prêt de consommation est le contrat par lequel l'une des parties livre à l'autre des choses qui se consomment par l'usage, à charge pour le preneur de lui rendre autant de même espèce et qualité.",
+            "text_ar": "القرض الاستهلاكي هو العقد الذي يسلم بموجبه أحد الطرفين للآخر أشياء قابلة للاستهلاك بالاستعمال، على أن يرد له المقترض مثلها نوعاً وجودة.",
+            "keywords": [
+                "prêt",
+                "قرض",
+                "consommation",
+                "استهلاك",
+                "restitution",
+                "رد"
+            ]
+        },
+        {
+            "number": 808,
+            "text_fr": "Le dépôt est le contrat par lequel une personne remet une chose à une autre qui s'oblige à la garder et à la restituer.",
+            "text_ar": "الوديعة عقد يسلم بموجبه شخص شيئاً لآخر يلتزم بحفظه ورده.",
+            "keywords": [
+                "dépôt",
+                "وديعة",
+                "garde",
+                "حفظ",
+                "restitution",
+                "رد"
+            ]
+        },
+        {
+            "number": 827,
+            "text_fr": "Le gage est un contrat par lequel le débiteur ou un tiers agissant dans son intérêt remet une chose mobilière au créancier, pour sûreté de sa créance.",
+            "text_ar": "الرهن الحيازي عقد يسلم بموجبه المدين أو طرف ثالث يتصرف لمصلحته شيئاً منقولاً للدائن ضماناً لدينه.",
+            "keywords": [
+                "gage",
+                "رهن حيازي",
+                "sûreté",
+                "ضمان",
+                "créance",
+                "دين"
+            ]
+        },
+        {
+            "number": 870,
+            "text_fr": "L'hypothèque est l'affectation d'un immeuble en garantie du paiement d'une obligation.",
+            "text_ar": "الرهن الرسمي هو تخصيص عقار لضمان الوفاء بالتزام.",
+            "keywords": [
+                "hypothèque",
+                "رهن رسمي",
+                "immeuble",
+                "عقار",
+                "garantie",
+                "ضمان"
+            ]
+        },
+        {
+            "number": 875,
+            "text_fr": "Le cautionnement est un contrat par lequel une personne s'oblige envers le créancier à satisfaire à l'obligation du débiteur, si celui-ci n'y satisfait pas lui-même.",
+            "text_ar": "الكفالة عقد يلتزم بموجبه شخص تجاه الدائن بأداء التزام المدين إذا لم يفِ هذا الأخير بنفسه.",
+            "keywords": [
+                "cautionnement",
+                "كفالة",
+                "caution",
+                "كفيل",
+                "débiteur",
+                "مدين"
+            ]
+        },
+        {
+            "number": 958,
+            "text_fr": "Le contrat d'assurance est celui par lequel l'assureur s'engage, moyennant une prime, à indemniser l'assuré d'un préjudice éventuel.",
+            "text_ar": "عقد التأمين هو العقد الذي يلتزم بموجبه المؤمن، مقابل قسط، بتعويض المؤمن له عن ضرر محتمل.",
+            "keywords": [
+                "assurance",
+                "تأمين",
+                "prime",
+                "قسط",
+                "indemnité",
+                "تعويض"
+            ]
+        },
+        {
+            "number": 982,
+            "text_fr": "Le mandat est un contrat par lequel une personne charge une autre d'accomplir un acte licite pour le compte de la constituante.",
+            "text_ar": "الوكالة عقد بمقتضاه يكلف شخص شخصاً آخر بإجراء عمل مشروع لحسابه.",
+            "keywords": [
+                "mandat",
+                "وكالة",
+                "contrat",
+                "عقد",
+                "acte licite",
+                "عمل مشروع"
+            ]
+        },
+        {
+            "number": 1098,
+            "text_fr": "Le contrat de société est celui par lequel deux ou plusieurs personnes mettent en commun soit leurs biens, soit leur travail, ou les deux à la fois, en vue de partager le bénéfice qui pourra en résulter.",
+            "text_ar": "عقد الشركة هو العقد الذي يضم بموجبه شخصان أو أكثر أموالهم أو أعمالهم أو كليهما معاً بهدف اقتسام الربح الذي قد ينتج عنها.",
+            "keywords": [
+                "société",
+                "شركة",
+                "bénéfice",
+                "ربح",
+                "associés",
+                "شركاء"
+            ]
+        },
+        {
+            "number": 1106,
+            "text_fr": "Les associés sont solidairement et indéfiniment tenus des dettes de la société.",
+            "text_ar": "الشركاء ملتزمون بالتضامن وبصورة غير محدودة بديون الشركة.",
+            "keywords": [
+                "solidarité",
+                "تضامن",
+                "dettes",
+                "ديون",
+                "responsabilité",
+                "مسؤولية"
+            ]
+        }
+    ]
+}

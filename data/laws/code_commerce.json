@@ -1,0 +1,665 @@
+{
+    "code_id": "code_commerce",
+    "code_name_fr": "Code de Commerce",
+    "code_name_ar": "مدونة التجارة",
+    "total_articles": 734,
+    "source": "Loi n° 15-95 formant Code de Commerce",
+    "articles": [
+        {
+            "number": 1,
+            "text_fr": "Le présent code régit les actes de commerce et les commerçants.",
+            "text_ar": "ينظم هذا القانون الأعمال التجارية والتجار.",
+            "keywords": [
+                "commerce",
+                "تجارة",
+                "commerçant",
+                "تاجر"
+            ]
+        },
+        {
+            "number": 2,
+            "text_fr": "Sont considérés comme actes de commerce par nature : l'achat de meubles corporels ou incorporels en vue de les revendre, la location de meubles en vue de les sous-louer, l'achat de biens immeubles en vue de les revendre.",
+            "text_ar": "تعتبر أعمالاً تجارية بطبيعتها: شراء المنقولات المادية أو المعنوية بقصد بيعها، كراء المنقولات بقصد إعادة كرائها، شراء العقارات بقصد بيعها.",
+            "keywords": [
+                "actes commerce",
+                "أعمال تجارية",
+                "achat revente",
+                "شراء وبيع"
+            ]
+        },
+        {
+            "number": 3,
+            "text_fr": "Sont également considérés comme actes de commerce : toute opération portant sur les navires et les aéronefs, toute opération de banque, de change, de courtage, d'assurance.",
+            "text_ar": "تعتبر أيضاً أعمالاً تجارية: كل عملية تتعلق بالسفن والطائرات، كل عملية بنكية أو صرف أو سمسرة أو تأمين.",
+            "keywords": [
+                "banque",
+                "بنك",
+                "assurance",
+                "تأمين",
+                "courtage",
+                "سمسرة"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "Sont considérés comme actes de commerce par la forme : la lettre de change, le billet à ordre signé par un commerçant, les sociétés commerciales.",
+            "text_ar": "تعتبر أعمالاً تجارية بحكم شكلها: الكمبيالة، السند لأمر الموقع من تاجر، الشركات التجارية.",
+            "keywords": [
+                "lettre de change",
+                "كمبيالة",
+                "billet à ordre",
+                "سند لأمر"
+            ]
+        },
+        {
+            "number": 5,
+            "text_fr": "Les actes accomplis par un commerçant à l'occasion de son commerce sont réputés commerciaux sauf preuve contraire.",
+            "text_ar": "تعتبر الأعمال التي يقوم بها التاجر بمناسبة تجارته أعمالاً تجارية ما لم يثبت العكس.",
+            "keywords": [
+                "présomption",
+                "قرينة",
+                "actes commerciaux",
+                "أعمال تجارية"
+            ]
+        },
+        {
+            "number": 6,
+            "text_fr": "La qualité de commerçant s'acquiert par l'exercice habituel ou professionnel des activités suivantes : achat de meubles, activités industrielles, transport, banque, assurances.",
+            "text_ar": "تكتسب صفة تاجر بالممارسة الاعتيادية أو الاحترافية للأنشطة التالية: شراء المنقولات، الأنشطة الصناعية، النقل، البنك، التأمين.",
+            "keywords": [
+                "commerçant",
+                "تاجر",
+                "activité",
+                "نشاط"
+            ]
+        },
+        {
+            "number": 7,
+            "text_fr": "Pour exercer une activité commerciale, une personne doit avoir la capacité légale.",
+            "text_ar": "لممارسة نشاط تجاري، يجب أن يتوفر الشخص على الأهلية القانونية.",
+            "keywords": [
+                "capacité",
+                "أهلية",
+                "légale",
+                "قانونية"
+            ]
+        },
+        {
+            "number": 8,
+            "text_fr": "L'exercice d'une activité commerciale est interdit aux mineurs non émancipés.",
+            "text_ar": "يمنع على القاصرين غير المأذون لهم ممارسة نشاط تجاري.",
+            "keywords": [
+                "mineur",
+                "قاصر",
+                "interdit",
+                "ممنوع"
+            ]
+        },
+        {
+            "number": 10,
+            "text_fr": "Le tuteur légal peut être autorisé par le juge à continuer, pour le compte du mineur, le fonds de commerce qu'il a recueilli par succession.",
+            "text_ar": "يمكن للولي القانوني أن يأذن له القاضي بمواصلة الأصل التجاري لحساب القاصر الذي آل إليه بالإرث.",
+            "keywords": [
+                "tuteur",
+                "ولي",
+                "mineur",
+                "قاصر",
+                "fonds commerce",
+                "أصل تجاري"
+            ]
+        },
+        {
+            "number": 15,
+            "text_fr": "Est réputé commerçant tout étranger qui exerce habituellement une activité commerciale au Maroc.",
+            "text_ar": "يعتبر تاجراً كل أجنبي يمارس بصفة اعتيادية نشاطاً تجارياً بالمغرب.",
+            "keywords": [
+                "étranger",
+                "أجنبي",
+                "commerce",
+                "تجارة"
+            ]
+        },
+        {
+            "number": 19,
+            "text_fr": "Tout commerçant, pour les besoins de son commerce, doit tenir une comptabilité.",
+            "text_ar": "يجب على كل تاجر لحاجات تجارته أن يمسك محاسبة.",
+            "keywords": [
+                "comptabilité",
+                "محاسبة",
+                "obligation",
+                "التزام"
+            ]
+        },
+        {
+            "number": 20,
+            "text_fr": "Les livres comptables et documents comptables doivent être conservés pendant dix ans.",
+            "text_ar": "يجب الاحتفاظ بالدفاتر والوثائق المحاسبية لمدة عشر سنوات.",
+            "keywords": [
+                "conservation",
+                "حفظ",
+                "10 ans",
+                "عشر سنوات",
+                "documents",
+                "وثائق"
+            ]
+        },
+        {
+            "number": 37,
+            "text_fr": "Tout commerçant doit, dans les trois mois de son immatriculation au registre du commerce, déposer au greffe du tribunal le modèle de sa signature.",
+            "text_ar": "يجب على كل تاجر، خلال ثلاثة أشهر من تقييده في السجل التجاري، أن يودع بكتابة الضبط نموذجاً لتوقيعه.",
+            "keywords": [
+                "signature",
+                "توقيع",
+                "registre commerce",
+                "سجل تجاري"
+            ]
+        },
+        {
+            "number": 38,
+            "text_fr": "L'immatriculation au registre du commerce fait présumer la qualité de commerçant.",
+            "text_ar": "التقييد في السجل التجاري يقيم قرينة على صفة التاجر.",
+            "keywords": [
+                "immatriculation",
+                "تقييد",
+                "présomption",
+                "قرينة"
+            ]
+        },
+        {
+            "number": 79,
+            "text_fr": "Le fonds de commerce comprend obligatoirement la clientèle et l'achalandage.",
+            "text_ar": "يشتمل الأصل التجاري إلزامياً على الزبناء والسمعة التجارية.",
+            "keywords": [
+                "fonds commerce",
+                "أصل تجاري",
+                "clientèle",
+                "زبناء",
+                "achalandage",
+                "سمعة"
+            ]
+        },
+        {
+            "number": 80,
+            "text_fr": "Le fonds de commerce peut comprendre : le nom commercial, l'enseigne, le droit au bail, le mobilier commercial, le matériel, l'outillage, les marchandises, les brevets d'invention, les licences, les marques de fabrique.",
+            "text_ar": "يمكن أن يشمل الأصل التجاري: الاسم التجاري، العنوان التجاري، الحق في الكراء، الأثاث التجاري، المعدات، البضائع، براءات الاختراع، الرخص، علامات الصنع.",
+            "keywords": [
+                "éléments",
+                "عناصر",
+                "nom commercial",
+                "اسم تجاري",
+                "marque",
+                "علامة"
+            ]
+        },
+        {
+            "number": 81,
+            "text_fr": "La vente du fonds de commerce doit être constatée par un acte écrit.",
+            "text_ar": "يجب أن يثبت بيع الأصل التجاري بعقد كتابي.",
+            "keywords": [
+                "vente",
+                "بيع",
+                "écrit",
+                "كتابي",
+                "fonds commerce",
+                "أصل تجاري"
+            ]
+        },
+        {
+            "number": 82,
+            "text_fr": "L'acte de vente doit mentionner : le nom du vendeur et son titre, l'origine de la propriété du fonds, le chiffre d'affaires réalisé, les bénéfices commerciaux, le bail, les privilèges et nantissements.",
+            "text_ar": "يجب أن يتضمن عقد البيع: اسم البائع وصفته، أصل ملكية الأصل التجاري، رقم المعاملات المحقق، الأرباح التجارية، عقد الكراء، الامتيازات والرهون.",
+            "keywords": [
+                "mentions obligatoires",
+                "بيانات إلزامية",
+                "chiffre affaires",
+                "رقم معاملات"
+            ]
+        },
+        {
+            "number": 106,
+            "text_fr": "Le nantissement du fonds de commerce doit être inscrit au registre du commerce dans un délai de quinze jours.",
+            "text_ar": "يجب تقييد رهن الأصل التجاري في السجل التجاري خلال أجل خمسة عشر يوماً.",
+            "keywords": [
+                "nantissement",
+                "رهن",
+                "inscription",
+                "تقييد",
+                "15 jours"
+            ]
+        },
+        {
+            "number": 112,
+            "text_fr": "Le propriétaire du fonds nanti ne peut déplacer le fonds sans le consentement du créancier nanti.",
+            "text_ar": "لا يجوز لمالك الأصل المرهون نقله دون موافقة الدائن المرتهن.",
+            "keywords": [
+                "déplacement",
+                "نقل",
+                "consentement",
+                "موافقة"
+            ]
+        },
+        {
+            "number": 114,
+            "text_fr": "Le bail des locaux affectés à un fonds de commerce confère au locataire un droit au renouvellement.",
+            "text_ar": "يخول كراء المحلات المخصصة للأصل التجاري للمكتري حقاً في التجديد.",
+            "keywords": [
+                "bail commercial",
+                "كراء تجاري",
+                "droit renouvellement",
+                "حق التجديد"
+            ]
+        },
+        {
+            "number": 115,
+            "text_fr": "Pour bénéficier du droit au renouvellement, le locataire doit justifier d'une exploitation du fonds pendant au moins deux ans.",
+            "text_ar": "للاستفادة من حق التجديد، يجب على المكتري أن يثبت استغلال الأصل التجاري لمدة سنتين على الأقل.",
+            "keywords": [
+                "exploitation",
+                "استغلال",
+                "2 ans",
+                "سنتان"
+            ]
+        },
+        {
+            "number": 131,
+            "text_fr": "À défaut d'accord sur le loyer du bail renouvelé, celui-ci est fixé par le tribunal.",
+            "text_ar": "في غياب الاتفاق على وجيبة الكراء المجدد، تحدده المحكمة.",
+            "keywords": [
+                "loyer",
+                "كراء",
+                "tribunal",
+                "محكمة",
+                "fixation",
+                "تحديد"
+            ]
+        },
+        {
+            "number": 142,
+            "text_fr": "Le bailleur qui refuse le renouvellement du bail sans justifier d'un motif grave et légitime doit payer une indemnité d'éviction.",
+            "text_ar": "يلتزم المكري الذي يرفض تجديد الكراء دون تقديم سبب خطير ومشروع بأداء تعويض عن الإفراغ.",
+            "keywords": [
+                "indemnité éviction",
+                "تعويض الإفراغ",
+                "refus",
+                "رفض"
+            ]
+        },
+        {
+            "number": 165,
+            "text_fr": "Le contrat de gérance libre d'un fonds de commerce est le contrat par lequel le propriétaire concède à un gérant le droit d'exploiter librement ce fonds à ses risques et périls.",
+            "text_ar": "عقد التسيير الحر للأصل التجاري هو العقد الذي بموجبه يمنح المالك للمسير حق استغلال ذلك الأصل بحرية على مسؤوليته.",
+            "keywords": [
+                "gérance libre",
+                "تسيير حر",
+                "propriétaire",
+                "مالك",
+                "gérant",
+                "مسير"
+            ]
+        },
+        {
+            "number": 166,
+            "text_fr": "Le propriétaire ou l'exploitant qui concède la gérance libre d'un fonds de commerce doit avoir été commerçant pendant deux ans au moins ou avoir exercé pendant la même durée les fonctions de gérant.",
+            "text_ar": "يجب أن يكون المالك أو المستغل الذي يمنح التسيير الحر للأصل التجاري قد مارس التجارة لمدة سنتين على الأقل أو شغل وظائف المسير لنفس المدة.",
+            "keywords": [
+                "condition",
+                "شرط",
+                "2 ans",
+                "سنتان",
+                "expérience",
+                "تجربة"
+            ]
+        },
+        {
+            "number": 176,
+            "text_fr": "Le représentant de commerce est la personne qui, sans être liée par un contrat de travail, prospecte et effectue des ventes pour le compte d'un ou plusieurs commerçants.",
+            "text_ar": "الممثل التجاري هو الشخص الذي، دون أن يكون مرتبطاً بعقد شغل، يبحث عن الزبناء ويقوم بالمبيعات لحساب تاجر أو أكثر.",
+            "keywords": [
+                "représentant",
+                "ممثل",
+                "ventes",
+                "مبيعات",
+                "commission",
+                "عمولة"
+            ]
+        },
+        {
+            "number": 239,
+            "text_fr": "Le chèque est un écrit par lequel le tireur donne l'ordre au tiré de payer une somme déterminée au bénéficiaire.",
+            "text_ar": "الشيك محرر يأمر بمقتضاه الساحب المسحوب عليه بأداء مبلغ معين للمستفيد.",
+            "keywords": [
+                "chèque",
+                "شيك",
+                "paiement",
+                "أداء",
+                "tireur",
+                "ساحب"
+            ]
+        },
+        {
+            "number": 240,
+            "text_fr": "Le chèque doit contenir : la dénomination 'chèque', le mandat de payer une somme déterminée, le nom du tiré, le lieu de paiement, la date et le lieu de création, la signature du tireur.",
+            "text_ar": "يجب أن يتضمن الشيك: تسمية 'شيك'، الأمر بأداء مبلغ معين، اسم المسحوب عليه، مكان الأداء، تاريخ ومكان الإنشاء، توقيع الساحب.",
+            "keywords": [
+                "mentions",
+                "بيانات",
+                "obligatoires",
+                "إلزامية",
+                "signature",
+                "توقيع"
+            ]
+        },
+        {
+            "number": 241,
+            "text_fr": "Le chèque ne peut être tiré que sur un établissement bancaire.",
+            "text_ar": "لا يجوز سحب شيك إلا على مؤسسة بنكية.",
+            "keywords": [
+                "banque",
+                "بنك",
+                "chèque",
+                "شيك",
+                "établissement",
+                "مؤسسة"
+            ]
+        },
+        {
+            "number": 242,
+            "text_fr": "Le chèque est payable à vue. Toute mention contraire est réputée non écrite.",
+            "text_ar": "الشيك مستحق الأداء لدى الاطلاع. وكل شرط مخالف يعتبر كأن لم يكن.",
+            "keywords": [
+                "à vue",
+                "لدى الاطلاع",
+                "payable",
+                "مستحق"
+            ]
+        },
+        {
+            "number": 247,
+            "text_fr": "Le chèque peut être payable à une personne dénommée, à une personne dénommée ou à son ordre, au porteur.",
+            "text_ar": "يمكن أن يكون الشيك مستحق الأداء لشخص مسمى، أو لشخص مسمى أو لأمره، أو للحامل.",
+            "keywords": [
+                "bénéficiaire",
+                "مستفيد",
+                "ordre",
+                "أمر",
+                "porteur",
+                "حامل"
+            ]
+        },
+        {
+            "number": 267,
+            "text_fr": "Le chèque doit être présenté au paiement dans un délai de vingt jours s'il est émis et payable au Maroc.",
+            "text_ar": "يجب تقديم الشيك للأداء خلال عشرين يوماً إذا كان صادراً ومستحق الأداء بالمغرب.",
+            "keywords": [
+                "présentation",
+                "تقديم",
+                "délai",
+                "أجل",
+                "20 jours",
+                "عشرون يوما"
+            ]
+        },
+        {
+            "number": 268,
+            "text_fr": "Le délai est de soixante jours pour le chèque émis hors du Maroc et payable au Maroc.",
+            "text_ar": "يكون الأجل ستين يوماً إذا كان الشيك صادراً خارج المغرب ومستحق الأداء بالمغرب.",
+            "keywords": [
+                "60 jours",
+                "ستون يوما",
+                "étranger",
+                "خارج"
+            ]
+        },
+        {
+            "number": 271,
+            "text_fr": "Le tiré peut payer même après l'expiration du délai de présentation.",
+            "text_ar": "يحق للمسحوب عليه الأداء حتى بعد انقضاء أجل التقديم.",
+            "keywords": [
+                "paiement tardif",
+                "أداء متأخر",
+                "après délai",
+                "بعد الأجل"
+            ]
+        },
+        {
+            "number": 283,
+            "text_fr": "Le tireur qui émet un chèque sans provision préalable, suffisante et disponible commet une infraction.",
+            "text_ar": "يرتكب مخالفة الساحب الذي يصدر شيكاً دون مؤونة سابقة وكافية وقابلة للتصرف.",
+            "keywords": [
+                "chèque sans provision",
+                "شيك بدون رصيد",
+                "infraction",
+                "مخالفة"
+            ]
+        },
+        {
+            "number": 305,
+            "text_fr": "La lettre de change est un acte de commerce par la forme.",
+            "text_ar": "تعتبر الكمبيالة عملاً تجارياً من حيث الشكل.",
+            "keywords": [
+                "lettre de change",
+                "كمبيالة",
+                "acte commerce",
+                "عمل تجاري"
+            ]
+        },
+        {
+            "number": 306,
+            "text_fr": "La lettre de change contient : la dénomination 'lettre de change', le mandat de payer une somme déterminée, le nom du tiré, l'échéance, le lieu de paiement, le nom du bénéficiaire, la date et le lieu de création, la signature du tireur.",
+            "text_ar": "تتضمن الكمبيالة: تسمية 'كمبيالة'، الأمر بأداء مبلغ معين، اسم المسحوب عليه، تاريخ الاستحقاق، مكان الأداء، اسم المستفيد، تاريخ ومكان الإنشاء، توقيع الساحب.",
+            "keywords": [
+                "mentions",
+                "بيانات",
+                "échéance",
+                "استحقاق"
+            ]
+        },
+        {
+            "number": 316,
+            "text_fr": "Est puni d'emprisonnement quiconque, soit contrefait ou falsifie un chèque, soit fait usage d'un chèque contrefait.",
+            "text_ar": "يعاقب بالحبس كل من زيف أو زور شيكاً، أو استعمل شيكاً مزيفاً.",
+            "keywords": [
+                "faux",
+                "تزوير",
+                "chèque",
+                "شيك",
+                "sanction",
+                "عقوبة"
+            ]
+        },
+        {
+            "number": 317,
+            "text_fr": "Est puni d'emprisonnement d'un an à cinq ans et d'une amende de 2000 à 10000 dirhams quiconque émet un chèque sans provision préalable et disponible ou avec une provision insuffisante.",
+            "text_ar": "يعاقب بالحبس من سنة إلى خمس سنوات وبغرامة من 2000 إلى 10000 درهم كل من أصدر شيكاً بدون رصيد سابق ومقابل للتصرف فيه أو برصيد غير كاف.",
+            "keywords": [
+                "chèque sans provision",
+                "شيك بدون رصيد",
+                "emprisonnement",
+                "حبس",
+                "amende",
+                "غرامة"
+            ]
+        },
+        {
+            "number": 318,
+            "text_fr": "Est puni des mêmes peines quiconque, après avoir émis un chèque, retire, dans l'intention de nuire au bénéficiaire, tout ou partie de la provision.",
+            "text_ar": "يعاقب بنفس العقوبات كل من سحب، بعد إصدار شيك، كل الرصيد أو جزء منه بقصد الإضرار بالمستفيد.",
+            "keywords": [
+                "retrait provision",
+                "سحب الرصيد",
+                "intention nuire",
+                "قصد الإضرار"
+            ]
+        },
+        {
+            "number": 319,
+            "text_fr": "Est puni des mêmes peines quiconque fait défense au tiré de payer un chèque hors les cas prévus par la loi.",
+            "text_ar": "يعاقب بنفس العقوبات كل من أمر المسحوب عليه بعدم أداء شيك خارج الحالات المنصوص عليها قانوناً.",
+            "keywords": [
+                "opposition",
+                "معارضة",
+                "défense payer",
+                "منع الأداء"
+            ]
+        },
+        {
+            "number": 320,
+            "text_fr": "Toute personne qui accepte en connaissance de cause un chèque à condition qu'il ne soit présenté au paiement qu'à partir d'une date déterminée est punie d'une amende.",
+            "text_ar": "يعاقب بغرامة كل من قبل عن علم شيكاً بشرط عدم تقديمه للأداء إلا ابتداء من تاريخ معين.",
+            "keywords": [
+                "chèque postdaté",
+                "شيك مؤجل",
+                "amende",
+                "غرامة"
+            ]
+        },
+        {
+            "number": 327,
+            "text_fr": "La personne condamnée pour émission de chèque sans provision peut demander sa réhabilitation après un délai de cinq ans.",
+            "text_ar": "يمكن للمحكوم عليه بسبب إصدار شيك بدون رصيد طلب رد اعتباره بعد أجل خمس سنوات.",
+            "keywords": [
+                "réhabilitation",
+                "رد الاعتبار",
+                "5 ans",
+                "خمس سنوات"
+            ]
+        },
+        {
+            "number": 409,
+            "text_fr": "Le billet à ordre contient : la clause à ordre ou la dénomination du titre, la promesse pure et simple de payer une somme déterminée, l'échéance, le lieu de paiement, le nom du bénéficiaire, la date et le lieu de création, la signature du souscripteur.",
+            "text_ar": "يتضمن السند لأمر: شرط الأمر أو تسمية السند، الوعد البسيط بأداء مبلغ معين، تاريخ الاستحقاق، مكان الأداء، اسم المستفيد، تاريخ ومكان الإنشاء، توقيع المحرر.",
+            "keywords": [
+                "billet à ordre",
+                "سند لأمر",
+                "promesse",
+                "وعد"
+            ]
+        },
+        {
+            "number": 544,
+            "text_fr": "Les sociétés commerciales sont : la société en nom collectif, la société en commandite simple, la société en commandite par actions, la société à responsabilité limitée, la société anonyme.",
+            "text_ar": "الشركات التجارية هي: شركة التضامن، شركة التوصية البسيطة، شركة التوصية بالأسهم، الشركة ذات المسؤولية المحدودة، شركة المساهمة.",
+            "keywords": [
+                "sociétés",
+                "شركات",
+                "types",
+                "أنواع",
+                "SARL",
+                "SA"
+            ]
+        },
+        {
+            "number": 545,
+            "text_fr": "Les sociétés commerciales sont soumises aux règles du droit commercial et aux dispositions particulières les régissant.",
+            "text_ar": "تخضع الشركات التجارية لقواعد القانون التجاري وللنصوص الخاصة المنظمة لها.",
+            "keywords": [
+                "règles",
+                "قواعد",
+                "droit commercial",
+                "قانون تجاري"
+            ]
+        },
+        {
+            "number": 560,
+            "text_fr": "La procédure de traitement des difficultés de l'entreprise est ouverte lorsqu'une entreprise est en cessation de paiement.",
+            "text_ar": "تفتح مسطرة معالجة صعوبات المقاولة عندما تكون المقاولة في حالة توقف عن الدفع.",
+            "keywords": [
+                "difficulté",
+                "صعوبة",
+                "cessation paiement",
+                "توقف عن الدفع",
+                "entreprise",
+                "مقاولة"
+            ]
+        },
+        {
+            "number": 561,
+            "text_fr": "L'entreprise est en cessation de paiement lorsqu'elle est dans l'impossibilité de faire face au passif exigible avec son actif disponible.",
+            "text_ar": "تكون المقاولة في حالة توقف عن الدفع عندما تعجز عن سداد ديونها المستحقة بأصولها المتاحة.",
+            "keywords": [
+                "passif",
+                "خصوم",
+                "actif",
+                "أصول",
+                "impossibilité",
+                "عجز"
+            ]
+        },
+        {
+            "number": 562,
+            "text_fr": "La procédure de traitement des difficultés de l'entreprise comprend la procédure de sauvegarde, la procédure de redressement et la procédure de liquidation judiciaire.",
+            "text_ar": "تشمل مسطرة معالجة صعوبات المقاولة: مسطرة الإنقاذ، مسطرة التسوية القضائية، مسطرة التصفية القضائية.",
+            "keywords": [
+                "sauvegarde",
+                "إنقاذ",
+                "redressement",
+                "تسوية",
+                "liquidation",
+                "تصفية"
+            ]
+        },
+        {
+            "number": 575,
+            "text_fr": "Le chef d'entreprise doit demander l'ouverture d'une procédure de redressement judiciaire au plus tard dans les 30 jours de la cessation de paiement.",
+            "text_ar": "يجب على رئيس المقاولة أن يطلب فتح مسطرة التسوية القضائية داخل أجل أقصاه 30 يوماً من تاريخ التوقف عن الدفع.",
+            "keywords": [
+                "délai",
+                "أجل",
+                "30 jours",
+                "ثلاثون يوما",
+                "obligation",
+                "التزام"
+            ]
+        },
+        {
+            "number": 619,
+            "text_fr": "Le tribunal peut prononcer contre le dirigeant d'entreprise en état de cessation des paiements la faillite personnelle ou l'interdiction de gérer.",
+            "text_ar": "يمكن للمحكمة أن تصدر في حق مسير المقاولة المتوقفة عن الدفع حكماً بالإفلاس الشخصي أو بالمنع من التسيير.",
+            "keywords": [
+                "faillite personnelle",
+                "إفلاس شخصي",
+                "interdiction gérer",
+                "منع من التسيير"
+            ]
+        },
+        {
+            "number": 620,
+            "text_fr": "La faillite personnelle emporte l'interdiction de diriger, gérer, administrer ou contrôler, directement ou indirectement, toute entreprise commerciale.",
+            "text_ar": "يترتب على الإفلاس الشخصي المنع من تسيير أو إدارة أو مراقبة أية مقاولة تجارية بصفة مباشرة أو غير مباشرة.",
+            "keywords": [
+                "interdiction",
+                "منع",
+                "diriger",
+                "تسيير",
+                "commerciale",
+                "تجارية"
+            ]
+        },
+        {
+            "number": 704,
+            "text_fr": "Le contrat de transport de marchandises est le contrat par lequel le transporteur s'engage moyennant un prix à déplacer une marchandise d'un lieu à un autre.",
+            "text_ar": "عقد نقل البضائع هو العقد الذي يلتزم بموجبه الناقل مقابل ثمن بنقل بضاعة من مكان إلى آخر.",
+            "keywords": [
+                "transport",
+                "نقل",
+                "marchandises",
+                "بضائع",
+                "contrat",
+                "عقد"
+            ]
+        },
+        {
+            "number": 705,
+            "text_fr": "Le transporteur est responsable des avaries ou pertes des marchandises qui lui sont confiées.",
+            "text_ar": "الناقل مسؤول عن العوار أو فقدان البضائع المسلمة إليه.",
+            "keywords": [
+                "responsabilité",
+                "مسؤولية",
+                "avaries",
+                "عوار",
+                "pertes",
+                "فقدان"
+            ]
+        }
+    ]
+}

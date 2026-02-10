@@ -1,0 +1,650 @@
+{
+    "code_id": "code_procedure_penale",
+    "code_name_fr": "Code de Procédure Pénale",
+    "code_name_ar": "قانون المسطرة الجنائية",
+    "total_articles": 757,
+    "source": "Loi n° 22-01 relative à la procédure pénale",
+    "articles": [
+        {
+            "number": 1,
+            "text_fr": "Toute infraction est constatée, poursuivie et jugée conformément aux dispositions du présent code.",
+            "text_ar": "كل جريمة تثبت وتتابع ويحكم فيها طبقا لمقتضيات هذا القانون.",
+            "keywords": [
+                "infraction",
+                "جريمة",
+                "poursuite",
+                "متابعة",
+                "jugement",
+                "حكم"
+            ]
+        },
+        {
+            "number": 2,
+            "text_fr": "Le ministère public exerce l'action publique et requiert l'application de la loi.",
+            "text_ar": "تمارس النيابة العامة الدعوى العمومية وتطلب تطبيق القانون.",
+            "keywords": [
+                "ministère public",
+                "نيابة عامة",
+                "action publique",
+                "دعوى عمومية"
+            ]
+        },
+        {
+            "number": 3,
+            "text_fr": "L'action publique peut être exercée en même temps que l'action civile et devant la même juridiction.",
+            "text_ar": "يمكن ممارسة الدعوى العمومية في آن واحد مع الدعوى المدنية وأمام نفس المحكمة.",
+            "keywords": [
+                "action civile",
+                "دعوى مدنية",
+                "juridiction",
+                "محكمة"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "L'action publique pour l'application des peines s'éteint par la mort du prévenu, la prescription, l'amnistie, l'abrogation de la loi pénale et la chose jugée.",
+            "text_ar": "تسقط الدعوى العمومية لتطبيق العقوبات بموت المتهم، والتقادم، والعفو الشامل، وإلغاء القانون الجنائي، وحجية الشيء المقضي به.",
+            "keywords": [
+                "extinction",
+                "سقوط",
+                "prescription",
+                "تقادم",
+                "amnistie",
+                "عفو شامل"
+            ]
+        },
+        {
+            "number": 5,
+            "text_fr": "L'action publique se prescrit par : 15 ans pour les crimes, 4 ans pour les délits, 1 an pour les contraventions.",
+            "text_ar": "تتقادم الدعوى العمومية بمرور: خمس عشرة سنة بالنسبة للجنايات، أربع سنوات بالنسبة للجنح، سنة واحدة بالنسبة للمخالفات.",
+            "keywords": [
+                "prescription",
+                "تقادم",
+                "15 ans",
+                "خمس عشرة سنة",
+                "4 ans",
+                "أربع سنوات"
+            ]
+        },
+        {
+            "number": 16,
+            "text_fr": "La police judiciaire est exercée sous l'autorité du ministère public par les officiers de police judiciaire, les agents de police judiciaire et les fonctionnaires auxquels des pouvoirs de police judiciaire sont attribués.",
+            "text_ar": "تمارس الشرطة القضائية تحت سلطة النيابة العامة من طرف ضباط الشرطة القضائية، وأعوان الشرطة القضائية، والموظفين المخول لهم صلاحيات الشرطة القضائية.",
+            "keywords": [
+                "police judiciaire",
+                "شرطة قضائية",
+                "officiers",
+                "ضباط"
+            ]
+        },
+        {
+            "number": 18,
+            "text_fr": "Les officiers de police judiciaire ont pour mission de constater les infractions à la loi pénale, d'en rassembler les preuves et d'en rechercher les auteurs.",
+            "text_ar": "يكلف ضباط الشرطة القضائية بإثبات الجرائم المعاقب عليها قانونا وجمع الأدلة عنها والبحث عن مرتكبيها.",
+            "keywords": [
+                "mission",
+                "مهمة",
+                "constater",
+                "إثبات",
+                "preuves",
+                "أدلة"
+            ]
+        },
+        {
+            "number": 24,
+            "text_fr": "L'officier de police judiciaire ne peut retenir une personne à sa disposition pour les nécessités de l'enquête pendant plus de 48 heures.",
+            "text_ar": "لا يجوز لضابط الشرطة القضائية أن يحتفظ بأي شخص تحت تصرفه لضرورات البحث لمدة تتجاوز ثمان وأربعين ساعة.",
+            "keywords": [
+                "garde à vue",
+                "حراسة نظرية",
+                "48 heures",
+                "ثمان وأربعين ساعة"
+            ]
+        },
+        {
+            "number": 66,
+            "text_fr": "La garde à vue peut être prolongée une seule fois de 24 heures, sur autorisation écrite du ministère public.",
+            "text_ar": "يمكن تمديد الحراسة النظرية مرة واحدة فقط لمدة أربع وعشرين ساعة، بإذن كتابي من النيابة العامة.",
+            "keywords": [
+                "prolongation",
+                "تمديد",
+                "24 heures",
+                "أربع وعشرون ساعة",
+                "autorisation",
+                "إذن"
+            ]
+        },
+        {
+            "number": 67,
+            "text_fr": "La personne placée en garde à vue doit être immédiatement informée des motifs de cette mesure.",
+            "text_ar": "يجب إخبار الشخص الموضوع تحت الحراسة النظرية فورا بدواعي هذا الإجراء.",
+            "keywords": [
+                "information",
+                "إخبار",
+                "motifs",
+                "دواعي",
+                "droits",
+                "حقوق"
+            ]
+        },
+        {
+            "number": 68,
+            "text_fr": "La personne placée en garde à vue peut demander à être examinée par un médecin.",
+            "text_ar": "يمكن للشخص الموضوع تحت الحراسة النظرية أن يطلب فحصه من طرف طبيب.",
+            "keywords": [
+                "médecin",
+                "طبيب",
+                "examen",
+                "فحص",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 73,
+            "text_fr": "L'officier de police judiciaire peut procéder à des perquisitions et à des saisies.",
+            "text_ar": "يمكن لضابط الشرطة القضائية إجراء التفتيش والحجز.",
+            "keywords": [
+                "perquisition",
+                "تفتيش",
+                "saisie",
+                "حجز"
+            ]
+        },
+        {
+            "number": 74,
+            "text_fr": "Les perquisitions ne peuvent être effectuées avant 6 heures du matin et après 21 heures, sauf flagrant délit ou consentement de la personne.",
+            "text_ar": "لا يجوز إجراء التفتيش قبل الساعة السادسة صباحا وبعد الساعة التاسعة ليلا، إلا في حالة التلبس أو موافقة الشخص المعني.",
+            "keywords": [
+                "heures",
+                "ساعات",
+                "flagrant délit",
+                "تلبس",
+                "consentement",
+                "موافقة"
+            ]
+        },
+        {
+            "number": 75,
+            "text_fr": "Les infractions flagrantes sont celles qui se commettent actuellement ou viennent de se commettre.",
+            "text_ar": "الجرائم المتلبس بها هي تلك التي ترتكب في الحال أو التي ارتكبت للتو.",
+            "keywords": [
+                "flagrant délit",
+                "تلبس",
+                "infraction",
+                "جريمة"
+            ]
+        },
+        {
+            "number": 76,
+            "text_fr": "Dans les cas de flagrance, l'officier de police judiciaire peut retenir toute personne susceptible de fournir des renseignements.",
+            "text_ar": "في حالة التلبس، يمكن لضابط الشرطة القضائية استبقاء كل شخص يمكنه تقديم معلومات.",
+            "keywords": [
+                "témoins",
+                "شهود",
+                "renseignements",
+                "معلومات"
+            ]
+        },
+        {
+            "number": 83,
+            "text_fr": "Le juge d'instruction est chargé de procéder aux informations judiciaires.",
+            "text_ar": "يكلف قاضي التحقيق بإجراء التحقيقات القضائية.",
+            "keywords": [
+                "juge instruction",
+                "قاضي التحقيق",
+                "information",
+                "تحقيق"
+            ]
+        },
+        {
+            "number": 84,
+            "text_fr": "L'instruction préparatoire est obligatoire en matière de crime, facultative en matière de délit.",
+            "text_ar": "التحقيق الإعدادي إلزامي في الجنايات، واختياري في الجنح.",
+            "keywords": [
+                "instruction",
+                "تحقيق",
+                "crime",
+                "جناية",
+                "délit",
+                "جنحة"
+            ]
+        },
+        {
+            "number": 85,
+            "text_fr": "Le juge d'instruction ne peut procéder à aucun acte d'information que s'il est saisi par un réquisitoire du ministère public ou par une plainte avec constitution de partie civile.",
+            "text_ar": "لا يمكن لقاضي التحقيق القيام بأي إجراء من إجراءات التحقيق إلا إذا كان مطالباً من النيابة العامة أو بناء على شكاية مقرونة بالتنصيب كطرف مدني.",
+            "keywords": [
+                "réquisitoire",
+                "ملتمس",
+                "plainte",
+                "شكاية",
+                "partie civile",
+                "طرف مدني"
+            ]
+        },
+        {
+            "number": 100,
+            "text_fr": "Le juge d'instruction peut décerner un mandat de comparution, d'amener, de dépôt ou d'arrêt.",
+            "text_ar": "يمكن لقاضي التحقيق إصدار أمر بالحضور أو بالإحضار أو بالإيداع في السجن أو بالاعتقال.",
+            "keywords": [
+                "mandat",
+                "أمر",
+                "comparution",
+                "حضور",
+                "arrêt",
+                "اعتقال"
+            ]
+        },
+        {
+            "number": 127,
+            "text_fr": "Toute personne arrêtée doit être conduite devant le juge dans les 24 heures.",
+            "text_ar": "يجب تقديم كل شخص موقوف أمام القاضي خلال أربع وعشرين ساعة.",
+            "keywords": [
+                "délai",
+                "أجل",
+                "24 heures",
+                "أربع وعشرون ساعة",
+                "juge",
+                "قاضي"
+            ]
+        },
+        {
+            "number": 134,
+            "text_fr": "La mise en détention provisoire ne peut être ordonnée que si elle constitue le seul moyen de conserver les preuves ou d'empêcher une pression sur les témoins ou la victime.",
+            "text_ar": "لا يمكن الأمر بالاعتقال الاحتياطي إلا إذا كان الوسيلة الوحيدة للحفاظ على الأدلة أو منع الضغط على الشهود أو الضحية.",
+            "keywords": [
+                "détention provisoire",
+                "اعتقال احتياطي",
+                "preuves",
+                "أدلة",
+                "témoins",
+                "شهود"
+            ]
+        },
+        {
+            "number": 135,
+            "text_fr": "La durée de la détention provisoire ne peut excéder un mois en matière de délit et deux mois en matière de crime, renouvelable dans les limites fixées par la loi.",
+            "text_ar": "لا يمكن أن تتجاوز مدة الاعتقال الاحتياطي شهراً واحداً في الجنح وشهرين في الجنايات، قابلة للتمديد ضمن الحدود المقررة قانوناً.",
+            "keywords": [
+                "durée",
+                "مدة",
+                "1 mois",
+                "شهر",
+                "2 mois",
+                "شهرين"
+            ]
+        },
+        {
+            "number": 142,
+            "text_fr": "Tout inculpé peut demander sa mise en liberté provisoire à tout moment de l'information.",
+            "text_ar": "يحق لكل متهم أن يطلب الإفراج المؤقت عنه في أي وقت أثناء التحقيق.",
+            "keywords": [
+                "liberté provisoire",
+                "إفراج مؤقت",
+                "demande",
+                "طلب"
+            ]
+        },
+        {
+            "number": 154,
+            "text_fr": "La libération provisoire peut être subordonnée au versement d'une caution ou à la remise du passeport.",
+            "text_ar": "يمكن أن يخضع الإفراج المؤقت لتقديم كفالة أو تسليم جواز السفر.",
+            "keywords": [
+                "caution",
+                "كفالة",
+                "passeport",
+                "جواز سفر"
+            ]
+        },
+        {
+            "number": 159,
+            "text_fr": "L'inculpé peut demander au juge d'instruction de procéder à une confrontation avec les témoins.",
+            "text_ar": "يمكن للمتهم أن يطلب من قاضي التحقيق إجراء مواجهة مع الشهود.",
+            "keywords": [
+                "confrontation",
+                "مواجهة",
+                "témoins",
+                "شهود"
+            ]
+        },
+        {
+            "number": 196,
+            "text_fr": "L'ordonnance de renvoi devant le tribunal correctionnel est prise par le juge d'instruction lorsque les faits constituent un délit.",
+            "text_ar": "يصدر قاضي التحقيق أمراً بالإحالة على المحكمة الابتدائية عندما تشكل الوقائع جنحة.",
+            "keywords": [
+                "renvoi",
+                "إحالة",
+                "tribunal correctionnel",
+                "محكمة ابتدائية",
+                "délit",
+                "جنحة"
+            ]
+        },
+        {
+            "number": 197,
+            "text_fr": "L'ordonnance de non-lieu est prise lorsque les faits ne constituent pas une infraction ou lorsque l'auteur est resté inconnu.",
+            "text_ar": "يصدر الأمر بعدم المتابعة عندما لا تشكل الوقائع جريمة أو عندما يبقى الفاعل مجهولاً.",
+            "keywords": [
+                "non-lieu",
+                "عدم المتابعة",
+                "infraction",
+                "جريمة"
+            ]
+        },
+        {
+            "number": 200,
+            "text_fr": "Les appels contre les ordonnances du juge d'instruction sont portés devant la chambre correctionnelle de la cour d'appel.",
+            "text_ar": "ترفع الاستئنافات ضد أوامر قاضي التحقيق أمام الغرفة الجنحية بمحكمة الاستئناف.",
+            "keywords": [
+                "appel",
+                "استئناف",
+                "cour appel",
+                "محكمة الاستئناف"
+            ]
+        },
+        {
+            "number": 286,
+            "text_fr": "Le tribunal délibère en chambre du conseil et rend sa décision à la majorité des voix.",
+            "text_ar": "تتداول المحكمة في غرفة المشورة وتصدر حكمها بأغلبية الأصوات.",
+            "keywords": [
+                "délibération",
+                "مداولة",
+                "majorité",
+                "أغلبية",
+                "décision",
+                "حكم"
+            ]
+        },
+        {
+            "number": 287,
+            "text_fr": "La décision doit être motivée.",
+            "text_ar": "يجب أن يكون الحكم معللاً.",
+            "keywords": [
+                "motivation",
+                "تعليل",
+                "décision",
+                "حكم"
+            ]
+        },
+        {
+            "number": 288,
+            "text_fr": "Les jugements sont rendus en audience publique.",
+            "text_ar": "تصدر الأحكام في جلسة علنية.",
+            "keywords": [
+                "audience publique",
+                "جلسة علنية",
+                "jugement",
+                "حكم"
+            ]
+        },
+        {
+            "number": 290,
+            "text_fr": "Le prévenu a droit à l'assistance d'un défenseur.",
+            "text_ar": "للمتهم الحق في الاستعانة بمدافع.",
+            "keywords": [
+                "défenseur",
+                "مدافع",
+                "avocat",
+                "محامي",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 292,
+            "text_fr": "Le prévenu a le droit de garder le silence et de ne pas répondre aux questions.",
+            "text_ar": "للمتهم الحق في التزام الصمت وعدم الإجابة عن الأسئلة.",
+            "keywords": [
+                "silence",
+                "صمت",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 293,
+            "text_fr": "Le prévenu est présumé innocent jusqu'à ce que sa culpabilité soit légalement établie.",
+            "text_ar": "المتهم بريء حتى تثبت إدانته قانوناً.",
+            "keywords": [
+                "présomption innocence",
+                "قرينة البراءة",
+                "culpabilité",
+                "إدانة"
+            ]
+        },
+        {
+            "number": 315,
+            "text_fr": "L'aveu comme tous les autres moyens de preuve est laissé à la libre appréciation du juge.",
+            "text_ar": "الاعتراف كباقي وسائل الإثبات الأخرى يخضع للسلطة التقديرية للقاضي.",
+            "keywords": [
+                "aveu",
+                "اعتراف",
+                "preuve",
+                "إثبات",
+                "appréciation",
+                "تقدير"
+            ]
+        },
+        {
+            "number": 316,
+            "text_fr": "L'aveu ne peut être retenu s'il a été obtenu par la violence ou la contrainte.",
+            "text_ar": "لا يعتد بالاعتراف إذا كان منتزعاً بالعنف أو الإكراه.",
+            "keywords": [
+                "violence",
+                "عنف",
+                "contrainte",
+                "إكراه",
+                "nullité",
+                "بطلان"
+            ]
+        },
+        {
+            "number": 352,
+            "text_fr": "Les crimes sont jugés par la chambre criminelle de la cour d'appel.",
+            "text_ar": "تختص الغرفة الجنائية بمحكمة الاستئناف بالحكم في الجنايات.",
+            "keywords": [
+                "crimes",
+                "جنايات",
+                "chambre criminelle",
+                "غرفة جنائية",
+                "cour appel",
+                "محكمة الاستئناف"
+            ]
+        },
+        {
+            "number": 353,
+            "text_fr": "La chambre criminelle est composée d'un président et de quatre conseillers.",
+            "text_ar": "تتألف الغرفة الجنائية من رئيس وأربعة مستشارين.",
+            "keywords": [
+                "composition",
+                "تشكيلة",
+                "président",
+                "رئيس",
+                "conseillers",
+                "مستشارين"
+            ]
+        },
+        {
+            "number": 392,
+            "text_fr": "Les jugements correctionnels sont susceptibles d'appel.",
+            "text_ar": "تقبل الأحكام الصادرة في الجنح الاستئناف.",
+            "keywords": [
+                "appel",
+                "استئناف",
+                "jugement correctionnel",
+                "حكم جنحي"
+            ]
+        },
+        {
+            "number": 393,
+            "text_fr": "Le délai d'appel est de dix jours à compter du prononcé du jugement contradictoire.",
+            "text_ar": "أجل الاستئناف عشرة أيام ابتداء من صدور الحكم الحضوري.",
+            "keywords": [
+                "délai",
+                "أجل",
+                "10 jours",
+                "عشرة أيام"
+            ]
+        },
+        {
+            "number": 400,
+            "text_fr": "Le condamné peut se pourvoir en cassation contre les arrêts rendus en dernier ressort.",
+            "text_ar": "يجوز للمحكوم عليه الطعن بالنقض ضد القرارات الصادرة انتهائياً.",
+            "keywords": [
+                "cassation",
+                "نقض",
+                "pourvoi",
+                "طعن"
+            ]
+        },
+        {
+            "number": 407,
+            "text_fr": "Les pourvois en cassation doivent être formés dans le délai de 10 jours.",
+            "text_ar": "يجب تقديم الطعون بالنقض في أجل عشرة أيام.",
+            "keywords": [
+                "délai",
+                "أجل",
+                "10 jours",
+                "عشرة أيام",
+                "cassation",
+                "نقض"
+            ]
+        },
+        {
+            "number": 481,
+            "text_fr": "Les décisions pénales devenues définitives ont autorité de la chose jugée.",
+            "text_ar": "تكتسي المقررات الجنائية التي أصبحت نهائية حجية الشيء المقضي به.",
+            "keywords": [
+                "chose jugée",
+                "شيء مقضي به",
+                "définitive",
+                "نهائية",
+                "autorité",
+                "حجية"
+            ]
+        },
+        {
+            "number": 524,
+            "text_fr": "Les peines privatives de liberté sont exécutées dans les établissements pénitentiaires.",
+            "text_ar": "تنفذ العقوبات السالبة للحرية في المؤسسات السجنية.",
+            "keywords": [
+                "prison",
+                "سجن",
+                "exécution",
+                "تنفيذ",
+                "peine",
+                "عقوبة"
+            ]
+        },
+        {
+            "number": 596,
+            "text_fr": "Toute personne détenue a le droit d'être traitée avec humanité et avec le respect de la dignité inhérente à la personne humaine.",
+            "text_ar": "لكل شخص معتقل الحق في معاملة إنسانية تحترم كرامته الآدمية.",
+            "keywords": [
+                "dignité",
+                "كرامة",
+                "humanité",
+                "إنسانية",
+                "détenu",
+                "معتقل"
+            ]
+        },
+        {
+            "number": 597,
+            "text_fr": "Les détenus ont le droit de recevoir des visites de leurs proches.",
+            "text_ar": "للمعتقلين الحق في تلقي زيارات من ذويهم.",
+            "keywords": [
+                "visites",
+                "زيارات",
+                "proches",
+                "أقارب",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 598,
+            "text_fr": "Les détenus ont le droit d'accéder aux soins médicaux.",
+            "text_ar": "للمعتقلين الحق في الولوج إلى العلاج الطبي.",
+            "keywords": [
+                "soins médicaux",
+                "علاج طبي",
+                "santé",
+                "صحة"
+            ]
+        },
+        {
+            "number": 608,
+            "text_fr": "Le condamné peut bénéficier de la libération conditionnelle après avoir accompli la moitié de sa peine.",
+            "text_ar": "يمكن للمحكوم عليه الاستفادة من الإفراج المشروط بعد قضاء نصف مدة العقوبة.",
+            "keywords": [
+                "libération conditionnelle",
+                "إفراج مشروط",
+                "moitié peine",
+                "نصف العقوبة"
+            ]
+        },
+        {
+            "number": 620,
+            "text_fr": "L'extradition est l'acte par lequel un État livre à un autre État, qui en fait la demande, un individu se trouvant sur son territoire et poursuivi ou condamné par la justice de l'État requérant.",
+            "text_ar": "التسليم هو الإجراء الذي تقوم بموجبه دولة ما بتسليم شخص متواجد في إقليمها إلى دولة أخرى تطلبه، يكون متابعاً أو محكوماً عليه من طرف قضاء الدولة الطالبة.",
+            "keywords": [
+                "extradition",
+                "تسليم",
+                "état",
+                "دولة"
+            ]
+        },
+        {
+            "number": 621,
+            "text_fr": "L'extradition ne peut être accordée lorsque l'infraction revêt un caractère politique.",
+            "text_ar": "لا يجوز منح التسليم إذا كانت الجريمة ذات طابع سياسي.",
+            "keywords": [
+                "infraction politique",
+                "جريمة سياسية",
+                "refus",
+                "رفض"
+            ]
+        },
+        {
+            "number": 675,
+            "text_fr": "La réhabilitation efface la condamnation et met fin à toutes les incapacités qui en résultent.",
+            "text_ar": "يمحو رد الاعتبار الإدانة ويضع حداً لجميع حالات عدم الأهلية المترتبة عليها.",
+            "keywords": [
+                "réhabilitation",
+                "رد الاعتبار",
+                "condamnation",
+                "إدانة",
+                "effacement",
+                "محو"
+            ]
+        },
+        {
+            "number": 679,
+            "text_fr": "Toute personne qui se prétend lésée par un crime ou un délit peut demander réparation.",
+            "text_ar": "لكل شخص يدعي أنه لحقه ضرر من جناية أو جنحة أن يطالب بالتعويض.",
+            "keywords": [
+                "réparation",
+                "تعويض",
+                "victime",
+                "ضحية",
+                "préjudice",
+                "ضرر"
+            ]
+        },
+        {
+            "number": 751,
+            "text_fr": "Une commission procède au réexamen des condamnations pénales prononcées par erreur judiciaire.",
+            "text_ar": "تتولى لجنة إعادة النظر في الأحكام الجنائية الصادرة بسبب خطأ قضائي.",
+            "keywords": [
+                "erreur judiciaire",
+                "خطأ قضائي",
+                "réexamen",
+                "إعادة النظر",
+                "révision",
+                "مراجعة"
+            ]
+        }
+    ]
+}

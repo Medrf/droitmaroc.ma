@@ -1,0 +1,784 @@
+{
+    "themes": [
+        {
+            "id": "travail-01",
+            "title": "Le licenciement abusif",
+            "domain": "Droit du travail",
+            "description": "Un salarié est licencié sans motif valable ou sans respect de la procédure légale. Il s'agit d'une des problématiques les plus fréquentes dans les relations employeur-salarié au Maroc.",
+            "legal_framework": "Le Code du travail marocain encadre strictement le licenciement. L'employeur doit justifier le licenciement par un motif valable (faute grave, raisons économiques, etc.) et respecter une procédure incluant un entretien préalable et une notification écrite.",
+            "obligations_consequences": [
+                "L'employeur doit respecter le préavis légal",
+                "Le salarié licencié abusivement peut prétendre à des indemnités",
+                "L'indemnité de licenciement abusif peut atteindre jusqu'à 1,5 mois de salaire par année d'ancienneté",
+                "Le salarié peut saisir l'inspection du travail ou le tribunal"
+            ],
+            "deadlines": "Le salarié dispose de 90 jours pour contester un licenciement devant le tribunal compétent.",
+            "sources": [
+                "Code du travail marocain (Livre I)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "licenciement",
+                "abusif",
+                "indemnité",
+                "préavis",
+                "tribunal"
+            ]
+        },
+        {
+            "id": "travail-02",
+            "title": "Le contrat à durée déterminée (CDD)",
+            "domain": "Droit du travail",
+            "description": "Le CDD est un contrat de travail limité dans le temps. Son utilisation est encadrée par la loi pour éviter les abus et protéger les salariés.",
+            "legal_framework": "Le CDD ne peut être conclu que dans des cas précis : remplacement d'un salarié absent, accroissement temporaire d'activité, travaux saisonniers. La durée maximale est généralement d'un an, renouvelable une fois.",
+            "obligations_consequences": [
+                "Le CDD doit être écrit obligatoirement",
+                "La reconduction abusive de CDD peut entraîner sa requalification en CDI",
+                "Le salarié en CDD a les mêmes droits que le salarié en CDI",
+                "La rupture anticipée sans motif grave expose à des dommages-intérêts"
+            ],
+            "deadlines": "La durée maximale d'un CDD est de 1 an, renouvelable une fois dans la plupart des cas.",
+            "sources": [
+                "Code du travail marocain (Articles 16-17)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "CDD",
+                "contrat",
+                "durée déterminée",
+                "renouvellement",
+                "CDI"
+            ]
+        },
+        {
+            "id": "travail-03",
+            "title": "Les heures supplémentaires",
+            "domain": "Droit du travail",
+            "description": "Les heures travaillées au-delà de la durée légale du travail doivent être compensées par une majoration de salaire.",
+            "legal_framework": "La durée légale du travail au Maroc est de 44 heures par semaine (ou 2288 heures par an). Les heures supplémentaires donnent droit à une majoration de 25% pour les heures effectuées entre 6h et 21h, et 50% entre 21h et 6h. Ces taux sont majorés de 100% les jours fériés et de repos.",
+            "obligations_consequences": [
+                "L'employeur doit payer les heures supplémentaires majorées",
+                "Le refus de payer peut faire l'objet d'une réclamation",
+                "Les heures supplémentaires doivent être autorisées ou demandées par l'employeur",
+                "Un maximum de 80 heures supplémentaires par an peut être imposé"
+            ],
+            "deadlines": "Le salarié peut réclamer le paiement des heures supplémentaires sur une période de 2 ans.",
+            "sources": [
+                "Code du travail marocain (Articles 184-201)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "heures supplémentaires",
+                "majoration",
+                "salaire",
+                "durée travail"
+            ]
+        },
+        {
+            "id": "travail-04",
+            "title": "Le congé de maternité",
+            "domain": "Droit du travail",
+            "description": "La salariée enceinte bénéficie d'un congé de maternité protégé par la loi, avant et après l'accouchement.",
+            "legal_framework": "Le congé de maternité est de 14 semaines (98 jours) réparties avant et après l'accouchement. Pendant cette période, la salariée perçoit des indemnités journalières de la CNSS. Le licenciement d'une femme enceinte ou en congé maternité est interdit.",
+            "obligations_consequences": [
+                "L'employeur ne peut pas licencier une salariée en congé maternité",
+                "La salariée peut prolonger son congé sans solde jusqu'à 90 jours",
+                "Les indemnités sont versées par la CNSS si les conditions sont remplies",
+                "La salariée doit informer l'employeur de sa grossesse"
+            ],
+            "deadlines": "Le congé commence au plus tôt 7 semaines avant la date prévue de l'accouchement.",
+            "sources": [
+                "Code du travail marocain (Articles 152-158)",
+                "Régime CNSS"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "maternité",
+                "congé",
+                "grossesse",
+                "CNSS",
+                "indemnités"
+            ]
+        },
+        {
+            "id": "travail-05",
+            "title": "La démission du salarié",
+            "domain": "Droit du travail",
+            "description": "Le salarié souhaite quitter son emploi de son propre gré. La démission doit respecter certaines règles pour être valable.",
+            "legal_framework": "La démission est un droit du salarié mais doit être claire, non équivoque et exprimée librement. Le salarié démissionnaire doit respecter un préavis dont la durée varie selon l'ancienneté et le statut. La démission forcée peut être requalifiée en licenciement abusif.",
+            "obligations_consequences": [
+                "Le salarié doit respecter le délai de préavis",
+                "Aucune indemnité de licenciement n'est due en cas de démission",
+                "Le certificat de travail et le solde de tout compte sont dus",
+                "L'abandon de poste peut avoir des conséquences juridiques"
+            ],
+            "deadlines": "Le préavis varie de 8 jours à 2 mois selon l'ancienneté et la catégorie professionnelle.",
+            "sources": [
+                "Code du travail marocain (Articles 43-51)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "démission",
+                "préavis",
+                "certificat travail",
+                "solde compte"
+            ]
+        },
+        {
+            "id": "travail-06",
+            "title": "L'accident du travail",
+            "domain": "Droit du travail",
+            "description": "Un accident survenu pendant le travail ou sur le trajet domicile-travail ouvre droit à une protection spéciale.",
+            "legal_framework": "Tout employeur doit être assuré contre les accidents du travail. En cas d'accident, le salarié bénéficie de la prise en charge des soins, d'indemnités journalières, et éventuellement d'une rente en cas d'incapacité permanente.",
+            "obligations_consequences": [
+                "L'employeur doit déclarer l'accident dans les 48 heures",
+                "Le salarié conserve son emploi pendant la période d'incapacité",
+                "Les frais médicaux sont pris en charge intégralement",
+                "Une faute inexcusable de l'employeur peut ouvrir droit à des dommages supplémentaires"
+            ],
+            "deadlines": "La déclaration d'accident doit être faite dans les 48 heures par l'employeur.",
+            "sources": [
+                "Dahir de 1963 sur les accidents du travail",
+                "Code du travail"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "accident",
+                "travail",
+                "indemnité",
+                "déclaration",
+                "assurance"
+            ]
+        },
+        {
+            "id": "travail-07",
+            "title": "Le salaire minimum (SMIG/SMAG)",
+            "domain": "Droit du travail",
+            "description": "Le salaire minimum interprofessionnel garanti fixe le plancher de rémunération que tout employeur doit respecter.",
+            "legal_framework": "Le SMIG (secteur industriel et commercial) et le SMAG (secteur agricole) sont fixés par décret et révisés périodiquement. Aucun salarié ne peut être payé en dessous de ce seuil. Les retenues abusives sur salaire sont interdites.",
+            "obligations_consequences": [
+                "Le paiement en dessous du SMIG est une infraction",
+                "Le salarié peut réclamer la différence due",
+                "Les primes et avantages ne remplacent pas le salaire minimum",
+                "L'inspection du travail peut intervenir et sanctionner"
+            ],
+            "deadlines": "Les salaires doivent être versés au moins deux fois par mois pour les ouvriers.",
+            "sources": [
+                "Code du travail marocain",
+                "Décrets de revalorisation du SMIG"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "SMIG",
+                "SMAG",
+                "salaire minimum",
+                "rémunération"
+            ]
+        },
+        {
+            "id": "travail-08",
+            "title": "Le harcèlement au travail",
+            "domain": "Droit du travail",
+            "description": "Le harcèlement moral ou sexuel au travail est interdit et sanctionné par la loi marocaine.",
+            "legal_framework": "Le Code du travail et le Code pénal interdisent le harcèlement. Le harcèlement sexuel est défini comme tout comportement à connotation sexuelle non désiré. Le harcèlement moral se traduit par des agissements répétés dégradant les conditions de travail.",
+            "obligations_consequences": [
+                "La victime peut demander la rupture du contrat aux torts de l'employeur",
+                "L'auteur du harcèlement peut être poursuivi pénalement",
+                "L'employeur a l'obligation de prévenir le harcèlement",
+                "Des sanctions disciplinaires peuvent être prises contre l'auteur"
+            ],
+            "deadlines": "L'action pénale pour harcèlement se prescrit par 5 ans.",
+            "sources": [
+                "Code du travail (Article 40)",
+                "Code pénal (Articles 503-1 à 503-2)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "harcèlement",
+                "moral",
+                "sexuel",
+                "sanctions",
+                "pénal"
+            ]
+        },
+        {
+            "id": "travail-09",
+            "title": "Les congés payés annuels",
+            "domain": "Droit du travail",
+            "description": "Tout salarié a droit à des congés payés après une période de travail effectif chez le même employeur.",
+            "legal_framework": "Le salarié acquiert 1,5 jour de congé par mois de travail, soit 18 jours minimum par an. Ce droit augmente avec l'ancienneté (1,5 jour supplémentaire par tranche de 5 ans). L'employeur doit payer les congés au moment de leur prise.",
+            "obligations_consequences": [
+                "L'employeur ne peut pas forcer le salarié à renoncer à ses congés",
+                "Les congés non pris peuvent être reportés ou indemnisés",
+                "Le calendrier des congés est fixé par l'employeur après consultation",
+                "Le fractionnement des congés est possible sous conditions"
+            ],
+            "deadlines": "Les congés doivent être pris dans les 12 mois suivant leur acquisition.",
+            "sources": [
+                "Code du travail marocain (Articles 231-268)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "congés",
+                "payés",
+                "vacances",
+                "ancienneté",
+                "repos"
+            ]
+        },
+        {
+            "id": "travail-10",
+            "title": "La période d'essai",
+            "domain": "Droit du travail",
+            "description": "La période d'essai permet à l'employeur et au salarié de tester leur collaboration avant l'engagement définitif.",
+            "legal_framework": "La durée de la période d'essai varie selon le type de contrat et la catégorie professionnelle. Pour un CDI, elle est de 3 mois pour les cadres, 1,5 mois pour les employés, et 15 jours pour les ouvriers. Elle peut être renouvelée une fois.",
+            "obligations_consequences": [
+                "Pendant l'essai, chaque partie peut rompre sans indemnité ni motif",
+                "Un délai de préavis minimum doit être respecté pour la rupture",
+                "La période d'essai doit être prévue dans le contrat de travail",
+                "Les droits fondamentaux du salarié s'appliquent pendant l'essai"
+            ],
+            "deadlines": "La période d'essai maximale varie de 15 jours à 3 mois selon la catégorie.",
+            "sources": [
+                "Code du travail marocain (Articles 13-14)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "période essai",
+                "CDI",
+                "CDD",
+                "rupture",
+                "embauche"
+            ]
+        },
+        {
+            "id": "location-01",
+            "title": "Le contrat de bail d'habitation",
+            "domain": "Location immobilière",
+            "description": "Le bail d'habitation est le contrat par lequel un propriétaire met un logement à disposition d'un locataire moyennant un loyer.",
+            "legal_framework": "La loi 67-12 régit les baux d'habitation au Maroc. Le contrat doit préciser la durée, le montant du loyer, les charges, et les obligations de chaque partie. Un bail verbal est valable mais difficile à prouver.",
+            "obligations_consequences": [
+                "Le bailleur doit délivrer un logement décent et en bon état",
+                "Le locataire doit payer le loyer aux échéances convenues",
+                "Les deux parties doivent respecter les clauses du contrat",
+                "L'état des lieux est recommandé à l'entrée et à la sortie"
+            ],
+            "deadlines": "La durée du bail est librement fixée par les parties.",
+            "sources": [
+                "Loi 67-12 relative aux baux d'habitation",
+                "Dahir des Obligations et Contrats"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "bail",
+                "location",
+                "habitation",
+                "loyer",
+                "contrat"
+            ]
+        },
+        {
+            "id": "location-02",
+            "title": "L'expulsion du locataire",
+            "domain": "Location immobilière",
+            "description": "Le propriétaire souhaite récupérer son bien occupé par un locataire. L'expulsion est encadrée par la loi.",
+            "legal_framework": "L'expulsion ne peut se faire que par décision de justice. Le propriétaire doit obtenir un jugement d'expulsion puis faire exécuter la décision par un huissier. L'expulsion de force sans titre est interdite.",
+            "obligations_consequences": [
+                "Le propriétaire doit d'abord mettre en demeure le locataire",
+                "Une procédure judiciaire est obligatoire",
+                "Le locataire peut contester l'expulsion devant le tribunal",
+                "Des délais de grâce peuvent être accordés au locataire"
+            ],
+            "deadlines": "Le préavis de congé est généralement de 3 mois avant l'expiration du bail.",
+            "sources": [
+                "Loi 67-12",
+                "Code de procédure civile"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "expulsion",
+                "locataire",
+                "tribunal",
+                "congé",
+                "huissier"
+            ]
+        },
+        {
+            "id": "location-03",
+            "title": "La caution locative (dépôt de garantie)",
+            "domain": "Location immobilière",
+            "description": "Le propriétaire demande une somme d'argent au locataire pour garantir le respect du contrat et couvrir d'éventuels dégâts.",
+            "legal_framework": "Le dépôt de garantie est courant au Maroc bien que non strictement réglementé. Son montant est librement fixé (généralement 1 à 2 mois de loyer). Il doit être restitué à la fin du bail déduction faite des éventuelles réparations.",
+            "obligations_consequences": [
+                "Le locataire verse la caution à la signature du bail",
+                "Le bailleur doit restituer la caution à la fin du bail",
+                "Des retenues peuvent être faites pour dégradations prouvées",
+                "L'état des lieux est essentiel pour éviter les litiges"
+            ],
+            "deadlines": "La restitution doit intervenir dans un délai raisonnable après la remise des clés.",
+            "sources": [
+                "Dahir des Obligations et Contrats",
+                "Pratique contractuelle"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "caution",
+                "dépôt garantie",
+                "restitution",
+                "état lieux"
+            ]
+        },
+        {
+            "id": "location-04",
+            "title": "L'augmentation du loyer",
+            "domain": "Location immobilière",
+            "description": "Le propriétaire souhaite augmenter le loyer en cours de bail ou lors du renouvellement.",
+            "legal_framework": "L'augmentation du loyer doit respecter les conditions prévues au contrat. En l'absence de clause, les parties doivent négocier. L'augmentation unilatérale abusive peut être contestée.",
+            "obligations_consequences": [
+                "L'augmentation doit être prévue ou négociée",
+                "Le locataire peut contester une augmentation abusive",
+                "Le refus d'augmentation peut entraîner un non-renouvellement du bail",
+                "Le tribunal peut fixer un loyer en cas de désaccord"
+            ],
+            "deadlines": "L'augmentation est généralement annuelle ou au renouvellement du bail.",
+            "sources": [
+                "Loi 67-12",
+                "Contrat de bail"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "augmentation",
+                "loyer",
+                "révision",
+                "renouvellement"
+            ]
+        },
+        {
+            "id": "location-05",
+            "title": "Les réparations locatives",
+            "domain": "Location immobilière",
+            "description": "Qui prend en charge les réparations dans un logement loué ? La répartition des charges entre propriétaire et locataire.",
+            "legal_framework": "Le propriétaire est responsable des grosses réparations (structure, toiture, etc.). Le locataire assume les réparations d'entretien courant (robinetterie, peinture légère, etc.). Les dégradations causées par le locataire sont à sa charge.",
+            "obligations_consequences": [
+                "Le bailleur doit maintenir le logement en état de servir",
+                "Le locataire doit entretenir le logement et signaler les dégâts",
+                "Le refus de réparations urgentes peut justifier une demande de réduction de loyer",
+                "Les travaux importants peuvent nécessiter un accord écrit"
+            ],
+            "deadlines": "Les réparations urgentes doivent être effectuées dans un délai raisonnable.",
+            "sources": [
+                "Dahir des Obligations et Contrats (Articles 661-675)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "réparations",
+                "entretien",
+                "charges",
+                "propriétaire",
+                "locataire"
+            ]
+        },
+        {
+            "id": "location-06",
+            "title": "Le bail commercial",
+            "domain": "Location immobilière",
+            "description": "La location d'un local pour exercer une activité commerciale, artisanale ou industrielle suit des règles spécifiques.",
+            "legal_framework": "Le bail commercial est régi par le Dahir de 1955. Il offre une protection renforcée au locataire commerçant : droit au renouvellement, indemnité d'éviction en cas de refus de renouvellement. La durée minimale est de 2 ans.",
+            "obligations_consequences": [
+                "Le locataire bénéficie d'un droit au renouvellement du bail",
+                "Le refus de renouvellement donne droit à une indemnité d'éviction",
+                "La cession du bail est possible sous conditions",
+                "Le fonds de commerce peut être cédé avec le droit au bail"
+            ],
+            "deadlines": "La demande de renouvellement doit être faite 6 mois avant l'expiration du bail.",
+            "sources": [
+                "Dahir du 24 mai 1955 relatif aux baux commerciaux"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "bail commercial",
+                "fonds commerce",
+                "renouvellement",
+                "éviction"
+            ]
+        },
+        {
+            "id": "location-07",
+            "title": "Le non-paiement du loyer",
+            "domain": "Location immobilière",
+            "description": "Le locataire ne paie plus son loyer. Quelles sont les solutions pour le propriétaire et les risques pour le locataire ?",
+            "legal_framework": "Le non-paiement du loyer est un motif de résiliation du bail. Le propriétaire doit d'abord mettre en demeure le locataire, puis saisir le tribunal. Le locataire peut régulariser sa situation jusqu'à un certain stade de la procédure.",
+            "obligations_consequences": [
+                "Le propriétaire doit envoyer une mise en demeure",
+                "Une action en justice peut être engagée pour paiement et expulsion",
+                "Le locataire peut être condamné aux arriérés plus des dommages-intérêts",
+                "La résiliation peut être prononcée par le tribunal"
+            ],
+            "deadlines": "Un préavis de mise en demeure de 15 à 30 jours est généralement accordé.",
+            "sources": [
+                "Loi 67-12",
+                "Dahir des Obligations et Contrats"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "impayés",
+                "loyer",
+                "mise demeure",
+                "résiliation",
+                "expulsion"
+            ]
+        },
+        {
+            "id": "location-08",
+            "title": "La sous-location",
+            "domain": "Location immobilière",
+            "description": "Le locataire souhaite louer à son tour tout ou partie du logement à un tiers.",
+            "legal_framework": "La sous-location est en principe interdite sauf accord écrit du propriétaire. La sous-location non autorisée peut entraîner la résiliation du bail principal. Le sous-locataire n'a pas de lien direct avec le propriétaire.",
+            "obligations_consequences": [
+                "Le locataire doit obtenir l'accord écrit du propriétaire",
+                "La sous-location sans accord peut justifier la résiliation du bail",
+                "Le sous-loyer ne peut pas dépasser le loyer principal",
+                "Le locataire reste responsable envers le propriétaire"
+            ],
+            "deadlines": "L'accord doit être obtenu avant la sous-location.",
+            "sources": [
+                "Loi 67-12",
+                "Dahir des Obligations et Contrats"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "sous-location",
+                "autorisation",
+                "résiliation",
+                "interdiction"
+            ]
+        },
+        {
+            "id": "location-09",
+            "title": "Le préavis de départ",
+            "domain": "Location immobilière",
+            "description": "Le locataire souhaite quitter le logement avant la fin du bail ou à son terme.",
+            "legal_framework": "Le locataire doit respecter un délai de préavis avant de quitter le logement. Ce délai est généralement prévu au contrat (souvent 1 à 3 mois). Le préavis doit être notifié par écrit au propriétaire.",
+            "obligations_consequences": [
+                "Le préavis doit être donné par lettre recommandée ou remise en main propre",
+                "Le loyer reste dû pendant toute la durée du préavis",
+                "Le bailleur peut dispenser le locataire du préavis",
+                "Le non-respect du préavis peut entraîner une indemnité"
+            ],
+            "deadlines": "Le délai de préavis est fixé par le contrat (généralement 1 à 3 mois).",
+            "sources": [
+                "Contrat de bail",
+                "Loi 67-12"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "préavis",
+                "départ",
+                "congé",
+                "notification",
+                "locataire"
+            ]
+        },
+        {
+            "id": "location-10",
+            "title": "L'état des lieux",
+            "domain": "Location immobilière",
+            "description": "L'état des lieux est un document décrivant l'état du logement à l'entrée et à la sortie du locataire.",
+            "legal_framework": "L'état des lieux n'est pas légalement obligatoire au Maroc mais est fortement recommandé. Il permet d'éviter les litiges sur les dégradations. Il doit être signé par les deux parties et établi contradictoirement.",
+            "obligations_consequences": [
+                "Un état des lieux d'entrée protège le locataire",
+                "L'état des lieux de sortie permet de comparer l'état du logement",
+                "Sans état des lieux, le logement est présumé en bon état",
+                "Les dégradations constatées peuvent être retenues sur la caution"
+            ],
+            "deadlines": "À faire le jour de la remise des clés (entrée) et de la restitution (sortie).",
+            "sources": [
+                "Pratique contractuelle",
+                "Dahir des Obligations et Contrats"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "état lieux",
+                "entrée",
+                "sortie",
+                "dégradations",
+                "caution"
+            ]
+        },
+        {
+            "id": "freelance-01",
+            "title": "Le statut d'auto-entrepreneur",
+            "domain": "Freelances et petits commerçants",
+            "description": "Le régime de l'auto-entrepreneur est un statut simplifié pour exercer une activité indépendante au Maroc.",
+            "legal_framework": "Créé par la loi 114-13, le statut d'auto-entrepreneur offre un régime fiscal et social simplifié. Le chiffre d'affaires est plafonné (500 000 DH pour les services, 200 000 DH pour les activités commerciales). L'inscription se fait en ligne.",
+            "obligations_consequences": [
+                "L'auto-entrepreneur paie un impôt forfaitaire sur le chiffre d'affaires",
+                "Il est affilié à la sécurité sociale (couverture maladie et retraite)",
+                "Il doit déclarer son chiffre d'affaires trimestriellement",
+                "Le dépassement des plafonds entraîne un changement de régime"
+            ],
+            "deadlines": "Déclaration trimestrielle du chiffre d'affaires dans les 30 jours suivant le trimestre.",
+            "sources": [
+                "Loi 114-13 relative au statut d'auto-entrepreneur"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "auto-entrepreneur",
+                "freelance",
+                "statut",
+                "impôt",
+                "déclaration"
+            ]
+        },
+        {
+            "id": "freelance-02",
+            "title": "La facturation et les devis",
+            "domain": "Freelances et petits commerçants",
+            "description": "L'obligation d'établir des factures et devis conformes à la réglementation fiscale marocaine.",
+            "legal_framework": "Toute prestation ou vente doit faire l'objet d'une facture comportant des mentions obligatoires : identité des parties, date, nature de la prestation, montant HT et TTC, numéro d'identification fiscale.",
+            "obligations_consequences": [
+                "La facture est obligatoire pour toute transaction commerciale",
+                "L'absence de facturation peut entraîner des sanctions fiscales",
+                "Le devis devient un contrat une fois accepté et signé",
+                "Les factures doivent être conservées pendant 10 ans"
+            ],
+            "deadlines": "La facture doit être émise au moment de la livraison ou de la prestation.",
+            "sources": [
+                "Code général des impôts",
+                "Loi comptable"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "facture",
+                "devis",
+                "mentions obligatoires",
+                "fiscal"
+            ]
+        },
+        {
+            "id": "freelance-03",
+            "title": "L'impôt sur le revenu professionnel",
+            "domain": "Freelances et petits commerçants",
+            "description": "Les revenus tirés d'une activité indépendante sont soumis à l'impôt sur le revenu.",
+            "legal_framework": "L'IR professionnel s'applique aux bénéfices des activités commerciales, artisanales et de prestations de services. Il existe trois régimes : le résultat net réel, le résultat net simplifié, et le forfait. Le choix dépend du chiffre d'affaires.",
+            "obligations_consequences": [
+                "Les professionnels doivent tenir une comptabilité",
+                "La déclaration de revenus est annuelle",
+                "Des acomptes provisionnels peuvent être exigés",
+                "Les charges professionnelles sont déductibles"
+            ],
+            "deadlines": "La déclaration annuelle doit être déposée avant le 1er avril de chaque année.",
+            "sources": [
+                "Code général des impôts (IR professionnel)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "IR",
+                "impôt revenu",
+                "professionnel",
+                "déclaration",
+                "bénéfice"
+            ]
+        },
+        {
+            "id": "freelance-04",
+            "title": "La TVA pour les petites entreprises",
+            "domain": "Freelances et petits commerçants",
+            "description": "Quand et comment s'applique la taxe sur la valeur ajoutée pour les indépendants et petits commerçants.",
+            "legal_framework": "La TVA s'applique aux opérations commerciales et de services au Maroc. Certaines activités sont exonérées. Le taux normal est de 20%, avec des taux réduits pour certains produits. Les assujettis doivent facturer la TVA et la reverser à l'État.",
+            "obligations_consequences": [
+                "L'assujettissement à la TVA dépend du chiffre d'affaires et de l'activité",
+                "La TVA collectée doit être reversée à l'administration fiscale",
+                "La TVA payée sur les achats professionnels est déductible",
+                "Les déclarations sont mensuelles ou trimestrielles selon le régime"
+            ],
+            "deadlines": "Déclaration mensuelle avant le 20 du mois suivant, ou trimestrielle.",
+            "sources": [
+                "Code général des impôts (TVA)"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "TVA",
+                "taxe",
+                "déclaration",
+                "exonération",
+                "facturation"
+            ]
+        },
+        {
+            "id": "freelance-05",
+            "title": "La création d'une SARL",
+            "domain": "Freelances et petits commerçants",
+            "description": "La société à responsabilité limitée est une forme juridique adaptée aux petites et moyennes entreprises.",
+            "legal_framework": "La SARL requiert un capital minimum de 10 000 DH (libérable partiellement). Elle peut avoir un ou plusieurs associés. La responsabilité des associés est limitée à leurs apports. La création passe par le Centre Régional d'Investissement (CRI).",
+            "obligations_consequences": [
+                "Les statuts doivent être rédigés et enregistrés",
+                "L'inscription au registre de commerce est obligatoire",
+                "Le gérant engage sa responsabilité personnelle dans certains cas",
+                "La tenue d'une comptabilité régulière est obligatoire"
+            ],
+            "deadlines": "La création peut prendre de quelques jours à quelques semaines via le CRI.",
+            "sources": [
+                "Loi 5-96 sur les sociétés",
+                "Dahir formant code de commerce"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "SARL",
+                "société",
+                "création",
+                "capital",
+                "statuts"
+            ]
+        },
+        {
+            "id": "freelance-06",
+            "title": "Le recouvrement des créances",
+            "domain": "Freelances et petits commerçants",
+            "description": "Un client ne paie pas ses factures. Quelles sont les solutions légales pour recouvrer les sommes dues ?",
+            "legal_framework": "Le créancier peut d'abord tenter une relance amiable, puis une mise en demeure. En cas d'échec, une procédure judiciaire peut être engagée. L'injonction de payer est une procédure simplifiée et rapide pour les créances non contestées.",
+            "obligations_consequences": [
+                "La mise en demeure est un préalable recommandé",
+                "L'injonction de payer peut être obtenue rapidement",
+                "Le tribunal peut ordonner la saisie des biens du débiteur",
+                "Les frais de recouvrement peuvent être mis à la charge du débiteur"
+            ],
+            "deadlines": "L'action en recouvrement se prescrit généralement par 5 ans pour les dettes commerciales.",
+            "sources": [
+                "Dahir des Obligations et Contrats",
+                "Code de procédure civile"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "recouvrement",
+                "créances",
+                "impayés",
+                "injonction payer",
+                "mise demeure"
+            ]
+        },
+        {
+            "id": "freelance-07",
+            "title": "Le registre de commerce",
+            "domain": "Freelances et petits commerçants",
+            "description": "L'inscription au registre de commerce est une formalité obligatoire pour exercer une activité commerciale.",
+            "legal_framework": "Tout commerçant (personne physique ou société) doit s'inscrire au registre de commerce tenu par le tribunal. L'inscription confère le statut de commerçant et permet d'obtenir un numéro RC nécessaire pour les démarches administratives.",
+            "obligations_consequences": [
+                "L'inscription doit être faite dans les 3 mois suivant le début de l'activité",
+                "Toute modification (adresse, activité) doit être déclarée",
+                "Le défaut d'inscription peut entraîner des sanctions",
+                "L'extrait du registre de commerce est un document officiel"
+            ],
+            "deadlines": "Inscription obligatoire dans les 3 mois du début d'activité.",
+            "sources": [
+                "Code de commerce",
+                "Loi sur le registre de commerce"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "registre commerce",
+                "inscription",
+                "RC",
+                "commerçant"
+            ]
+        },
+        {
+            "id": "freelance-08",
+            "title": "La protection de la propriété intellectuelle",
+            "domain": "Freelances et petits commerçants",
+            "description": "Comment protéger ses créations, innovations, marques et designs au Maroc.",
+            "legal_framework": "L'OMPIC (Office Marocain de la Propriété Industrielle et Commerciale) gère le dépôt des marques, brevets et dessins. Le droit d'auteur protège les œuvres littéraires et artistiques sans formalité. La marque doit être déposée pour être protégée.",
+            "obligations_consequences": [
+                "Le dépôt de marque confère un droit exclusif d'utilisation",
+                "La contrefaçon est sanctionnée pénalement et civilement",
+                "Le brevet protège une invention pendant 20 ans maximum",
+                "Le droit d'auteur naît automatiquement avec la création"
+            ],
+            "deadlines": "La protection d'une marque est valable 10 ans, renouvelable indéfiniment.",
+            "sources": [
+                "Loi 17-97 sur la propriété industrielle",
+                "Loi 2-00 sur les droits d'auteur"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "marque",
+                "brevet",
+                "propriété intellectuelle",
+                "OMPIC",
+                "droit auteur"
+            ]
+        },
+        {
+            "id": "freelance-09",
+            "title": "Les obligations sociales de l'employeur",
+            "domain": "Freelances et petits commerçants",
+            "description": "Lorsqu'un indépendant ou petit commerçant embauche du personnel, il devient employeur avec des obligations.",
+            "legal_framework": "L'employeur doit déclarer ses salariés à la CNSS, payer les cotisations sociales, respecter le SMIG, et fournir un contrat de travail. Il est également redevable de la formation professionnelle et de l'assurance accident du travail.",
+            "obligations_consequences": [
+                "L'affiliation à la CNSS est obligatoire dès le premier salarié",
+                "Les cotisations sociales sont partagées entre employeur et salarié",
+                "L'employeur doit tenir un registre du personnel",
+                "Le non-respect expose à des sanctions et des redressements"
+            ],
+            "deadlines": "La déclaration à la CNSS doit être faite dès l'embauche.",
+            "sources": [
+                "Code du travail",
+                "Régime de sécurité sociale"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "employeur",
+                "CNSS",
+                "cotisations",
+                "salarié",
+                "obligations"
+            ]
+        },
+        {
+            "id": "freelance-10",
+            "title": "La fermeture d'une activité commerciale",
+            "domain": "Freelances et petits commerçants",
+            "description": "Comment cesser légalement une activité commerciale et quelles sont les démarches à effectuer.",
+            "legal_framework": "La cessation d'activité nécessite plusieurs formalités : radiation du registre de commerce, régularisation des obligations fiscales et sociales, liquidation éventuelle de la société. La procédure varie selon le statut juridique.",
+            "obligations_consequences": [
+                "La radiation du registre de commerce est obligatoire",
+                "Les déclarations fiscales de cessation doivent être déposées",
+                "Les dettes doivent être réglées ou la liquidation organisée",
+                "Les salariés éventuels doivent être licenciés selon les règles"
+            ],
+            "deadlines": "La radiation doit être demandée dans les 30 jours suivant la cessation effective.",
+            "sources": [
+                "Code de commerce",
+                "Code général des impôts",
+                "Code du travail"
+            ],
+            "warning": "Ces informations sont fournies à titre général et informatif. Elles ne constituent pas un conseil juridique personnalisé.",
+            "keywords": [
+                "cessation",
+                "fermeture",
+                "radiation",
+                "liquidation",
+                "activité"
+            ]
+        }
+    ],
+    "metadata": {
+        "total_themes": 30,
+        "domains": [
+            {
+                "name": "Droit du travail",
+                "count": 10
+            },
+            {
+                "name": "Location immobilière",
+                "count": 10
+            },
+            {
+                "name": "Freelances et petits commerçants",
+                "count": 10
+            }
+        ],
+        "last_updated": "2026-02-04",
+        "version": "1.0"
+    }
+}

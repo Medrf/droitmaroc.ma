@@ -1,0 +1,846 @@
+{
+    "code": "constitution",
+    "code_id": "constitution",
+    "code_name_fr": "Constitution du Royaume du Maroc 2011",
+    "code_name_ar": "دستور المملكة المغربية 2011",
+    "source": "Bulletin Officiel / Adala Maroc",
+    "total_articles": 180,
+    "articles": [
+        {
+            "number": 1,
+            "text_fr": "Le Maroc est une monarchie constitutionnelle, démocratique, parlementaire et sociale. Le régime constitutionnel du Royaume est fondé sur la séparation, l'équilibre et la collaboration des pouvoirs, ainsi que sur la démocratie citoyenne et participative, et les principes de bonne gouvernance et de la corrélation entre la responsabilité et la reddition des comptes.",
+            "text_ar": "نظام الحكم بالمغرب نظام ملكية دستورية، ديمقراطية برلمانية واجتماعية. يقوم النظام الدستوري للمملكة على أساس فصل السلط، وتوازنها وتعاونها، والديمقراطية المواطنة والتشاركية، وعلى مبادئ الحكامة الجيدة، وربط المسؤولية بالمحاسبة.",
+            "keywords": [
+                "monarchie",
+                "démocratie",
+                "pouvoirs",
+                "gouvernance",
+                "ملك",
+                "ديمقراطية",
+                "سلط",
+                "حكامة"
+            ]
+        },
+        {
+            "number": 2,
+            "text_fr": "La souveraineté appartient à la nation qui l'exerce directement par voie de référendum, et indirectement par l'intermédiaire de ses représentants. La nation choisit ses représentants au sein des institutions élues par voie de suffrages libres, sincères et réguliers.",
+            "text_ar": "السيادة للأمة، تمارسها مباشرة بالاستفتاء، وبصفة غير مباشرة بواسطة ممثليها. تختار الأمة ممثليها في المؤسسات المنتخبة بالاقتراع الحر والنزيه والمنتظم.",
+            "keywords": [
+                "souveraineté",
+                "nation",
+                "référendum",
+                "élections",
+                "سيادة",
+                "أمة",
+                "استفتاء",
+                "انتخابات"
+            ]
+        },
+        {
+            "number": 3,
+            "text_fr": "L'Islam est la religion de l'Etat, qui garantit à tous le libre exercice des cultes.",
+            "text_ar": "الإسلام دين الدولة، والدولة تضمن لكل واحد حرية ممارسة شؤونه الدينية.",
+            "keywords": [
+                "islam",
+                "religion",
+                "culte",
+                "état",
+                "إسلام",
+                "دين",
+                "دولة",
+                "شعائر"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "L'emblème du Royaume est le drapeau rouge frappé en son centre d'une étoile verte à cinq branches. La devise du Royaume est : Dieu, la Patrie, le Roi.",
+            "text_ar": "شعار المملكة هو العلم الأحمر الذي تتوسطه نجمة خضراء خماسية الفروع. شعار المملكة: الله، الوطن، الملك.",
+            "keywords": [
+                "emblème",
+                "drapeau",
+                "devise",
+                "roi",
+                "شعار",
+                "علم",
+                "ملك",
+                "وطن"
+            ]
+        },
+        {
+            "number": 5,
+            "text_fr": "L'arabe demeure la langue officielle de l'Etat. L'Etat œuvre à la protection et au développement de la langue arabe, ainsi qu'à la promotion de son utilisation. De même, l'amazighe constitue une langue officielle de l'État, en tant que patrimoine commun à tous les Marocains sans exception.",
+            "text_ar": "تظل العربية اللغة الرسمية للدولة. وتعمل الدولة على حمايتها وتطويرها، وتنمية استعمالها. تعد الأمازيغية أيضا لغة رسمية للدولة، باعتبارها رصيدا مشتركا لجميع المغاربة بدون استثناء.",
+            "keywords": [
+                "langue",
+                "arabe",
+                "amazighe",
+                "officielle",
+                "لغة",
+                "عربية",
+                "أمازيغية",
+                "رسمية"
+            ]
+        },
+        {
+            "number": 6,
+            "text_fr": "La loi est l'expression suprême de la volonté de la nation. Tous, personnes physiques ou morales, y compris les pouvoirs publics, sont égaux devant elle et tenus de s'y soumettre.",
+            "text_ar": "القانون هو أسمى تعبير عن إرادة الأمة. والجميع، أشخاصا ذاتيين أو اعتباريين، بما فيهم السلطات العمومية، متساوون أمامه، وملزمون بالامتثال له.",
+            "keywords": [
+                "loi",
+                "égalité",
+                "citoyens",
+                "liberté",
+                "قانون",
+                "مساواة",
+                "مواطنين",
+                "حرية"
+            ]
+        },
+        {
+            "number": 7,
+            "text_fr": "Les partis politiques œuvrent à l'encadrement et à la formation politique des citoyennes et citoyens, à la promotion de leur participation à la vie nationale et à la gestion des affaires publiques.",
+            "text_ar": "تعمل الأحزاب السياسية على تأطير المواطنات والمواطنين وتكوينهم السياسي، وتعزيز انخراطهم في الحياة الوطنية، وفي تدبير الشأن العام.",
+            "keywords": [
+                "partis",
+                "politique",
+                "participation",
+                "affaires publiques",
+                "أحزاب",
+                "سياسة",
+                "مشاركة",
+                "شأن عام"
+            ]
+        },
+        {
+            "number": 8,
+            "text_fr": "Les organisations syndicales des salariés, les chambres professionnelles et les organisations professionnelles des employeurs contribuent à la défense et à la promotion des droits et des intérêts socioéconomiques des catégories qu'elles représentent.",
+            "text_ar": "تساهم المنظمات النقابية للأجراء، والغرف المهنية، والمنظمات المهنية للمشغلين، في الدفاع عن الحقوق والمصالح الاجتماعية والاقتصادية للفئات التي تمثلها والنهوض بها.",
+            "keywords": [
+                "syndicats",
+                "نقابات",
+                "chambres",
+                "غرف",
+                "employeurs",
+                "مشغلين"
+            ]
+        },
+        {
+            "number": 9,
+            "text_fr": "Les partis politiques et les organisations syndicales ne peuvent être suspendus ou dissous par les pouvoirs publics qu'en vertu d'une décision de justice.",
+            "text_ar": "لا يمكن حل الأحزاب السياسية والمنظمات النقابية أو توقيفها من لدن السلطات العمومية، إلا بمقتضى قرار قضائي.",
+            "keywords": [
+                "dissolution",
+                "حل",
+                "justice",
+                "قضاء",
+                "partis",
+                "أحزاب"
+            ]
+        },
+        {
+            "number": 10,
+            "text_fr": "La Constitution garantit à l'opposition parlementaire un statut lui conférant des droits à même de lui permettre de s'acquitter convenablement de ses missions.",
+            "text_ar": "يضمن الدستور للمعارضة البرلمانية مكانة تخولها حقوقا، من شأنها تمكينها من النهوض بمهامها على الوجه الأكمل.",
+            "keywords": [
+                "opposition",
+                "معارضة",
+                "parlement",
+                "برلمان",
+                "droits",
+                "حقوق"
+            ]
+        },
+        {
+            "number": 11,
+            "text_fr": "Les élections libres, sincères et transparentes constituent le fondement de la légitimité de la représentation démocratique.",
+            "text_ar": "الانتخابات الحرة والنزيهة والشفافة هي أساس مشروعية التمثيل الديمقراطي.",
+            "keywords": [
+                "élections",
+                "انتخابات",
+                "libres",
+                "حرة",
+                "transparentes",
+                "شفافة"
+            ]
+        },
+        {
+            "number": 12,
+            "text_fr": "Les associations de la société civile et les organisations non gouvernementales se constituent et exercent leurs activités en toute liberté, dans le respect de la Constitution et de la loi.",
+            "text_ar": "تُؤَسَّس جمعيات المجتمع المدني والمنظمات غير الحكومية وتمارس أنشطتها بحرية، في نطاق احترام الدستور والقانون.",
+            "keywords": [
+                "associations",
+                "جمعيات",
+                "société civile",
+                "مجتمع مدني",
+                "ONG",
+                "منظمات"
+            ]
+        },
+        {
+            "number": 13,
+            "text_fr": "Les pouvoirs publics œuvrent à la création d'instances de concertation, en vue d'associer les différents acteurs sociaux à l'élaboration, la mise en œuvre et l'évaluation des politiques publiques.",
+            "text_ar": "تعمل السلطات العمومية على إحداث هيئات للتشاور، قصد إشراك مختلف الفاعلين الاجتماعيين، في إعداد السياسات العمومية وتفعيلها وتنفيذها وتقييمها.",
+            "keywords": [
+                "concertation",
+                "تشاور",
+                "politiques publiques",
+                "سياسات عمومية"
+            ]
+        },
+        {
+            "number": 14,
+            "text_fr": "Les citoyennes et les citoyens disposent du droit de présenter des pétitions aux pouvoirs publics.",
+            "text_ar": "للمواطنات والمواطنين، ضمن شروط وكيفيات يحددها قانون تنظيمي، الحق في تقديم ملتمسات في مجال التشريع.",
+            "keywords": [
+                "pétitions",
+                "ملتمسات",
+                "citoyens",
+                "مواطنين",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 15,
+            "text_fr": "Les citoyens et les citoyennes ont le droit d'accéder à l'information détenue par l'administration publique, les institutions élues et les organismes investis d'une mission de service public.",
+            "text_ar": "للمواطنات والمواطنين الحق في الحصول على المعلومات، الموجودة في حوزة الإدارة العمومية، والمؤسسات المنتخبة، والهيئات المكلفة بمهام المرفق العام.",
+            "keywords": [
+                "accès information",
+                "الحصول على المعلومات",
+                "transparence",
+                "شفافية"
+            ]
+        },
+        {
+            "number": 16,
+            "text_fr": "Le Royaume du Maroc œuvre à la protection des droits et des intérêts légitimes des citoyennes et des citoyens marocains résidant à l'étranger.",
+            "text_ar": "تعمل المملكة المغربية على حماية الحقوق والمصالح المشروعة للمواطنات والمواطنين المغاربة المقيمين في الخارج.",
+            "keywords": [
+                "MRE",
+                "مغاربة الخارج",
+                "protection",
+                "حماية"
+            ]
+        },
+        {
+            "number": 17,
+            "text_fr": "Les Marocains résidant à l'étranger jouissent des droits de pleine citoyenneté, y compris le droit d'être électeurs et éligibles.",
+            "text_ar": "يتمتع المغاربة المقيمون في الخارج بحقوق المواطنة كاملة، بما فيها حق التصويت والترشح.",
+            "keywords": [
+                "vote",
+                "تصويت",
+                "éligibilité",
+                "ترشح",
+                "MRE",
+                "مغاربة الخارج"
+            ]
+        },
+        {
+            "number": 18,
+            "text_fr": "Les pouvoirs publics œuvrent à assurer une participation aussi étendue que possible des Marocains résidant à l'étranger aux institutions consultatives et de bonne gouvernance.",
+            "text_ar": "تعمل السلطات العمومية على ضمان أوسع مشاركة ممكنة للمغاربة المقيمين في الخارج، في المؤسسات الاستشارية، وهيئات الحكامة الجيدة.",
+            "keywords": [
+                "participation",
+                "مشاركة",
+                "gouvernance",
+                "حكامة"
+            ]
+        },
+        {
+            "number": 19,
+            "text_fr": "L'homme et la femme jouissent, à égalité, des droits et libertés à caractère civil, politique, économique, social, culturel et environnemental. L'Etat marocain œuvre à la réalisation de la parité entre les hommes et les femmes.",
+            "text_ar": "يتمتع الرجل والمرأة، على قدم المساواة، بالحقوق والحريات المدنية والسياسية والاقتصادية والاجتماعية والثقافية والبيئية. تسعى الدولة إلى تحقيق مبدأ المناصفة بين الرجال والنساء.",
+            "keywords": [
+                "égalité",
+                "homme",
+                "femme",
+                "parité",
+                "droits",
+                "مساواة",
+                "رجل",
+                "مرأة",
+                "مناصفة",
+                "حقوق"
+            ]
+        },
+        {
+            "number": 20,
+            "text_fr": "Le droit à la vie est le droit premier de tout être humain. La loi protège ce droit.",
+            "text_ar": "الحق في الحياة هو أول الحقوق لكل إنسان. ويحميه القانون.",
+            "keywords": [
+                "vie",
+                "droit",
+                "humain",
+                "protection",
+                "حياة",
+                "حق",
+                "إنسان",
+                "حماية"
+            ]
+        },
+        {
+            "number": 21,
+            "text_fr": "Tous ont droit à la sécurité de leur personne, de leurs proches et de leurs biens. Les pouvoirs publics assurent la sécurité des populations et du territoire national.",
+            "text_ar": "لكل فرد الحق في سلامة شخصه وأقربائه وممتلكاته. تضمن السلطات العمومية سلامة السكان وسلامة التراب الوطني.",
+            "keywords": [
+                "sécurité",
+                "personne",
+                "biens",
+                "population",
+                "سلامة",
+                "شخص",
+                "ممتلكات",
+                "سكان"
+            ]
+        },
+        {
+            "number": 22,
+            "text_fr": "Il ne peut être porté atteinte à l'intégrité physique ou morale de quiconque, en quelque circonstance que ce soit et par quelque personne que ce soit. Nul ne doit infliger à autrui, sous quelque prétexte que ce soit, des traitements cruels, inhumains, dégradants ou portant atteinte à la dignité. La pratique de la torture, sous toutes ses formes et par quiconque, est un crime puni par la loi.",
+            "text_ar": "لا يجوز المس بالسلامة الجسدية أو المعنوية لأي شخص، في أي ظرف، ومن قبل أي جهة كانت. لا يجوز لأحد أن يعامل الغير، تحت أي ذريعة، معاملة قاسية أو لا إنسانية أو مهينة أو حاطة بالكرامة. ممارسة التعذيب بكافة أشكاله، ومن قبل أي أحد، جريمة يعاقب عليها القانون.",
+            "keywords": [
+                "intégrité",
+                "torture",
+                "crime",
+                "dignité",
+                "سلامة",
+                "تعذيب",
+                "جريمة",
+                "كرامة"
+            ]
+        },
+        {
+            "number": 23,
+            "text_fr": "Nul ne peut être arrêté, détenu, poursuivi ou condamné en dehors des cas et des formes prévus par la loi. La détention arbitraire ou secrète et la disparition forcée sont des crimes de la plus grande gravité.",
+            "text_ar": "لا يجوز إلقاء القبض على أي شخص أو اعتقاله أو متابعته أو إدانته، إلا في الحالات وطبقا للإجراءات التي ينص عليها القانون. الاعتقال التعسفي أو السري والاختفاء القسري، من أخطر الجرائم.",
+            "keywords": [
+                "arrestation",
+                "اعتقال",
+                "détention",
+                "احتجاز",
+                "légalité",
+                "قانونية"
+            ]
+        },
+        {
+            "number": 24,
+            "text_fr": "Toute personne a droit à la protection de sa vie privée. Le domicile est inviolable. Les perquisitions ne peuvent intervenir que dans les conditions et les formes prévues par la loi.",
+            "text_ar": "لكل شخص الحق في حماية حياته الخاصة. لا تنتهك حرمة المنزل. ولا يمكن القيام بأي تفتيش إلا وفق الشروط والإجراءات، التي ينص عليها القانون.",
+            "keywords": [
+                "vie privée",
+                "حياة خاصة",
+                "domicile",
+                "منزل",
+                "perquisition",
+                "تفتيش"
+            ]
+        },
+        {
+            "number": 25,
+            "text_fr": "Sont garanties les libertés de pensée, d'opinion et d'expression sous toutes ses formes. Sont garanties les libertés de création, de publication et d'exposition en matière littéraire et artistique et de recherche scientifique et technique.",
+            "text_ar": "حرية الفكر والرأي والتعبير مكفولة بكل أشكالها. حرية الإبداع والنشر والعرض في مجالات الأدب والفن والبحث العلمي والتقني مضمونة.",
+            "keywords": [
+                "liberté expression",
+                "حرية التعبير",
+                "pensée",
+                "فكر",
+                "opinion",
+                "رأي"
+            ]
+        },
+        {
+            "number": 26,
+            "text_fr": "Les pouvoirs publics apportent, par des moyens appropriés, leur appui au développement de la création culturelle et artistique, et de la recherche scientifique et technique.",
+            "text_ar": "تقدم السلطات العمومية، بالوسائل الملائمة، الدعم اللازم لتطوير الإبداع الثقافي والفني، والبحث العلمي والتقني.",
+            "keywords": [
+                "culture",
+                "ثقافة",
+                "art",
+                "فن",
+                "recherche",
+                "بحث"
+            ]
+        },
+        {
+            "number": 27,
+            "text_fr": "Les citoyennes et les citoyens ont le droit d'accéder à l'information détenue par l'administration publique, les institutions élues et les organismes investis d'une mission de service public.",
+            "text_ar": "للمواطنات والمواطنين حق الحصول على المعلومات، الموجودة في حوزة الإدارة العمومية، والمؤسسات المنتخبة، والهيئات المكلفة بمهام المرفق العام.",
+            "keywords": [
+                "information",
+                "معلومات",
+                "accès",
+                "ولوج",
+                "administration",
+                "إدارة"
+            ]
+        },
+        {
+            "number": 28,
+            "text_fr": "La liberté de la presse est garantie et ne peut être limitée par aucune forme de censure préalable. Tous ont le droit d'exprimer et de diffuser librement les informations, les idées et les opinions dans le respect des droits d'autrui.",
+            "text_ar": "حرية الصحافة مضمونة، ولا يمكن تقييدها بأي شكل من أشكال الرقابة القبلية. للجميع الحق في التعبير، ونشر الأخبار والأفكار والآراء، بكل حرية، ومن غير قيد، عدا ما ينص عليه القانون صراحة.",
+            "keywords": [
+                "presse",
+                "صحافة",
+                "liberté",
+                "حرية",
+                "censure",
+                "رقابة"
+            ]
+        },
+        {
+            "number": 29,
+            "text_fr": "Sont garanties les libertés de réunion, de rassemblement, de manifestation pacifique, d'association et d'appartenance syndicale et politique.",
+            "text_ar": "حريات الاجتماع والتجمهر والتظاهر السلمي، وتأسيس الجمعيات، والانتماء النقابي والسياسي مضمونة.",
+            "keywords": [
+                "réunion",
+                "اجتماع",
+                "manifestation",
+                "تظاهر",
+                "association",
+                "جمعية"
+            ]
+        },
+        {
+            "number": 30,
+            "text_fr": "Chacun a droit à l'éducation et à l'enseignement. L'État, les établissements publics et les collectivités territoriales œuvrent à faciliter et à généraliser l'accès à l'enseignement.",
+            "text_ar": "لكل شخص الحق في التعليم. تعمل الدولة والمؤسسات العمومية والجماعات الترابية على تيسير أسباب الاستفادة من التعليم وتعميمه.",
+            "keywords": [
+                "éducation",
+                "تعليم",
+                "enseignement",
+                "دراسة",
+                "droit",
+                "حق"
+            ]
+        },
+        {
+            "number": 31,
+            "text_fr": "L'État, les établissements publics et les collectivités territoriales œuvrent à la mobilisation de tous les moyens disponibles pour faciliter l'égal accès des citoyennes et des citoyens aux conditions leur permettant de jouir des droits : à la santé, à la protection sociale, à la couverture médicale, à un logement décent, au travail, à l'accès à l'eau et à un environnement sain.",
+            "text_ar": "تعمل الدولة والمؤسسات العمومية والجماعات الترابية على تعبئة كل الوسائل المتاحة، لتيسير أسباب استفادة المواطنات والمواطنين، على قدم المساواة، من الحق في: العلاج والعناية الصحية، الحماية الاجتماعية والتغطية الصحية، السكن اللائق، الشغل، الولوج للماء والعيش في بيئة سليمة.",
+            "keywords": [
+                "santé",
+                "صحة",
+                "logement",
+                "سكن",
+                "travail",
+                "شغل",
+                "eau",
+                "ماء"
+            ]
+        },
+        {
+            "number": 32,
+            "text_fr": "La famille, fondée sur le lien légal du mariage, est la cellule de base de la société. L'État œuvre à garantir, par la loi, la protection de la famille sur les plans juridique, social et économique.",
+            "text_ar": "الأسرة القائمة على علاقة الزواج الشرعي هي الخلية الأساسية للمجتمع. تعمل الدولة على ضمان الحماية الحقوقية والاجتماعية والاقتصادية للأسرة، بمقتضى القانون.",
+            "keywords": [
+                "famille",
+                "أسرة",
+                "mariage",
+                "زواج",
+                "protection",
+                "حماية"
+            ]
+        },
+        {
+            "number": 33,
+            "text_fr": "Il incombe aux pouvoirs publics de prendre toutes les mesures appropriées en vue d'étendre et généraliser la participation de la jeunesse au développement social, économique, culturel et politique du pays.",
+            "text_ar": "على السلطات العمومية اتخاذ التدابير الملائمة لتحقيق ما يلي: توسيع وتعميم مشاركة الشباب في التنمية الاجتماعية والاقتصادية والثقافية والسياسية للبلاد.",
+            "keywords": [
+                "jeunesse",
+                "شباب",
+                "participation",
+                "مشاركة",
+                "développement",
+                "تنمية"
+            ]
+        },
+        {
+            "number": 34,
+            "text_fr": "Les pouvoirs publics élaborent et mettent en œuvre des politiques destinées aux personnes et aux catégories à besoins spécifiques. À cet effet, ils veillent notamment à : traiter et prévenir la vulnérabilité de certaines catégories de femmes et de mères, d'enfants et de personnes âgées.",
+            "text_ar": "تقوم السلطات العمومية بوضع وتفعيل سياسات موجهة إلى الأشخاص والفئات من ذوي الاحتياجات الخاصة. ولهذا الغرض، تسهر خصوصا على: معالجة الأوضاع الهشة لفئات من النساء والأمهات، وللأطفال والأشخاص المسنين والوقاية منها.",
+            "keywords": [
+                "handicap",
+                "إعاقة",
+                "vulnérabilité",
+                "هشاشة",
+                "protection",
+                "حماية"
+            ]
+        },
+        {
+            "number": 35,
+            "text_fr": "Le droit de propriété est garanti. La loi peut en limiter l'étendue et l'exercice si les exigences du développement économique et social du pays le nécessitent. Il ne peut être procédé à l'expropriation que dans les cas et les formes prévus par la loi.",
+            "text_ar": "يضمن القانون حق الملكية. ويمكن للقانون أن يحد من نطاقها وممارستها، إذا اقتضت ذلك متطلبات التنمية الاقتصادية والاجتماعية للبلاد. ولا يمكن نزع الملكية إلا في الحالات ووفق الإجراءات التي ينص عليها القانون.",
+            "keywords": [
+                "propriété",
+                "ملكية",
+                "expropriation",
+                "نزع",
+                "garantie",
+                "ضمان"
+            ]
+        },
+        {
+            "number": 36,
+            "text_fr": "Les infractions relatives aux conflits d'intérêts, aux délits d'initié, et toutes les infractions d'ordre financier sont sanctionnées par la loi. Les pouvoirs publics sont tenus de prévenir et réprimer, conformément à la loi, toutes formes de délinquance liées à l'activité des administrations et des organismes publics.",
+            "text_ar": "يعاقب القانون على المخالفات المتعلقة بحالات تنازع المصالح، وعلى استغلال التسريبات المخلة بالتنافس النزيه، وكل مخالفة ذات طابع مالي. على السلطات العمومية الوقاية، طبقا للقانون، من كل أشكال الانحراف المرتبطة بنشاط الإدارات والهيئات العمومية، وزجرها.",
+            "keywords": [
+                "corruption",
+                "فساد",
+                "conflits intérêts",
+                "تضارب المصالح",
+                "infractions",
+                "مخالفات"
+            ]
+        },
+        {
+            "number": 41,
+            "text_fr": "Le Roi, Amir Al Mouminine, veille au respect de l'Islam. Il est le Garant du libre exercice des cultes. Il préside le Conseil supérieur des Oulémas, chargé de l'étude des questions qu'Il lui soumet.",
+            "text_ar": "الملك، أمير المؤمنين وحامي حمى الملة والدين، والضامن لحرية ممارسة الشؤون الدينية. يرأس الملك، أمير المؤمنين، المجلس العلمي الأعلى، الذي يتولى دراسة القضايا التي يعرضها عليه.",
+            "keywords": [
+                "Roi",
+                "ملك",
+                "Amir Al Mouminine",
+                "أمير المؤمنين",
+                "Islam",
+                "إسلام"
+            ]
+        },
+        {
+            "number": 42,
+            "text_fr": "Le Roi, Chef de l'État, son Représentant Suprême, Symbole de l'unité de la Nation, Garant de la pérennité et de la continuité de l'État et Arbitre suprême entre ses institutions, veille au respect de la Constitution, au bon fonctionnement des institutions constitutionnelles.",
+            "text_ar": "الملك، رئيس الدولة، وممثلها الأسمى، ورمز وحدة الأمة، وضامن دوام الدولة واستمرارها، والحكم الأسمى بين مؤسساتها، يسهر على احترام الدستور، وحسن سير المؤسسات الدستورية.",
+            "keywords": [
+                "Chef État",
+                "رئيس الدولة",
+                "unité",
+                "وحدة",
+                "Constitution",
+                "دستور"
+            ]
+        },
+        {
+            "number": 43,
+            "text_fr": "La Couronne du Maroc et ses droits constitutionnels sont héréditaires et se transmettent de père en fils aux descendants mâles en ligne directe et par ordre de primogéniture de Sa Majesté le Roi Mohammed VI, à moins que le Roi ne désigne, de Son vivant, un successeur parmi Ses fils, autre que Son fils aîné.",
+            "text_ar": "إن عرش المغرب وحقوقه الدستورية تنتقل بالوراثة من الأب إلى الابن، إلى الذكور من ذرية جلالة الملك محمد السادس، ثم إلى الأكبر سنا منهم، ولاءً عند تعادل السن، ما عدا إذا عين الملك قيد حياته خلفا له ولدا آخر من أبنائه غير الولد الأكبر.",
+            "keywords": [
+                "Couronne",
+                "عرش",
+                "succession",
+                "وراثة",
+                "Roi",
+                "ملك"
+            ]
+        },
+        {
+            "number": 47,
+            "text_fr": "Le Roi nomme le Chef du Gouvernement au sein du parti politique arrivé en tête des élections des membres de la Chambre des Représentants, et au vu de leurs résultats.",
+            "text_ar": "يعين الملك رئيس الحكومة من الحزب السياسي الذي تصدر انتخابات أعضاء مجلس النواب، وعلى أساس نتائجها.",
+            "keywords": [
+                "roi",
+                "chef gouvernement",
+                "élections",
+                "nomination",
+                "ملك",
+                "رئيس الحكومة",
+                "انتخابات",
+                "تعيين"
+            ]
+        },
+        {
+            "number": 48,
+            "text_fr": "Le Roi préside le Conseil des ministres composé du Chef du Gouvernement et des ministres.",
+            "text_ar": "يرأس الملك المجلس الوزاري، المكون من رئيس الحكومة والوزراء.",
+            "keywords": [
+                "Conseil ministres",
+                "مجلس وزاري",
+                "présidence",
+                "رئاسة"
+            ]
+        },
+        {
+            "number": 49,
+            "text_fr": "Le Conseil des ministres délibère sur les orientations stratégiques de la politique de l'État, les projets de révision de la Constitution, les projets de lois organiques, les orientations générales du projet de loi de finances.",
+            "text_ar": "يتداول المجلس الوزاري في القضايا والنصوص التالية: التوجهات الإستراتيجية لسياسة الدولة، مشاريع مراجعة الدستور، مشاريع القوانين التنظيمية، التوجهات العامة لمشروع قانون المالية.",
+            "keywords": [
+                "délibérations",
+                "مداولات",
+                "lois",
+                "قوانين",
+                "finances",
+                "مالية"
+            ]
+        },
+        {
+            "number": 53,
+            "text_fr": "Le Roi est le Chef Suprême des Forces Armées Royales. Il nomme aux emplois militaires et peut déléguer ce droit.",
+            "text_ar": "الملك هو القائد الأعلى للقوات المسلحة الملكية. وله حق التعيين في الوظائف العسكرية، كما له أن يفوض لغيره ممارسة هذا الحق.",
+            "keywords": [
+                "Forces Armées",
+                "قوات مسلحة",
+                "Chef Suprême",
+                "قائد أعلى"
+            ]
+        },
+        {
+            "number": 54,
+            "text_fr": "Il est créé un Conseil supérieur de sécurité, en tant qu'instance de concertation sur les stratégies de sécurité intérieure et extérieure du pays. Le Roi préside ce Conseil.",
+            "text_ar": "يُحدث مجلس أعلى للأمن، بصفته هيئة للتشاور بشأن استراتيجيات الأمن الداخلي والخارجي للبلاد. يرأس الملك هذا المجلس.",
+            "keywords": [
+                "sécurité",
+                "أمن",
+                "Conseil",
+                "مجلس",
+                "défense",
+                "دفاع"
+            ]
+        },
+        {
+            "number": 55,
+            "text_fr": "Lorsque l'intégrité du territoire national est menacée ou que se produisent des événements qui entravent le fonctionnement régulier des institutions constitutionnelles, le Roi peut, après avoir consulté le Chef du Gouvernement et les présidents des chambres, proclamer par dahir l'état d'exception.",
+            "text_ar": "عندما تكون حوزة التراب الوطني مهددة، أو يقع من الأحداث ما من شأنه أن يمس بالسير العادي للمؤسسات الدستورية، يمكن للملك أن يُعلن حالة الاستثناء بظهير، بعد استشارة كل من رئيس الحكومة، ورئيس مجلس النواب، ورئيس مجلس المستشارين، ورئيس المحكمة الدستورية.",
+            "keywords": [
+                "état exception",
+                "حالة الاستثناء",
+                "menace",
+                "تهديد",
+                "territoire",
+                "تراب"
+            ]
+        },
+        {
+            "number": 60,
+            "text_fr": "Le Parlement est composé de deux Chambres, la Chambre des Représentants et la Chambre des Conseillers. Leurs membres tiennent leur mandat de la Nation. Leur droit de vote est personnel et ne peut être délégué.",
+            "text_ar": "يتكون البرلمان من مجلسين، مجلس النواب ومجلس المستشارين؛ ويستمد أعضاؤه نيابتهم من الأمة، وحقهم في التصويت حق شخصي لا يمكن تفويضه.",
+            "keywords": [
+                "Parlement",
+                "برلمان",
+                "Chambres",
+                "مجلسين",
+                "Représentants",
+                "نواب",
+                "Conseillers",
+                "مستشارين"
+            ]
+        },
+        {
+            "number": 70,
+            "text_fr": "Le Parlement exerce le pouvoir législatif. Il vote les lois, contrôle l'action du gouvernement et évalue les politiques publiques.",
+            "text_ar": "يمارس البرلمان السلطة التشريعية. يصوت البرلمان على القوانين، ويراقب عمل الحكومة، ويقيم السياسات العمومية.",
+            "keywords": [
+                "pouvoir législatif",
+                "سلطة تشريعية",
+                "lois",
+                "قوانين",
+                "contrôle",
+                "مراقبة"
+            ]
+        },
+        {
+            "number": 71,
+            "text_fr": "Sont du domaine de la loi, outre les matières qui lui sont expressément dévolues par d'autres articles de la Constitution : les droits et libertés fondamentaux, le statut de la famille et l'état civil, les principes et règles du système de santé, le régime des médias audiovisuels et de la presse.",
+            "text_ar": "يختص القانون، بالإضافة إلى المواد المسندة إليه صراحة بفصول أخرى من الدستور، بالتشريع في الميادين التالية: الحقوق والحريات الأساسية، نظام الأسرة والحالة المدنية، مبادئ المنظومة الصحية وقواعدها، نظام الوسائط السمعية البصرية والصحافة.",
+            "keywords": [
+                "loi",
+                "قانون",
+                "domaine",
+                "مجال",
+                "libertés",
+                "حريات"
+            ]
+        },
+        {
+            "number": 87,
+            "text_fr": "Le Gouvernement se compose du Chef du Gouvernement et des ministres. Le Chef du Gouvernement nomme les ministres au sein du Gouvernement et en informe le Roi.",
+            "text_ar": "تتألف الحكومة من رئيس الحكومة والوزراء. ويعين رئيس الحكومة أعضاء الحكومة ويعلم الملك بذلك.",
+            "keywords": [
+                "Gouvernement",
+                "حكومة",
+                "ministres",
+                "وزراء",
+                "nomination",
+                "تعيين"
+            ]
+        },
+        {
+            "number": 89,
+            "text_fr": "Le Gouvernement exerce le pouvoir exécutif. Sous l'autorité du Chef du Gouvernement, le Gouvernement met en œuvre son programme gouvernemental, assure l'exécution des lois, dispose de l'administration.",
+            "text_ar": "تمارس الحكومة السلطة التنفيذية. تعمل الحكومة، تحت سلطة رئيسها، على تنفيذ البرنامج الحكومي وعلى ضمان تنفيذ القوانين.",
+            "keywords": [
+                "pouvoir exécutif",
+                "سلطة تنفيذية",
+                "programme",
+                "برنامج",
+                "lois",
+                "قوانين"
+            ]
+        },
+        {
+            "number": 107,
+            "text_fr": "Le pouvoir judiciaire est indépendant du pouvoir législatif et du pouvoir exécutif. Le Roi est le garant de l'indépendance du pouvoir judiciaire.",
+            "text_ar": "السلطة القضائية مستقلة عن السلطة التشريعية وعن السلطة التنفيذية. الملك هو الضامن لاستقلال السلطة القضائية.",
+            "keywords": [
+                "pouvoir judiciaire",
+                "سلطة قضائية",
+                "indépendance",
+                "استقلال",
+                "justice",
+                "قضاء"
+            ]
+        },
+        {
+            "number": 108,
+            "text_fr": "Les magistrats du siège sont inamovibles.",
+            "text_ar": "لا يُعزل قضاة الأحكام ولا يُنقلون إلا بمقتضى القانون.",
+            "keywords": [
+                "magistrats",
+                "قضاة",
+                "inamovibles",
+                "عدم العزل"
+            ]
+        },
+        {
+            "number": 109,
+            "text_fr": "Est proscrite toute intervention dans les affaires soumises à la justice. Dans sa fonction judiciaire, le juge ne saurait recevoir d'injonction ou d'instruction, ni être soumis à une quelconque pression.",
+            "text_ar": "يُمنع كل تدخل في القضايا المعروضة على القضاء؛ ولا يتلقى القاضي بشأن مهمته القضائية أي أوامر أو تعليمات ولا يخضع لأي ضغط.",
+            "keywords": [
+                "indépendance",
+                "استقلال",
+                "intervention",
+                "تدخل",
+                "pression",
+                "ضغط"
+            ]
+        },
+        {
+            "number": 110,
+            "text_fr": "Les magistrats du Parquet sont tenus à l'application du droit et doivent se conformer aux instructions écrites émanant de l'autorité hiérarchique.",
+            "text_ar": "يجب على قضاة النيابة العامة تطبيق القانون. كما يتعين عليهم الالتزام بالتعليمات الكتابية القانونية الصادرة عن السلطة التي يتبعون لها.",
+            "keywords": [
+                "Parquet",
+                "نيابة عامة",
+                "instructions",
+                "تعليمات",
+                "hiérarchie",
+                "تسلسل"
+            ]
+        },
+        {
+            "number": 117,
+            "text_fr": "Le juge est en charge de la protection des droits et libertés et de la sécurité judiciaire des personnes et des groupes, ainsi que de l'application de la loi.",
+            "text_ar": "يتولى القاضي حماية حقوق الأشخاص والجماعات وحرياتهم وأمنهم القضائي، وتطبيق القانون.",
+            "keywords": [
+                "protection",
+                "حماية",
+                "droits",
+                "حقوق",
+                "sécurité judiciaire",
+                "أمن قضائي"
+            ]
+        },
+        {
+            "number": 118,
+            "text_fr": "L'accès à la justice est garanti à toute personne pour la défense de ses droits et de ses intérêts protégés par la loi.",
+            "text_ar": "حق التقاضي مضمون لكل شخص للدفاع عن حقوقه وعن مصالحه التي يحميها القانون.",
+            "keywords": [
+                "accès justice",
+                "التقاضي",
+                "défense",
+                "دفاع",
+                "droits",
+                "حقوق"
+            ]
+        },
+        {
+            "number": 120,
+            "text_fr": "Toute personne a droit à un procès équitable et à un jugement rendu dans un délai raisonnable. Les droits de la défense sont garantis devant toutes les juridictions.",
+            "text_ar": "لكل شخص الحق في محاكمة عادلة، وفي حكم يصدر داخل أجل معقول. حقوق الدفاع مضمونة أمام جميع المحاكم.",
+            "keywords": [
+                "procès équitable",
+                "محاكمة عادلة",
+                "délai raisonnable",
+                "أجل معقول",
+                "défense",
+                "دفاع"
+            ]
+        },
+        {
+            "number": 121,
+            "text_fr": "Dans les cas où la loi le prévoit, la justice est gratuite pour ceux qui ne disposent pas de ressources suffisantes pour ester en justice.",
+            "text_ar": "يكون التقاضي مجانيا، في الحالات المنصوص عليها قانونا، لمن لا يتوفر على موارد كافية للتقاضي.",
+            "keywords": [
+                "gratuit",
+                "مجاني",
+                "aide juridictionnelle",
+                "مساعدة قضائية"
+            ]
+        },
+        {
+            "number": 130,
+            "text_fr": "La Cour Constitutionnelle est composée de douze membres nommés pour un mandat de neuf ans non renouvelable.",
+            "text_ar": "تتألف المحكمة الدستورية من اثني عشر عضوا، يعينون لمدة تسع سنوات غير قابلة للتجديد.",
+            "keywords": [
+                "Cour Constitutionnelle",
+                "محكمة دستورية",
+                "membres",
+                "أعضاء",
+                "9 ans"
+            ]
+        },
+        {
+            "number": 133,
+            "text_fr": "La Cour Constitutionnelle est compétente pour connaître d'une exception d'inconstitutionnalité soulevée au cours d'un procès, lorsqu'il est soutenu par l'une des parties que la loi dont dépend l'issue du litige, porte atteinte aux droits et libertés garantis par la Constitution.",
+            "text_ar": "تختص المحكمة الدستورية بالنظر في كل دفع متعلق بعدم دستورية قانون، أثير أثناء النظر في قضية، وذلك إذا دفع أحد الأطراف بأن القانون، الذي سيطبق في النزاع، يمس بالحقوق وبالحريات التي يضمنها الدستور.",
+            "keywords": [
+                "inconstitutionnalité",
+                "عدم دستورية",
+                "exception",
+                "دفع",
+                "droits",
+                "حقوق"
+            ]
+        },
+        {
+            "number": 135,
+            "text_fr": "Les collectivités territoriales du Royaume sont les régions, les préfectures, les provinces et les communes. Elles constituent des personnes morales de droit public et gèrent démocratiquement leurs affaires.",
+            "text_ar": "الجماعات الترابية للمملكة هي الجهات والعمالات والأقاليم والجماعات. وهي أشخاص اعتبارية، خاضعة للقانون العام، تسير شؤونها بكيفية ديمقراطية.",
+            "keywords": [
+                "collectivités",
+                "جماعات ترابية",
+                "régions",
+                "جهات",
+                "communes",
+                "جماعات"
+            ]
+        },
+        {
+            "number": 136,
+            "text_fr": "L'organisation territoriale du Royaume repose sur les principes de libre administration, de coopération et de solidarité. Elle assure la participation des populations concernées à la gestion de leurs affaires.",
+            "text_ar": "يرتكز التنظيم الترابي للمملكة على مبادئ التدبير الحر، وعلى التعاون والتضامن؛ ويؤمن مشاركة السكان المعنيين في تدبير شؤونهم.",
+            "keywords": [
+                "libre administration",
+                "تدبير حر",
+                "coopération",
+                "تعاون",
+                "solidarité",
+                "تضامن"
+            ]
+        },
+        {
+            "number": 175,
+            "text_fr": "Aucune révision ne peut porter sur les dispositions relatives à la religion musulmane, sur la forme monarchique de l'Etat, sur le choix démocratique de la nation ou sur les acquis en matière de libertés et de droits fondamentaux inscrits dans la présente Constitution.",
+            "text_ar": "لا يمكن أن تتناول المراجعة الأحكام المتعلقة بالدين الإسلامي، وبالنظام الملكي للدولة، وبالاختيار الديمقراطي للأمة، وبالمكتسبات في مجال الحريات والحقوق الأساسية المنصوص عليها في هذا الدستور.",
+            "keywords": [
+                "révision",
+                "مراجعة",
+                "religion",
+                "دين",
+                "monarchie",
+                "ملكية",
+                "démocratie",
+                "ديمقراطية",
+                "droits",
+                "حقوق"
+            ]
+        }
+    ]
+}
