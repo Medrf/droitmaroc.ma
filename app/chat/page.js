@@ -149,9 +149,20 @@ export default function ChatPage() {
                 body: JSON.stringify({ message, history: messages }),
             })
 
-            if (!response.ok) throw new Error('Failed to get response')
+            let data
+            try {
+                data = await response.json()
+            } catch (e) {
+                throw new Error("Erreur de communication avec le serveur (Réponse invalide)")
+            }
 
-            const data = await response.json()
+            if (!response.ok) {
+                throw new Error(data.message || `Erreur serveur: ${response.status}`)
+            }
+
+            // Check for explicit error field even if 200 OK (just in case)
+            if (data.error) throw new Error(data.error)
+
             const assistantMsg = { role: 'assistant', content: data.response }
             const finalMessages = [...updatedMessages, assistantMsg]
 
@@ -161,7 +172,7 @@ export default function ChatPage() {
             console.error('Error:', error)
             const errorMsg = {
                 role: 'assistant',
-                content: '⚠️ Une erreur est survenue. Veuillez réessayer.'
+                content: `⚠️ ${error.message || 'Une erreur est survenue'}`
             }
             const finalMessages = [...updatedMessages, errorMsg]
             setMessages(finalMessages)
