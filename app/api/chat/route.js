@@ -52,41 +52,58 @@ export async function POST(request) {
             content: message
         })
 
-        // Call Groq API using fetch (no SDK needed!)
+        // Call Groq API with SAFE BASELINE parameters
+        const payload = {
+            model: 'llama3-70b-8192', // Primary model
+            messages: messages,
+            temperature: 0.2,        // Low temp for accuracy
+            top_p: 0.9,
+            max_tokens: 400,         // Safe token limit
+            stream: false
+        }
+
+        console.log('Sending request to Groq:', JSON.stringify(payload, null, 2))
+
         const response = await fetch(GROQ_API_URL, {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                model: 'llama3-70b-8192', // Preferred model for legal accuracy
-                max_tokens: 800,          // Assistant settings: 800 tokens
-                temperature: 0.2,         // Strict adherence to facts
-                top_p: 0.9,               // Focused sampling
-                presence_penalty: 0,
-                frequency_penalty: 0,
-                messages: messages
-            })
+            body: JSON.stringify(payload)
         })
 
         if (!response.ok) {
-            const error = await response.text()
-            console.error('Groq API Error:', error)
-            throw new Error('API request failed')
+            const errorText = await response.text()
+            console.error('❌ Groq API Critical Error:', {
+                status: response.status,
+                statusText: response.statusText,
+                body: errorText
+            })
+
+            // Fallback to mock response in case of API overload/error
+            return Response.json({
+                response: "⚠️ Une erreur technique est survenue. Veuillez réessayer dans quelques instants (Erreur API)."
+            })
         }
 
         const data = await response.json()
-        const assistantMessage = data.choices?.[0]?.message?.content || 'Désolé, je n\'ai pas pu répondre. Réessaie.'
 
+        if (!data.choices || !data.choices.length) {
+            console.error('❌ Invalid Groq Response Structure:', JSON.stringify(data))
+            throw new Error('Invalid response structure from Groq')
+        }
+
+        const assistantMessage = data.choices[0].message.content
         return Response.json({ response: assistantMessage })
 
     } catch (error) {
-        console.error('API Error:', error)
+        console.error('🚨 Server Error in Chat Route:', error)
 
+        // Always return valid JSON even on crash
         return Response.json(
             {
-                response: 'Une erreur s\'est produite. Réessaie dans un moment.'
+                response: "⚠️ Service momentanément indisponible. Veuillez vérifier votre connexion ou réessayer."
             },
             { status: 500 }
         )
