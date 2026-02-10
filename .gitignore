@@ -35,4 +35,5 @@ Thumbs.db
 
 # Misc
 *.log
-.env*.local
+vercel_env_vars.txt
+

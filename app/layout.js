@@ -6,7 +6,7 @@ import { LanguageProvider } from '@/lib/language'
 
 export default function RootLayout({ children }) {
     return (
-        <ClerkProvider>
+        <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
             <html lang="fr" dir="ltr" suppressHydrationWarning>
                 <head>
                     <title>droitmaroc.ma | Informations Juridiques Marocaines</title>
@@ -25,6 +25,6 @@ export default function RootLayout({ children }) {
                     </LanguageProvider>
                 </body>
             </html>
-        </ClerkProvider>
+        </ClerkProvider >
     )
 }
