@@ -63,7 +63,7 @@ export async function POST(request) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama3-70b-8192', // Preferred model
+                model: 'llama-3.3-70b-versatile', // Updated to supported model
                 max_tokens: 1200,         // Audit settings: 1200 tokens
                 temperature: 0.2,         // Very strict for analysis
                 top_p: 0.9,

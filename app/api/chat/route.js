@@ -54,11 +54,11 @@ export async function POST(request) {
 
         // Call Groq API with SAFE BASELINE parameters
         const payload = {
-            model: 'llama3-70b-8192', // Primary model
+            model: 'llama-3.3-70b-versatile', // Updated to supported model
             messages: messages,
-            temperature: 0.2,        // Low temp for accuracy
+            temperature: 0.2,
             top_p: 0.9,
-            max_tokens: 400,         // Safe token limit
+            max_tokens: 800,         // Restoring 800 tokens as it's safe for 3.3
             stream: false
         }
 

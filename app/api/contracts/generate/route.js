@@ -50,7 +50,7 @@ Generate the FULL contract now with all articles. Use placeholders for any missi
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama3-70b-8192', // Preferred model
+                model: 'llama-3.3-70b-versatile', // Updated to supported model
                 max_tokens: 2000,         // Contract settings: 2000 tokens
                 temperature: 0.25,        // Specific legal creativity balance
                 top_p: 0.95,
