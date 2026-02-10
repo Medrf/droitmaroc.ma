@@ -81,10 +81,16 @@ export async function POST(request) {
                 body: errorText
             })
 
-            // Fallback to mock response in case of API overload/error
-            return Response.json({
-                response: "⚠️ Une erreur technique est survenue. Veuillez réessayer dans quelques instants (Erreur API)."
-            })
+            // Debugging: Return the actual error
+            return Response.json(
+                {
+                    ok: false,
+                    errorType: "GROQ_API_ERROR (HTTP)",
+                    message: `Groq API Error: ${response.status} ${response.statusText} - ${errorText}`,
+                    status: response.status
+                },
+                { status: 500 }
+            )
         }
 
         const data = await response.json()
@@ -97,16 +103,18 @@ export async function POST(request) {
         const assistantMessage = data.choices[0].message.content
         return Response.json({ response: assistantMessage })
 
-    } catch (error) {
-        console.error('🚨 Server Error in Chat Route:', error)
-
-        // Always return valid JSON even on crash
+    } catch (e) {
+        console.error("GROQ API ERROR:", e);
         return Response.json(
             {
-                response: "⚠️ Service momentanément indisponible. Veuillez vérifier votre connexion ou réessayer."
+                ok: false,
+                errorType: "GROQ_API_ERROR",
+                message: e?.message || String(e),
+                status: e?.status || null,
+                code: e?.code || null,
             },
             { status: 500 }
-        )
+        );
     }
 }
 
