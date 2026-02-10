@@ -44,9 +44,10 @@ export async function POST(request) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama-3.3-70b-versatile',
-                max_tokens: 8192,
-                temperature: 0.2,
+                model: 'llama3-70b-8192', // Preferred model
+                max_tokens: 2000,         // Contract settings: 2000 tokens
+                temperature: 0.25,        // Specific legal creativity balance
+                top_p: 0.95,
                 messages: [
                     { role: 'system', content: systemPrompt },
                     { role: 'user', content: userPrompt }

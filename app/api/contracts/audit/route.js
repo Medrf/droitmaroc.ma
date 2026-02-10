@@ -63,9 +63,10 @@ export async function POST(request) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama-3.3-70b-versatile',
-                max_tokens: 2048,
-                temperature: 0.3, // Strict and factual
+                model: 'llama3-70b-8192', // Preferred model
+                max_tokens: 1200,         // Audit settings: 1200 tokens
+                temperature: 0.2,         // Very strict for analysis
+                top_p: 0.9,
                 messages: messages
             })
         })
