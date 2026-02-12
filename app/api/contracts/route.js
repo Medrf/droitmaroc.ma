@@ -1,7 +1,7 @@
 import { CONTRACT_DRAFTER_PROMPT_FR } from '@/lib/contractPrompts'
 
-// Gemini API endpoint (OpenAI-compatible)
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+// Gemini API endpoint (native)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
 
 export async function POST(request) {
     try {
@@ -22,31 +22,21 @@ export async function POST(request) {
         }
 
         // Call Gemini API
-        const response = await fetch(GEMINI_API_URL, {
+        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
             method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                model: 'gemini-2.0-flash',
-                max_tokens: 8192,
-                temperature: 0.3,
-                messages: [
-                    {
-                        role: 'system',
-                        content: CONTRACT_DRAFTER_PROMPT_FR
-                    },
-                    {
-                        role: 'user',
-                        content: description
-                    }
-                ]
+                contents: [{ role: 'user', parts: [{ text: description }] }],
+                systemInstruction: { parts: [{ text: CONTRACT_DRAFTER_PROMPT_FR }] },
+                generationConfig: {
+                    maxOutputTokens: 8192,
+                    temperature: 0.3
+                }
             })
         })
 
         if (!response.ok) {
-            const error = await response.json()
+            const error = await response.text()
             console.error('Gemini API Error:', error)
             return Response.json({
                 contract: getMockContract(description, language)
@@ -54,7 +44,7 @@ export async function POST(request) {
         }
 
         const data = await response.json()
-        const contract = data.choices[0]?.message?.content || getMockContract(description, language)
+        const contract = data.candidates?.[0]?.content?.parts?.[0]?.text || getMockContract(description, language)
 
         return Response.json({ contract })
 

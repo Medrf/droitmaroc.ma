@@ -1,7 +1,7 @@
 import { CONTRACT_AUDIT_PROMPT } from '@/lib/contractPrompts'
 
-// Gemini API endpoint (OpenAI-compatible)
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+// Gemini API endpoint (native)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
 
 export async function POST(request) {
     try {
@@ -28,46 +28,41 @@ export async function POST(request) {
             })
         }
 
-        // Prepare system prompt with contract context
-        const systemMessage = {
-            role: 'system',
-            content: `${CONTRACT_AUDIT_PROMPT}\n\n━━━━━━━━━━━━━━━━━━\nDOCUMENT À ANALYSER :\n━━━━━━━━━━━━━━━━━━\n${contractText}`
-        }
+        // Build system instruction with contract context
+        const systemText = `${CONTRACT_AUDIT_PROMPT}\n\n━━━━━━━━━━━━━━━━━━\nDOCUMENT À ANALYSER :\n━━━━━━━━━━━━━━━━━━\n${contractText}`
 
-        // Prepare conversation history
-        const messages = [systemMessage]
+        // Build conversation history
+        const contents = []
 
-        // Add history if valid
         if (Array.isArray(history)) {
             history.forEach(msg => {
                 if (msg.role && msg.content) {
-                    messages.push({
-                        role: msg.role === 'user' ? 'user' : 'assistant',
-                        content: msg.content
+                    contents.push({
+                        role: msg.role === 'user' ? 'user' : 'model',
+                        parts: [{ text: msg.content }]
                     })
                 }
             })
         }
 
         // Add current message
-        messages.push({
+        contents.push({
             role: 'user',
-            content: message
+            parts: [{ text: message }]
         })
 
         // Call Gemini API
-        const response = await fetch(GEMINI_API_URL, {
+        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
             method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                model: 'gemini-2.0-flash',
-                max_tokens: 1200,
-                temperature: 0.2,
-                top_p: 0.9,
-                messages: messages
+                contents: contents,
+                systemInstruction: { parts: [{ text: systemText }] },
+                generationConfig: {
+                    maxOutputTokens: 1200,
+                    temperature: 0.2,
+                    topP: 0.9
+                }
             })
         })
 
@@ -78,7 +73,7 @@ export async function POST(request) {
         }
 
         const data = await response.json()
-        const assistantMessage = data.choices?.[0]?.message?.content || 'Erreur lors de l\'analyse.'
+        const assistantMessage = data.candidates?.[0]?.content?.parts?.[0]?.text || 'Erreur lors de l\'analyse.'
 
         return Response.json({ response: assistantMessage })
 

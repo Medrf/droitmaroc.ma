@@ -1,7 +1,7 @@
 import { SYSTEM_PROMPT, isSafeQuery, SAFETY_RESPONSE } from '@/lib/prompts'
 
-// Gemini API endpoint (OpenAI-compatible)
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+// Gemini API endpoint (native)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
 
 export async function POST(request) {
     try {
@@ -28,47 +28,42 @@ export async function POST(request) {
             })
         }
 
-        // Prepare messages array with history
-        const messages = [
-            {
-                role: 'system',
-                content: SYSTEM_PROMPT
-            }
-        ]
+        // Build Gemini conversation history
+        const contents = []
 
-        // Add history if it exists and is valid
         if (Array.isArray(history)) {
             history.forEach(msg => {
                 if (msg.role && msg.content) {
-                    messages.push({
-                        role: msg.role === 'user' ? 'user' : 'assistant',
-                        content: msg.content
+                    contents.push({
+                        role: msg.role === 'user' ? 'user' : 'model',
+                        parts: [{ text: msg.content }]
                     })
                 }
             })
         }
 
         // Add current message
-        messages.push({
+        contents.push({
             role: 'user',
-            content: message
+            parts: [{ text: message }]
         })
 
         // Call Gemini API
         const payload = {
-            model: 'gemini-2.0-flash',
-            messages: messages,
-            temperature: 0.15,
-            top_p: 0.9,
-            max_tokens: 800
+            contents: contents,
+            systemInstruction: {
+                parts: [{ text: SYSTEM_PROMPT }]
+            },
+            generationConfig: {
+                temperature: 0.15,
+                topP: 0.9,
+                maxOutputTokens: 800
+            }
         }
 
-        const response = await fetch(GEMINI_API_URL, {
+        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
             method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         })
 
@@ -91,12 +86,12 @@ export async function POST(request) {
 
         const data = await response.json()
 
-        if (!data.choices || !data.choices.length) {
-            console.error('❌ Invalid Gemini Response Structure:', JSON.stringify(data))
-            throw new Error('Invalid response structure from Gemini')
+        if (!data.candidates || !data.candidates.length) {
+            console.error('❌ Invalid Gemini Response:', JSON.stringify(data))
+            throw new Error('Invalid response from Gemini')
         }
 
-        const assistantMessage = data.choices[0].message.content
+        const assistantMessage = data.candidates[0].content.parts[0].text
         return Response.json({ success: true, answer: assistantMessage, response: assistantMessage })
 
     } catch (e) {

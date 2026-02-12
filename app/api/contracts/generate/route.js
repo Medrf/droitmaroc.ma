@@ -1,7 +1,7 @@
 import { CONTRACT_SYSTEM_PROMPT, DISCLAIMERS, WATERMARKS } from '@/lib/contracts'
 
-// Gemini API endpoint (OpenAI-compatible)
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+// Gemini API endpoint (native)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
 
 export async function POST(request) {
     try {
@@ -44,27 +44,17 @@ Language: ${language === 'ar' ? 'Arabic (العربية الفصحى)' : 'French
 Generate the FULL contract now with all articles. Use placeholders for any missing specific information.`
 
         // Call Gemini API
-        const response = await fetch(GEMINI_API_URL, {
+        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
             method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                model: 'gemini-2.0-flash',
-                max_tokens: 2000,
-                temperature: 0.25,
-                top_p: 0.95,
-                messages: [
-                    {
-                        role: 'system',
-                        content: CONTRACT_SYSTEM_PROMPT
-                    },
-                    {
-                        role: 'user',
-                        content: userPrompt
-                    }
-                ]
+                contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
+                systemInstruction: { parts: [{ text: CONTRACT_SYSTEM_PROMPT }] },
+                generationConfig: {
+                    maxOutputTokens: 2000,
+                    temperature: 0.25,
+                    topP: 0.95
+                }
             })
         })
 
@@ -75,7 +65,7 @@ Generate the FULL contract now with all articles. Use placeholders for any missi
         }
 
         const data = await response.json()
-        const generatedContract = data.choices?.[0]?.message?.content || ''
+        const generatedContract = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
 
         return Response.json({
             contract: generatedContract,
