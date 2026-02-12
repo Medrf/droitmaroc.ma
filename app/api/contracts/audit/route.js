@@ -1,7 +1,7 @@
 import { CONTRACT_AUDIT_PROMPT } from '@/lib/contractPrompts'
 
-// DeepSeek API endpoint
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
+// Gemini API endpoint (OpenAI-compatible)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
 
 export async function POST(request) {
     try {
@@ -22,7 +22,7 @@ export async function POST(request) {
         }
 
         // Check if API key is configured
-        if (!process.env.DEEPSEEK_API_KEY) {
+        if (!process.env.GEMINI_API_KEY) {
             return Response.json({
                 response: "⚠️ API Key manquant. Impossible d'analyser le contrat."
             })
@@ -55,27 +55,25 @@ export async function POST(request) {
             content: message
         })
 
-        // Call DeepSeek API
-        const response = await fetch(DEEPSEEK_API_URL, {
+        // Call Gemini API
+        const response = await fetch(GEMINI_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+                'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'deepseek-chat',
+                model: 'gemini-2.0-flash',
                 max_tokens: 1200,
                 temperature: 0.2,
                 top_p: 0.9,
-                frequency_penalty: 0.2,
-                presence_penalty: -0.2,
                 messages: messages
             })
         })
 
         if (!response.ok) {
             const error = await response.text()
-            console.error('DeepSeek API Error:', error)
+            console.error('Gemini API Error:', error)
             throw new Error('API request failed')
         }
 

@@ -1,7 +1,7 @@
 import { CONTRACT_SYSTEM_PROMPT, DISCLAIMERS, WATERMARKS } from '@/lib/contracts'
 
-// DeepSeek API endpoint
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
+// Gemini API endpoint (OpenAI-compatible)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
 
 export async function POST(request) {
     try {
@@ -25,7 +25,7 @@ export async function POST(request) {
         }
 
         // Check if API key exists
-        if (!process.env.DEEPSEEK_API_KEY) {
+        if (!process.env.GEMINI_API_KEY) {
             // Return mock contract for demo
             return Response.json({
                 contract: getMockContract(language, contractRequest),
@@ -43,20 +43,18 @@ Language: ${language === 'ar' ? 'Arabic (العربية الفصحى)' : 'French
 
 Generate the FULL contract now with all articles. Use placeholders for any missing specific information.`
 
-        // Call DeepSeek API
-        const response = await fetch(DEEPSEEK_API_URL, {
+        // Call Gemini API
+        const response = await fetch(GEMINI_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+                'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'deepseek-chat',
+                model: 'gemini-2.0-flash',
                 max_tokens: 2000,
                 temperature: 0.25,
                 top_p: 0.95,
-                frequency_penalty: 0.2,
-                presence_penalty: -0.2,
                 messages: [
                     {
                         role: 'system',
@@ -72,7 +70,7 @@ Generate the FULL contract now with all articles. Use placeholders for any missi
 
         if (!response.ok) {
             const error = await response.text()
-            console.error('DeepSeek API Error:', error)
+            console.error('Gemini API Error:', error)
             throw new Error('API request failed')
         }
 

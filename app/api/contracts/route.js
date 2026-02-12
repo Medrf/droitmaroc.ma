@@ -1,7 +1,7 @@
 import { CONTRACT_DRAFTER_PROMPT_FR } from '@/lib/contractPrompts'
 
-// DeepSeek API endpoint
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
+// Gemini API endpoint (OpenAI-compatible)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
 
 export async function POST(request) {
     try {
@@ -15,25 +15,23 @@ export async function POST(request) {
         }
 
         // Check if API key is configured
-        if (!process.env.DEEPSEEK_API_KEY) {
+        if (!process.env.GEMINI_API_KEY) {
             return Response.json({
                 contract: getMockContract(description, language)
             })
         }
 
-        // Call DeepSeek API
-        const response = await fetch(DEEPSEEK_API_URL, {
+        // Call Gemini API
+        const response = await fetch(GEMINI_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+                'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'deepseek-chat',
+                model: 'gemini-2.0-flash',
                 max_tokens: 8192,
                 temperature: 0.3,
-                frequency_penalty: 0.2,
-                presence_penalty: -0.2,
                 messages: [
                     {
                         role: 'system',
@@ -49,7 +47,7 @@ export async function POST(request) {
 
         if (!response.ok) {
             const error = await response.json()
-            console.error('DeepSeek API Error:', error)
+            console.error('Gemini API Error:', error)
             return Response.json({
                 contract: getMockContract(description, language)
             })
