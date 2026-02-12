@@ -1,7 +1,7 @@
 import { SYSTEM_PROMPT, isSafeQuery, SAFETY_RESPONSE } from '@/lib/prompts'
 
-// Gemini API endpoint (native)
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
+// OpenRouter API endpoint
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -20,7 +20,7 @@ export async function POST(request) {
         }
 
         // Check if API key is configured
-        if (!process.env.GEMINI_API_KEY) {
+        if (!process.env.OPENROUTER_API_KEY) {
             return Response.json({
                 success: true,
                 answer: getMockResponse(message),
@@ -28,48 +28,43 @@ export async function POST(request) {
             })
         }
 
-        // Build Gemini conversation history
-        const contents = []
+        // Prepare messages array with system prompt and history
+        const messages = [
+            { role: 'system', content: SYSTEM_PROMPT }
+        ]
 
         if (Array.isArray(history)) {
             history.forEach(msg => {
                 if (msg.role && msg.content) {
-                    contents.push({
-                        role: msg.role === 'user' ? 'user' : 'model',
-                        parts: [{ text: msg.content }]
+                    messages.push({
+                        role: msg.role === 'user' ? 'user' : 'assistant',
+                        content: msg.content
                     })
                 }
             })
         }
 
-        // Add current message
-        contents.push({
-            role: 'user',
-            parts: [{ text: message }]
-        })
+        messages.push({ role: 'user', content: message })
 
-        // Call Gemini API
-        const payload = {
-            contents: contents,
-            systemInstruction: {
-                parts: [{ text: SYSTEM_PROMPT }]
-            },
-            generationConfig: {
-                temperature: 0.15,
-                topP: 0.9,
-                maxOutputTokens: 800
-            }
-        }
-
-        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
+        // Call OpenRouter API
+        const response = await fetch(OPENROUTER_API_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
+            headers: {
+                'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                model: process.env.OPENROUTER_MODEL || 'google/gemini-2.0-flash-001',
+                messages: messages,
+                temperature: 0.15,
+                top_p: 0.9,
+                max_tokens: 800
+            })
         })
 
         if (!response.ok) {
             const errorText = await response.text()
-            console.error('❌ Gemini API Error:', {
+            console.error('❌ OpenRouter API Error:', {
                 status: response.status,
                 statusText: response.statusText,
                 body: errorText
@@ -86,16 +81,16 @@ export async function POST(request) {
 
         const data = await response.json()
 
-        if (!data.candidates || !data.candidates.length) {
-            console.error('❌ Invalid Gemini Response:', JSON.stringify(data))
-            throw new Error('Invalid response from Gemini')
+        if (!data.choices || !data.choices.length) {
+            console.error('❌ Invalid OpenRouter Response:', JSON.stringify(data))
+            throw new Error('Invalid response from OpenRouter')
         }
 
-        const assistantMessage = data.candidates[0].content.parts[0].text
+        const assistantMessage = data.choices[0].message.content
         return Response.json({ success: true, answer: assistantMessage, response: assistantMessage })
 
     } catch (e) {
-        console.error("Gemini API Error:", e);
+        console.error("OpenRouter API Error:", e);
         return Response.json(
             {
                 success: false,

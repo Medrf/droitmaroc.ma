@@ -1,7 +1,7 @@
 import { CONTRACT_DRAFTER_PROMPT_FR } from '@/lib/contractPrompts'
 
-// Gemini API endpoint (native)
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
+// OpenRouter API endpoint
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -15,36 +15,40 @@ export async function POST(request) {
         }
 
         // Check if API key is configured
-        if (!process.env.GEMINI_API_KEY) {
+        if (!process.env.OPENROUTER_API_KEY) {
             return Response.json({
                 contract: getMockContract(description, language)
             })
         }
 
-        // Call Gemini API
-        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
+        // Call OpenRouter API
+        const response = await fetch(OPENROUTER_API_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify({
-                contents: [{ role: 'user', parts: [{ text: description }] }],
-                systemInstruction: { parts: [{ text: CONTRACT_DRAFTER_PROMPT_FR }] },
-                generationConfig: {
-                    maxOutputTokens: 8192,
-                    temperature: 0.3
-                }
+                model: 'meta-llama/llama-3.3-70b-instruct:free',
+                max_tokens: 8192,
+                temperature: 0.3,
+                messages: [
+                    { role: 'system', content: CONTRACT_DRAFTER_PROMPT_FR },
+                    { role: 'user', content: description }
+                ]
             })
         })
 
         if (!response.ok) {
             const error = await response.text()
-            console.error('Gemini API Error:', error)
+            console.error('OpenRouter API Error:', error)
             return Response.json({
                 contract: getMockContract(description, language)
             })
         }
 
         const data = await response.json()
-        const contract = data.candidates?.[0]?.content?.parts?.[0]?.text || getMockContract(description, language)
+        const contract = data.choices?.[0]?.message?.content || getMockContract(description, language)
 
         return Response.json({ contract })
 
