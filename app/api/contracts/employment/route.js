@@ -1,6 +1,7 @@
 import { EMPLOYMENT_CONTRACT_PROMPT, EMPLOYMENT_CONTRACT_PROMPT_AR, EMPLOYMENT_WATERMARK, EMPLOYMENT_DISCLAIMER } from '@/lib/employmentContracts'
 
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+// DeepSeek API endpoint
+const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -20,7 +21,7 @@ export async function POST(request) {
         }
 
         // Check if API key exists
-        if (!process.env.GROQ_API_KEY) {
+        if (!process.env.DEEPSEEK_API_KEY) {
             return Response.json({
                 contract: getMockEmploymentContract(language, contractType, details),
                 disclaimer: EMPLOYMENT_DISCLAIMER[language],
@@ -36,18 +37,20 @@ export async function POST(request) {
             ? `أنشئ عقد شغل كامل واحترافي من النوع التالي:\n\nنوع العقد: ${contractType}\n\nتفاصيل إضافية: ${details || 'لا توجد تفاصيل إضافية'}\n\nأنشئ العقد الكامل الآن مع جميع المواد. استخدم [يُستكمل] للمعلومات الناقصة.`
             : `Générez un contrat de travail complet et professionnel du type suivant:\n\nType de contrat: ${contractType}\n\nDétails supplémentaires: ${details || 'Aucun détail supplémentaire'}\n\nGénérez le contrat COMPLET maintenant avec tous les articles. Utilisez [À compléter] pour les informations manquantes.`
 
-        // Call Groq API
-        const response = await fetch(GROQ_API_URL, {
+        // Call DeepSeek API
+        const response = await fetch(DEEPSEEK_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama-3.3-70b-versatile', // Updated to supported model
-                max_tokens: 2000,         // Contract settings: 2000 tokens
-                temperature: 0.25,        // Specific legal creativity balance
+                model: 'deepseek-chat',
+                max_tokens: 2000,
+                temperature: 0.25,
                 top_p: 0.95,
+                frequency_penalty: 0.2,
+                presence_penalty: -0.2,
                 messages: [
                     { role: 'system', content: systemPrompt },
                     { role: 'user', content: userPrompt }
@@ -57,7 +60,7 @@ export async function POST(request) {
 
         if (!response.ok) {
             const error = await response.text()
-            console.error('Groq API Error:', error)
+            console.error('DeepSeek API Error:', error)
             return Response.json({
                 contract: getMockEmploymentContract(language, contractType, details),
                 disclaimer: EMPLOYMENT_DISCLAIMER[language],

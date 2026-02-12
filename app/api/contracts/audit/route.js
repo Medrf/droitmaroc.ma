@@ -1,7 +1,7 @@
 import { CONTRACT_AUDIT_PROMPT } from '@/lib/contractPrompts'
 
-// Groq API endpoint
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+// DeepSeek API endpoint
+const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -22,7 +22,7 @@ export async function POST(request) {
         }
 
         // Check if API key is configured
-        if (!process.env.GROQ_API_KEY) {
+        if (!process.env.DEEPSEEK_API_KEY) {
             return Response.json({
                 response: "⚠️ API Key manquant. Impossible d'analyser le contrat."
             })
@@ -55,25 +55,27 @@ export async function POST(request) {
             content: message
         })
 
-        // Call Groq API
-        const response = await fetch(GROQ_API_URL, {
+        // Call DeepSeek API
+        const response = await fetch(DEEPSEEK_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama-3.3-70b-versatile', // Updated to supported model
-                max_tokens: 1200,         // Audit settings: 1200 tokens
-                temperature: 0.2,         // Very strict for analysis
+                model: 'deepseek-chat',
+                max_tokens: 1200,
+                temperature: 0.2,
                 top_p: 0.9,
+                frequency_penalty: 0.2,
+                presence_penalty: -0.2,
                 messages: messages
             })
         })
 
         if (!response.ok) {
             const error = await response.text()
-            console.error('Groq API Error:', error)
+            console.error('DeepSeek API Error:', error)
             throw new Error('API request failed')
         }
 

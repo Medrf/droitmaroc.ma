@@ -1,6 +1,7 @@
 import { CONTRACT_DRAFTER_PROMPT_FR } from '@/lib/contractPrompts'
 
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+// DeepSeek API endpoint
+const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -14,23 +15,25 @@ export async function POST(request) {
         }
 
         // Check if API key is configured
-        if (!process.env.GROQ_API_KEY) {
+        if (!process.env.DEEPSEEK_API_KEY) {
             return Response.json({
                 contract: getMockContract(description, language)
             })
         }
 
-        // Call Groq API
-        const response = await fetch(GROQ_API_URL, {
+        // Call DeepSeek API
+        const response = await fetch(DEEPSEEK_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama-3.3-70b-versatile',
+                model: 'deepseek-chat',
                 max_tokens: 8192,
                 temperature: 0.3,
+                frequency_penalty: 0.2,
+                presence_penalty: -0.2,
                 messages: [
                     {
                         role: 'system',
@@ -46,7 +49,7 @@ export async function POST(request) {
 
         if (!response.ok) {
             const error = await response.json()
-            console.error('Groq API Error:', error)
+            console.error('DeepSeek API Error:', error)
             return Response.json({
                 contract: getMockContract(description, language)
             })

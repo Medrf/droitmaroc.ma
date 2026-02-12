@@ -1,7 +1,7 @@
 import { SYSTEM_PROMPT, isSafeQuery, SAFETY_RESPONSE } from '@/lib/prompts'
 
-// Groq API endpoint (FREE!)
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+// DeepSeek API endpoint
+const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -9,19 +9,21 @@ export async function POST(request) {
 
         if (!message || typeof message !== 'string') {
             return Response.json(
-                { error: 'Message is required' },
+                { success: false, error: 'Message is required' },
                 { status: 400 }
             )
         }
 
         // Check for unsafe queries
         if (!isSafeQuery(message)) {
-            return Response.json({ response: SAFETY_RESPONSE })
+            return Response.json({ success: true, answer: SAFETY_RESPONSE, response: SAFETY_RESPONSE })
         }
 
         // Check if API key is configured
-        if (!process.env.GROQ_API_KEY) {
+        if (!process.env.DEEPSEEK_API_KEY) {
             return Response.json({
+                success: true,
+                answer: getMockResponse(message),
                 response: getMockResponse(message)
             })
         }
@@ -39,7 +41,7 @@ export async function POST(request) {
             history.forEach(msg => {
                 if (msg.role && msg.content) {
                     messages.push({
-                        role: msg.role === 'user' ? 'user' : 'assistant', // Ensure valid role
+                        role: msg.role === 'user' ? 'user' : 'assistant',
                         content: msg.content
                     })
                 }
@@ -52,22 +54,22 @@ export async function POST(request) {
             content: message
         })
 
-        // Call Groq API with SAFE BASELINE parameters
+        // Call DeepSeek API
         const payload = {
-            model: 'llama-3.3-70b-versatile', // Updated to supported model
+            model: 'deepseek-chat',
             messages: messages,
-            temperature: 0.2,
+            temperature: 0.15,
             top_p: 0.9,
-            max_tokens: 800,         // Restoring 800 tokens as it's safe for 3.3
+            max_tokens: 800,
+            frequency_penalty: 0.2,
+            presence_penalty: -0.2,
             stream: false
         }
 
-        console.log('Sending request to Groq:', JSON.stringify(payload, null, 2))
-
-        const response = await fetch(GROQ_API_URL, {
+        const response = await fetch(DEEPSEEK_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(payload)
@@ -75,19 +77,16 @@ export async function POST(request) {
 
         if (!response.ok) {
             const errorText = await response.text()
-            console.error('❌ Groq API Critical Error:', {
+            console.error('❌ DeepSeek API Error:', {
                 status: response.status,
                 statusText: response.statusText,
                 body: errorText
             })
 
-            // Debugging: Return the actual error
             return Response.json(
                 {
-                    ok: false,
-                    errorType: "GROQ_API_ERROR (HTTP)",
-                    message: `Groq API Error: ${response.status} ${response.statusText} - ${errorText}`,
-                    status: response.status
+                    success: false,
+                    error: '⚠️ حدث خطأ تقني مؤقت. المرجو إعادة المحاولة.'
                 },
                 { status: 500 }
             )
@@ -96,22 +95,19 @@ export async function POST(request) {
         const data = await response.json()
 
         if (!data.choices || !data.choices.length) {
-            console.error('❌ Invalid Groq Response Structure:', JSON.stringify(data))
-            throw new Error('Invalid response structure from Groq')
+            console.error('❌ Invalid DeepSeek Response Structure:', JSON.stringify(data))
+            throw new Error('Invalid response structure from DeepSeek')
         }
 
         const assistantMessage = data.choices[0].message.content
-        return Response.json({ response: assistantMessage })
+        return Response.json({ success: true, answer: assistantMessage, response: assistantMessage })
 
     } catch (e) {
-        console.error("GROQ API ERROR:", e);
+        console.error("DeepSeek API Error:", e);
         return Response.json(
             {
-                ok: false,
-                errorType: "GROQ_API_ERROR",
-                message: e?.message || String(e),
-                status: e?.status || null,
-                code: e?.code || null,
+                success: false,
+                error: '⚠️ حدث خطأ تقني مؤقت. المرجو إعادة المحاولة.'
             },
             { status: 500 }
         );

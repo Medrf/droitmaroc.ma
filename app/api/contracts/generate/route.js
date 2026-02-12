@@ -1,6 +1,7 @@
 import { CONTRACT_SYSTEM_PROMPT, DISCLAIMERS, WATERMARKS } from '@/lib/contracts'
 
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+// DeepSeek API endpoint
+const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -24,7 +25,7 @@ export async function POST(request) {
         }
 
         // Check if API key exists
-        if (!process.env.GROQ_API_KEY) {
+        if (!process.env.DEEPSEEK_API_KEY) {
             // Return mock contract for demo
             return Response.json({
                 contract: getMockContract(language, contractRequest),
@@ -42,18 +43,20 @@ Language: ${language === 'ar' ? 'Arabic (العربية الفصحى)' : 'French
 
 Generate the FULL contract now with all articles. Use placeholders for any missing specific information.`
 
-        // Call Groq API
-        const response = await fetch(GROQ_API_URL, {
+        // Call DeepSeek API
+        const response = await fetch(DEEPSEEK_API_URL, {
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'llama-3.3-70b-versatile', // Updated to supported model
-                max_tokens: 2000,         // Contract settings: 2000 tokens
-                temperature: 0.25,        // Specific legal creativity balance
+                model: 'deepseek-chat',
+                max_tokens: 2000,
+                temperature: 0.25,
                 top_p: 0.95,
+                frequency_penalty: 0.2,
+                presence_penalty: -0.2,
                 messages: [
                     {
                         role: 'system',
@@ -69,7 +72,7 @@ Generate the FULL contract now with all articles. Use placeholders for any missi
 
         if (!response.ok) {
             const error = await response.text()
-            console.error('Groq API Error:', error)
+            console.error('DeepSeek API Error:', error)
             throw new Error('API request failed')
         }
 
