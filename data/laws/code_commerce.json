@@ -240,13 +240,15 @@
         },
         {
             "number": 114,
-            "text_fr": "Le bail des locaux affectés à un fonds de commerce confère au locataire un droit au renouvellement.",
-            "text_ar": "يخول كراء المحلات المخصصة للأصل التجاري للمكتري حقاً في التجديد.",
+            "text_fr": "Le bail des locaux affectés à un fonds de commerce confère au locataire un droit au renouvellement. (ATTENTION: Cet article est abrogé/remplacé par la Loi 49-16 relative aux baux commerciaux. Ne pas citer comme base principale).",
+            "text_ar": "يخول كراء المحلات المخصصة للأصل التجاري للمكتري حقاً في التجديد. (تنبيه: تم تعويض هذا الفصل بالقانون 49.16 المتعلق بالكراء التجاري).",
             "keywords": [
                 "bail commercial",
                 "كراء تجاري",
                 "droit renouvellement",
-                "حق التجديد"
+                "حق التجديد",
+                "ABROGÉ",
+                "LOI 49-16"
             ]
         },
         {

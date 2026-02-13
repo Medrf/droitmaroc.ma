@@ -1,0 +1,94 @@
+{
+    "code_id": "loi_49_16",
+    "code_name_fr": "Loi 49-16 (Baux Commerciaux)",
+    "code_name_ar": "القانون 49.16 (الكراء التجاري)",
+    "total_articles": 38,
+    "source": "Loi n° 49-16 relative aux baux d'immeubles ou de locaux loués à usage commercial, industriel ou artisanal",
+    "articles": [
+        {
+            "number": 3,
+            "text_fr": "Les contrats de bail doivent être rédigés par écrit, à date certaine. Lorsqu'il n'est pas établi, par écrit, le bail est censé conclu pour une durée indéterminée.",
+            "text_ar": "تبرم عقود الكراء بمحرر كتابي ثابت التاريخ. إذا لم يبرم عقد الكراء كتابة، يعتبر مبرماً لمدة غير محددة.",
+            "keywords": [
+                "écrit",
+                "كتابي",
+                "date certaine",
+                "تاريخ ثابت"
+            ]
+        },
+        {
+            "number": 4,
+            "text_fr": "Le locataire bénéficie du droit au renouvellement du bail lorsqu'il justifie d'une jouissance consécutive du local pendant au moins deux années. La durée de deux ans n'est pas exigée si le locataire a versé un montant d'argent en contrepartie du droit au bail (pas de porte), et que ce montant est constaté par écrit.",
+            "text_ar": "يستفيد المكتري من الحق في تجديد العقد متى أثبت انتفاعه بالمحل بصفة مستمرة لمدة سنتين على الأقل. لا تشترط مدة السنتين إذا كان المكتري قد دفع مبلغاً مالياً مقابل الحق في الكراء (الساروت)، وتم إثبات ذلك كتابة.",
+            "keywords": [
+                "renouvellement",
+                "تجديد",
+                "2 ans",
+                "سنتين",
+                "pas de porte",
+                "ساروت"
+            ]
+        },
+        {
+            "number": 6,
+            "text_fr": "Le locataire a le droit de céder son droit au bail avec le fonds de commerce sans l'accord du bailleur, toute clause contraire est réputée non écrite.",
+            "text_ar": "يحق للمكتري تفويت الحق في الكراء مع الأصل التجاري دون موافقة المكري، وكل شرط مخالف يعتبر كأن لم يكن.",
+            "keywords": [
+                "cession",
+                "تفويت",
+                "fonds commerce",
+                "أصل تجاري"
+            ]
+        },
+        {
+            "number": 7,
+            "text_fr": "Le bailleur qui refuse le renouvellement du bail doit payer au locataire une indemnité d'éviction égale au préjudice subi. Cette indemnité correspond à la valeur marchande du fonds de commerce basée sur les déclarations fiscales des 4 dernières années, augmentée des frais de déménagement et de réinstallation, et des frais de mutation.",
+            "text_ar": "يلتزم المكري الذي يرفض تجديد العقد بأداء تعويض عن الإفراغ للمكتري يعادل الضرر الذي لحقه. يقابل هذا التعويض القيمة السوقية للأصل التجاري بناءً على التصريحات الضريبية للسنوات الأربع الأخيرة، مضافاً إليها مصاريف التنقل والتركيب ومصاريف التغيير.",
+            "keywords": [
+                "indemnité éviction",
+                "تعويض الإفراغ",
+                "calcul",
+                "حساب",
+                "valeur marchande",
+                "قيمة سوقية"
+            ]
+        },
+        {
+            "number": 8,
+            "text_fr": "Le bailleur n'est pas tenu de payer l'indemnité d'éviction s'il justifie d'un motif grave et légitime à l'encontre du locataire : 1) Défaut de paiement de loyer (3 mois) après mise en demeure. 2) Changement d'activité sans accord. 3) Changements importants dans les lieux sans accord. 4) Cessation d'activité. 5) Local menaçant ruine.",
+            "text_ar": "لا يلزم المكري بأداء التعويض إذا أثبت سبباً خطيراً ومشروعاً ضد المكتري: 1) عدم أداء الكراء (3 أشهر) بعد الإنذار. 2) تغيير النشاط دون موافقة. 3) إحداث تغييرات هامة بالمحل دون موافقة. 4) توقف النشاط. 5) المحل آيل للسقوط.",
+            "keywords": [
+                "exonération",
+                "إعفاء",
+                "motif grave",
+                "سبب خطير",
+                "non-paiement",
+                "عدم الأداء"
+            ]
+        },
+        {
+            "number": 26,
+            "text_fr": "Le propriétaire désirant mettre fin au bail doit adresser un congé au locataire comportant le motif, accordant un délai de préavis de six mois.",
+            "text_ar": "يجب على المالك الراغب في إنهاء العقد توجيه إنذار بالإفراغ للمكتري يتضمن السبب، ويمنح مهلة إخطار مدتها ستة أشهر.",
+            "keywords": [
+                "congé",
+                "إفراغ",
+                "préavis",
+                "إخطار",
+                "6 mois",
+                "ستة أشهر"
+            ]
+        },
+        {
+            "number": 37,
+            "text_fr": "Les tribunaux de commerce sont compétents pour connaitre des litiges relatifs à l'application de la présente loi.",
+            "text_ar": "تختص المحاكم التجارية بالنظر في النزاعات المتعلقة بتطبيق هذا القانون.",
+            "keywords": [
+                "tribunal",
+                "محكمة",
+                "compétence",
+                "اختصاص"
+            ]
+        }
+    ]
+}
