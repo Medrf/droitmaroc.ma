@@ -4,7 +4,7 @@
 git add .
 
 # Commit with a descriptive message
-git commit -m "refactor: enforce strict language mirroring and add explanations for article requests"
+git commit -m "fix(data): correct Article 37 text and add truncated data warning system"
 
 # Push to the remote repository (assuming main branch)
 git push origin main

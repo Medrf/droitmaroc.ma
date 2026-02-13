@@ -324,10 +324,11 @@
         },
         {
             "number": 37,
-            "text_fr": "Est prohibé, pour cause de parenté par alliance, le mariage de l’homme avec les ascendantes de ses épouses...",
-            "text_ar": "يحرم على الرجل بسبب المصاهرة...",
+            "text_fr": "Est prohibé, pour cause de parenté par alliance, le mariage de l'homme avec les ascendantes de son épouse dès la conclusion du mariage et avec les descendantes de l'épouse à condition que le mariage avec la mère ait été consommé, à tous les degrés, avec les ex-épouses des ascendants et descendants dès la conclusion du mariage.",
+            "text_ar": "المحرمات بالمصاهرة، أصول الزوجات بمجرد العقد، وفصولهن بشرط البناء بالأم، وزوجات الآباء وإن علوا، وزوجات الأولاد وإن سفلوا بمجرد العقد.",
             "keywords": [
-                "alliance"
+                "alliance",
+                "empêchements"
             ]
         },
         {
