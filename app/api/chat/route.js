@@ -1,4 +1,5 @@
 import { SYSTEM_PROMPT, isSafeQuery, SAFETY_RESPONSE } from '@/lib/prompts'
+import { searchLaws } from '@/lib/laws'
 
 // OpenRouter API endpoint
 const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
@@ -28,9 +29,38 @@ export async function POST(request) {
             })
         }
 
+        // --- RAG IMPLEMENTATION ---
+        // 1. Search for relevant laws
+        console.log(`🔍 Searching laws for: "${message}"`)
+        const searchResults = searchLaws(message, 'fr', 'all') // Default to 'fr', laws lib handles mixed content scoring
+
+        // 2. Filter for high relevance (score >= 50)
+        const relevantLaws = searchResults.filter(law => law.score >= 50).slice(0, 5)
+
+        // 3. Construct Context Block
+        let legalContext = ""
+        if (relevantLaws.length > 0) {
+            legalContext = `
+[LEGAL DATA CONTEXT]
+The following official Moroccan legal texts were retrieved from the database. 
+You MUST use these texts to answer. If the answer is here, cite it explicitly.
+
+${relevantLaws.map((law, index) => `
+--- DOCUMENT ${index + 1} ---
+SOURCE: ${law.code_name} (Article ${law.article_number})
+TEXT (FR): ${law.article_text}
+TEXT (AR): ${law.article_text_ar}
+-------------------------
+`).join('\n')}
+`
+        }
+
         // Prepare messages array with system prompt and history
         const messages = [
-            { role: 'system', content: SYSTEM_PROMPT }
+            {
+                role: 'system',
+                content: SYSTEM_PROMPT + "\n\n" + legalContext
+            }
         ]
 
         if (Array.isArray(history)) {
