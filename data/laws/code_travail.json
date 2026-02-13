@@ -444,28 +444,28 @@
         },
         {
             "number": 53,
-            "text_fr": "L'indemnité de licenciement est calculée sur la base de l'ancienneté du salarié.",
-            "text_ar": "يحتسب تعويض الفصل بناء على أقدمية الأجير.",
+            "text_fr": "Le montant de l'indemnité de licenciement pour chaque année ou fraction d'année de travail effectif est égal à : 96 heures de salaire pour les cinq premières années, 144 heures pour la période de 6 à 10 ans, 192 heures pour la période de 11 à 15 ans, 240 heures pour la période au-delà de 15 ans.",
+            "text_ar": "يعادل مبلغ تعويض الفصل عن كل سنة أو جزء من سنة من العمل الفعلي: 96 ساعة من الأجر بالنسبة للخمس سنوات الأولى، 144 ساعة للفترة من 6 إلى 10 سنوات، 192 ساعة للفترة من 11 إلى 15 سنة، 240 ساعة لما فوق 15 سنة.",
             "keywords": [
                 "indemnité",
                 "تعويض",
                 "calcul",
                 "حساب",
                 "ancienneté",
-                "أقدمية"
+                "أقدمية",
+                "96 heures",
+                "144 heures"
             ]
         },
         {
             "number": 54,
-            "text_fr": "Le montant de l'indemnité de licenciement pour chaque année ou fraction d'année de travail effectif est égal à 96 heures de salaire pour les cinq premières années, 144 heures pour la période de 6 à 10 ans, 192 heures pour la période de 11 à 15 ans, 240 heures pour la période au-delà de 15 ans.",
-            "text_ar": "يعادل مبلغ تعويض الفصل عن كل سنة أو جزء من سنة من العمل الفعلي 96 ساعة من الأجر بالنسبة للخمس سنوات الأولى، 144 ساعة للفترة من 6 إلى 10 سنوات، 192 ساعة للفترة من 11 إلى 15 سنة، 240 ساعة لما فوق 15 سنة.",
+            "text_fr": "Sont considérées comme périodes de travail effectif pour le calcul de l'ancienneté les périodes de travail, de congés payés, de repos pour la femme accouchée, de suspension du contrat pour accident de travail ou maladie professionnelle.",
+            "text_ar": "تعتبر فترات شغل فعلي لحساب الأقدمية فترات الشغل، والعطل المؤدى عنها، وفترة استراحة المرأة النفساء، وفترة توقف العقد بسبب حادثة شغل أو مرض مهني.",
             "keywords": [
-                "calcul indemnité",
-                "حساب التعويض",
+                "travail effectif",
+                "شغل فعلي",
                 "ancienneté",
-                "أقدمية",
-                "heures",
-                "ساعات"
+                "أقدمية"
             ]
         },
         {
