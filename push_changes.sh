@@ -4,7 +4,7 @@
 git add .
 
 # Commit with a descriptive message
-git commit -m "fix: adjust prompt to skip consultation structure for simple article requests"
+git commit -m "fix: correct Article 35 text and enforce strict Moroccan jurisdiction in prompts"
 
 # Push to the remote repository (assuming main branch)
 git push origin main
