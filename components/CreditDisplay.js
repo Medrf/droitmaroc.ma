@@ -54,7 +54,7 @@ export default function CreditDisplay() {
                     <span className="text-xs font-bold text-red-300">!</span>
                 </div>
                 <div className="text-[10px] text-red-400">
-                    {data.error?.message || 'Configuration manquante'}
+                    {typeof data.error === 'string' ? data.error : data.error?.message || 'Configuration manquante'}
                 </div>
             </div>
         )
