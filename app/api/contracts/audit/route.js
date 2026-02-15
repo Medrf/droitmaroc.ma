@@ -1,7 +1,7 @@
 import { CONTRACT_AUDIT_PROMPT } from '@/lib/contractPrompts'
 
-// Native Gemini API endpoint
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent'
+// OpenRouter API endpoint
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -22,9 +22,9 @@ export async function POST(request) {
         }
 
         // Check if API key is configured
-        if (!process.env.GEMINI_API_KEY) {
+        if (!process.env.OPENROUTER_API_KEY) {
             return Response.json({
-                response: "⚠️ API Key manquant (GEMINI_API_KEY). Impossible d'analyser le contrat."
+                response: "⚠️ API Key manquant (OPENROUTER_API_KEY). Impossible d'analyser le contrat."
             })
         }
 
@@ -38,49 +38,51 @@ DOCUMENT À ANALYSER :
 ${contractText}
 `
 
-        // Build chat history for Gemini
-        const contents = []
+        // Build chat history for OpenRouter (OpenAI format)
+        const messages = [
+            { role: 'system', content: systemInstruction }
+        ]
 
         if (Array.isArray(history)) {
             history.forEach(msg => {
                 if (msg.role && msg.content) {
-                    contents.push({
-                        role: msg.role === 'user' ? 'user' : 'model', // Gemini uses 'model' instead of 'assistant'
-                        parts: [{ text: msg.content }]
+                    messages.push({
+                        role: msg.role === 'user' ? 'user' : 'assistant',
+                        content: msg.content
                     })
                 }
             })
         }
 
         // Add current user message
-        contents.push({
-            role: 'user',
-            parts: [{ text: message }]
-        })
+        messages.push({ role: 'user', content: message })
 
-        // Call Gemini API
-        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
+        // Call OpenRouter API
+        const response = await fetch(OPENROUTER_API_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
+                'Content-Type': 'application/json',
+                'HTTP-Referer': 'https://droitmaroc.ma',
+                'X-Title': 'Moroccan Legal AI',
+            },
             body: JSON.stringify({
-                contents: contents,
-                systemInstruction: { parts: [{ text: systemInstruction }] },
-                generationConfig: {
-                    maxOutputTokens: 2000,
-                    temperature: 0.2,
-                    topP: 0.95
-                }
+                model: 'google/gemini-2.0-flash-001',
+                messages: messages,
+                temperature: 0.2,
+                top_p: 0.95,
+                max_tokens: 2000
             })
         })
 
         if (!response.ok) {
             const errorText = await response.text()
-            console.error('Gemini API Error:', errorText)
-            throw new Error('API request failed')
+            console.error('OpenRouter API Error:', errorText)
+            throw new Error(`API request failed: ${errorText}`)
         }
 
         const data = await response.json()
-        const assistantMessage = data.candidates?.[0]?.content?.parts?.[0]?.text || 'Erreur lors de l\'analyse.'
+        const assistantMessage = data.choices?.[0]?.message?.content || 'Erreur lors de l\'analyse.'
 
         return Response.json({ response: assistantMessage })
 
