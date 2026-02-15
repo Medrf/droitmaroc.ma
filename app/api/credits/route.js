@@ -13,6 +13,15 @@ export async function GET(request) {
         }
 
         // Ensure row exists and is up to date
+        // Note: ensureDailyCredits also needs supabaseAdmin. It's imported from @/lib/supabase or @/lib/credits?
+        // Wait, ensureDailyCredits is imported from @/lib/credits. I should check that file too.
+        // For now, let's fix this file.
+
+        if (!supabaseAdmin) {
+            console.error('Supabase not configured')
+            return Response.json({ error: 'System configuration error' }, { status: 500 })
+        }
+
         await ensureDailyCredits(user.id)
 
         // Fetch current status
