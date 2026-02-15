@@ -34,23 +34,27 @@ export default function CreditDisplay() {
         return () => window.removeEventListener('credit_updated', handleCreditUpdate)
     }, [mutate])
 
+    useEffect(() => {
+        console.log('CreditDisplay MOUNTED')
+    }, [])
+
     if (!data) return (
-        <div className="mx-4 mb-4 p-3 bg-slate-800/50 rounded-xl border border-slate-700/50 animate-pulse">
+        <div className="mx-4 mb-4 p-3 bg-slate-800/50 rounded-xl border-2 border-yellow-500 animate-pulse relative z-50">
+            <div className="text-xs text-yellow-500 mb-1">LOADING...</div>
             <div className="h-4 bg-slate-700 rounded w-24 mb-2"></div>
             <div className="h-2 bg-slate-700 rounded-full"></div>
         </div>
     )
 
     if (data.error) {
-        // Fallback to 0/7 if error (e.g. not configured), but keep UI visible
         return (
-            <div className="mx-4 mb-4 p-3 bg-red-900/20 rounded-xl border border-red-800/50">
+            <div className="mx-4 mb-4 p-3 bg-red-900/20 rounded-xl border-2 border-red-500 relative z-50">
                 <div className="flex justify-between items-center mb-2">
                     <span className="text-xs font-semibold text-red-300">Erreur Crédits</span>
                     <span className="text-xs font-bold text-red-300">!</span>
                 </div>
                 <div className="text-[10px] text-red-400">
-                    Configuration manquante
+                    {data.error?.message || 'Configuration manquante'}
                 </div>
             </div>
         )
@@ -60,7 +64,8 @@ export default function CreditDisplay() {
     const isLow = data.credits_remaining <= 2 && data.credits_daily_limit < 50
 
     return (
-        <div className="mx-4 mb-4 p-3 bg-slate-800/50 rounded-xl border border-slate-700/50">
+        <div className="mx-4 mb-4 p-3 bg-slate-800/50 rounded-xl border-2 border-green-500 relative z-50">
+            <div className="text-[10px] text-green-500 mb-1">DEBUG: ACTIVE</div>
             <div className="flex justify-between items-center mb-2">
                 <span className="text-xs font-semibold text-slate-300">Crédits quotidiens</span>
                 <span className={`text-xs font-bold ${isLow ? 'text-red-400' : 'text-amber-500'}`}>
