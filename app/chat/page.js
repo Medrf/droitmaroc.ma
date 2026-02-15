@@ -26,6 +26,47 @@ export default function ChatPage() {
     // Refs
     const messagesEndRef = useRef(null)
 
+    // Feedback State
+    const [correctionModalOpen, setCorrectionModalOpen] = useState(false)
+    const [selectedMessageIndex, setSelectedMessageIndex] = useState(null)
+    const [correctionText, setCorrectionText] = useState("")
+
+    const handleFeedback = async (index, rating, correction = null) => {
+        const message = messages[index]
+        const query = messages[index - 1]?.content
+
+        if (!message || !query) return;
+
+        try {
+            await fetch('/api/feedback', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    query,
+                    response: message.content,
+                    rating,
+                    correction
+                })
+            })
+            // Could show a toast or thank you message here
+        } catch (e) {
+            console.error("Error submitting feedback:", e)
+        }
+    }
+
+    const openCorrectionModal = (index) => {
+        setSelectedMessageIndex(index)
+        setCorrectionText("")
+        setCorrectionModalOpen(true)
+    }
+
+    const submitCorrection = async () => {
+        if (selectedMessageIndex !== null) {
+            await handleFeedback(selectedMessageIndex, -1, correctionText)
+            setCorrectionModalOpen(false)
+        }
+    }
+
     // Load chats from LocalStorage on mount
     useEffect(() => {
         const savedChats = localStorage.getItem('legal_ai_chats')
@@ -333,6 +374,8 @@ export default function ChatPage() {
                                             key={index}
                                             message={msg.content}
                                             isUser={msg.role === 'user'}
+                                            onLike={() => !msg.role === 'user' && handleFeedback(index, 1)}
+                                            onDislike={() => !msg.role === 'user' && openCorrectionModal(index)}
                                         />
                                     ))}
                                     {isLoading && <TypingIndicator />}
@@ -353,6 +396,39 @@ export default function ChatPage() {
                     </div>
                 </main>
             </div>
+            {/* Correction Modal */}
+            {correctionModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+                    <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 w-full max-w-md shadow-2xl">
+                        <h3 className="text-xl font-bold text-white mb-4">Suggérer une correction</h3>
+                        <p className="text-slate-400 text-sm mb-4">
+                            Aidez-nous à nous améliorer. Quelle serait la meilleure réponse ?
+                        </p>
+
+                        <textarea
+                            className="w-full h-32 bg-slate-900 border border-slate-700 rounded-lg p-3 text-slate-200 focus:outline-none focus:border-amber-500 mb-4 text-sm"
+                            placeholder="Écrivez votre correction ici..."
+                            value={correctionText}
+                            onChange={(e) => setCorrectionText(e.target.value)}
+                        />
+
+                        <div className="flex justify-end gap-3">
+                            <button
+                                onClick={() => setCorrectionModalOpen(false)}
+                                className="px-4 py-2 text-slate-400 hover:text-white text-sm"
+                            >
+                                Annuler
+                            </button>
+                            <button
+                                onClick={submitCorrection}
+                                className="px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-sm font-medium"
+                            >
+                                Envoyer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

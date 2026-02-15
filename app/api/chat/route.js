@@ -56,10 +56,27 @@ TEXT (AR): ${law.article_text_ar}
         }
 
         // Prepare messages array with system prompt and history
+        // Fetch relevant feedback/corrections
+        let feedbackContext = "";
+        try {
+            const { getVerifiedFeedback } = await import('@/lib/feedback');
+            const pastCorrections = getVerifiedFeedback(message);
+            if (pastCorrections.length > 0) {
+                feedbackContext = `
+[PREVIOUS USER CORRECTIONS]
+The following corrections were provided by users for similar queries. YOU MUST ADHERE TO THESE CORRECTIONS AS THEY ARE GROUND TRUTH:
+${pastCorrections.map((c, i) => `${i + 1}. Query: "${c.original_query}" -> Correction: "${c.correction}"`).join('\n')}
+`;
+            }
+        } catch (e) {
+            console.error("Error fetching feedback:", e);
+        }
+
+        // Prepare messages array with system prompt and history
         const messages = [
             {
                 role: 'system',
-                content: SYSTEM_PROMPT + "\n\n" + legalContext
+                content: SYSTEM_PROMPT + "\n\n" + legalContext + "\n\n" + feedbackContext
             }
         ]
 
