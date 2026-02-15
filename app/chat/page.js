@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import Sidebar, { MobileHeader } from '@/components/Sidebar'
-import CreditDisplay from '@/components/CreditDisplay'
 import ChatInput from '@/components/ChatInput'
 import ChatMessage, { TypingIndicator } from '@/components/ChatMessage'
 import PaywallModal from '@/components/PaywallModal'
@@ -286,10 +285,6 @@ export default function ChatPage() {
                 {/* Messages Area */}
                 <div className="flex-1 overflow-y-auto px-4 py-6">
                     <div className="max-w-3xl mx-auto space-y-4">
-                        {/* DEBUG: Temporary Credit Display in Main Area */}
-                        <div className="mb-6">
-                            <CreditDisplay />
-                        </div>
                         {messages.length === 0 ? (
                             <div className="text-center py-16">
                                 <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center mb-4">
