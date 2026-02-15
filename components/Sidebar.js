@@ -118,6 +118,7 @@ export default function Sidebar({ isOpen, onClose }) {
                     flex flex-col
                     transition-transform duration-300 ease-out
                     lg:translate-x-0
+                    border-4 border-red-600
                     ${isOpen ? 'translate-x-0' : '-translate-x-full'}
                 `}
             >

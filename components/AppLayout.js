@@ -11,6 +11,9 @@ export default function AppLayout({ children, fullWidth = false }) {
 
     return (
         <div className="min-h-screen bg-slate-900">
+            <div className="bg-red-600 text-white text-center p-2 font-bold z-[100] relative">
+                DEBUG: APP LAYOUT IS ACTIVE
+            </div>
             {/* Mobile Header */}
             <MobileHeader onMenuClick={openSidebar} />
 
