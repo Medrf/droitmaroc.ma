@@ -160,7 +160,7 @@ export default function Sidebar({ isOpen, onClose }) {
 
                     {/* Injected Content (e.g. Chat History) */}
                     {children && (
-                        <div className="pt-4 mt-4 border-t border-slate-800/50">
+                        <div className="border-t border-slate-800/30 pt-2 mt-2">
                             {children}
                         </div>
                     )}

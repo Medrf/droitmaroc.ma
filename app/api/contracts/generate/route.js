@@ -61,7 +61,7 @@ Generate the FULL contract now with all articles. Use placeholders for any missi
         if (!response.ok) {
             const error = await response.text()
             console.error('Gemini API Error:', error)
-            throw new Error('API request failed')
+            throw new Error(`API request failed: ${error}`)
         }
 
         const data = await response.json()
@@ -76,7 +76,9 @@ Generate the FULL contract now with all articles. Use placeholders for any missi
     } catch (error) {
         console.error('Contract Generation Error:', error)
         return Response.json(
-            { error: 'Une erreur s\'est produite lors de la génération du contrat | حدث خطأ أثناء إنشاء العقد' },
+            {
+                error: `Une erreur s'est produite lors de la génération du contrat | حدث خطأ أثناء إنشاء العقد. Détails: ${error.message}`
+            },
             { status: 500 }
         )
     }
