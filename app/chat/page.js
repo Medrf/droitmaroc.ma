@@ -17,91 +17,16 @@ export default function ChatPage() {
     // Navigation sidebar state
     const [isNavSidebarOpen, setIsNavSidebarOpen] = useState(false)
 
+    // Chat state
+    const [messages, setMessages] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
+    const [currentChatId, setCurrentChatId] = useState(null)
+    const [chats, setChats] = useState([])
+
     // Paywall State
     const [showPaywall, setShowPaywall] = useState(false)
     const [resetTime, setResetTime] = useState(null)
 
-    // ... (rest of existing state)
-
-    const handleSend = async (message) => {
-        const userMsg = { role: 'user', content: message }
-        const updatedMessages = [...messages, userMsg]
-
-        setMessages(updatedMessages)
-        updateCurrentChat(updatedMessages)
-        setIsLoading(true)
-
-        try {
-            const response = await fetch('/api/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message, history: messages }),
-            })
-
-            let data
-            try {
-                data = await response.json()
-            } catch (e) {
-                throw new Error("Erreur de communication avec le serveur (Réponse invalide)")
-            }
-
-            if (response.status === 402) {
-                // Paywall hit
-                setResetTime(data.reset_at) // API doesn't return this yet in my prev edit, but good to have prepared or default to null
-                setShowPaywall(true)
-                // Remove the user message we just added to "undo" the send visually or just keep it? 
-                // Better to remove it so they can try again later? Or keep it as "failed"?
-                // Let's keep it but mark as error? actually just stop loading.
-                setIsLoading(false)
-                // Optional: Remove user message if we want "transaction didn't happen" feel
-                // setMessages(messages) 
-                return
-            }
-
-            if (!response.ok) {
-                throw new Error(data.message || `Erreur serveur: ${response.status}`)
-            }
-
-            if (data.error) throw new Error(data.error)
-
-            const assistantMsg = { role: 'assistant', content: data.response }
-            const finalMessages = [...updatedMessages, assistantMsg]
-
-            setMessages(finalMessages)
-            updateCurrentChat(finalMessages)
-        } catch (error) {
-            console.error('Error:', error)
-            const errorMsg = {
-                role: 'assistant',
-                content: `⚠️ ${error.message || 'Une erreur est survenue'}`
-            }
-            const finalMessages = [...updatedMessages, errorMsg]
-            setMessages(finalMessages)
-            updateCurrentChat(finalMessages)
-        } finally {
-            setIsLoading(false)
-        }
-    }
-
-    // ... (rest of component)
-
-    return (
-        <div className="min-h-screen bg-slate-900">
-            {/* ... existing JSX ... */}
-
-            {/* Paywall Modal */}
-            <PaywallModal
-                isOpen={showPaywall}
-                onClose={() => setShowPaywall(false)}
-                resetTime={resetTime}
-            />
-
-            {/* Correction Modal */}
-            {correctionModalOpen && (
-                // ... existing modal
-            )}
-        </div>
-    )
     // Refs
     const messagesEndRef = useRef(null)
 
@@ -125,7 +50,6 @@ export default function ChatPage() {
                     correction
                 })
             })
-            // Could show a toast or thank you message here
         } catch (e) {
             console.error("Error submitting feedback:", e)
         }
@@ -151,11 +75,8 @@ export default function ChatPage() {
             try {
                 const parsedChats = JSON.parse(savedChats)
                 setChats(parsedChats)
-
                 if (parsedChats.length > 0) {
                     const lastId = localStorage.getItem('legal_ai_last_chat_id')
-                    // Only load a chat if we specifically have a lastId. 
-                    // Otherwise, we assume the user wants a new chat (e.g. they clicked "New Chat").
                     if (lastId) {
                         const chatToLoad = parsedChats.find(c => c.id === lastId)
                         if (chatToLoad) {
@@ -203,10 +124,9 @@ export default function ChatPage() {
                 startNewChat()
             }
         }
-
         window.addEventListener('legal_ai_chat_selected', handleChatSelected)
         return () => window.removeEventListener('legal_ai_chat_selected', handleChatSelected)
-    }, [chats]) // Depend on chats to ensure loadChat has latest state
+    }, [chats])
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -227,7 +147,7 @@ export default function ChatPage() {
         setChats(prev => [newChat, ...prev])
         setCurrentChatId(newId)
         setMessages([])
-        setIsNavSidebarOpen(false) // Close mobile sidebar if open
+        setIsNavSidebarOpen(false)
     }
 
     const loadChat = (chatId) => {
@@ -235,18 +155,16 @@ export default function ChatPage() {
         if (chat) {
             setCurrentChatId(chatId)
             setMessages(chat.messages)
-            setIsNavSidebarOpen(false) // Close mobile sidebar if open
+            setIsNavSidebarOpen(false)
         }
     }
 
     const deleteChat = (e, chatId) => {
         e.stopPropagation()
         if (!window.confirm('Supprimer cette conversation ?')) return
-
         const updatedChats = chats.filter(c => c.id !== chatId)
         setChats(updatedChats)
         localStorage.setItem('legal_ai_chats', JSON.stringify(updatedChats))
-
         if (currentChatId === chatId) {
             if (updatedChats.length > 0) {
                 loadChat(updatedChats[0].id)
@@ -299,6 +217,13 @@ export default function ChatPage() {
                 throw new Error("Erreur de communication avec le serveur (Réponse invalide)")
             }
 
+            if (response.status === 402) {
+                setResetTime(data.reset_at)
+                setShowPaywall(true)
+                setIsLoading(false)
+                return
+            }
+
             if (!response.ok) {
                 throw new Error(data.message || `Erreur serveur: ${response.status}`)
             }
@@ -310,6 +235,11 @@ export default function ChatPage() {
 
             setMessages(finalMessages)
             updateCurrentChat(finalMessages)
+
+            // Refresh credits
+            if (typeof window !== 'undefined') {
+                window.dispatchEvent(new Event('credit_updated'))
+            }
         } catch (error) {
             console.error('Error:', error)
             const errorMsg = {
@@ -345,7 +275,6 @@ export default function ChatPage() {
                 {/* Header */}
                 <header className="h-14 border-b border-slate-800 flex items-center justify-between px-4 bg-slate-900/95 backdrop-blur-sm sticky top-0 z-10">
                     <div className="flex items-center gap-3">
-                        {/* Mobile toggle logic handled by MobileHeader above, but here we might want to ensure spacing */}
                         <h1 className="text-base font-medium text-white">Assistant juridique</h1>
                     </div>
                     <Link href="/" className="text-slate-400 hover:text-white text-sm hidden lg:block">
@@ -412,6 +341,13 @@ export default function ChatPage() {
                     </div>
                 </div>
             </main>
+
+            {/* Paywall Modal */}
+            <PaywallModal
+                isOpen={showPaywall}
+                onClose={() => setShowPaywall(false)}
+                resetTime={resetTime}
+            />
 
             {/* Correction Modal */}
             {correctionModalOpen && (

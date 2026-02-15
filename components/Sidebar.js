@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '@/lib/language'
+import CreditDisplay from '@/components/CreditDisplay'
 
 // Navigation items configuration
 const navItems = [
@@ -147,6 +148,11 @@ export default function Sidebar({ isOpen, onClose }) {
 
                 {/* Navigation Items */}
                 <nav className="flex-1 px-3 py-6 space-y-2 overflow-y-auto">
+                    {/* Credit Display */}
+                    <div className="mb-6">
+                        <CreditDisplay />
+                    </div>
+
                     {navItems.map((item) => (
                         <SidebarItem
                             key={item.href}

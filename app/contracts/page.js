@@ -41,6 +41,9 @@ export default function ContractsPage() {
             }
 
             setGeneratedContract(data)
+
+            // Refresh credits
+            window.dispatchEvent(new Event('credit_updated'))
         } catch (err) {
             setError(err.message)
         } finally {
