@@ -4,12 +4,26 @@ import { useEffect } from 'react'
 import useSWR from 'swr'
 import Link from 'next/link'
 
-const fetcher = (url) => fetch(url).then((res) => res.json())
+const fetcher = async (url) => {
+    try {
+        const res = await fetch(url)
+        if (!res.ok) {
+            const errorData = await res.json().catch(() => ({}))
+            throw new Error(errorData.error || `Error ${res.status}`)
+        }
+        return res.json()
+    } catch (e) {
+        console.error("CreditDisplay fetch error:", e)
+        return { error: e.message }
+    }
+}
 
 export default function CreditDisplay() {
     const { data, mutate } = useSWR('/api/credits', fetcher, {
-        refreshInterval: 60000, // Refresh every minute
-        revalidateOnFocus: true
+        refreshInterval: 60000,
+        revalidateOnFocus: true,
+        onSuccess: (data) => console.log("CreditDisplay data:", data),
+        onError: (err) => console.error("CreditDisplay SWR error:", err)
     })
 
     useEffect(() => {
