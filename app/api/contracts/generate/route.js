@@ -1,7 +1,7 @@
 import { CONTRACT_SYSTEM_PROMPT, DISCLAIMERS, WATERMARKS } from '@/lib/contracts'
 
-// Gemini API endpoint (native)
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent'
+// OpenRouter API endpoint
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
 
 export async function POST(request) {
     try {
@@ -25,7 +25,7 @@ export async function POST(request) {
         }
 
         // Check if API key exists
-        if (!process.env.GEMINI_API_KEY) {
+        if (!process.env.OPENROUTER_API_KEY) {
             // Return mock contract for demo
             return Response.json({
                 contract: getMockContract(language, contractRequest),
@@ -43,29 +43,35 @@ Language: ${language === 'ar' ? 'Arabic (العربية الفصحى)' : 'French
 
 Generate the FULL contract now with all articles. Use placeholders for any missing specific information.`
 
-        // Call Gemini API
-        const response = await fetch(`${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`, {
+        // Call OpenRouter API
+        const response = await fetch(OPENROUTER_API_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
+                'Content-Type': 'application/json',
+                'HTTP-Referer': 'https://droitmaroc.ma', // Optional, for OpenRouter rankings
+                'X-Title': 'Moroccan Legal AI', // Optional
+            },
             body: JSON.stringify({
-                contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
-                systemInstruction: { parts: [{ text: CONTRACT_SYSTEM_PROMPT }] },
-                generationConfig: {
-                    maxOutputTokens: 2000,
-                    temperature: 0.25,
-                    topP: 0.95
-                }
+                model: 'google/gemini-2.0-flash-001',
+                messages: [
+                    { role: 'system', content: CONTRACT_SYSTEM_PROMPT },
+                    { role: 'user', content: userPrompt }
+                ],
+                temperature: 0.25,
+                top_p: 0.95,
+                max_tokens: 4000
             })
         })
 
         if (!response.ok) {
             const error = await response.text()
-            console.error('Gemini API Error:', error)
+            console.error('OpenRouter API Error:', error)
             throw new Error(`API request failed: ${error}`)
         }
 
         const data = await response.json()
-        const generatedContract = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
+        const generatedContract = data.choices?.[0]?.message?.content || ''
 
         return Response.json({
             contract: generatedContract,

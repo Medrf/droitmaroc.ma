@@ -77,9 +77,19 @@ export default function ChatPage() {
 
                 if (parsedChats.length > 0) {
                     const lastId = localStorage.getItem('legal_ai_last_chat_id')
-                    const chatToLoad = parsedChats.find(c => c.id === lastId) || parsedChats[0]
-                    setCurrentChatId(chatToLoad.id)
-                    setMessages(chatToLoad.messages)
+                    // Only load a chat if we specifically have a lastId. 
+                    // Otherwise, we assume the user wants a new chat (e.g. they clicked "New Chat").
+                    if (lastId) {
+                        const chatToLoad = parsedChats.find(c => c.id === lastId)
+                        if (chatToLoad) {
+                            setCurrentChatId(chatToLoad.id)
+                            setMessages(chatToLoad.messages)
+                        } else {
+                            startNewChat()
+                        }
+                    } else {
+                        startNewChat()
+                    }
                 } else {
                     startNewChat()
                 }

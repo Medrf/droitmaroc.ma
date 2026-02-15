@@ -170,7 +170,8 @@ export default function Sidebar({ isOpen, onClose }) {
                                     // Let's make this button specifically "New Conversation" which clears the current ID logic?
                                     // For now, let's just link to /chat which is the "Assistant" page.
                                     // But the user wants a "New Chat" button.
-                                    localStorage.removeItem('legal_ai_last_chat_id'); // Force new chat on next load
+                                    localStorage.removeItem('legal_ai_last_chat_id');
+                                    window.dispatchEvent(new Event('legal_ai_chat_selected'));
                                     onClose();
                                 }}
                                 className="w-full py-2 px-3 bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 text-amber-500 hover:text-amber-400 border border-amber-500/20 rounded-lg flex items-center justify-center gap-2 transition-all text-xs font-medium"
