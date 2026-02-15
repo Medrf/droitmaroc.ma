@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useLanguage } from '@/lib/language'
 import AppLayout from '@/components/AppLayout'
 import Footer from '@/components/Footer'
 import ContractForm from '@/components/ContractForm'
