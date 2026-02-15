@@ -34,6 +34,28 @@ export async function POST(request) {
             })
         }
 
+        // --- CREDIT CHECK ---
+        const { currentUser } = await import('@clerk/nextjs/server')
+        const { deductCredits } = await import('@/lib/credits')
+
+        const user = await currentUser()
+
+        if (user) {
+            const deduction = await deductCredits(user.id, 3, 'contract_gen') // Cost: 3 credits
+
+            if (!deduction.success) {
+                if (deduction.error === 'PAYWALL') {
+                    return Response.json(
+                        {
+                            error: language === 'ar' ? 'نفذت رصيدك اليومي' : 'Crédits quotidiens épuisés',
+                            code: 'PAYWALL'
+                        },
+                        { status: 402 }
+                    )
+                }
+            }
+        }
+
         // Build user prompt
         const userPrompt = `Generate a complete professional contract for the following request:
 

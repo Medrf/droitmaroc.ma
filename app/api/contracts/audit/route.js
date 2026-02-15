@@ -28,6 +28,25 @@ export async function POST(request) {
             })
         }
 
+        // --- CREDIT CHECK ---
+        const { currentUser } = await import('@clerk/nextjs/server')
+        const { deductCredits } = await import('@/lib/credits')
+
+        const user = await currentUser()
+
+        if (user) {
+            const deduction = await deductCredits(user.id, 4, 'contract_audit') // Cost: 4 credits
+
+            if (!deduction.success) {
+                if (deduction.error === 'PAYWALL') {
+                    return Response.json(
+                        { error: 'Crédits quotidiens épuisés (Daily credits exhausted)', code: 'PAYWALL' },
+                        { status: 402 }
+                    )
+                }
+            }
+        }
+
         // Build system instructions
         const systemInstruction = `
 ${CONTRACT_AUDIT_PROMPT}

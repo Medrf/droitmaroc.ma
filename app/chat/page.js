@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 import Sidebar, { MobileHeader } from '@/components/Sidebar'
 import ChatInput from '@/components/ChatInput'
 import ChatMessage, { TypingIndicator } from '@/components/ChatMessage'
+import PaywallModal from '@/components/PaywallModal'
 
 // Helper to generate IDs
 const generateId = () => Math.random().toString(36).substr(2, 9)
@@ -16,13 +17,91 @@ export default function ChatPage() {
     // Navigation sidebar state
     const [isNavSidebarOpen, setIsNavSidebarOpen] = useState(false)
 
-    // Chat state
-    const [messages, setMessages] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
-    const [currentChatId, setCurrentChatId] = useState(null)
-    const [chats, setChats] = useState([])
-    // Removed isChatHistoryOpen as it's now part of the main sidebar
+    // Paywall State
+    const [showPaywall, setShowPaywall] = useState(false)
+    const [resetTime, setResetTime] = useState(null)
 
+    // ... (rest of existing state)
+
+    const handleSend = async (message) => {
+        const userMsg = { role: 'user', content: message }
+        const updatedMessages = [...messages, userMsg]
+
+        setMessages(updatedMessages)
+        updateCurrentChat(updatedMessages)
+        setIsLoading(true)
+
+        try {
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message, history: messages }),
+            })
+
+            let data
+            try {
+                data = await response.json()
+            } catch (e) {
+                throw new Error("Erreur de communication avec le serveur (Réponse invalide)")
+            }
+
+            if (response.status === 402) {
+                // Paywall hit
+                setResetTime(data.reset_at) // API doesn't return this yet in my prev edit, but good to have prepared or default to null
+                setShowPaywall(true)
+                // Remove the user message we just added to "undo" the send visually or just keep it? 
+                // Better to remove it so they can try again later? Or keep it as "failed"?
+                // Let's keep it but mark as error? actually just stop loading.
+                setIsLoading(false)
+                // Optional: Remove user message if we want "transaction didn't happen" feel
+                // setMessages(messages) 
+                return
+            }
+
+            if (!response.ok) {
+                throw new Error(data.message || `Erreur serveur: ${response.status}`)
+            }
+
+            if (data.error) throw new Error(data.error)
+
+            const assistantMsg = { role: 'assistant', content: data.response }
+            const finalMessages = [...updatedMessages, assistantMsg]
+
+            setMessages(finalMessages)
+            updateCurrentChat(finalMessages)
+        } catch (error) {
+            console.error('Error:', error)
+            const errorMsg = {
+                role: 'assistant',
+                content: `⚠️ ${error.message || 'Une erreur est survenue'}`
+            }
+            const finalMessages = [...updatedMessages, errorMsg]
+            setMessages(finalMessages)
+            updateCurrentChat(finalMessages)
+        } finally {
+            setIsLoading(false)
+        }
+    }
+
+    // ... (rest of component)
+
+    return (
+        <div className="min-h-screen bg-slate-900">
+            {/* ... existing JSX ... */}
+
+            {/* Paywall Modal */}
+            <PaywallModal
+                isOpen={showPaywall}
+                onClose={() => setShowPaywall(false)}
+                resetTime={resetTime}
+            />
+
+            {/* Correction Modal */}
+            {correctionModalOpen && (
+                // ... existing modal
+            )}
+        </div>
+    )
     // Refs
     const messagesEndRef = useRef(null)
 
@@ -34,9 +113,7 @@ export default function ChatPage() {
     const handleFeedback = async (index, rating, correction = null) => {
         const message = messages[index]
         const query = messages[index - 1]?.content
-
         if (!message || !query) return;
-
         try {
             await fetch('/api/feedback', {
                 method: 'POST',

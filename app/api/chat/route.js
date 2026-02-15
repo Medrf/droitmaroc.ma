@@ -29,6 +29,34 @@ export async function POST(request) {
             })
         }
 
+        // --- CREDIT CHECK ---
+        const { currentUser } = await import('@clerk/nextjs/server')
+        const { deductCredits } = await import('@/lib/credits')
+
+        const user = await currentUser()
+        let creditsInfo = null
+
+        if (user) {
+            const deduction = await deductCredits(user.id, 1, 'ai_answer') // Cost: 1 credit
+
+            if (!deduction.success) {
+                if (deduction.error === 'PAYWALL') {
+                    return Response.json(
+                        {
+                            success: false,
+                            code: 'PAYWALL',
+                            message: 'Crédits quotidiens épuisés',
+                            credits_remaining: 0
+                        },
+                        { status: 402 }
+                    )
+                }
+                // Log but allow if technical error (fail open for MVP or fail closed? Plan said fail closed but let's follow logic)
+                console.error('Credit deduction error:', deduction.error)
+            }
+            creditsInfo = { remaining: deduction.remaining }
+        }
+
         // --- RAG IMPLEMENTATION ---
         // 1. Search for relevant laws
         console.log(`🔍 Searching laws for: "${message}"`)

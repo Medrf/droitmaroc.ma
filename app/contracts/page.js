@@ -4,8 +4,7 @@ import { useState } from 'react'
 import AppLayout from '@/components/AppLayout'
 import Footer from '@/components/Footer'
 import ContractForm from '@/components/ContractForm'
-import ContractOutput from '@/components/ContractOutput'
-import { useLanguage } from '@/lib/language'
+import PaywallModal from '@/components/PaywallModal'
 
 export default function ContractsPage() {
     const { language } = useLanguage()
@@ -13,6 +12,9 @@ export default function ContractsPage() {
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState('')
     const [currentLanguage, setCurrentLanguage] = useState('fr')
+
+    // Paywall State
+    const [showPaywall, setShowPaywall] = useState(false)
 
     const handleGenerate = async (formData) => {
         setIsLoading(true)
@@ -27,6 +29,12 @@ export default function ContractsPage() {
             })
 
             const data = await response.json()
+
+            if (response.status === 402) {
+                setShowPaywall(true)
+                setIsLoading(false)
+                return
+            }
 
             if (!response.ok) {
                 throw new Error(data.error || 'Erreur lors de la génération')
@@ -107,6 +115,12 @@ export default function ContractsPage() {
                 </main>
 
                 <Footer />
+
+                {/* Paywall Modal */}
+                <PaywallModal
+                    isOpen={showPaywall}
+                    onClose={() => setShowPaywall(false)}
+                />
             </div>
         </AppLayout>
     )
