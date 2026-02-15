@@ -157,6 +157,13 @@ export default function Sidebar({ isOpen, onClose }) {
                             onClick={onClose}
                         />
                     ))}
+
+                    {/* Injected Content (e.g. Chat History) */}
+                    {children && (
+                        <div className="pt-4 mt-4 border-t border-slate-800/50">
+                            {children}
+                        </div>
+                    )}
                 </nav>
 
                 {/* Footer Section */}
