@@ -1,3 +1,4 @@
+// Force rebuild for env vars
 const nextConfig = {
     reactStrictMode: true,
     eslint: {
