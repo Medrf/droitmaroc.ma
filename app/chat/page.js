@@ -262,9 +262,6 @@ export default function ChatPage() {
 
     return (
         <div className="min-h-screen bg-slate-900">
-            <div className="bg-red-600 text-white text-center p-2 font-bold z-[100] relative">
-                DEBUG: CHAT PAGE ACTIVE
-            </div>
             {/* Main Navigation Sidebar */}
             <Sidebar isOpen={isNavSidebarOpen} onClose={() => setIsNavSidebarOpen(false)} />
 

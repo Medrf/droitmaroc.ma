@@ -21,7 +21,6 @@ export default function LandingHero() {
                         <span className="w-2 h-2 bg-accent-primary rounded-full"></span>
                         <span className="text-small font-medium text-accent-primary">droitmaroc.ma</span>
                     </div>
-                    <div className="bg-red-600 text-white font-bold p-2 mb-4 mx-auto max-w-sm rounded">DEBUG: LANDING PAGE ACTIVE</div>
 
                     {/* Headline */}
                     <h1 className="text-h1 md:text-display text-text-primary mb-6">
