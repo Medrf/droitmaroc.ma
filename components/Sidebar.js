@@ -158,12 +158,37 @@ export default function Sidebar({ isOpen, onClose }) {
                         />
                     ))}
 
-                    {/* Injected Content (e.g. Chat History) */}
-                    {children && (
-                        <div className="border-t border-slate-800/30 pt-2 mt-2">
-                            {children}
+                    {/* Global Chat History */}
+                    <div className="border-t border-slate-800/30 pt-4 mt-2">
+                        <div className="px-2 mb-2">
+                            <Link
+                                href="/chat"
+                                onClick={(e) => {
+                                    // If we are already on chat page, this might need to trigger a reset or we rely on ChatPage to handle "new" if id is missing? 
+                                    // Actually, simplest is to just go to /chat. ChatPage usually loads last chat. 
+                                    // To force new, we might need a specific action.
+                                    // Let's make this button specifically "New Conversation" which clears the current ID logic?
+                                    // For now, let's just link to /chat which is the "Assistant" page.
+                                    // But the user wants a "New Chat" button.
+                                    localStorage.removeItem('legal_ai_last_chat_id'); // Force new chat on next load
+                                    onClose();
+                                }}
+                                className="w-full py-2 px-3 bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 text-amber-500 hover:text-amber-400 border border-amber-500/20 rounded-lg flex items-center justify-center gap-2 transition-all text-xs font-medium"
+                            >
+                                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                                </svg>
+                                <span>{language === 'ar' ? 'محادثة جديدة' : 'Nouvelle conversation'}</span>
+                            </Link>
                         </div>
-                    )}
+
+                        <div className="px-2">
+                            <div className="text-[10px] font-semibold text-slate-600 uppercase tracking-wider mb-2 px-1">
+                                {language === 'ar' ? 'السجل' : 'Historique'}
+                            </div>
+                            <ChatHistoryList onClose={onClose} />
+                        </div>
+                    </div>
                 </nav>
 
                 {/* Footer Section */}
@@ -250,5 +275,80 @@ export function MobileHeader({ onMenuClick }) {
                 <div className="w-10" /> {/* Spacer for centering */}
             </div>
         </header>
+    )
+}
+
+function ChatHistoryList({ onClose }) {
+    const [chats, setChats] = useState([])
+    const pathname = usePathname()
+
+    // We need to listen to localStorage changes to update the list even if we are not on the chat page
+    // Using a custom event or polling? simpler is just load on mount. 
+    // But for a true app feel, we can listen to 'storage' event (only works across tabs)
+    // AND listen to a custom window event for in-tab updates.
+
+    useEffect(() => {
+        const loadChats = () => {
+            const saved = localStorage.getItem('legal_ai_chats')
+            if (saved) {
+                try {
+                    const parsed = JSON.parse(saved)
+                    setChats(parsed)
+                } catch (e) {
+                    console.error(e)
+                }
+            }
+        }
+
+        loadChats()
+
+        // Listen for updates
+        const handleStorageChange = (e) => {
+            if (e.key === 'legal_ai_chats') loadChats()
+        }
+
+        window.addEventListener('storage', handleStorageChange)
+        // Custom event for same-tab updates
+        window.addEventListener('legal_ai_chats_updated', loadChats)
+
+        return () => {
+            window.removeEventListener('storage', handleStorageChange)
+            window.removeEventListener('legal_ai_chats_updated', loadChats)
+        }
+    }, [])
+
+    const formatTime = (timestamp) => {
+        return new Date(timestamp).toLocaleDateString('fr-MA', {
+            month: 'short', day: 'numeric'
+        })
+    }
+
+    if (chats.length === 0) return null
+
+    return (
+        <div className="space-y-0.5">
+            {chats.map(chat => (
+                <Link
+                    key={chat.id}
+                    href={`/chat`}
+                    onClick={() => {
+                        localStorage.setItem('legal_ai_last_chat_id', chat.id)
+                        // Dispatch event to notify ChatPage if we are already there
+                        window.dispatchEvent(new Event('legal_ai_chat_selected'))
+                        onClose()
+                    }}
+                    className="group flex items-center gap-2 px-2 py-2 rounded-lg hover:bg-slate-800/50 transition-all cursor-pointer"
+                >
+                    <svg className="w-3.5 h-3.5 text-slate-500 group-hover:text-amber-500/70 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                    <div className="flex-1 min-w-0">
+                        <p className="truncate text-xs text-slate-400 group-hover:text-slate-200 transition-colors">
+                            {chat.title}
+                        </p>
+                    </div>
+                </Link>
+            ))}
+        </div>
     )
 }

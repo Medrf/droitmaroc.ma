@@ -106,6 +106,21 @@ export default function ChatPage() {
         }
     }, [currentChatId])
 
+    // Listen for global chat selection events from Sidebar
+    useEffect(() => {
+        const handleChatSelected = () => {
+            const lastId = localStorage.getItem('legal_ai_last_chat_id')
+            if (lastId) {
+                loadChat(lastId)
+            } else {
+                startNewChat()
+            }
+        }
+
+        window.addEventListener('legal_ai_chat_selected', handleChatSelected)
+        return () => window.removeEventListener('legal_ai_chat_selected', handleChatSelected)
+    }, [chats]) // Depend on chats to ensure loadChat has latest state
+
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
@@ -230,57 +245,8 @@ export default function ChatPage() {
 
     return (
         <div className="min-h-screen bg-slate-900">
-            {/* Main Navigation Sidebar with Chat History injected */}
-            <Sidebar isOpen={isNavSidebarOpen} onClose={() => setIsNavSidebarOpen(false)}>
-                <div className="space-y-1">
-                    <button
-                        onClick={startNewChat}
-                        className="w-full py-2.5 px-4 mb-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-white rounded-xl flex items-center justify-center gap-2 transition-all text-sm font-medium shadow-lg shadow-amber-500/20"
-                    >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                        </svg>
-                        <span>Nouvelle conversation</span>
-                    </button>
-
-                    <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider px-2 mb-2">Historique</div>
-
-                    {chats.map(chat => (
-                        <div
-                            key={chat.id}
-                            onClick={() => loadChat(chat.id)}
-                            className={`
-                                group flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer transition-all text-sm
-                                ${currentChatId === chat.id
-                                    ? 'bg-slate-800 text-white border border-slate-700'
-                                    : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200 border border-transparent'}
-                            `}
-                        >
-                            <svg className="w-4 h-4 flex-shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                            </svg>
-                            <div className="flex-1 min-w-0">
-                                <p className="truncate text-xs font-medium">{chat.title}</p>
-                                <p className="text-[10px] text-slate-600 mt-0.5">{formatTime(chat.timestamp)}</p>
-                            </div>
-                            <button
-                                onClick={(e) => deleteChat(e, chat.id)}
-                                className="opacity-0 group-hover:opacity-100 p-1 hover:text-red-400 rounded transition-all"
-                            >
-                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-                    ))}
-
-                    {chats.length === 0 && (
-                        <div className="text-center text-slate-600 py-4 text-xs">
-                            Aucune conversation
-                        </div>
-                    )}
-                </div>
-            </Sidebar>
+            {/* Main Navigation Sidebar */}
+            <Sidebar isOpen={isNavSidebarOpen} onClose={() => setIsNavSidebarOpen(false)} />
 
             {/* Mobile Header for main navigation */}
             <div className="lg:hidden">
