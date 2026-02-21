@@ -10,7 +10,7 @@ export default function AppLayout({ children, fullWidth = false }) {
     const closeSidebar = () => setIsSidebarOpen(false)
 
     return (
-        <div className="min-h-screen bg-slate-900">
+        <div className="min-h-screen bg-background text-foreground">
             {/* Mobile Header */}
             <MobileHeader onMenuClick={openSidebar} />
 
