@@ -1,53 +1,95 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    darkMode: ["class"],
     content: [
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        container: {
+            center: true,
+            padding: "2rem",
+            screens: {
+                "2xl": "1400px",
+            },
+        },
         extend: {
             fontFamily: {
                 sans: ['Inter', 'system-ui', 'sans-serif'],
                 arabic: ['Cairo', 'Tajawal', 'sans-serif'],
+                mono: ['JetBrains Mono', 'monospace'],
             },
             colors: {
-                // Premium Legal SaaS Palette
-                background: '#FAFAFA',
-                surface: '#FFFFFF',
-
-                // Text colors
-                text: {
-                    primary: '#1E293B',
-                    secondary: '#64748B',
-                    muted: '#94A3B8',
-                },
-
-                // Accent colors
-                accent: {
-                    primary: '#1D4ED8',
-                    'primary-hover': '#1E40AF',
-                    gold: '#B8860B',
-                    'gold-light': '#F5E6C8',
-                },
-
-                // UI colors
-                border: {
-                    DEFAULT: '#E5E7EB',
-                    light: '#F3F4F6',
-                    dark: '#D1D5DB',
-                },
-
-                // Legacy support
+                // Shadcn UI tokens
+                border: "hsl(var(--border))",
+                input: "hsl(var(--input))",
+                ring: "hsl(var(--ring))",
+                background: "hsl(var(--background))",
+                foreground: "hsl(var(--foreground))",
                 primary: {
+                    DEFAULT: "hsl(var(--primary))",
+                    foreground: "hsl(var(--primary-foreground))",
+                    // Legacy support from moroccan-legal-ai
                     50: '#EFF6FF',
                     100: '#DBEAFE',
                     500: '#3B82F6',
                     600: '#2563EB',
                     700: '#1D4ED8',
                 },
+                secondary: {
+                    DEFAULT: "hsl(var(--secondary))",
+                    foreground: "hsl(var(--secondary-foreground))",
+                },
+                destructive: {
+                    DEFAULT: "hsl(var(--destructive))",
+                    foreground: "hsl(var(--destructive-foreground))",
+                },
+                muted: {
+                    DEFAULT: "hsl(var(--muted))",
+                    foreground: "hsl(var(--muted-foreground))",
+                },
+                accent: {
+                    DEFAULT: "hsl(var(--accent))",
+                    foreground: "hsl(var(--accent-foreground))",
+                    // Legacy support
+                    gold: '#B8860B',
+                    'gold-light': '#F5E6C8',
+                },
+                popover: {
+                    DEFAULT: "hsl(var(--popover))",
+                    foreground: "hsl(var(--popover-foreground))",
+                },
+                card: {
+                    DEFAULT: "hsl(var(--card))",
+                    foreground: "hsl(var(--card-foreground))",
+                },
+                sidebar: {
+                    DEFAULT: "hsl(var(--sidebar-background))",
+                    foreground: "hsl(var(--sidebar-foreground))",
+                    primary: "hsl(var(--sidebar-primary))",
+                    "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+                    accent: "hsl(var(--sidebar-accent))",
+                    "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+                    border: "hsl(var(--sidebar-border))",
+                    ring: "hsl(var(--sidebar-ring))",
+                },
+                hero: {
+                    bg: "hsl(var(--hero-bg))",
+                    foreground: "hsl(var(--hero-foreground))",
+                    muted: "hsl(var(--hero-muted))",
+                    card: "hsl(var(--hero-card))",
+                    border: "hsl(var(--hero-border))",
+                },
+                // Premium Legal SaaS Palette Legacy Support
+                surface: '#FFFFFF',
+                text: {
+                    primary: '#1E293B',
+                    secondary: '#64748B',
+                    muted: '#94A3B8',
+                },
             },
             fontSize: {
-                // Typography scale
+                // Typography scale from moroccan-legal-ai
                 'display': ['64px', { lineHeight: '1.1', fontWeight: '700' }],
                 'h1': ['48px', { lineHeight: '1.15', fontWeight: '700' }],
                 'h2': ['36px', { lineHeight: '1.2', fontWeight: '600' }],
@@ -58,16 +100,14 @@ module.exports = {
                 'small': ['14px', { lineHeight: '1.5', fontWeight: '400' }],
             },
             spacing: {
-                // Spacing scale (4px base)
                 '18': '4.5rem',
                 '22': '5.5rem',
                 '30': '7.5rem',
             },
             borderRadius: {
-                'sm': '6px',
-                'md': '12px',
-                'lg': '16px',
-                'xl': '24px',
+                lg: "var(--radius)",
+                md: "calc(var(--radius) - 2px)",
+                sm: "calc(var(--radius) - 4px)",
             },
             boxShadow: {
                 'soft': '0 2px 8px rgba(0, 0, 0, 0.04)',
@@ -76,10 +116,42 @@ module.exports = {
                 'card': '0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03)',
                 'card-hover': '0 4px 12px rgba(0, 0, 0, 0.1)',
             },
+            keyframes: {
+                "accordion-down": {
+                    from: { height: "0" },
+                    to: { height: "var(--radix-accordion-content-height)" },
+                },
+                "accordion-up": {
+                    from: { height: "var(--radix-accordion-content-height)" },
+                    to: { height: "0" },
+                },
+                "fade-up": {
+                    "0%": { opacity: "0", transform: "translateY(20px)" },
+                    "100%": { opacity: "1", transform: "translateY(0)" },
+                },
+                "fade-in": {
+                    "0%": { opacity: "0" },
+                    "100%": { opacity: "1" },
+                },
+                "slide-in-right": {
+                    "0%": { opacity: "0", transform: "translateX(30px)" },
+                    "100%": { opacity: "1", transform: "translateX(0)" },
+                },
+                "pulse-glow": {
+                    "0%, 100%": { opacity: "0.4" },
+                    "50%": { opacity: "0.8" },
+                },
+            },
             animation: {
                 'pulse-slow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                "accordion-down": "accordion-down 0.2s ease-out",
+                "accordion-up": "accordion-up 0.2s ease-out",
+                "fade-up": "fade-up 0.7s ease-out forwards",
+                "fade-in": "fade-in 0.5s ease-out forwards",
+                "slide-in-right": "slide-in-right 0.7s ease-out forwards",
+                "pulse-glow": "pulse-glow 3s ease-in-out infinite",
             },
         },
     },
-    plugins: [],
+    plugins: [require("tailwindcss-animate")],
 }
