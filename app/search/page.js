@@ -48,12 +48,12 @@ export default function SearchPage() {
     ]
 
     const colorClasses = {
-        amber: 'bg-amber-900/30 border-amber-700/50 text-amber-400',
-        red: 'bg-red-900/30 border-red-700/50 text-red-400',
-        blue: 'bg-blue-900/30 border-blue-700/50 text-blue-400',
-        purple: 'bg-purple-900/30 border-purple-700/50 text-purple-400',
-        orange: 'bg-orange-900/30 border-orange-700/50 text-orange-400',
-        slate: 'bg-slate-800 border-slate-700 text-slate-400'
+        amber: 'bg-amber-500/10 border-amber-500/20 text-amber-500',
+        red: 'bg-destructive/10 border-destructive/20 text-destructive',
+        blue: 'bg-primary/10 border-primary/20 text-primary',
+        purple: 'bg-purple-500/10 border-purple-500/20 text-purple-500',
+        orange: 'bg-orange-500/10 border-orange-500/20 text-orange-500',
+        slate: 'bg-muted border-border text-foreground'
     }
 
     return (
@@ -63,10 +63,10 @@ export default function SearchPage() {
                     {/* Page Header */}
                     <section className="py-12">
                         <div className="container-main text-center">
-                            <h1 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                            <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
                                 {language === 'ar' ? 'الأدلة القانونية' : 'Guides juridiques'}
                             </h1>
-                            <p className="text-slate-400 max-w-xl mx-auto">
+                            <p className="text-muted-foreground max-w-xl mx-auto">
                                 {language === 'ar'
                                     ? 'تصفح القوانين المغربية بالعربية والفرنسية'
                                     : 'Consultez les textes juridiques marocains en arabe et en français'}
@@ -82,7 +82,7 @@ export default function SearchPage() {
                     {/* Codes Overview */}
                     <section className="pb-12">
                         <div className="container-main">
-                            <h2 className="text-lg font-medium text-slate-300 mb-4">
+                            <h2 className="text-lg font-medium text-muted-foreground mb-4">
                                 {language === 'ar' ? 'النصوص المتاحة' : 'Textes disponibles'}
                             </h2>
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
@@ -103,8 +103,8 @@ export default function SearchPage() {
                     <section className="pb-12">
                         <div className="container-main">
                             <div className="max-w-2xl mx-auto">
-                                <div className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/50 text-center">
-                                    <p className="text-sm text-slate-500">
+                                <div className="p-4 rounded-xl bg-card border border-border text-center shadow-sm">
+                                    <p className="text-sm text-muted-foreground">
                                         {language === 'ar'
                                             ? 'المعلومات المقدمة على Loidumaroc.ma هي لأغراض إعلامية وعامة. لا تشكل استشارة قانونية شخصية.'
                                             : 'Les informations fournies sur Loidumaroc.ma sont à titre informatif et général. Elles ne constituent pas un conseil juridique personnalisé.'}

@@ -1,27 +1,28 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { useLanguage } from '@/lib/language'
 import Sidebar, { MobileHeader } from '@/components/Sidebar'
 import ChatInput from '@/components/ChatInput'
 import ChatMessage, { TypingIndicator } from '@/components/ChatMessage'
 import PaywallModal from '@/components/PaywallModal'
+import { Bot, Scale, Search, FileSignature, MessageSquarePlus, Trash2 } from 'lucide-react'
 
 // Helper to generate IDs
 const generateId = () => Math.random().toString(36).substr(2, 9)
 
 export default function ChatPage() {
-    const router = useRouter()
+    const { language } = useLanguage()
 
     // Navigation sidebar state
-    const [isNavSidebarOpen, setIsNavSidebarOpen] = useState(false)
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
     // Chat state
     const [messages, setMessages] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     const [currentChatId, setCurrentChatId] = useState(null)
     const [chats, setChats] = useState([])
+    const [error, setError] = useState(null)
 
     // Paywall State
     const [showPaywall, setShowPaywall] = useState(false)
@@ -140,14 +141,15 @@ export default function ChatPage() {
         const newId = generateId()
         const newChat = {
             id: newId,
-            title: 'Nouvelle conversation',
+            title: language === 'ar' ? 'محادثة جديدة' : 'Nouvelle conversation',
             timestamp: Date.now(),
             messages: []
         }
         setChats(prev => [newChat, ...prev])
         setCurrentChatId(newId)
         setMessages([])
-        setIsNavSidebarOpen(false)
+        setIsSidebarOpen(false)
+        setError(null)
     }
 
     const loadChat = (chatId) => {
@@ -155,13 +157,14 @@ export default function ChatPage() {
         if (chat) {
             setCurrentChatId(chatId)
             setMessages(chat.messages)
-            setIsNavSidebarOpen(false)
+            setIsSidebarOpen(false)
+            setError(null)
         }
     }
 
     const deleteChat = (e, chatId) => {
         e.stopPropagation()
-        if (!window.confirm('Supprimer cette conversation ?')) return
+        if (!window.confirm(language === 'ar' ? 'هل أنت متأكد أنك تريد حذف هذه المحادثة؟' : 'Supprimer cette conversation ?')) return
         const updatedChats = chats.filter(c => c.id !== chatId)
         setChats(updatedChats)
         localStorage.setItem('legal_ai_chats', JSON.stringify(updatedChats))
@@ -195,7 +198,8 @@ export default function ChatPage() {
         }))
     }
 
-    const handleSend = async (message) => {
+    const handleSendMessage = async (message) => {
+        setError(null)
         const userMsg = { role: 'user', content: message }
         const updatedMessages = [...messages, userMsg]
 
@@ -214,7 +218,7 @@ export default function ChatPage() {
             try {
                 data = await response.json()
             } catch (e) {
-                throw new Error("Erreur de communication avec le serveur (Réponse invalide)")
+                throw new Error(language === 'ar' ? "خطأ في الاتصال بالخادم (استجابة غير صالحة)" : "Erreur de communication avec le serveur (Réponse invalide)")
             }
 
             if (response.status === 402) {
@@ -225,7 +229,7 @@ export default function ChatPage() {
             }
 
             if (!response.ok) {
-                throw new Error(data.message || `Erreur serveur: ${response.status}`)
+                throw new Error(data.message || (language === 'ar' ? `خطأ في الخادم: ${response.status}` : `Erreur serveur: ${response.status}`))
             }
 
             if (data.error) throw new Error(data.error)
@@ -242,9 +246,10 @@ export default function ChatPage() {
             }
         } catch (error) {
             console.error('Error:', error)
+            setError(error.message || (language === 'ar' ? 'حدث خطأ' : 'Une erreur est survenue'))
             const errorMsg = {
                 role: 'assistant',
-                content: `⚠️ ${error.message || 'Une erreur est survenue'}`
+                content: `⚠️ ${error.message || (language === 'ar' ? 'حدث خطأ' : 'Une erreur est survenue')}`
             }
             const finalMessages = [...updatedMessages, errorMsg]
             setMessages(finalMessages)
@@ -254,32 +259,58 @@ export default function ChatPage() {
         }
     }
 
+    const handleNewChat = () => {
+        startNewChat()
+    }
+
+    const handleClearConversation = () => {
+        if (!window.confirm(language === 'ar' ? 'هل أنت متأكد أنك تريد مسح هذه المحادثة؟' : 'Voulez-vous vraiment effacer cette conversation ?')) return
+        setMessages([])
+        updateCurrentChat([])
+    }
+
     const formatTime = (timestamp) => {
-        return new Date(timestamp).toLocaleDateString('fr-MA', {
+        return new Date(timestamp).toLocaleDateString(language === 'ar' ? 'ar-MA' : 'fr-MA', {
             month: 'short', day: 'numeric'
         })
     }
 
     return (
-        <div className="min-h-screen bg-slate-900">
-            {/* Main Navigation Sidebar */}
-            <Sidebar isOpen={isNavSidebarOpen} onClose={() => setIsNavSidebarOpen(false)} />
+        <div className="min-h-screen bg-background flex flex-col lg:flex-row">
+            {/* Sidebar */}
+            <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
-            {/* Mobile Header for main navigation */}
-            <div className="lg:hidden">
-                <MobileHeader onMenuClick={() => setIsNavSidebarOpen(true)} />
-            </div>
+            {/* Main Content Viewport */}
+            <div className="flex-1 flex flex-col min-h-screen lg:pl-[280px] transition-all duration-300">
+                {/* Mobile Header wrapper */}
+                <div className="lg:hidden shrink-0">
+                    <MobileHeader onMenuClick={() => setIsSidebarOpen(true)} />
+                </div>
 
-            {/* Main Content Area */}
-            <main className="lg:pl-[280px] min-h-screen flex flex-col pt-14 lg:pt-0 transition-all duration-300">
-                {/* Header */}
-                <header className="h-14 border-b border-slate-800 flex items-center justify-between px-4 bg-slate-900/95 backdrop-blur-sm sticky top-0 z-10">
-                    <div className="flex items-center gap-3">
-                        <h1 className="text-base font-medium text-white">Assistant juridique</h1>
+                {/* Top Actions Bar (Desktop) */}
+                <header className="hidden lg:flex shrink-0 items-center justify-between px-6 py-4 bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-30">
+                    <h1 className="text-lg font-semibold text-foreground flex items-center gap-2">
+                        <Scale className="w-5 h-5 text-primary" />
+                        {language === 'ar' ? 'المساعد القانوني' : 'Assistant Juridique'}
+                    </h1>
+                    <div className="flex gap-2">
+                        {messages.length > 1 && (
+                            <button
+                                onClick={handleClearConversation}
+                                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-destructive hover:bg-destructive/10 rounded-lg transition-colors border border-transparent hover:border-destructive/20"
+                            >
+                                <Trash2 className="w-4 h-4" />
+                                {language === 'ar' ? 'حذف المحادثة' : 'Effacer la conversation'}
+                            </button>
+                        )}
+                        <button
+                            onClick={handleNewChat}
+                            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-primary-foreground bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-sm"
+                        >
+                            <MessageSquarePlus className="w-4 h-4" />
+                            {language === 'ar' ? 'محادثة جديدة' : 'Nouvelle conversation'}
+                        </button>
                     </div>
-                    <Link href="/" className="text-slate-400 hover:text-white text-sm hidden lg:block">
-                        Accueil
-                    </Link>
                 </header>
 
                 {/* Messages Area */}
@@ -287,26 +318,28 @@ export default function ChatPage() {
                     <div className="max-w-3xl mx-auto space-y-4">
                         {messages.length === 0 ? (
                             <div className="text-center py-16">
-                                <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center mb-4">
-                                    <svg className="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                                    </svg>
+                                <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
+                                    <Scale className="w-8 h-8 text-primary" />
                                 </div>
-                                <h2 className="text-xl font-semibold text-white mb-2">Comment puis-je vous aider ?</h2>
-                                <p className="text-slate-400 mb-8 max-w-md mx-auto text-sm">
-                                    Posez vos questions et obtenez des informations générales basées sur le cadre juridique marocain.
+                                <h2 className="text-xl font-semibold text-foreground mb-2">
+                                    {language === 'ar' ? 'كيف يمكنني مساعدتك؟' : 'Comment puis-je vous aider ?'}
+                                </h2>
+                                <p className="text-muted-foreground mb-8 max-w-md mx-auto text-sm">
+                                    {language === 'ar'
+                                        ? 'اطرح أسئلتك واحصل على معلومات عامة بناءً على الإطار القانوني المغربي.'
+                                        : 'Posez vos questions et obtenez des informations générales basées sur le cadre juridique marocain.'}
                                 </p>
 
                                 <div className="grid gap-2 max-w-lg mx-auto">
                                     {[
-                                        'Quelles sont les conditions de licenciement au Maroc ?',
-                                        'Quels sont les droits d\'un locataire ?',
-                                        'Comment fonctionne le divorce au Maroc ?'
+                                        language === 'ar' ? 'ما هي شروط الفصل من العمل في المغرب؟' : 'Quelles sont les conditions de licenciement au Maroc ?',
+                                        language === 'ar' ? 'ما هي حقوق المستأجر؟' : 'Quels sont les droits d\'un locataire ?',
+                                        language === 'ar' ? 'كيف يعمل الطلاق في المغرب؟' : 'Comment fonctionne le divorce au Maroc ?'
                                     ].map((question, index) => (
                                         <button
                                             key={index}
-                                            onClick={() => handleSend(question)}
-                                            className="w-full p-3 text-left rounded-xl border border-slate-700 bg-slate-800/50 hover:bg-slate-800 hover:border-amber-500/30 transition-all text-slate-300 hover:text-white text-sm"
+                                            onClick={() => handleSendMessage(question)}
+                                            className="w-full p-3 text-left rounded-xl border border-border bg-card hover:bg-accent hover:border-primary/30 transition-all text-foreground hover:text-primary text-sm"
                                         >
                                             {question}
                                         </button>
@@ -320,8 +353,8 @@ export default function ChatPage() {
                                         key={index}
                                         message={msg.content}
                                         isUser={msg.role === 'user'}
-                                        onLike={() => !msg.role === 'user' && handleFeedback(index, 1)}
-                                        onDislike={() => !msg.role === 'user' && openCorrectionModal(index)}
+                                        onLike={() => msg.role === 'assistant' && handleFeedback(index, 1)}
+                                        onDislike={() => msg.role === 'assistant' && openCorrectionModal(index)}
                                     />
                                 ))}
                                 {isLoading && <TypingIndicator />}
@@ -332,15 +365,24 @@ export default function ChatPage() {
                 </div>
 
                 {/* Input Area */}
-                <div className="p-4 border-t border-slate-800 bg-slate-900 sticky bottom-0 z-10">
-                    <div className="max-w-3xl mx-auto">
-                        <ChatInput onSend={handleSend} isLoading={isLoading} />
-                        <p className="text-xs text-slate-500 text-center mt-2">
-                            Les informations fournies sur Loidumaroc.ma sont à titre informatif et général.
+                <div className="shrink-0 bg-background border-t border-border">
+                    <div className="max-w-4xl mx-auto p-4 w-full">
+                        <ChatInput onSend={handleSendMessage} isLoading={isLoading} />
+
+                        {error && (
+                            <div className="mt-3 text-sm text-destructive text-center flex items-center justify-center gap-2">
+                                <span className="w-1.5 h-1.5 rounded-full bg-destructive"></span>
+                                {error}
+                            </div>
+                        )}
+                        <p className="text-[11px] text-muted-foreground text-center mt-3 font-medium">
+                            {language === 'ar'
+                                ? 'Loidumaroc.ma الذكاء الاصطناعي يمكن أن يخطئ. يرجى التحقق من المعلومات المهمة.'
+                                : "L'IA de Loidumaroc.ma peut faire des erreurs. Vérifiez les informations importantes."}
                         </p>
                     </div>
                 </div>
-            </main>
+            </div>
 
             {/* Paywall Modal */}
             <PaywallModal
@@ -352,15 +394,17 @@ export default function ChatPage() {
             {/* Correction Modal */}
             {correctionModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-                    <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 w-full max-w-md shadow-2xl">
-                        <h3 className="text-xl font-bold text-white mb-4">Suggérer une correction</h3>
-                        <p className="text-slate-400 text-sm mb-4">
-                            Aidez-nous à nous améliorer. Quelle serait la meilleure réponse ?
+                    <div className="bg-card border border-border rounded-xl p-6 w-full max-w-md shadow-2xl">
+                        <h3 className="text-xl font-bold text-foreground mb-4">
+                            {language === 'ar' ? 'اقتراح تصحيح' : 'Suggérer une correction'}
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-4">
+                            {language === 'ar' ? 'ساعدنا على التحسين. ما هي أفضل إجابة؟' : 'Aidez-nous à nous améliorer. Quelle serait la meilleure réponse ?'}
                         </p>
 
                         <textarea
-                            className="w-full h-32 bg-slate-900 border border-slate-700 rounded-lg p-3 text-slate-200 focus:outline-none focus:border-amber-500 mb-4 text-sm"
-                            placeholder="Écrivez votre correction ici..."
+                            className="w-full h-32 bg-background border border-border rounded-lg p-3 text-foreground focus:outline-none focus:border-primary mb-4 text-sm"
+                            placeholder={language === 'ar' ? 'اكتب تصحيحك هنا...' : 'Écrivez votre correction ici...'}
                             value={correctionText}
                             onChange={(e) => setCorrectionText(e.target.value)}
                         />
@@ -368,15 +412,15 @@ export default function ChatPage() {
                         <div className="flex justify-end gap-3">
                             <button
                                 onClick={() => setCorrectionModalOpen(false)}
-                                className="px-4 py-2 text-slate-400 hover:text-white text-sm"
+                                className="px-4 py-2 text-muted-foreground hover:text-foreground text-sm"
                             >
-                                Annuler
+                                {language === 'ar' ? 'إلغاء' : 'Annuler'}
                             </button>
                             <button
                                 onClick={submitCorrection}
-                                className="px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-sm font-medium"
+                                className="px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg text-sm font-medium"
                             >
-                                Envoyer
+                                {language === 'ar' ? 'إرسال' : 'Envoyer'}
                             </button>
                         </div>
                     </div>

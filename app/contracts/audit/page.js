@@ -5,6 +5,7 @@ import AppLayout from '@/components/AppLayout'
 import Footer from '@/components/Footer'
 import ChatMessage, { TypingIndicator } from '@/components/ChatMessage'
 import { useLanguage } from '@/lib/language'
+import { Send, Loader2, UploadCloud, FileText, CheckCircle2, ArrowRight, X } from 'lucide-react'
 
 export default function ContractAuditPage() {
     const { language } = useLanguage()
@@ -122,10 +123,10 @@ export default function ContractAuditPage() {
                     {/* Page Header */}
                     <section className="py-12">
                         <div className="container-main text-center">
-                            <h1 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                            <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
                                 {language === 'ar' ? 'تدقيق العقود' : 'Audit interactif des contrats'}
                             </h1>
-                            <p className="text-slate-400 max-w-xl mx-auto">
+                            <p className="text-muted-foreground max-w-xl mx-auto">
                                 {language === 'ar'
                                     ? 'قم بتحميل عقدك واطرح أسئلة حول البنود والمخاطر المحتملة'
                                     : 'Chargez votre contrat et posez des questions sur les clauses et points de vigilance'}
@@ -133,13 +134,13 @@ export default function ContractAuditPage() {
 
                             {/* Step Indicator */}
                             <div className="flex items-center justify-center gap-4 mt-6">
-                                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${step >= 1 ? 'bg-amber-500 text-white' : 'bg-slate-700 text-slate-400'}`}>1</div>
-                                <div className={`w-12 h-0.5 transition-colors ${step >= 2 ? 'bg-amber-500' : 'bg-slate-700'}`}></div>
-                                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${step >= 2 ? 'bg-amber-500 text-white' : 'bg-slate-700 text-slate-400'}`}>2</div>
+                                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${step >= 1 ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'}`}>1</div>
+                                <div className={`w-12 h-0.5 transition-colors ${step >= 2 ? 'bg-primary' : 'bg-border'}`}></div>
+                                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${step >= 2 ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'}`}>2</div>
                             </div>
-                            <div className="flex items-center justify-center gap-8 mt-2 text-xs text-slate-500">
-                                <span>{language === 'ar' ? 'تحميل' : 'Upload'}</span>
-                                <span>{language === 'ar' ? 'تحليل' : 'Analyse'}</span>
+                            <div className="flex items-center justify-center gap-8 mt-2 text-xs text-muted-foreground">
+                                <span className={step >= 1 ? 'text-primary' : ''}>{language === 'ar' ? 'تحميل' : 'Upload'}</span>
+                                <span className={step >= 2 ? 'text-primary' : ''}>{language === 'ar' ? 'تحليل' : 'Analyse'}</span>
                             </div>
                         </div>
                     </section>
@@ -148,41 +149,35 @@ export default function ContractAuditPage() {
                     {step === 1 && (
                         <section className="pb-12">
                             <div className="container-main max-w-2xl">
-                                <div className="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50">
+                                <div className="p-6 rounded-2xl bg-card border border-border shadow-sm">
                                     {/* File Upload */}
                                     <div className="mb-6">
-                                        <label className="block text-sm font-medium text-slate-300 mb-2">
+                                        <label className="block text-sm font-medium text-foreground mb-2">
                                             {language === 'ar' ? 'تحميل ملف PDF' : 'Télécharger un PDF'}
                                         </label>
                                         <div
                                             className={`flex justify-center px-6 py-8 border-2 border-dashed rounded-xl transition-colors cursor-pointer ${file
-                                                ? 'border-amber-500/50 bg-amber-500/5'
-                                                : 'border-slate-700 hover:border-slate-600'
+                                                ? 'border-primary/50 bg-primary/5'
+                                                : 'border-border hover:border-primary/50 hover:bg-muted/50'
                                                 }`}
                                         >
                                             <div className="text-center">
                                                 {file ? (
-                                                    <div className="flex items-center gap-2 text-amber-400">
-                                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                        </svg>
+                                                    <div className="flex items-center gap-2 text-primary">
+                                                        <CheckCircle2 className="w-5 h-5" />
                                                         <span className="font-medium">{file.name}</span>
                                                         <button
                                                             onClick={(e) => { e.preventDefault(); setFile(null) }}
-                                                            className="ml-2 text-slate-400 hover:text-red-400"
+                                                            className="ml-2 text-muted-foreground hover:text-destructive"
                                                         >
-                                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                                            </svg>
+                                                            <X className="w-4 h-4" />
                                                         </button>
                                                     </div>
                                                 ) : (
                                                     <>
-                                                        <svg className="mx-auto h-10 w-10 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                                        </svg>
-                                                        <div className="mt-2 text-sm text-slate-400">
-                                                            <label htmlFor="file-upload" className="cursor-pointer text-amber-400 hover:text-amber-300">
+                                                        <UploadCloud className="mx-auto h-10 w-10 text-muted-foreground" />
+                                                        <div className="mt-2 text-sm text-muted-foreground">
+                                                            <label htmlFor="file-upload" className="cursor-pointer font-semibold text-primary hover:text-primary/80">
                                                                 {language === 'ar' ? 'اختر ملف' : 'Choisir un fichier'}
                                                             </label>
                                                             <input
@@ -197,7 +192,7 @@ export default function ContractAuditPage() {
                                                             />
                                                             <span className="ml-1">{language === 'ar' ? 'أو اسحب وأفلت' : 'ou glisser-déposer'}</span>
                                                         </div>
-                                                        <p className="text-xs text-slate-600 mt-1">PDF (texte uniquement)</p>
+                                                        <p className="text-xs text-muted-foreground/80 mt-1">PDF (texte uniquement)</p>
                                                     </>
                                                 )}
                                             </div>
@@ -206,16 +201,16 @@ export default function ContractAuditPage() {
 
                                     {/* Divider */}
                                     <div className="relative flex py-4 items-center">
-                                        <div className="flex-grow border-t border-slate-700"></div>
-                                        <span className="flex-shrink mx-4 text-slate-600 text-xs uppercase">
+                                        <div className="flex-grow border-t border-border"></div>
+                                        <span className="flex-shrink mx-4 text-muted-foreground text-xs uppercase">
                                             {language === 'ar' ? 'أو' : 'ou'}
                                         </span>
-                                        <div className="flex-grow border-t border-slate-700"></div>
+                                        <div className="flex-grow border-t border-border"></div>
                                     </div>
 
                                     {/* Text Input */}
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-300 mb-2">
+                                        <label className="block text-sm font-medium text-foreground mb-2">
                                             {language === 'ar' ? 'أو الصق نص العقد' : 'Ou collez le texte'}
                                         </label>
                                         <textarea
@@ -225,7 +220,7 @@ export default function ContractAuditPage() {
                                                 setFile(null)
                                             }}
                                             disabled={!!file}
-                                            className={`w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50 transition-all min-h-[200px] resize-none ${file ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                            className={`w-full px-4 py-3 bg-muted/50 border border-border rounded-xl text-foreground placeholder:-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all min-h-[200px] resize-none ${file ? 'opacity-50 cursor-not-allowed' : ''}`}
                                             placeholder={language === 'ar'
                                                 ? 'المادة 1: موضوع العقد...'
                                                 : 'Article 1 : Objet du contrat...'}
@@ -237,22 +232,17 @@ export default function ContractAuditPage() {
                                         <button
                                             onClick={handleStartAudit}
                                             disabled={(!contractText.trim() && !file) || isExtracting}
-                                            className="w-full py-3 px-6 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-full hover:from-amber-400 hover:to-orange-400 transition-all duration-200 shadow-lg shadow-amber-500/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                                            className="w-full py-3 px-6 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-all duration-200 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                                         >
                                             {isExtracting ? (
                                                 <>
-                                                    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                                                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                                                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
-                                                    </svg>
+                                                    <Loader2 className="animate-spin h-5 w-5" />
                                                     <span>{language === 'ar' ? 'جارٍ الاستخراج...' : 'Extraction...'}</span>
                                                 </>
                                             ) : (
                                                 <>
                                                     <span>{language === 'ar' ? 'بدء التحليل' : 'Commencer l\'audit'}</span>
-                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
+                                                    <ArrowRight className="w-4 h-4" />
                                                 </>
                                             )}
                                         </button>
@@ -266,13 +256,11 @@ export default function ContractAuditPage() {
                     {step === 2 && (
                         <section className="pb-8">
                             <div className="container-main max-w-3xl">
-                                <div className="rounded-2xl bg-slate-800/50 border border-slate-700/50 overflow-hidden" style={{ height: '60vh', minHeight: '400px' }}>
+                                <div className="rounded-2xl bg-card border border-border overflow-hidden shadow-sm" style={{ height: '60vh', minHeight: '400px' }}>
                                     {/* Chat Header */}
-                                    <div className="flex items-center justify-between px-4 py-3 border-b border-slate-700/50 bg-slate-800/30">
-                                        <div className="flex items-center gap-2 text-sm text-slate-400">
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                            </svg>
+                                    <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-muted/30">
+                                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                            <FileText className="w-4 h-4 text-primary" />
                                             <span>
                                                 {file
                                                     ? file.name
@@ -281,7 +269,7 @@ export default function ContractAuditPage() {
                                         </div>
                                         <button
                                             onClick={resetAudit}
-                                            className="text-xs text-slate-500 hover:text-white transition-colors"
+                                            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
                                         >
                                             {language === 'ar' ? 'عقد جديد' : 'Nouveau contrat'}
                                         </button>
@@ -301,7 +289,7 @@ export default function ContractAuditPage() {
                                     </div>
 
                                     {/* Input */}
-                                    <form onSubmit={handleSend} className="p-4 border-t border-slate-700/50 bg-slate-800/30">
+                                    <form onSubmit={handleSend} className="p-4 border-t border-border bg-muted/10">
                                         <div className="flex gap-2">
                                             <input
                                                 type="text"
@@ -310,24 +298,22 @@ export default function ContractAuditPage() {
                                                 placeholder={language === 'ar'
                                                     ? 'اطرح سؤالاً حول العقد...'
                                                     : 'Posez une question sur le contrat...'}
-                                                className="flex-1 px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-full text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50 transition-all"
+                                                className="flex-1 px-4 py-3 bg-background border border-border rounded-full text-foreground placeholder-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all"
                                             />
                                             <button
                                                 type="submit"
                                                 disabled={!input.trim() || isLoading}
-                                                className="px-5 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-full hover:from-amber-400 hover:to-orange-400 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                                                className="px-5 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
                                             >
-                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                                                </svg>
+                                                {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5 -ml-0.5" />}
                                             </button>
                                         </div>
                                     </form>
                                 </div>
 
                                 {/* Disclaimer */}
-                                <div className="mt-4 p-4 rounded-xl bg-slate-800/30 border border-slate-700/50 text-center">
-                                    <p className="text-sm text-slate-500">
+                                <div className="mt-4 p-4 rounded-xl bg-card border border-border text-center shadow-sm">
+                                    <p className="text-sm text-muted-foreground">
                                         {language === 'ar'
                                             ? 'هذا التحليل على Loidumaroc.ma لأغراض إعلامية وعامة. لا يشكل استشارة قانونية شخصية.'
                                             : 'Cette analyse sur Loidumaroc.ma est fournie à titre informatif et général. Elle ne constitue pas un conseil juridique personnalisé.'}

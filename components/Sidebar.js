@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '@/lib/language'
 import CreditDisplay from '@/components/CreditDisplay'
+import { ThemeToggle } from '@/components/ThemeToggle'
 import { LayoutDashboard, MessageSquareText, BookOpen, SearchCheck, FileSignature, Menu, X, Check, MessageSquarePlus, LogOut } from 'lucide-react'
 
 // Navigation items configuration
@@ -178,10 +179,13 @@ export default function Sidebar({ isOpen, onClose }) {
 
                 {/* Footer Section */}
                 <div className="px-4 py-4 border-t border-border bg-card">
-                    {/* Language Toggle */}
-                    <div className="flex items-center justify-center gap-1 mb-4 bg-accent/50 rounded-full p-1">
-                        <LanguageButton lang="fr" />
-                        <LanguageButton lang="ar" />
+                    {/* Language and Theme Toggles */}
+                    <div className="flex items-center justify-between gap-2 mb-4">
+                        <div className="flex items-center gap-1 bg-accent/50 rounded-full p-1 flex-1">
+                            <LanguageButton lang="fr" />
+                            <LanguageButton lang="ar" />
+                        </div>
+                        <ThemeToggle />
                     </div>
 
                     {/* Logout Button */}

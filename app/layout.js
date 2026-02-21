@@ -1,6 +1,7 @@
 import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
 import { LanguageProvider } from '@/lib/language'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata = {
     title: {
@@ -75,10 +76,12 @@ export default function RootLayout({ children }) {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet" />
                 </head>
-                <body className="antialiased bg-slate-900 text-slate-100 min-h-screen">
-                    <LanguageProvider>
-                        {children}
-                    </LanguageProvider>
+                <body className="antialiased bg-background text-foreground min-h-screen">
+                    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+                        <LanguageProvider>
+                            {children}
+                        </LanguageProvider>
+                    </ThemeProvider>
                 </body>
             </html>
         </ClerkProvider >

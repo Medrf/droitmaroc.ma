@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { Copy, Check, Download, Printer } from 'lucide-react'
 
 export default function ContractOutput({ contract, disclaimer, watermark, language }) {
     const [copied, setCopied] = useState(false)
@@ -108,42 +109,36 @@ export default function ContractOutput({ contract, disclaimer, watermark, langua
                 <button
                     onClick={handleCopy}
                     className={`flex-1 py-2.5 px-4 rounded-lg transition-colors text-sm font-medium flex items-center justify-center gap-2 ${copied
-                            ? 'bg-emerald-600 text-white'
-                            : 'btn-secondary'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'btn-secondary'
                         }`}
                 >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                    </svg>
+                    {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                     {copied ? t.copied : t.copy}
                 </button>
                 <button
                     onClick={handleExport}
-                    className="flex-1 py-2.5 px-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium flex items-center justify-center gap-2 transition-colors"
+                    className="flex-1 py-2.5 px-4 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium flex items-center justify-center gap-2 transition-colors"
                 >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
+                    <Download className="w-4 h-4" />
                     {t.export}
                 </button>
                 <button
                     onClick={handlePrint}
                     className="flex-1 btn-secondary py-2.5 px-4 text-sm flex items-center justify-center gap-2"
                 >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-                    </svg>
+                    <Printer className="w-4 h-4" />
                     {t.print}
                 </button>
             </div>
 
             {/* Contract Content */}
             <div
-                className="bg-white rounded-lg p-6 shadow-lg"
+                className="bg-card border border-border rounded-lg p-6 shadow-sm"
                 dir={language === 'ar' ? 'rtl' : 'ltr'}
             >
                 <pre
-                    className="whitespace-pre-wrap text-gray-800 leading-relaxed text-sm"
+                    className="whitespace-pre-wrap text-foreground leading-relaxed text-sm"
                     style={{
                         fontFamily: language === 'ar'
                             ? "'Amiri', 'Traditional Arabic', serif"
@@ -156,8 +151,8 @@ export default function ContractOutput({ contract, disclaimer, watermark, langua
 
             {/* Disclaimer */}
             {disclaimer && (
-                <div className="bg-red-900/20 border border-red-800/50 rounded-lg p-4">
-                    <p className="text-red-300 text-xs text-center">{disclaimer}</p>
+                <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
+                    <p className="text-destructive text-xs text-center">{disclaimer}</p>
                 </div>
             )}
         </div>

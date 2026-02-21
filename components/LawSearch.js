@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useLanguage } from '@/lib/language'
+import { Search, Loader2, SearchX } from 'lucide-react'
 
 export default function LawSearch() {
     const { language } = useLanguage()
@@ -64,9 +65,9 @@ export default function LawSearch() {
         'code_travail': 'badge-travail',
         'code_famille': 'badge-famille',
         'constitution': 'badge-default',
-        'code_commerce': 'bg-amber-900/50 text-amber-300 border border-amber-800/50',
+        'code_commerce': 'badge-commerce',
         'doc': 'badge-default',
-        'code_procedure_penale': 'bg-orange-900/50 text-orange-300 border border-orange-800/50'
+        'code_procedure_penale': 'bg-orange-500/10 text-orange-500 border border-orange-500/20'
     }
 
     return (
@@ -75,13 +76,13 @@ export default function LawSearch() {
             {stats && (
                 <div className="flex items-center justify-center gap-6 mb-6 text-sm">
                     <div className="flex items-center gap-2">
-                        <span className="text-emerald-400 font-semibold">{stats.totalArticles}</span>
-                        <span className="text-slate-500">{language === 'ar' ? 'مادة' : 'articles'}</span>
+                        <span className="text-primary font-semibold">{stats.totalArticles}</span>
+                        <span className="text-muted-foreground">{language === 'ar' ? 'مادة' : 'articles'}</span>
                     </div>
-                    <div className="w-px h-4 bg-slate-700"></div>
+                    <div className="w-px h-4 bg-border"></div>
                     <div className="flex items-center gap-2">
-                        <span className="text-slate-400 font-semibold">{stats.totalCodes}</span>
-                        <span className="text-slate-500">{language === 'ar' ? 'قانون' : 'codes'}</span>
+                        <span className="text-foreground font-semibold">{stats.totalCodes}</span>
+                        <span className="text-muted-foreground">{language === 'ar' ? 'قانون' : 'codes'}</span>
                     </div>
                 </div>
             )}
@@ -101,17 +102,12 @@ export default function LawSearch() {
                     <button
                         type="submit"
                         disabled={isLoading || !query.trim()}
-                        className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white rounded-lg transition-colors"
+                        className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-primary hover:bg-primary/90 disabled:opacity-50 text-primary-foreground rounded-lg transition-colors"
                     >
                         {isLoading ? (
-                            <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                            </svg>
+                            <Loader2 className="animate-spin h-5 w-5" />
                         ) : (
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
+                            <Search className="w-5 h-5 -ml-0.5" />
                         )}
                     </button>
                 </div>
@@ -121,7 +117,7 @@ export default function LawSearch() {
                     <select
                         value={selectedCode}
                         onChange={(e) => setSelectedCode(e.target.value)}
-                        className="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-sm text-slate-300 focus:outline-none focus:border-emerald-500"
+                        className="px-4 py-2 rounded-lg bg-card border border-border text-sm text-foreground focus:outline-none focus:border-primary"
                     >
                         <option value="all">{language === 'ar' ? 'جميع القوانين' : 'Tous les codes'}</option>
                         {codes.map((code) => (
@@ -131,13 +127,13 @@ export default function LawSearch() {
                         ))}
                     </select>
 
-                    <div className="flex rounded-lg bg-slate-800 border border-slate-700 p-0.5">
+                    <div className="flex rounded-lg bg-muted border border-border p-0.5">
                         <button
                             type="button"
                             onClick={() => setSelectedLang('fr')}
                             className={`px-3 py-1.5 rounded text-sm transition-colors ${selectedLang === 'fr'
-                                    ? 'bg-emerald-600 text-white'
-                                    : 'text-slate-400 hover:text-white'
+                                ? 'bg-primary text-primary-foreground'
+                                : 'text-muted-foreground hover:text-foreground'
                                 }`}
                         >
                             FR
@@ -146,8 +142,8 @@ export default function LawSearch() {
                             type="button"
                             onClick={() => setSelectedLang('ar')}
                             className={`px-3 py-1.5 rounded text-sm transition-colors ${selectedLang === 'ar'
-                                    ? 'bg-emerald-600 text-white'
-                                    : 'text-slate-400 hover:text-white'
+                                ? 'bg-primary text-primary-foreground'
+                                : 'text-muted-foreground hover:text-foreground'
                                 }`}
                         >
                             ع
@@ -170,7 +166,7 @@ export default function LawSearch() {
                                 setQuery(example)
                                 handleSearch(example)
                             }}
-                            className="px-3 py-1 text-xs bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-full text-slate-400 hover:text-white transition-colors"
+                            className="px-3 py-1 text-xs bg-muted hover:bg-muted/80 border border-border rounded-full text-muted-foreground hover:text-foreground transition-colors"
                         >
                             {example}
                         </button>
@@ -182,7 +178,7 @@ export default function LawSearch() {
             {results.length > 0 && (
                 <div className="mt-10 space-y-4">
                     <div className="flex items-center justify-between">
-                        <h3 className="text-sm font-medium text-slate-400">
+                        <h3 className="text-sm font-medium text-muted-foreground">
                             {results.length} {language === 'ar' ? 'نتيجة' : 'résultats'}
                         </h3>
                     </div>
@@ -192,8 +188,8 @@ export default function LawSearch() {
                             <div
                                 key={result.id || index}
                                 className={`card ${result.relevance === 'exact' ? 'relevance-exact' :
-                                        result.relevance === 'high' ? 'relevance-high' :
-                                            result.relevance === 'medium' ? 'relevance-medium' : ''
+                                    result.relevance === 'high' ? 'relevance-high' :
+                                        result.relevance === 'medium' ? 'relevance-medium' : ''
                                     }`}
                             >
                                 {/* Header */}
@@ -201,7 +197,7 @@ export default function LawSearch() {
                                     <span className={`badge ${codeBadgeColors[result.code_id] || 'badge-default'}`}>
                                         Article {result.article_number}
                                     </span>
-                                    <span className="text-xs text-slate-500">
+                                    <span className="text-xs text-muted-foreground">
                                         {result.code_name}
                                     </span>
                                 </div>
@@ -227,9 +223,9 @@ export default function LawSearch() {
 
                                 {/* Keywords */}
                                 {result.keywords && result.keywords.length > 0 && (
-                                    <div className="flex flex-wrap gap-1 mt-3 pt-3 border-t border-slate-700/50">
+                                    <div className="flex flex-wrap gap-1 mt-3 pt-3 border-t border-border">
                                         {result.keywords.slice(0, 4).map((kw, i) => (
-                                            <span key={i} className="px-2 py-0.5 text-xs bg-slate-800 rounded text-slate-500">
+                                            <span key={i} className="px-2 py-0.5 text-xs bg-muted rounded text-muted-foreground">
                                                 {kw}
                                             </span>
                                         ))}
@@ -244,15 +240,13 @@ export default function LawSearch() {
             {/* No Results */}
             {query && !isLoading && results.length === 0 && (
                 <div className="mt-12 text-center py-12">
-                    <div className="w-16 h-16 mx-auto rounded-xl bg-slate-800 flex items-center justify-center mb-4">
-                        <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
+                    <div className="w-16 h-16 mx-auto rounded-xl bg-muted flex items-center justify-center mb-4 border border-border shadow-sm">
+                        <SearchX className="w-8 h-8 text-muted-foreground" />
                     </div>
-                    <h3 className="text-lg font-medium text-slate-300 mb-1">
+                    <h3 className="text-lg font-medium text-foreground mb-1">
                         {language === 'ar' ? 'لا توجد نتائج' : 'Aucun résultat'}
                     </h3>
-                    <p className="text-sm text-slate-500">
+                    <p className="text-sm text-muted-foreground">
                         {language === 'ar' ? 'جرب كلمات مختلفة' : 'Essayez d\'autres mots-clés'}
                     </p>
                 </div>
