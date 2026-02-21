@@ -3,9 +3,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 const dashboardMockup = "/assets/dashboard-mockup.png";
 import { useLanguage } from "@/lib/language";
+import Link from 'next/link';
+import { SignUpButton, useAuth } from "@clerk/nextjs";
 
 const HeroSection = () => {
   const { t } = useLanguage();
+  const { isSignedIn } = useAuth();
 
   return (
     <section className="hero-dark bg-grid relative overflow-hidden">
@@ -43,25 +46,28 @@ const HeroSection = () => {
           {t("hero.subtitle")}
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap gap-4 mb-20"
-        >
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-medium text-sm px-6 py-3 rounded-lg hover:opacity-90 transition-opacity glow-primary"
-          >
-            {t("hero.cta1")} <ArrowRight className="h-4 w-4" />
-          </a>
-          <a
-            href="#features"
+        <div className="flex flex-wrap gap-4 mb-20">
+          {isSignedIn ? (
+            <Link
+              href="/dashboard"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-medium text-sm px-6 py-3 rounded-lg hover:opacity-90 transition-opacity glow-primary"
+            >
+              {t("dashboard")} <ArrowRight className="h-4 w-4" />
+            </Link>
+          ) : (
+            <SignUpButton mode="modal">
+              <button className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-medium text-sm px-6 py-3 rounded-lg hover:opacity-90 transition-opacity glow-primary">
+                {t("hero.cta1")} <ArrowRight className="h-4 w-4" />
+              </button>
+            </SignUpButton>
+          )}
+          <Link
+            href="/#features"
             className="inline-flex items-center gap-2 hero-card-bg border border-hero-border font-medium text-sm px-6 py-3 rounded-lg hover:border-hero-muted/50 transition-colors text-hero-foreground"
           >
             {t("hero.cta2")}
-          </a>
-        </motion.div>
+          </Link>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}

@@ -5,16 +5,19 @@ import { ArrowRight, Menu, X } from "lucide-react";
 const logo = "/assets/logo.png";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage } from "@/lib/language";
+import Link from 'next/link';
+import { SignInButton, SignUpButton, UserButton, useAuth } from "@clerk/nextjs";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { t } = useLanguage();
+  const { isSignedIn } = useAuth();
 
   const navLinks = [
-    { label: t("nav.features"), href: "#features" },
-    { label: t("nav.solutions"), href: "#solutions" },
-    { label: t("nav.about"), href: "#about" },
+    { label: t("nav.features"), href: "/#features" },
+    { label: t("nav.solutions"), href: "/#solutions" },
+    { label: t("nav.about"), href: "/#about" },
   ];
 
   useEffect(() => {
@@ -26,8 +29,8 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-hero-bg/80 backdrop-blur-xl border-b border-hero-border"
-          : "bg-transparent"
+        ? "bg-hero-bg/80 backdrop-blur-xl border-b border-hero-border"
+        : "bg-transparent"
         }`}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-16">
@@ -37,30 +40,42 @@ const Navbar = () => {
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm text-hero-muted hover:text-hero-foreground transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-4">
           <LanguageSwitcher />
-          <a
-            href="#"
-            className="text-sm text-hero-muted hover:text-hero-foreground transition-colors px-4 py-2"
-          >
-            {t("nav.login")}
-          </a>
-          <a
-            href="#"
-            className="text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2"
-          >
-            {t("nav.start")} <ArrowRight className="h-4 w-4" />
-          </a>
+          {isSignedIn ? (
+            <>
+              <Link
+                href="/dashboard"
+                className="text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2"
+              >
+                {t("dashboard")} <ArrowRight className="h-4 w-4" />
+              </Link>
+              <UserButton afterSignOutUrl="/" />
+            </>
+          ) : (
+            <>
+              <SignInButton mode="modal">
+                <button className="text-sm text-hero-muted hover:text-hero-foreground transition-colors px-4 py-2">
+                  {t("nav.login")}
+                </button>
+              </SignInButton>
+              <SignUpButton mode="modal">
+                <button className="text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2">
+                  {t("nav.start")} <ArrowRight className="h-4 w-4" />
+                </button>
+              </SignUpButton>
+            </>
+          )}
         </div>
 
         <button
@@ -79,24 +94,45 @@ const Navbar = () => {
         >
           <nav className="flex flex-col gap-4 mb-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className="text-sm text-hero-muted hover:text-hero-foreground transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             <LanguageSwitcher />
-            <a
-              href="#"
-              className="block w-full text-center text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-lg"
-            >
-              {t("nav.start")}
-            </a>
+            {isSignedIn ? (
+              <>
+                <Link
+                  href="/dashboard"
+                  onClick={() => setMobileOpen(false)}
+                  className="block w-full text-center text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-lg"
+                >
+                  {t("dashboard")}
+                </Link>
+                <div className="flex justify-center mt-2">
+                  <UserButton afterSignOutUrl="/" />
+                </div>
+              </>
+            ) : (
+              <>
+                <SignInButton mode="modal">
+                  <button className="block w-full text-center text-sm font-medium border border-border px-5 py-2.5 rounded-lg">
+                    {t("nav.login")}
+                  </button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <button className="block w-full text-center text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-lg">
+                    {t("nav.start")}
+                  </button>
+                </SignUpButton>
+              </>
+            )}
           </div>
         </motion.div>
       )}
