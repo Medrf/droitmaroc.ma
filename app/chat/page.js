@@ -336,7 +336,7 @@ export default function ChatPage() {
                     <div className="max-w-3xl mx-auto">
                         <ChatInput onSend={handleSend} isLoading={isLoading} />
                         <p className="text-xs text-slate-500 text-center mt-2">
-                            Les informations fournies sur droitmaroc.ma sont à titre informatif et général.
+                            Les informations fournies sur Loidumaroc.ma sont à titre informatif et général.
                         </p>
                     </div>
                 </div>

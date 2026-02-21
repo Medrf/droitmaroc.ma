@@ -30,7 +30,7 @@ export default function Header() {
                     <Link href="/" className="flex items-center py-4">
                         <Image
                             src="/logo.png"
-                            alt="droitmaroc"
+                            alt="Loidumaroc"
                             width={200}
                             height={52}
                             className="h-12 w-auto object-contain"

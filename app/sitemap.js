@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = 'https://droitmaroc.ma'
+    const baseUrl = 'https://Loidumaroc.ma'
 
     return [
         {

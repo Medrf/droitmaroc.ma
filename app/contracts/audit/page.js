@@ -329,8 +329,8 @@ export default function ContractAuditPage() {
                                 <div className="mt-4 p-4 rounded-xl bg-slate-800/30 border border-slate-700/50 text-center">
                                     <p className="text-sm text-slate-500">
                                         {language === 'ar'
-                                            ? 'هذا التحليل على droitmaroc.ma لأغراض إعلامية وعامة. لا يشكل استشارة قانونية شخصية.'
-                                            : 'Cette analyse sur droitmaroc.ma est fournie à titre informatif et général. Elle ne constitue pas un conseil juridique personnalisé.'}
+                                            ? 'هذا التحليل على Loidumaroc.ma لأغراض إعلامية وعامة. لا يشكل استشارة قانونية شخصية.'
+                                            : 'Cette analyse sur Loidumaroc.ma est fournie à titre informatif et général. Elle ne constitue pas un conseil juridique personnalisé.'}
                                     </p>
                                 </div>
                             </div>

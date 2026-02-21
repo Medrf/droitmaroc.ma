@@ -71,7 +71,7 @@ Generate the FULL contract now with all articles. Use placeholders for any missi
             headers: {
                 'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
                 'Content-Type': 'application/json',
-                'HTTP-Referer': 'https://droitmaroc.ma', // Optional, for OpenRouter rankings
+                'HTTP-Referer': 'https://Loidumaroc.ma', // Optional, for OpenRouter rankings
                 'X-Title': 'Moroccan Legal AI', // Optional
             },
             body: JSON.stringify({

@@ -19,7 +19,7 @@ export default function SignInPage() {
                     <Link href="/" className="mb-12">
                         <img
                             src="/logo.png"
-                            alt="droitmaroc"
+                            alt="Loidumaroc"
                             className="h-20 w-auto object-contain"
                         />
                     </Link>
@@ -72,7 +72,7 @@ export default function SignInPage() {
                 <Link href="/" className="lg:hidden mb-8">
                     <img
                         src="/logo.png"
-                        alt="droitmaroc"
+                        alt="Loidumaroc"
                         className="h-16 w-auto object-contain"
                     />
                 </Link>
@@ -151,7 +151,7 @@ export default function SignInPage() {
                 {/* Footer */}
                 <div className="mt-auto pt-8 text-center">
                     <p className="text-slate-600 text-xs">
-                        © 2024 droitmaroc.ma - Tous droits réservés
+                        © 2024 Loidumaroc.ma - Tous droits réservés
                     </p>
                 </div>
             </div>

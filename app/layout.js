@@ -4,8 +4,8 @@ import { LanguageProvider } from '@/lib/language'
 
 export const metadata = {
     title: {
-        template: '%s | DroitMaroc.ma',
-        default: 'DroitMaroc.ma | L\'Assistant Juridique IA Marocain (المساعد القانوني المغربي)',
+        template: '%s | Loidumaroc.ma',
+        default: 'Loidumaroc.ma | L\'Assistant Juridique IA Marocain (المساعد القانوني المغربي)',
     },
     description: 'La première plateforme d\'intelligence artificielle juridique au Maroc. Obtenez des réponses précises sur le Code du travail, Code pénal, et générez des contrats professionnels en quelques secondes. | أول منصة للذكاء الاصطناعي القانوني في المغرب.',
     keywords: [
@@ -13,9 +13,9 @@ export const metadata = {
         'Contrats', 'Code du travail', 'Code pénal', 'CF', 'DOC', 'Juriste',
         'قانون مغربي', 'ذكاء اصطناعي', 'عقود', 'مدونة الأسرة', 'مدونة الشغل', 'المحامي الذكي'
     ],
-    authors: [{ name: 'DroitMaroc.ma Team' }],
-    creator: 'DroitMaroc.ma',
-    publisher: 'DroitMaroc.ma',
+    authors: [{ name: 'Loidumaroc.ma Team' }],
+    creator: 'Loidumaroc.ma',
+    publisher: 'Loidumaroc.ma',
     formatDetection: {
         email: false,
         address: false,
@@ -27,10 +27,10 @@ export const metadata = {
         apple: '/logo.png',
     },
     openGraph: {
-        title: 'DroitMaroc.ma | L\'Assistant Juridique IA Marocain',
+        title: 'Loidumaroc.ma | L\'Assistant Juridique IA Marocain',
         description: 'Votre expert juridique disponible 24/7. Réponses instantanées sur le droit marocain, génération de contrats et audit juridique par IA.',
-        url: 'https://droitmaroc.ma',
-        siteName: 'DroitMaroc.ma',
+        url: 'https://Loidumaroc.ma',
+        siteName: 'Loidumaroc.ma',
         locale: 'fr_MA',
         type: 'website',
         images: [
@@ -38,13 +38,13 @@ export const metadata = {
                 url: '/logo.png', // Ideally should be a 1200x630 OG image, using logo as fallback
                 width: 800,
                 height: 600,
-                alt: 'DroitMaroc.ma Logo',
+                alt: 'Loidumaroc.ma Logo',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'DroitMaroc.ma | L\'IA Juridique Marocaine',
+        title: 'Loidumaroc.ma | L\'IA Juridique Marocaine',
         description: 'L\'expert juridique IA pour le Maroc. Réponses fiables et contrats instantanés.',
         images: ['/logo.png'],
     },

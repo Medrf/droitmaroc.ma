@@ -73,7 +73,7 @@ export default function Dashboard() {
                                     />
                                 </div>
                                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">
-                                    {language === 'ar' ? 'مرحباً بك في droitmaroc' : 'Bienvenue sur droitmaroc'}
+                                    {language === 'ar' ? 'مرحباً بك في Loidumaroc' : 'Bienvenue sur Loidumaroc'}
                                 </h1>
                                 <p className="text-base text-slate-400 mb-8 max-w-xl mx-auto">
                                     {t.heroSubtext}

@@ -126,7 +126,7 @@ export default function Sidebar({ isOpen, onClose }) {
                     <Link href="/" className="flex items-center" onClick={onClose}>
                         <Image
                             src="/logo.png"
-                            alt="droitmaroc"
+                            alt="Loidumaroc"
                             width={220}
                             height={56}
                             className="h-14 w-auto object-contain"
@@ -224,7 +224,7 @@ export default function Sidebar({ isOpen, onClose }) {
                             : 'Informations générales uniquement'}
                     </p>
                     <p className="text-xs text-slate-700 text-center mt-1">
-                        © droitmaroc.ma
+                        © Loidumaroc.ma
                     </p>
                 </div>
             </aside>
@@ -271,7 +271,7 @@ export function MobileHeader({ onMenuClick }) {
                 <Link href="/" className="flex items-center">
                     <Image
                         src="/logo.png"
-                        alt="droitmaroc"
+                        alt="Loidumaroc"
                         width={160}
                         height={40}
                         className="h-10 w-auto object-contain"

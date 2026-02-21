@@ -19,7 +19,7 @@ export default function LandingHero() {
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-primary/5 border border-accent-primary/20 mb-8">
                         <span className="w-2 h-2 bg-accent-primary rounded-full"></span>
-                        <span className="text-small font-medium text-accent-primary">droitmaroc.ma</span>
+                        <span className="text-small font-medium text-accent-primary">Loidumaroc.ma</span>
                     </div>
 
                     {/* Headline */}

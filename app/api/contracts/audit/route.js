@@ -82,7 +82,7 @@ ${contractText}
             headers: {
                 'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
                 'Content-Type': 'application/json',
-                'HTTP-Referer': 'https://droitmaroc.ma',
+                'HTTP-Referer': 'https://Loidumaroc.ma',
                 'X-Title': 'Moroccan Legal AI',
             },
             body: JSON.stringify({

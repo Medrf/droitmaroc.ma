@@ -19,7 +19,7 @@ export default function LandingHeader() {
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src="/logo.png"
-                            alt="droitmaroc"
+                            alt="Loidumaroc"
                             className="h-32 md:h-48 w-auto object-contain"
                         />
                     </Link>

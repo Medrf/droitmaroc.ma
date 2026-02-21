@@ -18,7 +18,7 @@ export default function Footer() {
                         <div className="flex items-center gap-3">
                             <Image
                                 src="/logo.png"
-                                alt="droitmaroc"
+                                alt="Loidumaroc"
                                 width={160}
                                 height={40}
                                 className="h-9 w-auto object-contain"

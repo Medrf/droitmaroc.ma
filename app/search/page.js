@@ -106,8 +106,8 @@ export default function SearchPage() {
                                 <div className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/50 text-center">
                                     <p className="text-sm text-slate-500">
                                         {language === 'ar'
-                                            ? 'المعلومات المقدمة على droitmaroc.ma هي لأغراض إعلامية وعامة. لا تشكل استشارة قانونية شخصية.'
-                                            : 'Les informations fournies sur droitmaroc.ma sont à titre informatif et général. Elles ne constituent pas un conseil juridique personnalisé.'}
+                                            ? 'المعلومات المقدمة على Loidumaroc.ma هي لأغراض إعلامية وعامة. لا تشكل استشارة قانونية شخصية.'
+                                            : 'Les informations fournies sur Loidumaroc.ma sont à titre informatif et général. Elles ne constituent pas un conseil juridique personnalisé.'}
                                     </p>
                                 </div>
                             </div>

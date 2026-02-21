@@ -15,7 +15,7 @@ export default function LoginPage() {
                     <Link href="/" className="flex items-center justify-center">
                         <Image
                             src="/logo.png"
-                            alt="droitmaroc"
+                            alt="Loidumaroc"
                             width={160}
                             height={40}
                             className="h-10 w-auto object-contain"
