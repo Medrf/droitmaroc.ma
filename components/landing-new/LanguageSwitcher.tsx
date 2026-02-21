@@ -1,3 +1,4 @@
+"use client";
 import { useLanguage } from "@/lib/language";
 import { Globe } from "lucide-react";
 

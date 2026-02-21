@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { Search, FileText, PenTool, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/lib/language";

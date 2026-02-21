@@ -1,3 +1,4 @@
+"use client";
 const logo = "/assets/logo.png";
 import { useLanguage } from "@/lib/language";
 

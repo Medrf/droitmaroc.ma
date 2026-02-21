@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { User, Briefcase, Building2 } from "lucide-react";
 import { useLanguage } from "@/lib/language";
